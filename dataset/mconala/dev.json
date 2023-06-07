@@ -1,0 +1,4286 @@
+[
+  {
+    "question": {
+      "en": "save current figure to file 'graph.png' with resolution of 1000 dpi"
+    },
+    "mr": {
+      "python": "plt.savefig('graph.png', dpi=1000)"
+    },
+    "question_id": 9402255
+  },
+  {
+    "question": {
+      "en": "convert binary string '01010101111' to integer"
+    },
+    "mr": {
+      "python": "int('01010101111', 2)"
+    },
+    "question_id": 1476
+  },
+  {
+    "question": {
+      "en": "insert a list `k` at the front of list `a`"
+    },
+    "mr": {
+      "python": "a.insert(0, k)"
+    },
+    "question_id": 8785554
+  },
+  {
+    "question": {
+      "en": "simple way to append a pandas series `a` and `b` with same index"
+    },
+    "mr": {
+      "python": "pd.concat([a, b], ignore_index=True)"
+    },
+    "question_id": 20400135
+  },
+  {
+    "question": {
+      "en": "lowercase a python dataframe string in column 'x' if it has missing values in dataframe `df`"
+    },
+    "mr": {
+      "python": "df['x'].str.lower()"
+    },
+    "question_id": 22245171
+  },
+  {
+    "question": {
+      "en": "sorting a list of tuples `lst` by the sum of the second elements onwards, and third element of the tuple"
+    },
+    "mr": {
+      "python": "sorted(lst, key=lambda x: (sum(x[1:]), x[0]))"
+    },
+    "question_id": 40384599
+  },
+  {
+    "question": {
+      "en": "get current time in string format"
+    },
+    "mr": {
+      "python": "str(datetime.now())"
+    },
+    "question_id": 415511
+  },
+  {
+    "question": {
+      "en": "get the size of object `items`"
+    },
+    "mr": {
+      "python": "items.__len__()"
+    },
+    "question_id": 1712227
+  },
+  {
+    "question": {
+      "en": "get tuples of the corresponding elements from lists `lst` and `lst2`"
+    },
+    "mr": {
+      "python": "[(x, lst2[i]) for i, x in enumerate(lst)]"
+    },
+    "question_id": 18990069
+  },
+  {
+    "question": {
+      "en": "split string \"a;bcd,ef g\" on delimiters ';' and ','"
+    },
+    "mr": {
+      "python": "\"\"\"a;bcd,ef g\"\"\".replace(';', ' ').replace(',', ' ').split()"
+    },
+    "question_id": 1059559
+  },
+  {
+    "question": {
+      "en": "convert binary string '\\x00\\x00\\x80?\\x00\\x00\\x00@\\x00\\x00@@\\x00\\x00\\x80@' to numpy array"
+    },
+    "mr": {
+      "python": "np.fromstring('\\x00\\x00\\x80?\\x00\\x00\\x00@\\x00\\x00@@\\x00\\x00\\x80@', dtype='<f4')"
+    },
+    "question_id": 11760095
+  },
+  {
+    "question": {
+      "en": "Concat a list of strings `lst` using string formatting"
+    },
+    "mr": {
+      "python": "\"\"\"\"\"\".join(lst)"
+    },
+    "question_id": 2133571
+  },
+  {
+    "question": {
+      "en": "Parse DateTime object `datetimevariable` using format '%Y-%m-%d'"
+    },
+    "mr": {
+      "python": "datetimevariable.strftime('%Y-%m-%d')"
+    },
+    "question_id": 40173569
+  },
+  {
+    "question": {
+      "en": "get the value of attribute 'property' of object `a` with default value 'default value'"
+    },
+    "mr": {
+      "python": "getattr(a, 'property', 'default value')"
+    },
+    "question_id": 610883
+  },
+  {
+    "question": {
+      "en": "python: dots in the name of variable in a format string"
+    },
+    "mr": {
+      "python": "\"\"\"Name: {0[person.name]}\"\"\".format({'person.name': 'Joe'})"
+    },
+    "question_id": 7934620
+  },
+  {
+    "question": {
+      "en": "plot point marker '.' on series `ts`"
+    },
+    "mr": {
+      "python": "ts.plot(marker='.')"
+    },
+    "question_id": 19939084
+  },
+  {
+    "question": {
+      "en": "print '[1, 2, 3]'"
+    },
+    "mr": {
+      "python": "print('[%s, %s, %s]' % (1, 2, 3))"
+    },
+    "question_id": 517355
+  },
+  {
+    "question": {
+      "en": "create a regular expression that matches the pattern '^(.+)(?:\\\\n|\\\\r\\\\n?)((?:(?:\\\\n|\\\\r\\\\n?).+)+)' over multiple lines of text"
+    },
+    "mr": {
+      "python": "re.compile('^(.+)(?:\\\\n|\\\\r\\\\n?)((?:(?:\\\\n|\\\\r\\\\n?).+)+)', re.MULTILINE)"
+    },
+    "question_id": 587345
+  },
+  {
+    "question": {
+      "en": "load a json data `json_string` into variable `json_data`"
+    },
+    "mr": {
+      "python": "json_data = json.loads(json_string)"
+    },
+    "question_id": 23970693
+  },
+  {
+    "question": {
+      "en": "call bash command 'tar c my_dir | md5sum' with pipe"
+    },
+    "mr": {
+      "python": "subprocess.call('tar c my_dir | md5sum', shell=True)"
+    },
+    "question_id": 7323859
+  },
+  {
+    "question": {
+      "en": "How to get output of exe in python script?"
+    },
+    "mr": {
+      "python": "output = subprocess.Popen(['mycmd', 'myarg'], stdout=PIPE).communicate()[0]"
+    },
+    "question_id": 748028
+  },
+  {
+    "question": {
+      "en": "split a unicode string `text` into a list of words and punctuation characters with a regex"
+    },
+    "mr": {
+      "python": "re.findall('\\\\w+|[^\\\\w\\\\s]', text, re.UNICODE)"
+    },
+    "question_id": 367155
+  },
+  {
+    "question": {
+      "en": "Get sum of values of columns  'Y1961', 'Y1962', 'Y1963' after group by on columns \"Country\" and \"Item_code\" in dataframe `df`."
+    },
+    "mr": {
+      "python": "df.groupby(['Country', 'Item_Code'])[['Y1961', 'Y1962', 'Y1963']].sum()"
+    },
+    "question_id": 32751229
+  },
+  {
+    "question": {
+      "en": "build dictionary with keys of dictionary `_container` as keys and values of returned value of function `_value` with correlating key as parameter"
+    },
+    "mr": {
+      "python": "{_key: _value(_key) for _key in _container}"
+    },
+    "question_id": 19121722
+  },
+  {
+    "question": {
+      "en": "concatenate lists `listone` and `listtwo`"
+    },
+    "mr": {
+      "python": "(listone + listtwo)"
+    },
+    "question_id": 1720421
+  },
+  {
+    "question": {
+      "en": "use regular expression '((\\\\d)(?:[()]*\\\\2*[()]*)*)' to split string `s`"
+    },
+    "mr": {
+      "python": "[i[0] for i in re.findall('((\\\\d)(?:[()]*\\\\2*[()]*)*)', s)]"
+    },
+    "question_id": 40582103
+  },
+  {
+    "question": {
+      "en": "check if string `string` starts with a number"
+    },
+    "mr": {
+      "python": "string[0].isdigit()"
+    },
+    "question_id": 5577501
+  },
+  {
+    "question": {
+      "en": "filter dataframe `grouped` where the length of each group `x` is bigger than 1"
+    },
+    "mr": {
+      "python": "grouped.filter(lambda x: len(x) > 1)"
+    },
+    "question_id": 13167391
+  },
+  {
+    "question": {
+      "en": "write a regex pattern to match even number of letter `A`"
+    },
+    "mr": {
+      "python": "re.compile('^([^A]*)AA([^A]|AA)*$')"
+    },
+    "question_id": 2045175
+  },
+  {
+    "question": {
+      "en": "concatenating values in list `L` to a string, separate by space"
+    },
+    "mr": {
+      "python": "' '.join((str(x) for x in L))"
+    },
+    "question_id": 5618878
+  },
+  {
+    "question": {
+      "en": "regular expression syntax for not to match anything"
+    },
+    "mr": {
+      "python": "re.compile('.\\\\A|.\\\\A*|.\\\\A+')"
+    },
+    "question_id": 940822
+  },
+  {
+    "question": {
+      "en": "Get all object attributes of an object"
+    },
+    "mr": {
+      "python": "dir()"
+    },
+    "question_id": 6886493
+  },
+  {
+    "question": {
+      "en": "start a new thread for `myfunction` with parameters 'MyStringHere' and 1"
+    },
+    "mr": {
+      "python": "thread.start_new_thread(myfunction, ('MyStringHere', 1))"
+    },
+    "question_id": 849674
+  },
+  {
+    "question": {
+      "en": "in django, check if a user is in a group 'Member'"
+    },
+    "mr": {
+      "python": "return user.groups.filter(name='Member').exists()"
+    },
+    "question_id": 4789021
+  },
+  {
+    "question": {
+      "en": "Check if all the items in a list `['a', 'b']` exists in another list `l`"
+    },
+    "mr": {
+      "python": "set(['a', 'b']).issubset(set(l))"
+    },
+    "question_id": 3931541
+  },
+  {
+    "question": {
+      "en": "convert js date object 'Tue, 22 Nov 2011 06:00:00 GMT' to python datetime"
+    },
+    "mr": {
+      "python": "datetime.strptime('Tue, 22 Nov 2011 06:00:00 GMT', '%a, %d %b %Y %H:%M:%S %Z')"
+    },
+    "question_id": 8153631
+  },
+  {
+    "question": {
+      "en": "pygobject center window `window`"
+    },
+    "mr": {
+      "python": "window.set_position(Gtk.WindowPosition.CENTER)"
+    },
+    "question_id": 16389188
+  },
+  {
+    "question": {
+      "en": "append `date` to list value of `key` in dictionary `dates_dict`, or create key `key` with value `date` in a list if it does not exist"
+    },
+    "mr": {
+      "python": "dates_dict.setdefault(key, []).append(date)"
+    },
+    "question_id": 26367812
+  },
+  {
+    "question": {
+      "en": "remove first word in string `s`"
+    },
+    "mr": {
+      "python": "s.split(' ', 1)[1]"
+    },
+    "question_id": 12883376
+  },
+  {
+    "question": {
+      "en": "check if a checkbox is checked in selenium python webdriver"
+    },
+    "mr": {
+      "python": "driver.find_element_by_name('<check_box_name>').is_selected()"
+    },
+    "question_id": 14442636
+  },
+  {
+    "question": {
+      "en": "check if object `obj` has attribute 'attr_name'"
+    },
+    "mr": {
+      "python": "hasattr(obj, 'attr_name')"
+    },
+    "question_id": 843277
+  },
+  {
+    "question": {
+      "en": "flatten a tuple `l`"
+    },
+    "mr": {
+      "python": "[(a, b, c) for a, (b, c) in l]"
+    },
+    "question_id": 18500541
+  },
+  {
+    "question": {
+      "en": "Get a repeated pandas data frame object `x` by `5` times"
+    },
+    "mr": {
+      "python": "pd.concat([x] * 5)"
+    },
+    "question_id": 23887881
+  },
+  {
+    "question": {
+      "en": "save json output from a url \u2018http://search.twitter.com/search.json?q=hi\u2019 to file \u2018hi.json\u2019 in Python 2"
+    },
+    "mr": {
+      "python": "urllib.request.urlretrieve('http://search.twitter.com/search.json?q=hi', 'hi.json')"
+    },
+    "question_id": 3040904
+  },
+  {
+    "question": {
+      "en": "iterate over a dictionary `foo` in sorted order"
+    },
+    "mr": {
+      "python": "for (k, v) in sorted(foo.items()):\n    pass"
+    },
+    "question_id": 364519
+  },
+  {
+    "question": {
+      "en": "open a text file `data.txt` in io module with encoding `utf-16-le`"
+    },
+    "mr": {
+      "python": "file = io.open('data.txt', 'r', encoding='utf-16-le')"
+    },
+    "question_id": 19328874
+  },
+  {
+    "question": {
+      "en": "Retrieve parameter 'var_name' from a GET request."
+    },
+    "mr": {
+      "python": "self.request.get('var_name')"
+    },
+    "question_id": 1391026
+  },
+  {
+    "question": {
+      "en": "get a relative path of file 'my_file' into variable `fn`"
+    },
+    "mr": {
+      "python": "fn = os.path.join(os.path.dirname(__file__), 'my_file')"
+    },
+    "question_id": 1270951
+  },
+  {
+    "question": {
+      "en": "check if a user `user` is in a group from list of groups `['group1', 'group2']`"
+    },
+    "mr": {
+      "python": "return user.groups.filter(name__in=['group1', 'group2']).exists()"
+    },
+    "question_id": 4789021
+  },
+  {
+    "question": {
+      "en": "unpack hexadecimal string `s` to a list of integer values"
+    },
+    "mr": {
+      "python": "struct.unpack('11B', s)"
+    },
+    "question_id": 14961562
+  },
+  {
+    "question": {
+      "en": "delete the element `c` from list `a`"
+    },
+    "mr": {
+      "python": "try:\n    a.remove(c)\nexcept ValueError:\n    pass"
+    },
+    "question_id": 2793324
+  },
+  {
+    "question": {
+      "en": "Format a string `u'Andr\\xc3\\xa9'` that has unicode characters"
+    },
+    "mr": {
+      "python": "\"\"\"\"\"\".join(chr(ord(c)) for c in 'Andr\\xc3\\xa9')"
+    },
+    "question_id": 2783079
+  },
+  {
+    "question": {
+      "en": "How to sort a dictionary in python by value when the value is a list and I want to sort it by the first index of that list"
+    },
+    "mr": {
+      "python": "sorted(list(data.items()), key=lambda x: x[1][0])"
+    },
+    "question_id": 42765620
+  },
+  {
+    "question": {
+      "en": "extract all keys from a list of dictionaries `LoD`"
+    },
+    "mr": {
+      "python": "[i for s in [list(d.keys()) for d in LoD] for i in s]"
+    },
+    "question_id": 11399384
+  },
+  {
+    "question": {
+      "en": "sort a list of dictionaries `list_of_dct` by values in an order `order`"
+    },
+    "mr": {
+      "python": "sorted(list_of_dct, key=lambda x: order.index(list(x.values())[0]))"
+    },
+    "question_id": 35078261
+  },
+  {
+    "question": {
+      "en": "list all files of a directory `mypath`"
+    },
+    "mr": {
+      "python": "f = []\nfor (dirpath, dirnames, filenames) in walk(mypath):\n    f.extend(filenames)\n    break"
+    },
+    "question_id": 3207219
+  },
+  {
+    "question": {
+      "en": "convert unicode string '\\xd0\\xbc\\xd0\\xb0\\xd1\\x80\\xd0\\xba\\xd0\\xb0' to byte string"
+    },
+    "mr": {
+      "python": "'\\xd0\\xbc\\xd0\\xb0\\xd1\\x80\\xd0\\xba\\xd0\\xb0'.encode('latin-1')"
+    },
+    "question_id": 11174790
+  },
+  {
+    "question": {
+      "en": "check if \"blah\" is in string `somestring`"
+    },
+    "mr": {
+      "python": "if ('blah' not in somestring):\n    pass"
+    },
+    "question_id": 3437059
+  },
+  {
+    "question": {
+      "en": "display first 5 characters of string 'aaabbbccc'"
+    },
+    "mr": {
+      "python": "\"\"\"{:.5}\"\"\".format('aaabbbccc')"
+    },
+    "question_id": 24076297
+  },
+  {
+    "question": {
+      "en": "group dataframe `df` based on minute interval"
+    },
+    "mr": {
+      "python": "df.groupby(df.index.map(lambda t: t.minute))"
+    },
+    "question_id": 11073609
+  },
+  {
+    "question": {
+      "en": "decode unicode string `s` into a readable unicode literal"
+    },
+    "mr": {
+      "python": "s.decode('unicode_escape')"
+    },
+    "question_id": 6504200
+  },
+  {
+    "question": {
+      "en": "pivot dataframe `df` so that values for `upc` become column headings and values for `saleid` become the index"
+    },
+    "mr": {
+      "python": "df.pivot_table(index='saleid', columns='upc', aggfunc='size', fill_value=0)"
+    },
+    "question_id": 39353758
+  },
+  {
+    "question": {
+      "en": "convert a list of lists `a` into list of tuples of appropriate elements form nested lists"
+    },
+    "mr": {
+      "python": "zip(*a)"
+    },
+    "question_id": 35017035
+  },
+  {
+    "question": {
+      "en": "convert a list `L` of ascii values to a string"
+    },
+    "mr": {
+      "python": "\"\"\"\"\"\".join(chr(i) for i in L)"
+    },
+    "question_id": 180606
+  },
+  {
+    "question": {
+      "en": "remove white space padding around a saved image `test.png` in matplotlib"
+    },
+    "mr": {
+      "python": "plt.savefig('test.png', bbox_inches='tight')"
+    },
+    "question_id": 11837979
+  },
+  {
+    "question": {
+      "en": "check if string `one` exists in the values of dictionary `d`"
+    },
+    "mr": {
+      "python": "'one' in list(d.values())"
+    },
+    "question_id": 8214932
+  },
+  {
+    "question": {
+      "en": "Split string 'sad_pandas_and_happy_cats_for_people' based on string 'and', 'or' or 'for'"
+    },
+    "mr": {
+      "python": "re.split('_(?:for|or|and)_', 'sad_pandas_and_happy_cats_for_people')"
+    },
+    "question_id": 34410358
+  },
+  {
+    "question": {
+      "en": "convert `a` to string"
+    },
+    "mr": {
+      "python": "a.__str__()"
+    },
+    "question_id": 961632
+  },
+  {
+    "question": {
+      "en": "create a new 2D array with 2 random rows from array `A`"
+    },
+    "mr": {
+      "python": "A[(np.random.choice(A.shape[0], 2, replace=False)), :]"
+    },
+    "question_id": 14262654
+  },
+  {
+    "question": {
+      "en": "un-escaping characters in a string with python"
+    },
+    "mr": {
+      "python": "\"\"\"\\\\u003Cp\\\\u003E\"\"\".decode('unicode-escape')"
+    },
+    "question_id": 5555063
+  },
+  {
+    "question": {
+      "en": "Sort list `alist` in ascending order based on each of its elements' attribute `foo`"
+    },
+    "mr": {
+      "python": "alist.sort(key=lambda x: x.foo)"
+    },
+    "question_id": 11850425
+  },
+  {
+    "question": {
+      "en": "zip two lists `[1, 2]` and `[3, 4]` into a list of two tuples containing elements at the same index in each list"
+    },
+    "mr": {
+      "python": "zip([1, 2], [3, 4])"
+    },
+    "question_id": 13704860
+  },
+  {
+    "question": {
+      "en": "Get the date object `date_of_manufacture` of object `car` in string  format '%Y-%m-%d'"
+    },
+    "mr": {
+      "python": "{{car.date_of_manufacture.strftime('%Y-%m-%d')}}"
+    },
+    "question_id": 4830535
+  },
+  {
+    "question": {
+      "en": "check whether a file \"/etc\" exists"
+    },
+    "mr": {
+      "python": "print(os.path.isfile('/etc'))"
+    },
+    "question_id": 82831
+  },
+  {
+    "question": {
+      "en": "Sort dictionary `d` by value in descending order"
+    },
+    "mr": {
+      "python": "sorted(d, key=d.get, reverse=True)"
+    },
+    "question_id": 613183
+  },
+  {
+    "question": {
+      "en": "Check if all the values in a list `['a', 'b']` are present in another list `['b', 'a', 'foo', 'bar']`"
+    },
+    "mr": {
+      "python": "all(x in ['b', 'a', 'foo', 'bar'] for x in ['a', 'b'])"
+    },
+    "question_id": 6159313
+  },
+  {
+    "question": {
+      "en": "sum of all values in a python dict `d`"
+    },
+    "mr": {
+      "python": "sum(d.values())"
+    },
+    "question_id": 4880960
+  },
+  {
+    "question": {
+      "en": "reverse a list `array`"
+    },
+    "mr": {
+      "python": "list(reversed(array))"
+    },
+    "question_id": 3940128
+  },
+  {
+    "question": {
+      "en": "delete all rows in a numpy array `a` where any value in a row is zero `0`"
+    },
+    "mr": {
+      "python": "a[np.all(a != 0, axis=1)]"
+    },
+    "question_id": 18397805
+  },
+  {
+    "question": {
+      "en": "get last element of string splitted by '\\\\' from list of strings `list_dirs`"
+    },
+    "mr": {
+      "python": "[l.split('\\\\')[-1] for l in list_dirs]"
+    },
+    "question_id": 28657018
+  },
+  {
+    "question": {
+      "en": "Filter a dictionary `d` to remove keys with value None and replace other values with 'updated'"
+    },
+    "mr": {
+      "python": "dict((k, 'updated') for k, v in d.items() if v is None)"
+    },
+    "question_id": 4484690
+  },
+  {
+    "question": {
+      "en": "combining rows in pandas by adding their values"
+    },
+    "mr": {
+      "python": "df.groupby(df.index).sum()"
+    },
+    "question_id": 17438906
+  },
+  {
+    "question": {
+      "en": "replace parentheses and all data within it with empty string '' in column 'name' of dataframe `df`"
+    },
+    "mr": {
+      "python": "df['name'].str.replace('\\\\(.*\\\\)', '')"
+    },
+    "question_id": 20894525
+  },
+  {
+    "question": {
+      "en": "Finding the largest delta between two integers in a list in python"
+    },
+    "mr": {
+      "python": "max(abs(x - y) for x, y in zip(values[1:], values[:-1]))"
+    },
+    "question_id": 3428769
+  },
+  {
+    "question": {
+      "en": "Compose keys from dictionary `d1` with respective values in dictionary `d2`"
+    },
+    "mr": {
+      "python": "result = {k: d2.get(v) for k, v in list(d1.items())}"
+    },
+    "question_id": 17846545
+  },
+  {
+    "question": {
+      "en": "parse string \"Aug 28 1999 12:00AM\" into datetime"
+    },
+    "mr": {
+      "python": "parser.parse('Aug 28 1999 12:00AM')"
+    },
+    "question_id": 466345
+  },
+  {
+    "question": {
+      "en": "sort a list `your_list` of class objects by their values for the attribute `anniversary_score`"
+    },
+    "mr": {
+      "python": "your_list.sort(key=operator.attrgetter('anniversary_score'))"
+    },
+    "question_id": 17038639
+  },
+  {
+    "question": {
+      "en": "plot data of column 'index' versus column 'A' of dataframe `monthly_mean` after resetting its index"
+    },
+    "mr": {
+      "python": "monthly_mean.reset_index().plot(x='index', y='A')"
+    },
+    "question_id": 20084487
+  },
+  {
+    "question": {
+      "en": "pad 'dog' up to a length of 5 characters with 'x'"
+    },
+    "mr": {
+      "python": "\"\"\"{s:{c}^{n}}\"\"\".format(s='dog', n=5, c='x')"
+    },
+    "question_id": 4008546
+  },
+  {
+    "question": {
+      "en": "Convert binary string to list of integers using Python"
+    },
+    "mr": {
+      "python": "[int(s[i:i + 3], 2) for i in range(0, len(s), 3)]"
+    },
+    "question_id": 1386811
+  },
+  {
+    "question": {
+      "en": "Open file 'sample.json' in read mode with encoding of 'utf-8-sig'"
+    },
+    "mr": {
+      "python": "json.load(codecs.open('sample.json', 'r', 'utf-8-sig'))"
+    },
+    "question_id": 13156395
+  },
+  {
+    "question": {
+      "en": "check whether file \"/path/to/file\" exists"
+    },
+    "mr": {
+      "python": "my_file = Path('/path/to/file')\nif my_file.is_file():\n    pass"
+    },
+    "question_id": 82831
+  },
+  {
+    "question": {
+      "en": "execute command 'source .bashrc; shopt -s expand_aliases; nuke -x scriptPath' from python script"
+    },
+    "mr": {
+      "python": "os.system('source .bashrc; shopt -s expand_aliases; nuke -x scriptPath')"
+    },
+    "question_id": 6856119
+  },
+  {
+    "question": {
+      "en": "Convert Date String to Day of Week"
+    },
+    "mr": {
+      "python": "datetime.datetime.strptime('January 11, 2010', '%B %d, %Y').strftime('%a')"
+    },
+    "question_id": 16766643
+  },
+  {
+    "question": {
+      "en": "send data 'HTTP/1.0 200 OK\\r\\n\\r\\n' to socket `connection`"
+    },
+    "mr": {
+      "python": "connection.send('HTTP/1.0 200 established\\r\\n\\r\\n')"
+    },
+    "question_id": 40851413
+  },
+  {
+    "question": {
+      "en": "sort array `order_array` based on column 'year', 'month' and 'day'"
+    },
+    "mr": {
+      "python": "order_array.sort(order=['year', 'month', 'day'])"
+    },
+    "question_id": 19156472
+  },
+  {
+    "question": {
+      "en": "sum the products of each two elements at the same index of list `a` and list `b`"
+    },
+    "mr": {
+      "python": "list(x * y for x, y in list(zip(a, b)))"
+    },
+    "question_id": 41821112
+  },
+  {
+    "question": {
+      "en": "remove duplicates from list `myset`"
+    },
+    "mr": {
+      "python": "mynewlist = list(myset)"
+    },
+    "question_id": 12897374
+  },
+  {
+    "question": {
+      "en": "remove elements from an array `A` that are in array `B`"
+    },
+    "mr": {
+      "python": "A[np.all(np.any(A - B[:, (None)], axis=2), axis=0)]"
+    },
+    "question_id": 40055835
+  },
+  {
+    "question": {
+      "en": "format current date to pattern '{%Y-%m-%d %H:%M:%S}'"
+    },
+    "mr": {
+      "python": "time.strftime('{%Y-%m-%d %H:%M:%S}')"
+    },
+    "question_id": 21618351
+  },
+  {
+    "question": {
+      "en": "insert a new field 'geolocCountry' on an existing document  'b' using pymongo"
+    },
+    "mr": {
+      "python": "db.Doc.update({'_id': b['_id']}, {'$set': {'geolocCountry': myGeolocCountry}})"
+    },
+    "question_id": 15666169
+  },
+  {
+    "question": {
+      "en": "Get the zip output as list from the lists `[1, 2, 3]`, `[4, 5, 6]`, `[7, 8, 9]`"
+    },
+    "mr": {
+      "python": "[list(a) for a in zip([1, 2, 3], [4, 5, 6], [7, 8, 9])]"
+    },
+    "question_id": 8372399
+  },
+  {
+    "question": {
+      "en": "properly quit a program"
+    },
+    "mr": {
+      "python": "sys.exit(0)"
+    },
+    "question_id": 13022385
+  },
+  {
+    "question": {
+      "en": "print unicode characters in a string `\\u0420\\u043e\\u0441\\u0441\\u0438\\u044f`"
+    },
+    "mr": {
+      "python": "print('\\u0420\\u043e\\u0441\\u0441\\u0438\\u044f')"
+    },
+    "question_id": 10569438
+  },
+  {
+    "question": {
+      "en": "draw a grid line on every tick of plot `plt`"
+    },
+    "mr": {
+      "python": "plt.grid(True)"
+    },
+    "question_id": 8209568
+  },
+  {
+    "question": {
+      "en": "get a list of last trailing words from another list  of strings`Original_List`"
+    },
+    "mr": {
+      "python": "new_list = [x.split()[-1] for x in Original_List]"
+    },
+    "question_id": 40535203
+  },
+  {
+    "question": {
+      "en": "get the first element of each tuple from a list of tuples `G`"
+    },
+    "mr": {
+      "python": "[x[0] for x in G]"
+    },
+    "question_id": 12440342
+  },
+  {
+    "question": {
+      "en": "How to get only the last part of a path in Python?"
+    },
+    "mr": {
+      "python": "os.path.basename(os.path.normpath('/folderA/folderB/folderC/folderD/'))"
+    },
+    "question_id": 3925096
+  },
+  {
+    "question": {
+      "en": "apply itertools.product to elements of a list of lists `arrays`"
+    },
+    "mr": {
+      "python": "list(itertools.product(*arrays))"
+    },
+    "question_id": 3034014
+  },
+  {
+    "question": {
+      "en": "normalize a pandas dataframe `df` by row"
+    },
+    "mr": {
+      "python": "df.div(df.sum(axis=1), axis=0)"
+    },
+    "question_id": 18594469
+  },
+  {
+    "question": {
+      "en": "substract 1 hour and 10 minutes from current time"
+    },
+    "mr": {
+      "python": "t = datetime.datetime.now()\n(t - datetime.timedelta(hours=1, minutes=10))"
+    },
+    "question_id": 14043934
+  },
+  {
+    "question": {
+      "en": "Convert a string `s` containing hex bytes to a hex string"
+    },
+    "mr": {
+      "python": "s.decode('hex')"
+    },
+    "question_id": 10824319
+  },
+  {
+    "question": {
+      "en": "Get pandas GroupBy object with sum over the rows with same column names within  dataframe `df`"
+    },
+    "mr": {
+      "python": "df.groupby(df.columns, axis=1).sum()"
+    },
+    "question_id": 13078751
+  },
+  {
+    "question": {
+      "en": "Python JSON encoding"
+    },
+    "mr": {
+      "python": "json.dumps({'apple': 'cat', 'banana': 'dog', 'pear': 'fish'})"
+    },
+    "question_id": 983855
+  },
+  {
+    "question": {
+      "en": "split string \"This     is a     string\" into words that does not contain whitespaces"
+    },
+    "mr": {
+      "python": "\"\"\"This     is a     string\"\"\".split()"
+    },
+    "question_id": 9206964
+  },
+  {
+    "question": {
+      "en": "combine two columns `foo` and `bar` in a pandas data frame"
+    },
+    "mr": {
+      "python": "pandas.concat([df['foo'].dropna(), df['bar'].dropna()]).reindex_like(df)"
+    },
+    "question_id": 10972410
+  },
+  {
+    "question": {
+      "en": "find the index of sub string 'World' in `x`"
+    },
+    "mr": {
+      "python": "x.find('World')"
+    },
+    "question_id": 674764
+  },
+  {
+    "question": {
+      "en": "append to file 'test' content 'koko'"
+    },
+    "mr": {
+      "python": "open('test', 'a+b').write('koko')"
+    },
+    "question_id": 4706499
+  },
+  {
+    "question": {
+      "en": "Open image 'picture.jpg'"
+    },
+    "mr": {
+      "python": "img = Image.open('picture.jpg')\nimg.show()"
+    },
+    "question_id": 16387069
+  },
+  {
+    "question": {
+      "en": "Match regex pattern '((?:A|B|C)D)' on string 'BDE'"
+    },
+    "mr": {
+      "python": "re.findall('((?:A|B|C)D)', 'BDE')"
+    },
+    "question_id": 11985628
+  },
+  {
+    "question": {
+      "en": "create a list `matrix` containing 5 lists, each of 5 items  all set to 0"
+    },
+    "mr": {
+      "python": "matrix = [([0] * 5) for i in range(5)]"
+    },
+    "question_id": 6667201
+  },
+  {
+    "question": {
+      "en": "convert dataframe `df` to integer-type sparse object"
+    },
+    "mr": {
+      "python": "df.to_sparse(0)"
+    },
+    "question_id": 41154648
+  },
+  {
+    "question": {
+      "en": "open a file `/home/user/test/wsservice/data.pkl` in binary write mode"
+    },
+    "mr": {
+      "python": "output = open('/home/user/test/wsservice/data.pkl', 'wb')"
+    },
+    "question_id": 5285181
+  },
+  {
+    "question": {
+      "en": "sort a pandas data frame according to column `Peak` in ascending and `Weeks` in descending order"
+    },
+    "mr": {
+      "python": "df.sort_values(['Peak', 'Weeks'], ascending=[True, False], inplace=True)"
+    },
+    "question_id": 13636592
+  },
+  {
+    "question": {
+      "en": "Trimming a string \"Bob has a cat\""
+    },
+    "mr": {
+      "python": "'Bob has a cat'.strip()"
+    },
+    "question_id": 761804
+  },
+  {
+    "question": {
+      "en": "remove specific elements in a numpy array `a`"
+    },
+    "mr": {
+      "python": "numpy.delete(a, index)"
+    },
+    "question_id": 10996140
+  },
+  {
+    "question": {
+      "en": "get a new string from the 3rd character to the end of the string `x`"
+    },
+    "mr": {
+      "python": "x[2:]"
+    },
+    "question_id": 663171
+  },
+  {
+    "question": {
+      "en": "unpack elements of list `i` as arguments into function `foo`"
+    },
+    "mr": {
+      "python": "foo(*i)"
+    },
+    "question_id": 13891559
+  },
+  {
+    "question": {
+      "en": "remove uppercased characters in string `s`"
+    },
+    "mr": {
+      "python": "re.sub('[^A-Z]', '', s)"
+    },
+    "question_id": 15886340
+  },
+  {
+    "question": {
+      "en": "Keep only unique words in list of words `words` and join into string"
+    },
+    "mr": {
+      "python": "print(' '.join(sorted(set(words), key=words.index)))"
+    },
+    "question_id": 7794208
+  },
+  {
+    "question": {
+      "en": "read the first line of a string `my_string`"
+    },
+    "mr": {
+      "python": "my_string.splitlines()[0]"
+    },
+    "question_id": 11833266
+  },
+  {
+    "question": {
+      "en": "Split a string `l` by multiple words `for` or `or` or `and`"
+    },
+    "mr": {
+      "python": "[re.split('_(?:f?or|and)_', s) for s in l]"
+    },
+    "question_id": 34410358
+  },
+  {
+    "question": {
+      "en": "Replace non-ASCII characters in string `text` with a single space"
+    },
+    "mr": {
+      "python": "re.sub('[^\\\\x00-\\\\x7F]+', ' ', text)"
+    },
+    "question_id": 20078816
+  },
+  {
+    "question": {
+      "en": "read csv file 'myfile.csv' into array"
+    },
+    "mr": {
+      "python": "df = pd.read_csv('myfile.csv', sep=',', header=None)"
+    },
+    "question_id": 3518778
+  },
+  {
+    "question": {
+      "en": "replace placeholders in string '{1} {ham} {0} {foo} {1}' with arguments `(10, 20, foo='bar', ham='spam')`"
+    },
+    "mr": {
+      "python": "\"\"\"{1} {ham} {0} {foo} {1}\"\"\".format(10, 20, foo='bar', ham='spam')"
+    },
+    "question_id": 17895835
+  },
+  {
+    "question": {
+      "en": "strip a string `line` of all carriage returns and newlines"
+    },
+    "mr": {
+      "python": "line.strip()"
+    },
+    "question_id": 13656519
+  },
+  {
+    "question": {
+      "en": "Retrieve an arbitrary value from dictionary `dict`"
+    },
+    "mr": {
+      "python": "next(iter(dict.values()))"
+    },
+    "question_id": 3097866
+  },
+  {
+    "question": {
+      "en": "How to plot two columns of a pandas data frame using points?"
+    },
+    "mr": {
+      "python": "df.plot(x='col_name_1', y='col_name_2', style='o')"
+    },
+    "question_id": 17812978
+  },
+  {
+    "question": {
+      "en": "Create 2D numpy array from the data provided in 'somefile.csv' with each row in the file having same number of values"
+    },
+    "mr": {
+      "python": "X = numpy.loadtxt('somefile.csv', delimiter=',')"
+    },
+    "question_id": 7356042
+  },
+  {
+    "question": {
+      "en": "throw an Exception with message 'This is the exception you expect to handle'"
+    },
+    "mr": {
+      "python": "raise Exception('This is the exception you expect to handle')"
+    },
+    "question_id": 2052390
+  },
+  {
+    "question": {
+      "en": "delete the element 6 from list `a`"
+    },
+    "mr": {
+      "python": "a.remove(6)"
+    },
+    "question_id": 2793324
+  },
+  {
+    "question": {
+      "en": "concatenate sequence of numpy arrays  `LIST` into a one dimensional array along the first axis"
+    },
+    "mr": {
+      "python": "numpy.concatenate(LIST, axis=0)"
+    },
+    "question_id": 27516849
+  },
+  {
+    "question": {
+      "en": "scroll a to the bottom of a web page using selenium webdriver"
+    },
+    "mr": {
+      "python": "driver.execute_script('window.scrollTo(0, document.body.scrollHeight);')"
+    },
+    "question_id": 20986631
+  },
+  {
+    "question": {
+      "en": "get index of elements in array `A` that occur in another array `B`"
+    },
+    "mr": {
+      "python": "np.where(np.in1d(A, B))[0]"
+    },
+    "question_id": 28901311
+  },
+  {
+    "question": {
+      "en": "get all sub-elements of an element `a` in an elementtree"
+    },
+    "mr": {
+      "python": "[elem.tag for elem in a.iter()]"
+    },
+    "question_id": 10408927
+  },
+  {
+    "question": {
+      "en": "create variable key/value pairs with argparse"
+    },
+    "mr": {
+      "python": "parser.add_argument('--conf', nargs=2, action='append')"
+    },
+    "question_id": 27146262
+  },
+  {
+    "question": {
+      "en": "read lines from a csv file `./urls-eu.csv` into a list of lists `arr`"
+    },
+    "mr": {
+      "python": "arr = [line.split(',') for line in open('./urls-eu.csv')]"
+    },
+    "question_id": 1532810
+  },
+  {
+    "question": {
+      "en": "split dictionary/list inside a pandas column 'b' into separate columns in dataframe `df`"
+    },
+    "mr": {
+      "python": "pd.concat([df.drop('b', axis=1), pd.DataFrame(df['b'].tolist())], axis=1)"
+    },
+    "question_id": 38231591
+  },
+  {
+    "question": {
+      "en": "Convert a datetime object `dt` to microtime"
+    },
+    "mr": {
+      "python": "time.mktime(dt.timetuple()) + dt.microsecond / 1000000.0"
+    },
+    "question_id": 7238226
+  },
+  {
+    "question": {
+      "en": "Selenium get the entire `driver` page text"
+    },
+    "mr": {
+      "python": "driver.page_source"
+    },
+    "question_id": 16114244
+  },
+  {
+    "question": {
+      "en": "get current url in selenium webdriver `browser`"
+    },
+    "mr": {
+      "python": "print(browser.current_url)"
+    },
+    "question_id": 15985339
+  },
+  {
+    "question": {
+      "en": "split string \"This is a string\" into words that do not contain whitespaces"
+    },
+    "mr": {
+      "python": "\"\"\"This is a string\"\"\".split()"
+    },
+    "question_id": 9206964
+  },
+  {
+    "question": {
+      "en": "select all rows whose values in a column `column_name` equals a scalar `some_value` in pandas data frame object `df`"
+    },
+    "mr": {
+      "python": "df.loc[df['column_name'] == some_value]"
+    },
+    "question_id": 17071871
+  },
+  {
+    "question": {
+      "en": "regular expression matching all but 'aa' and 'bb'"
+    },
+    "mr": {
+      "python": "re.findall('-(?!aa|bb)([^-]+)', string)"
+    },
+    "question_id": 39600161
+  },
+  {
+    "question": {
+      "en": "find overlapping matches from a string `hello` using regex"
+    },
+    "mr": {
+      "python": "re.findall('(?=(\\\\w\\\\w))', 'hello')"
+    },
+    "question_id": 11430863
+  },
+  {
+    "question": {
+      "en": "set the y axis range to `0, 1000` in subplot using pylab"
+    },
+    "mr": {
+      "python": "pylab.ylim([0, 1000])"
+    },
+    "question_id": 2849286
+  },
+  {
+    "question": {
+      "en": "declare an array `variable`"
+    },
+    "mr": {
+      "python": "variable = []"
+    },
+    "question_id": 1514553
+  },
+  {
+    "question": {
+      "en": "Creating an empty list `l`"
+    },
+    "mr": {
+      "python": "l = []"
+    },
+    "question_id": 2972212
+  },
+  {
+    "question": {
+      "en": "restart a computer after `900` seconds using subprocess"
+    },
+    "mr": {
+      "python": "subprocess.call(['shutdown', '/r', '/t', '900'])"
+    },
+    "question_id": 14764126
+  },
+  {
+    "question": {
+      "en": "Jinja2 formate date `item.date` accorto pattern 'Y M d'"
+    },
+    "mr": {
+      "python": "{{(item.date | date): 'Y M d'}}"
+    },
+    "question_id": 794995
+  },
+  {
+    "question": {
+      "en": "iterate over a python dictionary, ordered by values"
+    },
+    "mr": {
+      "python": "sorted(list(dictionary.items()), key=lambda x: x[1])"
+    },
+    "question_id": 674509
+  },
+  {
+    "question": {
+      "en": "Get a list comparing two lists of tuples `l1` and `l2` if any first value in `l1` matches with first value in `l2`"
+    },
+    "mr": {
+      "python": "[x[0] for x in l1 if any(x[0] == y[0] for y in l2)]"
+    },
+    "question_id": 13168252
+  },
+  {
+    "question": {
+      "en": "How to use variables in SQL statement in Python?"
+    },
+    "mr": {
+      "python": "cursor.execute('INSERT INTO table VALUES (%s, %s, %s)', (var1, var2, var3))"
+    },
+    "question_id": 902408
+  },
+  {
+    "question": {
+      "en": "set the value of cell `['x']['C']` equal to 10 in dataframe `df`"
+    },
+    "mr": {
+      "python": "df['x']['C'] = 10"
+    },
+    "question_id": 13842088
+  },
+  {
+    "question": {
+      "en": "select a first form with no name in mechanize"
+    },
+    "mr": {
+      "python": "br.select_form(nr=0)"
+    },
+    "question_id": 2582580
+  },
+  {
+    "question": {
+      "en": "get each value from a list of lists `a` using itertools"
+    },
+    "mr": {
+      "python": "print(list(itertools.chain.from_iterable(a)))"
+    },
+    "question_id": 716477
+  },
+  {
+    "question": {
+      "en": "request URI '<MY_URI>' and pass authorization token 'TOK:<MY_TOKEN>' to the header"
+    },
+    "mr": {
+      "python": "r = requests.get('<MY_URI>', headers={'Authorization': 'TOK:<MY_TOKEN>'})"
+    },
+    "question_id": 19069701
+  },
+  {
+    "question": {
+      "en": "delete the last column of numpy array `a` and assign resulting array to `b`"
+    },
+    "mr": {
+      "python": "b = np.delete(a, -1, 1)"
+    },
+    "question_id": 6710684
+  },
+  {
+    "question": {
+      "en": "prompt string 'Press Enter to continue...' to the console"
+    },
+    "mr": {
+      "python": "input('Press Enter to continue...')"
+    },
+    "question_id": 983354
+  },
+  {
+    "question": {
+      "en": "convert an rgb image 'messi5.jpg' into grayscale `img`"
+    },
+    "mr": {
+      "python": "img = cv2.imread('messi5.jpg', 0)"
+    },
+    "question_id": 12201577
+  },
+  {
+    "question": {
+      "en": "make a function `f` that calculates the sum of two integer variables `x` and `y`"
+    },
+    "mr": {
+      "python": "f = lambda x, y: x + y"
+    },
+    "question_id": 7974442
+  },
+  {
+    "question": {
+      "en": "change figure size to 3 by 4 in matplotlib"
+    },
+    "mr": {
+      "python": "plt.figure(figsize=(3, 4))"
+    },
+    "question_id": 17109608
+  },
+  {
+    "question": {
+      "en": "convert utf-8 with bom string `s` to utf-8 with no bom `u`"
+    },
+    "mr": {
+      "python": "u = s.decode('utf-8-sig')"
+    },
+    "question_id": 8898294
+  },
+  {
+    "question": {
+      "en": "Convert a datetime object `my_datetime` into readable format `%B %d, %Y`"
+    },
+    "mr": {
+      "python": "my_datetime.strftime('%B %d, %Y')"
+    },
+    "question_id": 2158347
+  },
+  {
+    "question": {
+      "en": "repeat every character for 7 times in string 'map'"
+    },
+    "mr": {
+      "python": "\"\"\"\"\"\".join(map(lambda x: x * 7, 'map'))"
+    },
+    "question_id": 38273353
+  },
+  {
+    "question": {
+      "en": "select the first row grouped per level 0 of dataframe `df`"
+    },
+    "mr": {
+      "python": "df.groupby(level=0, as_index=False).nth(0)"
+    },
+    "question_id": 42747987
+  },
+  {
+    "question": {
+      "en": "specify multiple positional arguments with argparse"
+    },
+    "mr": {
+      "python": "parser.add_argument('input', nargs='+')"
+    },
+    "question_id": 5373474
+  },
+  {
+    "question": {
+      "en": "if Selenium textarea element `foo` is not empty, clear the field"
+    },
+    "mr": {
+      "python": "driver.find_element_by_id('foo').clear()"
+    },
+    "question_id": 7732125
+  },
+  {
+    "question": {
+      "en": "commit all the changes after executing a query."
+    },
+    "mr": {
+      "python": "dbb.commit()"
+    },
+    "question_id": 15271907
+  },
+  {
+    "question": {
+      "en": "filter a Django model `MyModel` to have charfield length of max `255`"
+    },
+    "mr": {
+      "python": "MyModel.objects.extra(where=['CHAR_LENGTH(text) > 254'])"
+    },
+    "question_id": 23351183
+  },
+  {
+    "question": {
+      "en": "find the string matches within parenthesis from a string `s` using regex"
+    },
+    "mr": {
+      "python": "m = re.search('\\\\[(\\\\w+)\\\\]', s)"
+    },
+    "question_id": 8569201
+  },
+  {
+    "question": {
+      "en": "reverse sort items in dictionary `mydict` by value"
+    },
+    "mr": {
+      "python": "sorted(iter(mydict.items()), key=itemgetter(1), reverse=True)"
+    },
+    "question_id": 9849192
+  },
+  {
+    "question": {
+      "en": "Flatten list `x`"
+    },
+    "mr": {
+      "python": "x = [i[0] for i in x]"
+    },
+    "question_id": 15096021
+  },
+  {
+    "question": {
+      "en": "convert nan values to \u2018n/a\u2019 while reading rows from a csv `read_csv` with pandas"
+    },
+    "mr": {
+      "python": "df = pd.read_csv('my.csv', na_values=['n/a'])"
+    },
+    "question_id": 30190459
+  },
+  {
+    "question": {
+      "en": "check if list `li` is empty"
+    },
+    "mr": {
+      "python": "if (len(li) == 0):\n    pass"
+    },
+    "question_id": 53513
+  },
+  {
+    "question": {
+      "en": "terminate the program"
+    },
+    "mr": {
+      "python": "quit()"
+    },
+    "question_id": 73663
+  },
+  {
+    "question": {
+      "en": "In Django, filter `Task.objects` based on all entities in ['A', 'P', 'F']"
+    },
+    "mr": {
+      "python": "Task.objects.exclude(prerequisites__status__in=['A', 'P', 'F'])"
+    },
+    "question_id": 1516795
+  },
+  {
+    "question": {
+      "en": "convert bytes string `s`  to an unsigned integer"
+    },
+    "mr": {
+      "python": "struct.unpack('>q', s)[0]"
+    },
+    "question_id": 4433017
+  },
+  {
+    "question": {
+      "en": "check if any elements in one list `list1` are in another list `list2`"
+    },
+    "mr": {
+      "python": "len(set(list1).intersection(list2)) > 0"
+    },
+    "question_id": 16138015
+  },
+  {
+    "question": {
+      "en": "convert matlab engine array `x` to a numpy ndarray"
+    },
+    "mr": {
+      "python": "np.array(x._data).reshape(x.size[::-1]).T"
+    },
+    "question_id": 34155829
+  },
+  {
+    "question": {
+      "en": "Formate current date and time to a string using pattern '%Y-%m-%d %H:%M:%S'"
+    },
+    "mr": {
+      "python": "datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')"
+    },
+    "question_id": 7999935
+  },
+  {
+    "question": {
+      "en": "print all environment variables"
+    },
+    "mr": {
+      "python": "print(os.environ)"
+    },
+    "question_id": 4906977
+  },
+  {
+    "question": {
+      "en": "sort dictionary of dictionaries `dic` according to the key 'Fisher'"
+    },
+    "mr": {
+      "python": "sorted(list(dic.items()), key=lambda x: x[1]['Fisher'], reverse=True)"
+    },
+    "question_id": 16412563
+  },
+  {
+    "question": {
+      "en": "permanently set the current directory to the 'C:/Users/Name/Desktop'"
+    },
+    "mr": {
+      "python": "os.chdir('C:/Users/Name/Desktop')"
+    },
+    "question_id": 30405804
+  },
+  {
+    "question": {
+      "en": "fetch smilies matching regex pattern '(?::|;|=)(?:-)?(?:\\\\)|\\\\(|D|P)' in string `s`"
+    },
+    "mr": {
+      "python": "re.findall('(?::|;|=)(?:-)?(?:\\\\)|\\\\(|D|P)', s)"
+    },
+    "question_id": 14571103
+  },
+  {
+    "question": {
+      "en": "change the case of the first letter in string `s`"
+    },
+    "mr": {
+      "python": "return s[0].upper() + s[1:]"
+    },
+    "question_id": 4223923
+  },
+  {
+    "question": {
+      "en": "select rows from a dataframe `df` whose value for column `column_name` is not in `some_values`"
+    },
+    "mr": {
+      "python": "df.loc[~df['column_name'].isin(some_values)]"
+    },
+    "question_id": 17071871
+  },
+  {
+    "question": {
+      "en": "Do group by on `cluster` column in `df` and get its mean"
+    },
+    "mr": {
+      "python": "df.groupby(['cluster']).mean()"
+    },
+    "question_id": 30328646
+  },
+  {
+    "question": {
+      "en": "strip html from strings"
+    },
+    "mr": {
+      "python": "re.sub('<[^<]+?>', '', text)"
+    },
+    "question_id": 753052
+  },
+  {
+    "question": {
+      "en": "get all digits in a string `s` after a '[' character"
+    },
+    "mr": {
+      "python": "re.findall('\\\\d+(?=[^[]+$)', s)"
+    },
+    "question_id": 34338341
+  },
+  {
+    "question": {
+      "en": "change the state of the Tkinter `Text` widget to read only i.e. `disabled`"
+    },
+    "mr": {
+      "python": "text.config(state=DISABLED)"
+    },
+    "question_id": 3842155
+  },
+  {
+    "question": {
+      "en": "iterate over a dictionary `foo` sorted by the key"
+    },
+    "mr": {
+      "python": "for k in sorted(foo.keys()):\n    pass"
+    },
+    "question_id": 364519
+  },
+  {
+    "question": {
+      "en": "create file 'x' if file 'x' does not exist"
+    },
+    "mr": {
+      "python": "fd = os.open('x', os.O_WRONLY | os.O_CREAT | os.O_EXCL)"
+    },
+    "question_id": 1348026
+  },
+  {
+    "question": {
+      "en": "swap values in a tuple/list inside a list `mylist`"
+    },
+    "mr": {
+      "python": "map(lambda t: (t[1], t[0]), mylist)"
+    },
+    "question_id": 13384841
+  },
+  {
+    "question": {
+      "en": "Filter model 'Entry' where 'id' is not equal to 3 in Django"
+    },
+    "mr": {
+      "python": "Entry.objects.filter(~Q(id=3))"
+    },
+    "question_id": 687295
+  },
+  {
+    "question": {
+      "en": "sort list `trial_list` based on values of dictionary `trail_dict`"
+    },
+    "mr": {
+      "python": "sorted(trial_list, key=lambda x: trial_dict[x])"
+    },
+    "question_id": 12987178
+  },
+  {
+    "question": {
+      "en": "serve a static html page 'your_template.html' at the root of a django project"
+    },
+    "mr": {
+      "python": "url('^$', TemplateView.as_view(template_name='your_template.html'))"
+    },
+    "question_id": 30650254
+  },
+  {
+    "question": {
+      "en": "flatten list of tuples `a`"
+    },
+    "mr": {
+      "python": "list(chain.from_iterable(a))"
+    },
+    "question_id": 10941229
+  },
+  {
+    "question": {
+      "en": "join list of numbers `[1,2,3,4] ` to string of numbers."
+    },
+    "mr": {
+      "python": "\"\"\"\"\"\".join([1, 2, 3, 4])"
+    },
+    "question_id": 2597932
+  },
+  {
+    "question": {
+      "en": "empty a list `alist`"
+    },
+    "mr": {
+      "python": "alist[:] = []"
+    },
+    "question_id": 1400608
+  },
+  {
+    "question": {
+      "en": "return a string from a regex match with pattern '<img.*?>' in string 'line'"
+    },
+    "mr": {
+      "python": "imtag = re.match('<img.*?>', line).group(0)"
+    },
+    "question_id": 18493677
+  },
+  {
+    "question": {
+      "en": "webbrowser open url `url`"
+    },
+    "mr": {
+      "python": "webbrowser.open_new(url)"
+    },
+    "question_id": 4302027
+  },
+  {
+    "question": {
+      "en": "Find name of current directory"
+    },
+    "mr": {
+      "python": "dir_path = os.path.dirname(os.path.realpath(__file__))"
+    },
+    "question_id": 5137497
+  },
+  {
+    "question": {
+      "en": "Insert a character `-` after every two elements in a string `s`"
+    },
+    "mr": {
+      "python": "\"\"\"-\"\"\".join(a + b for a, b in zip(s[::2], s[1::2]))"
+    },
+    "question_id": 3258573
+  },
+  {
+    "question": {
+      "en": "sort list `files` based on variable `file_number`"
+    },
+    "mr": {
+      "python": "files.sort(key=file_number)"
+    },
+    "question_id": 9466017
+  },
+  {
+    "question": {
+      "en": "create list `c` containing items from list `b` whose index is in list `index`"
+    },
+    "mr": {
+      "python": "c = [b[i] for i in index]"
+    },
+    "question_id": 12768504
+  },
+  {
+    "question": {
+      "en": "return list `result` of sum of elements of each list `b` in list of lists `a`"
+    },
+    "mr": {
+      "python": "result = [sum(b) for b in a]"
+    },
+    "question_id": 13283689
+  },
+  {
+    "question": {
+      "en": "extract first and last row of a dataframe `df`"
+    },
+    "mr": {
+      "python": "pd.concat([df.head(1), df.tail(1)])"
+    },
+    "question_id": 36542169
+  },
+  {
+    "question": {
+      "en": "select alternate characters of \"H-e-l-l-o- -W-o-r-l-d\""
+    },
+    "mr": {
+      "python": "'H-e-l-l-o- -W-o-r-l-d'[::2]"
+    },
+    "question_id": 663171
+  },
+  {
+    "question": {
+      "en": "set dataframe `df` index using column 'month'"
+    },
+    "mr": {
+      "python": "df.set_index('month')"
+    },
+    "question_id": 15752422
+  },
+  {
+    "question": {
+      "en": "find the index of sub string 'df' in string 'sdfasdf'"
+    },
+    "mr": {
+      "python": "'sdfasdf'.index('df')"
+    },
+    "question_id": 674764
+  },
+  {
+    "question": {
+      "en": "drop rows of dataframe `df` whose index is smaller than the value of `start_remove` or bigger than the value of`end_remove`"
+    },
+    "mr": {
+      "python": "df.query('index < @start_remove or index > @end_remove')"
+    },
+    "question_id": 41513324
+  },
+  {
+    "question": {
+      "en": "sort a list of objects 'somelist' where the object has member number variable `resultType`"
+    },
+    "mr": {
+      "python": "somelist.sort(key=lambda x: x.resultType)"
+    },
+    "question_id": 2338531
+  },
+  {
+    "question": {
+      "en": "calculat the difference between each row and the row previous to it in dataframe `data`"
+    },
+    "mr": {
+      "python": "data.set_index('Date').diff()"
+    },
+    "question_id": 13114512
+  },
+  {
+    "question": {
+      "en": "count the number of elements in array `myArray`"
+    },
+    "mr": {
+      "python": "len(myArray)"
+    },
+    "question_id": 187455
+  },
+  {
+    "question": {
+      "en": "get the row names from index in a pandas data frame"
+    },
+    "mr": {
+      "python": "df.index"
+    },
+    "question_id": 26640145
+  },
+  {
+    "question": {
+      "en": "sort list `L` based on the value of variable 'resultType' for each object in list `L`"
+    },
+    "mr": {
+      "python": "sorted(L, key=operator.itemgetter('resultType'))"
+    },
+    "question_id": 2338531
+  },
+  {
+    "question": {
+      "en": "replace unicode characters ''\\u2022' in string 'str' with '*'"
+    },
+    "mr": {
+      "python": "str.decode('utf-8').replace('\\u2022', '*')"
+    },
+    "question_id": 13093727
+  },
+  {
+    "question": {
+      "en": "get file '~/foo.ini'"
+    },
+    "mr": {
+      "python": "config_file = os.path.expanduser('~/foo.ini')"
+    },
+    "question_id": 3227624
+  },
+  {
+    "question": {
+      "en": "open the file 'words.txt' in 'rU' mode"
+    },
+    "mr": {
+      "python": "f = open('words.txt', 'rU')"
+    },
+    "question_id": 13954840
+  },
+  {
+    "question": {
+      "en": "outer product of each column of a 2d `X` array to form a 3d array `X`"
+    },
+    "mr": {
+      "python": "np.einsum('ij,kj->jik', X, X)"
+    },
+    "question_id": 41469647
+  },
+  {
+    "question": {
+      "en": "Find all the tags `a` and `div` from Beautiful Soup object `soup`"
+    },
+    "mr": {
+      "python": "soup.find_all(['a', 'div'])"
+    },
+    "question_id": 24748445
+  },
+  {
+    "question": {
+      "en": "remove newline in string 'Mac EOL\\r'"
+    },
+    "mr": {
+      "python": "'Mac EOL\\r'.rstrip('\\r\\n')"
+    },
+    "question_id": 275018
+  },
+  {
+    "question": {
+      "en": "multiply the columns of sparse matrix `m` by array `a` then multiply the rows of the resulting matrix by array `a`"
+    },
+    "mr": {
+      "python": "numpy.dot(numpy.dot(a, m), a)"
+    },
+    "question_id": 13163145
+  },
+  {
+    "question": {
+      "en": "append dict `{'f': var6, 'g': var7, 'h': var8}` to value of key `e` in dict `jsobj['a']['b']`"
+    },
+    "mr": {
+      "python": "jsobj['a']['b']['e'].append({'f': var6, 'g': var7, 'h': var8})"
+    },
+    "question_id": 10895028
+  },
+  {
+    "question": {
+      "en": "check python version"
+    },
+    "mr": {
+      "python": "sys.version"
+    },
+    "question_id": 1093322
+  },
+  {
+    "question": {
+      "en": "convert a list of lists `list_of_lists` into a list of strings keeping empty sub-lists as empty string ''"
+    },
+    "mr": {
+      "python": "[''.join(l) for l in list_of_lists]"
+    },
+    "question_id": 18022241
+  },
+  {
+    "question": {
+      "en": "find all the elements that consists value '1' in a list of tuples 'a'"
+    },
+    "mr": {
+      "python": "[item for item in a if 1 in item]"
+    },
+    "question_id": 2191699
+  },
+  {
+    "question": {
+      "en": "remove all whitespaces in string `sentence`"
+    },
+    "mr": {
+      "python": "sentence = re.sub('\\\\s+', '', sentence, flags=re.UNICODE)"
+    },
+    "question_id": 8270092
+  },
+  {
+    "question": {
+      "en": "coalesce non-word-characters in string `a`"
+    },
+    "mr": {
+      "python": "print(re.sub('(\\\\W)\\\\1+', '\\\\1', a))"
+    },
+    "question_id": 2813829
+  },
+  {
+    "question": {
+      "en": "unpack first and second bytes of byte string `pS` into integer"
+    },
+    "mr": {
+      "python": "struct.unpack('h', pS[0:2])"
+    },
+    "question_id": 826284
+  },
+  {
+    "question": {
+      "en": "extract digits in a simple way from a python string"
+    },
+    "mr": {
+      "python": "map(int, re.findall('\\\\d+', s))"
+    },
+    "question_id": 10365225
+  },
+  {
+    "question": {
+      "en": "Trimming a string \" Hello\""
+    },
+    "mr": {
+      "python": "' Hello'.strip()"
+    },
+    "question_id": 761804
+  },
+  {
+    "question": {
+      "en": "delete an empty directory"
+    },
+    "mr": {
+      "python": "os.rmdir()"
+    },
+    "question_id": 6996603
+  },
+  {
+    "question": {
+      "en": "get multiple parameters with same name from a url in pylons"
+    },
+    "mr": {
+      "python": "request.params.getall('c')"
+    },
+    "question_id": 14734750
+  },
+  {
+    "question": {
+      "en": "Get the indices in array `b` of each element appearing in array `a`"
+    },
+    "mr": {
+      "python": "np.in1d(b, a).nonzero()[0]"
+    },
+    "question_id": 32191029
+  },
+  {
+    "question": {
+      "en": "delete the element 6 from list `a`"
+    },
+    "mr": {
+      "python": "a.remove(6)"
+    },
+    "question_id": 2793324
+  },
+  {
+    "question": {
+      "en": "sort a pandas data frame by column `a` in ascending, and by column `b` in descending order"
+    },
+    "mr": {
+      "python": "df.sort(['a', 'b'], ascending=[True, False])"
+    },
+    "question_id": 17141558
+  },
+  {
+    "question": {
+      "en": "encode string \"\\\\xc3\\\\x85\u3042\" to bytes"
+    },
+    "mr": {
+      "python": "\"\"\"\\\\xc3\\\\x85\u3042\"\"\".encode('utf-8')"
+    },
+    "question_id": 41552839
+  },
+  {
+    "question": {
+      "en": "split string 'a b.c' on space \" \" and dot character \".\""
+    },
+    "mr": {
+      "python": "re.split('[ .]', 'a b.c')"
+    },
+    "question_id": 373459
+  },
+  {
+    "question": {
+      "en": "How to download a file via FTP with Python ftplib"
+    },
+    "mr": {
+      "python": "ftp.retrbinary('RETR %s' % filename, file.write)"
+    },
+    "question_id": 11573817
+  },
+  {
+    "question": {
+      "en": "Convert dataframe `df` to a pivot table using column 'year', 'month', and 'item' as indexes"
+    },
+    "mr": {
+      "python": "df.set_index(['year', 'month', 'item']).unstack(level=-1)"
+    },
+    "question_id": 35414625
+  },
+  {
+    "question": {
+      "en": "create a set that is the exclusive or of [1, 2, 3] and [3, 4, 5]"
+    },
+    "mr": {
+      "python": "set([1, 2, 3]) ^ set([3, 4, 5])"
+    },
+    "question_id": 11348347
+  },
+  {
+    "question": {
+      "en": "replace occurrences of two whitespaces or more with one whitespace ' ' in string `s`"
+    },
+    "mr": {
+      "python": "re.sub(' +', ' ', s)"
+    },
+    "question_id": 943809
+  },
+  {
+    "question": {
+      "en": "get all combination of n binary values"
+    },
+    "mr": {
+      "python": "lst = list(itertools.product([0, 1], repeat=n))"
+    },
+    "question_id": 14931769
+  },
+  {
+    "question": {
+      "en": "sort a python dictionary `a_dict` by element `1` of the value"
+    },
+    "mr": {
+      "python": "sorted(list(a_dict.items()), key=lambda item: item[1][1])"
+    },
+    "question_id": 11932729
+  },
+  {
+    "question": {
+      "en": "filtering out strings that contain 'ab' from a list of strings `lst`"
+    },
+    "mr": {
+      "python": "[k for k in lst if 'ab' in k]"
+    },
+    "question_id": 2152898
+  },
+  {
+    "question": {
+      "en": "separate numbers from characters in string \"30m1000n20m\""
+    },
+    "mr": {
+      "python": "re.findall('(([0-9]+)([A-Z]))', '20M10000N80M')"
+    },
+    "question_id": 15103484
+  },
+  {
+    "question": {
+      "en": "sort a list of dictionary `persons` according to the key `['passport']['birth_info']['date']`"
+    },
+    "mr": {
+      "python": "sorted(persons, key=lambda x: x['passport']['birth_info']['date'])"
+    },
+    "question_id": 39804375
+  },
+  {
+    "question": {
+      "en": "read file 'myfile' using encoding 'iso-8859-1'"
+    },
+    "mr": {
+      "python": "codecs.open('myfile', 'r', 'iso-8859-1').read()"
+    },
+    "question_id": 16883447
+  },
+  {
+    "question": {
+      "en": "check if string `some_string` is empty"
+    },
+    "mr": {
+      "python": "if (not some_string):\n    pass"
+    },
+    "question_id": 9573244
+  },
+  {
+    "question": {
+      "en": "Insert records in bulk from \"table1\" of \"master\" DB to \"table1\" of  sqlite3 `cursor` object"
+    },
+    "mr": {
+      "python": "cursor.execute('INSERT OR REPLACE INTO master.table1 SELECT * FROM table1')"
+    },
+    "question_id": 8215686
+  },
+  {
+    "question": {
+      "en": "Convert each key,value pair in a dictionary `{'My Key': 'My Value'}` to lowercase"
+    },
+    "mr": {
+      "python": "dict((k.lower(), v.lower()) for k, v in {'My Key': 'My Value'}.items())"
+    },
+    "question_id": 764235
+  },
+  {
+    "question": {
+      "en": "Find all the items from a dictionary `D` if the key contains the string `Light`"
+    },
+    "mr": {
+      "python": "[(k, v) for k, v in D.items() if 'Light' in k]"
+    },
+    "question_id": 3252590
+  },
+  {
+    "question": {
+      "en": "unquote a urlencoded unicode string '%0a'"
+    },
+    "mr": {
+      "python": "urllib.parse.unquote('%0a')"
+    },
+    "question_id": 300445
+  },
+  {
+    "question": {
+      "en": "round number 4.0005 up to 3 decimal places"
+    },
+    "mr": {
+      "python": "round(4.0005, 3)"
+    },
+    "question_id": 31818050
+  },
+  {
+    "question": {
+      "en": "switch keys and values in a dictionary `my_dict`"
+    },
+    "mr": {
+      "python": "dict((v, k) for k, v in my_dict.items())"
+    },
+    "question_id": 8305518
+  },
+  {
+    "question": {
+      "en": "check if any of the items in  `search` appear in `string`"
+    },
+    "mr": {
+      "python": "any(x in string for x in search)"
+    },
+    "question_id": 5858916
+  },
+  {
+    "question": {
+      "en": "convert and escape string \"\\\\xc3\\\\x85\u3042\" to UTF-8 code"
+    },
+    "mr": {
+      "python": "\"\"\"\\\\xc3\\\\x85\u3042\"\"\".encode('utf-8').decode('unicode_escape')"
+    },
+    "question_id": 41552839
+  },
+  {
+    "question": {
+      "en": "python split string based on regular expression"
+    },
+    "mr": {
+      "python": "re.findall('\\\\S+', str1)"
+    },
+    "question_id": 10974932
+  },
+  {
+    "question": {
+      "en": "find float number proceeding sub-string `par` in string `dir`"
+    },
+    "mr": {
+      "python": "float(re.findall('(?:^|_)' + par + '(\\\\d+\\\\.\\\\d*)', dir)[0])"
+    },
+    "question_id": 12211944
+  },
+  {
+    "question": {
+      "en": "convert a 3d array `img` of dimensions 4x2x3 to a 2d array   of dimensions 3x8"
+    },
+    "mr": {
+      "python": "img.transpose(2, 0, 1).reshape(3, -1)"
+    },
+    "question_id": 32838802
+  },
+  {
+    "question": {
+      "en": "get the creation time of file `file`"
+    },
+    "mr": {
+      "python": "print(('created: %s' % time.ctime(os.path.getctime(file))))"
+    },
+    "question_id": 237079
+  },
+  {
+    "question": {
+      "en": "get the dimensions of numpy array `a`"
+    },
+    "mr": {
+      "python": "a.shape"
+    },
+    "question_id": 3061761
+  },
+  {
+    "question": {
+      "en": "get the opposite diagonal of a numpy array `array`"
+    },
+    "mr": {
+      "python": "np.diag(np.rot90(array))"
+    },
+    "question_id": 16114333
+  },
+  {
+    "question": {
+      "en": "concatenate key/value pairs in dictionary `a` with string ', ' into a single string"
+    },
+    "mr": {
+      "python": "\"\"\", \"\"\".join([(str(k) + ' ' + str(v)) for k, v in list(a.items())])"
+    },
+    "question_id": 40512124
+  },
+  {
+    "question": {
+      "en": "get a list of tuples of every three consecutive items in list `[1, 2, 3, 4, 5, 6, 7, 8, 9]`"
+    },
+    "mr": {
+      "python": "list(zip(*((iter([1, 2, 3, 4, 5, 6, 7, 8, 9]),) * 3)))"
+    },
+    "question_id": 2231663
+  },
+  {
+    "question": {
+      "en": "print backslash"
+    },
+    "mr": {
+      "python": "print('\\\\')"
+    },
+    "question_id": 19095796
+  },
+  {
+    "question": {
+      "en": "update all values associated with key `i` to string 'updated' if value `j` is not equal to 'None' in dictionary `d`"
+    },
+    "mr": {
+      "python": "{i: 'updated' for i, j in list(d.items()) if j != 'None'}"
+    },
+    "question_id": 4484690
+  },
+  {
+    "question": {
+      "en": "Format all floating variables `var1`, `var2`, `var3`, `var1` to print to two decimal places."
+    },
+    "mr": {
+      "python": "print('%.2f kg = %.2f lb = %.2f gal = %.2f l' % (var1, var2, var3, var4))"
+    },
+    "question_id": 2075128
+  },
+  {
+    "question": {
+      "en": "split string `text` by the occurrences of regex pattern '(?<=\\\\?|!|\\\\.)\\\\s{0,2}(?=[A-Z]|$)'"
+    },
+    "mr": {
+      "python": "re.split('(?<=\\\\?|!|\\\\.)\\\\s{0,2}(?=[A-Z]|$)', text)"
+    },
+    "question_id": 15530399
+  },
+  {
+    "question": {
+      "en": "create a list containing all cartesian products of elements in list `a`"
+    },
+    "mr": {
+      "python": "list(itertools.product(*a))"
+    },
+    "question_id": 798854
+  },
+  {
+    "question": {
+      "en": "return the column for value 38.15 in dataframe `df`"
+    },
+    "mr": {
+      "python": "df.ix[:, (df.loc[0] == 38.15)].columns"
+    },
+    "question_id": 38331568
+  },
+  {
+    "question": {
+      "en": "remove multiple values from a list `my_list` at the same time with index starting at `2` and ending just before `6`."
+    },
+    "mr": {
+      "python": "del my_list[2:6]"
+    },
+    "question_id": 11303225
+  },
+  {
+    "question": {
+      "en": "get unique values from the list `['a', 'b', 'c', 'd']`"
+    },
+    "mr": {
+      "python": "set(['a', 'b', 'c', 'd'])"
+    },
+    "question_id": 12897374
+  },
+  {
+    "question": {
+      "en": "Create an array containing the conversion of string '100110' into separate elements"
+    },
+    "mr": {
+      "python": "np.array(map(int, '100110'))"
+    },
+    "question_id": 28207743
+  },
+  {
+    "question": {
+      "en": "get a list of values for key \"key\" from a list of dictionaries in `l`"
+    },
+    "mr": {
+      "python": "[d['key'] for d in l]"
+    },
+    "question_id": 25040875
+  },
+  {
+    "question": {
+      "en": "Reverse a string `a_string`"
+    },
+    "mr": {
+      "python": "a_string[::(-1)]"
+    },
+    "question_id": 931092
+  },
+  {
+    "question": {
+      "en": "decode JSON string `u` to a dictionary"
+    },
+    "mr": {
+      "python": "json.load(u)"
+    },
+    "question_id": 2331943
+  },
+  {
+    "question": {
+      "en": "get index of key 'c' in dictionary `x`"
+    },
+    "mr": {
+      "python": "list(x.keys()).index('c')"
+    },
+    "question_id": 14538885
+  },
+  {
+    "question": {
+      "en": "sum the 3 largest integers in groupby by 'STNAME' and 'COUNTY_POP'"
+    },
+    "mr": {
+      "python": "df.groupby('STNAME')['COUNTY_POP'].agg(lambda x: x.nlargest(3).sum())"
+    },
+    "question_id": 40517350
+  },
+  {
+    "question": {
+      "en": "select multiple ranges of columns 1-10, 15, 17, and 50-100 in pandas dataframe `df`"
+    },
+    "mr": {
+      "python": "df.iloc[:, (np.r_[1:10, (15), (17), 50:100])]"
+    },
+    "question_id": 41256648
+  },
+  {
+    "question": {
+      "en": "sort objects in model `Profile` based on Theirs `reputation` attribute"
+    },
+    "mr": {
+      "python": "sorted(Profile.objects.all(), key=lambda p: p.reputation)"
+    },
+    "question_id": 930865
+  },
+  {
+    "question": {
+      "en": "replace the last occurence of an expression '</div>' with '</bad>' in a string `s`"
+    },
+    "mr": {
+      "python": "re.sub('(.*)</div>', '\\\\1</bad>', s)"
+    },
+    "question_id": 2556108
+  },
+  {
+    "question": {
+      "en": "retrieve all items in an numpy array 'x' except the item of the index 1"
+    },
+    "mr": {
+      "python": "x[(np.arange(x.shape[0]) != 1), :, :]"
+    },
+    "question_id": 8712332
+  },
+  {
+    "question": {
+      "en": "replace white spaces in dataframe `df` with '_'"
+    },
+    "mr": {
+      "python": "df.replace(' ', '_', regex=True)"
+    },
+    "question_id": 42462530
+  },
+  {
+    "question": {
+      "en": "clear Tkinter Canvas `canvas`"
+    },
+    "mr": {
+      "python": "canvas.delete('all')"
+    },
+    "question_id": 15839491
+  },
+  {
+    "question": {
+      "en": "sort column `m` in panda dataframe `df`"
+    },
+    "mr": {
+      "python": "df.sort('m')"
+    },
+    "question_id": 13838405
+  },
+  {
+    "question": {
+      "en": "convert hex string `s` to decimal"
+    },
+    "mr": {
+      "python": "i = int(s, 16)"
+    },
+    "question_id": 9210525
+  },
+  {
+    "question": {
+      "en": "get all characters between two `$` characters in string `string`"
+    },
+    "mr": {
+      "python": "re.findall('\\\\$([^$]*)\\\\$', string)"
+    },
+    "question_id": 15043326
+  },
+  {
+    "question": {
+      "en": "resample series `s` into 3 months bins and sum each bin"
+    },
+    "mr": {
+      "python": "s.resample('3M', how='sum')"
+    },
+    "question_id": 29100599
+  },
+  {
+    "question": {
+      "en": "Set a window size to `1400, 1000` using selenium webdriver"
+    },
+    "mr": {
+      "python": "driver.set_window_size(1400, 1000)"
+    },
+    "question_id": 21899953
+  },
+  {
+    "question": {
+      "en": "set color marker styles `--bo` in matplotlib"
+    },
+    "mr": {
+      "python": "plt.plot(list(range(10)), '--bo')"
+    },
+    "question_id": 8409095
+  },
+  {
+    "question": {
+      "en": "convert a date string `s` to a datetime object"
+    },
+    "mr": {
+      "python": "datetime.datetime.strptime(s, '%Y-%m-%dT%H:%M:%SZ')"
+    },
+    "question_id": 2721782
+  },
+  {
+    "question": {
+      "en": "generate a list from a pandas dataframe `df` with the column name and column values"
+    },
+    "mr": {
+      "python": "df.values.tolist()"
+    },
+    "question_id": 11811392
+  },
+  {
+    "question": {
+      "en": "Find all `div` tags whose classes has the value `comment-` in a beautiful soup object `soup`"
+    },
+    "mr": {
+      "python": "soup.find_all('div', class_=re.compile('comment-'))"
+    },
+    "question_id": 13794532
+  },
+  {
+    "question": {
+      "en": "make a line plot with errorbars, `ebar`, from data `x, y, err` and set color of the errorbars to `y` (yellow)"
+    },
+    "mr": {
+      "python": "ebar = plt.errorbar(x, y, yerr=err, ecolor='y')"
+    },
+    "question_id": 13395888
+  },
+  {
+    "question": {
+      "en": "read csv file 'myfile.csv' into array"
+    },
+    "mr": {
+      "python": "np.genfromtxt('myfile.csv', delimiter=',', dtype=None)"
+    },
+    "question_id": 3518778
+  },
+  {
+    "question": {
+      "en": "find the index of sub string 'Aloha' in `x`"
+    },
+    "mr": {
+      "python": "x.find('Aloha')"
+    },
+    "question_id": 674764
+  },
+  {
+    "question": {
+      "en": "Split each string in list `myList` on the tab character"
+    },
+    "mr": {
+      "python": "myList = [i.split('\\t')[0] for i in myList]"
+    },
+    "question_id": 6696027
+  },
+  {
+    "question": {
+      "en": "convert a string 'mystr' to numpy array of integer values"
+    },
+    "mr": {
+      "python": "print(np.array(list(mystr), dtype=int))"
+    },
+    "question_id": 28207743
+  },
+  {
+    "question": {
+      "en": "convert column of date objects 'DateObj' in pandas dataframe `df` to strings in new column 'DateStr'"
+    },
+    "mr": {
+      "python": "df['DateStr'] = df['DateObj'].dt.strftime('%d%m%Y')"
+    },
+    "question_id": 19738169
+  },
+  {
+    "question": {
+      "en": "switch positions of each two adjacent characters in string `a`"
+    },
+    "mr": {
+      "python": "print(''.join(''.join(i) for i in zip(a2, a1)) + a[-1] if len(a) % 2 else '')"
+    },
+    "question_id": 30628176
+  },
+  {
+    "question": {
+      "en": "BeautifulSoup get value associated with attribute 'content' where attribute 'name' is equal to 'City' in tag 'meta' in HTML parsed string `soup`"
+    },
+    "mr": {
+      "python": "soup.find('meta', {'name': 'City'})['content']"
+    },
+    "question_id": 11205386
+  },
+  {
+    "question": {
+      "en": "Find indices of elements equal to zero from numpy array `x`"
+    },
+    "mr": {
+      "python": "numpy.where((x == 0))[0]"
+    },
+    "question_id": 4588628
+  },
+  {
+    "question": {
+      "en": "Exclude column names when writing dataframe `df` to a csv file `filename.csv`"
+    },
+    "mr": {
+      "python": "df.to_csv('filename.csv', header=False)"
+    },
+    "question_id": 19781609
+  },
+  {
+    "question": {
+      "en": "generate 6 random numbers between 1 and 50"
+    },
+    "mr": {
+      "python": "random.sample(range(1, 50), 6)"
+    },
+    "question_id": 13628725
+  },
+  {
+    "question": {
+      "en": "remove adjacent duplicate elements from a list `[1, 2, 2, 3, 2, 2, 4]`"
+    },
+    "mr": {
+      "python": "[k for k, g in itertools.groupby([1, 2, 2, 3, 2, 2, 4])]"
+    },
+    "question_id": 3460161
+  },
+  {
+    "question": {
+      "en": "Concatenate dataframe `df_1` to dataframe `df_2` sorted by values of the column 'y'"
+    },
+    "mr": {
+      "python": "pd.concat([df_1, df_2.sort_values('y')])"
+    },
+    "question_id": 41192805
+  },
+  {
+    "question": {
+      "en": "flatten a dataframe df to a list"
+    },
+    "mr": {
+      "python": "df.values.flatten()"
+    },
+    "question_id": 25440008
+  },
+  {
+    "question": {
+      "en": "check if a global variable 'myVar' exists"
+    },
+    "mr": {
+      "python": "if ('myVar' in globals()):\n    pass"
+    },
+    "question_id": 843277
+  },
+  {
+    "question": {
+      "en": "insert a character ',' into a string in front of '+' character in second part of the string"
+    },
+    "mr": {
+      "python": "\"\"\",+\"\"\".join(c.rsplit('+', 1))"
+    },
+    "question_id": 13655392
+  },
+  {
+    "question": {
+      "en": "get all combination of 3 binary values"
+    },
+    "mr": {
+      "python": "bin = [0, 1]\n[(x, y, z) for x in bin for y in bin for z in bin]"
+    },
+    "question_id": 14931769
+  },
+  {
+    "question": {
+      "en": "merge pandas dataframe `x` with columns 'a' and 'b' and dataframe `y` with column 'y'"
+    },
+    "mr": {
+      "python": "pd.merge(y, x, on='k')[['a', 'b', 'y']]"
+    },
+    "question_id": 20504881
+  },
+  {
+    "question": {
+      "en": "cartesian product of `x` and `y` array points into single array of 2d points"
+    },
+    "mr": {
+      "python": "numpy.dstack(numpy.meshgrid(x, y)).reshape(-1, 2)"
+    },
+    "question_id": 11144513
+  },
+  {
+    "question": {
+      "en": "filter lines from a text file 'textfile' which contain a word 'apple'"
+    },
+    "mr": {
+      "python": "[line for line in open('textfile') if 'apple' in line]"
+    },
+    "question_id": 5245058
+  },
+  {
+    "question": {
+      "en": "produce a pivot table as dataframe using column 'Y' in datafram `df` to form the axes of the resulting dataframe"
+    },
+    "mr": {
+      "python": "df.pivot_table('Y', rows='X', cols='X2')"
+    },
+    "question_id": 9550867
+  },
+  {
+    "question": {
+      "en": "Creating an empty list"
+    },
+    "mr": {
+      "python": "list()"
+    },
+    "question_id": 2972212
+  },
+  {
+    "question": {
+      "en": "Set the resolution of a monitor as `FULLSCREEN` in pygame"
+    },
+    "mr": {
+      "python": "pygame.display.set_mode((0, 0), pygame.FULLSCREEN)"
+    },
+    "question_id": 19954469
+  },
+  {
+    "question": {
+      "en": "List of lists into numpy array"
+    },
+    "mr": {
+      "python": "numpy.array([[1, 2], [3, 4]])"
+    },
+    "question_id": 10346336
+  },
+  {
+    "question": {
+      "en": "request http url `url`"
+    },
+    "mr": {
+      "python": "r = requests.get(url)"
+    },
+    "question_id": 4476373
+  },
+  {
+    "question": {
+      "en": "sort a list of tuples 'unsorted' based on two elements, second and third"
+    },
+    "mr": {
+      "python": "sorted(unsorted, key=lambda element: (element[1], element[2]))"
+    },
+    "question_id": 9376384
+  },
+  {
+    "question": {
+      "en": "given list `to_reverse`, reverse the all sublists and the list itself"
+    },
+    "mr": {
+      "python": "[sublist[::-1] for sublist in to_reverse[::-1]]"
+    },
+    "question_id": 39821166
+  },
+  {
+    "question": {
+      "en": "convert datetime.date `dt` to utc timestamp"
+    },
+    "mr": {
+      "python": "timestamp = (dt - datetime(1970, 1, 1)).total_seconds()"
+    },
+    "question_id": 8777753
+  },
+  {
+    "question": {
+      "en": "Get a list of items in the list `container` with attribute equal to `value`"
+    },
+    "mr": {
+      "python": "items = [item for item in container if item.attribute == value]"
+    },
+    "question_id": 9089043
+  },
+  {
+    "question": {
+      "en": "sort dictionary `mydict` in descending order based on the sum of each value in it"
+    },
+    "mr": {
+      "python": "sorted(iter(mydict.items()), key=lambda tup: sum(tup[1]), reverse=True)[:3]"
+    },
+    "question_id": 3411025
+  },
+  {
+    "question": {
+      "en": "round off entries in dataframe `df` column `Alabama_exp` to two decimal places, and entries in column `Credit_exp` to three decimal places"
+    },
+    "mr": {
+      "python": "df.round({'Alabama_exp': 2, 'Credit_exp': 3})"
+    },
+    "question_id": 19100540
+  },
+  {
+    "question": {
+      "en": "check if dictionary `L[0].f.items()` is in dictionary `a3.f.items()`"
+    },
+    "mr": {
+      "python": "set(L[0].f.items()).issubset(set(a3.f.items()))"
+    },
+    "question_id": 18170459
+  },
+  {
+    "question": {
+      "en": "split string `s` into a list of strings based on ',' then replace empty strings with zero"
+    },
+    "mr": {
+      "python": "\"\"\",\"\"\".join(x or '0' for x in s.split(','))"
+    },
+    "question_id": 2606976
+  },
+  {
+    "question": {
+      "en": "get list of sums of neighboring integers in string `example`"
+    },
+    "mr": {
+      "python": "[sum(map(int, s)) for s in example.split()]"
+    },
+    "question_id": 40498088
+  },
+  {
+    "question": {
+      "en": "create a list of values from the dictionary `programs` that have a key with a case insensitive match to 'new york'"
+    },
+    "mr": {
+      "python": "[value for key, value in list(programs.items()) if 'new york' in key.lower()]"
+    },
+    "question_id": 10484261
+  },
+  {
+    "question": {
+      "en": "python pickle/unpickle a list to/from a file 'afile'"
+    },
+    "mr": {
+      "python": "pickle.load(open('afile', 'rb'))"
+    },
+    "question_id": 18229082
+  },
+  {
+    "question": {
+      "en": "filter the objects in django model 'Sample' between date range `2011-01-01` and `2011-01-31`"
+    },
+    "mr": {
+      "python": "Sample.objects.filter(date__range=['2011-01-01', '2011-01-31'])"
+    },
+    "question_id": 4668619
+  },
+  {
+    "question": {
+      "en": "Drop the rows in pandas timeseries `df` from the row containing index `start_remove` to the row containing index `end_remove`"
+    },
+    "mr": {
+      "python": "df.loc[(df.index < start_remove) | (df.index > end_remove)]"
+    },
+    "question_id": 41513324
+  },
+  {
+    "question": {
+      "en": "Converting string lists `s` to float list"
+    },
+    "mr": {
+      "python": "floats = map(float, s.split())"
+    },
+    "question_id": 4004550
+  },
+  {
+    "question": {
+      "en": "to convert a list of tuples `list_of_tuples` into list of lists"
+    },
+    "mr": {
+      "python": "[list(t) for t in zip(*list_of_tuples)]"
+    },
+    "question_id": 18637651
+  },
+  {
+    "question": {
+      "en": "find all substrings in string `mystring` composed only of letters `a` and `b` where each `a` is directly preceded and succeeded by `b`"
+    },
+    "mr": {
+      "python": "re.findall('\\\\b(?:b+a)+b+\\\\b', mystring)"
+    },
+    "question_id": 32926587
+  },
+  {
+    "question": {
+      "en": "get a list `no_integers` of all the items in list `mylist` that are not of type `int`"
+    },
+    "mr": {
+      "python": "no_integers = [x for x in mylist if not isinstance(x, int)]"
+    },
+    "question_id": 3159155
+  },
+  {
+    "question": {
+      "en": "Get value for  \"username\" parameter in GET request  in Django"
+    },
+    "mr": {
+      "python": "request.GET.get('username', '')"
+    },
+    "question_id": 23531030
+  },
+  {
+    "question": {
+      "en": "use regex pattern '((.+?)\\\\2+)' to split string '44442(2)2(2)44'"
+    },
+    "mr": {
+      "python": "[m[0] for m in re.compile('((.+?)\\\\2+)').findall('44442(2)2(2)44')]"
+    },
+    "question_id": 40582103
+  },
+  {
+    "question": {
+      "en": "get the  size of file 'C:\\\\Python27\\\\Lib\\\\genericpath.py'"
+    },
+    "mr": {
+      "python": "os.stat('C:\\\\Python27\\\\Lib\\\\genericpath.py').st_size"
+    },
+    "question_id": 6591931
+  },
+  {
+    "question": {
+      "en": "parse a YAML file \"example.yaml\""
+    },
+    "mr": {
+      "python": "with open('example.yaml') as stream:\n    try:\n        print((yaml.load(stream)))\n    except yaml.YAMLError as exc:\n        print(exc)"
+    },
+    "question_id": 1773805
+  },
+  {
+    "question": {
+      "en": "Find the full path of current directory"
+    },
+    "mr": {
+      "python": "full_path = os.path.realpath(__file__)"
+    },
+    "question_id": 5137497
+  },
+  {
+    "question": {
+      "en": "sort list of strings in list `the_list` by integer suffix"
+    },
+    "mr": {
+      "python": "sorted(the_list, key=lambda k: int(k.split('_')[1]))"
+    },
+    "question_id": 4287209
+  },
+  {
+    "question": {
+      "en": "rotate x-axis text labels of plot `ax` 45 degrees"
+    },
+    "mr": {
+      "python": "ax.set_xticklabels(ax.xaxis.get_majorticklabels(), rotation=45)"
+    },
+    "question_id": 10998621
+  },
+  {
+    "question": {
+      "en": "select all rows from pandas DataFrame 'df' where the value in column 'A' is greater than 1 or less than -1 in column 'B'."
+    },
+    "mr": {
+      "python": "df[(df['A'] > 1) | (df['B'] < -1)]"
+    },
+    "question_id": 8916302
+  },
+  {
+    "question": {
+      "en": "make a flat list from list of lists `sublist`"
+    },
+    "mr": {
+      "python": "[item for sublist in l for item in sublist]"
+    },
+    "question_id": 952914
+  },
+  {
+    "question": {
+      "en": "get current utc time"
+    },
+    "mr": {
+      "python": "datetime.utcnow()"
+    },
+    "question_id": 15940280
+  },
+  {
+    "question": {
+      "en": "convert a pandas `df1` groupby object to dataframe"
+    },
+    "mr": {
+      "python": "DataFrame({'count': df1.groupby(['Name', 'City']).size()}).reset_index()"
+    },
+    "question_id": 10373660
+  },
+  {
+    "question": {
+      "en": "Execute SQL statement `sql` with values of dictionary `myDict` as parameters"
+    },
+    "mr": {
+      "python": "cursor.execute(sql, list(myDict.values()))"
+    },
+    "question_id": 9336270
+  },
+  {
+    "question": {
+      "en": "sum a list of numbers `list_of_nums`"
+    },
+    "mr": {
+      "python": "sum(list_of_nums)"
+    },
+    "question_id": 4362586
+  },
+  {
+    "question": {
+      "en": "convert decimal integer 8 to a list of its binary values as elements"
+    },
+    "mr": {
+      "python": "[int(x) for x in list('{0:0b}'.format(8))]"
+    },
+    "question_id": 13557937
+  },
+  {
+    "question": {
+      "en": "Check if tuple (2, 3) is not in a list [(2, 3), (5, 6), (9, 1)]"
+    },
+    "mr": {
+      "python": "((2, 3) not in [(2, 3), (5, 6), (9, 1)])"
+    },
+    "question_id": 10406130
+  },
+  {
+    "question": {
+      "en": "convert strings in list-of-lists `lst` to ints"
+    },
+    "mr": {
+      "python": "[[int(x) for x in sublist] for sublist in lst]"
+    },
+    "question_id": 34696853
+  },
+  {
+    "question": {
+      "en": "update the fields in django model `Book` using dictionary `d`"
+    },
+    "mr": {
+      "python": "Book.objects.create(**d)"
+    },
+    "question_id": 5503925
+  },
+  {
+    "question": {
+      "en": "strip everything up to and including the character `&` from url `url`, strip the character `=` from the remaining string and concatenate `.html` to the end"
+    },
+    "mr": {
+      "python": "url.split('&')[-1].replace('=', '') + '.html'"
+    },
+    "question_id": 41133414
+  },
+  {
+    "question": {
+      "en": "return a DateTime object with the current UTC date"
+    },
+    "mr": {
+      "python": "today = datetime.datetime.utcnow().date()"
+    },
+    "question_id": 27587127
+  },
+  {
+    "question": {
+      "en": "sort a list of tuples `my_list` by second parameter in the tuple"
+    },
+    "mr": {
+      "python": "my_list.sort(key=lambda x: x[1])"
+    },
+    "question_id": 8459231
+  },
+  {
+    "question": {
+      "en": "find all anchor tags in html `soup` whose url begins with `http://www.iwashere.com`"
+    },
+    "mr": {
+      "python": "soup.find_all('a', href=re.compile('http://www\\\\.iwashere\\\\.com/'))"
+    },
+    "question_id": 15313250
+  },
+  {
+    "question": {
+      "en": "sort a list `unsorted_list` based on another sorted list `presorted_list`"
+    },
+    "mr": {
+      "python": "sorted(unsorted_list, key=presorted_list.index)"
+    },
+    "question_id": 36518800
+  },
+  {
+    "question": {
+      "en": "change string `s` to upper case"
+    },
+    "mr": {
+      "python": "s.upper()"
+    },
+    "question_id": 9257094
+  },
+  {
+    "question": {
+      "en": "remove all whitespace in a string `sentence`"
+    },
+    "mr": {
+      "python": "pattern = re.compile('\\\\s+')\nsentence = re.sub(pattern, '', sentence)"
+    },
+    "question_id": 8270092
+  },
+  {
+    "question": {
+      "en": "Calling an external command \"ls\""
+    },
+    "mr": {
+      "python": "p = subprocess.Popen('ls', shell=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)\nfor line in p.stdout.readlines():\n    print(line, end=' ')\nretval = p.wait()"
+    },
+    "question_id": 89228
+  },
+  {
+    "question": {
+      "en": "get the date 6 months from today"
+    },
+    "mr": {
+      "python": "six_months = (date.today() + relativedelta(months=(+ 6)))"
+    },
+    "question_id": 546321
+  },
+  {
+    "question": {
+      "en": "get rows of dataframe `df` where column `Col1` has values `['men', 'rocks', 'mountains']`"
+    },
+    "mr": {
+      "python": "df[df.Col1.isin(['men', 'rocks', 'mountains'])]"
+    },
+    "question_id": 39988589
+  },
+  {
+    "question": {
+      "en": "create a dictionary `list_dict` containing each tuple in list `tuple_list` as values and the tuple's first element as the corresponding key"
+    },
+    "mr": {
+      "python": "list_dict = {t[0]: t for t in tuple_list}"
+    },
+    "question_id": 20059427
+  },
+  {
+    "question": {
+      "en": "logoff computer having windows operating system using python"
+    },
+    "mr": {
+      "python": "subprocess.call(['shutdown', '/l '])"
+    },
+    "question_id": 14764126
+  },
+  {
+    "question": {
+      "en": "sort a list of lists `L` by index 2 of the inner list"
+    },
+    "mr": {
+      "python": "sorted(L, key=itemgetter(2))"
+    },
+    "question_id": 4174941
+  },
+  {
+    "question": {
+      "en": "print a character that has unicode value `\\u25b2`"
+    },
+    "mr": {
+      "python": "print('\\u25b2'.encode('utf-8'))"
+    },
+    "question_id": 16658068
+  },
+  {
+    "question": {
+      "en": "Execute Shell Script from python with variable"
+    },
+    "mr": {
+      "python": "subprocess.call(['test.sh', str(domid)])"
+    },
+    "question_id": 18742657
+  },
+  {
+    "question": {
+      "en": "convert 21 to binary string"
+    },
+    "mr": {
+      "python": "bin(21)"
+    },
+    "question_id": 1476
+  },
+  {
+    "question": {
+      "en": "check if a global variable `myVar` exists"
+    },
+    "mr": {
+      "python": "('myVar' in globals())"
+    },
+    "question_id": 843277
+  },
+  {
+    "question": {
+      "en": "get first non-null value per each row from dataframe `df`"
+    },
+    "mr": {
+      "python": "df.stack().groupby(level=0).first()"
+    },
+    "question_id": 31828240
+  },
+  {
+    "question": {
+      "en": "check if string `the_string` contains any upper or lower-case ASCII letters"
+    },
+    "mr": {
+      "python": "re.search('[a-zA-Z]', the_string)"
+    },
+    "question_id": 9072844
+  },
+  {
+    "question": {
+      "en": "join Numpy array `b` with Numpy array 'a' along axis 0"
+    },
+    "mr": {
+      "python": "b = np.concatenate((a, a), axis=0)"
+    },
+    "question_id": 6740311
+  },
+  {
+    "question": {
+      "en": "get max key in dictionary `MyCount`"
+    },
+    "mr": {
+      "python": "max(list(MyCount.keys()), key=int)"
+    },
+    "question_id": 3108042
+  },
+  {
+    "question": {
+      "en": "parse a comma-separated string number '1,000,000' into int"
+    },
+    "mr": {
+      "python": "int('1,000,000'.replace(',', ''))"
+    },
+    "question_id": 2953746
+  },
+  {
+    "question": {
+      "en": "removing duplicate characters from a string variable \"foo\""
+    },
+    "mr": {
+      "python": "\"\"\"\"\"\".join(set(foo))"
+    },
+    "question_id": 9841303
+  },
+  {
+    "question": {
+      "en": "sum of product of combinations in a list `l`"
+    },
+    "mr": {
+      "python": "sum([(i * j) for i, j in list(itertools.combinations(l, 2))])"
+    },
+    "question_id": 34437284
+  },
+  {
+    "question": {
+      "en": "get the maximum 2 values per row in array `A`"
+    },
+    "mr": {
+      "python": "A[:, -2:]"
+    },
+    "question_id": 37125495
+  },
+  {
+    "question": {
+      "en": "round number 2.0005 up to 3 decimal places"
+    },
+    "mr": {
+      "python": "round(2.0005, 3)"
+    },
+    "question_id": 31818050
+  },
+  {
+    "question": {
+      "en": "create a list of integers from 1 to 5 with each value duplicated"
+    },
+    "mr": {
+      "python": "[(i // 2) for i in range(10)]"
+    },
+    "question_id": 31743603
+  },
+  {
+    "question": {
+      "en": "unpack keys and values of a dictionary `d` into two lists"
+    },
+    "mr": {
+      "python": "keys, values = zip(*list(d.items()))"
+    },
+    "question_id": 6612769
+  },
+  {
+    "question": {
+      "en": "check whether a path \"/etc/password.txt\" exists"
+    },
+    "mr": {
+      "python": "print(os.path.exists('/etc/password.txt'))"
+    },
+    "question_id": 82831
+  },
+  {
+    "question": {
+      "en": "finding words in string `s` after keyword 'name'"
+    },
+    "mr": {
+      "python": "re.search('name (.*)', s)"
+    },
+    "question_id": 6633678
+  },
+  {
+    "question": {
+      "en": "copy list `old_list` as `new_list`"
+    },
+    "mr": {
+      "python": "new_list = list(old_list)"
+    },
+    "question_id": 2612802
+  },
+  {
+    "question": {
+      "en": "interleave the elements of two lists `a` and `b`"
+    },
+    "mr": {
+      "python": "[j for i in zip(a, b) for j in i]"
+    },
+    "question_id": 3471999
+  },
+  {
+    "question": {
+      "en": "remove items from dictionary `myDict` if the item's value `val` is equal to 42"
+    },
+    "mr": {
+      "python": "myDict = {key: val for key, val in list(myDict.items()) if val != 42}"
+    },
+    "question_id": 29218750
+  },
+  {
+    "question": {
+      "en": "get the indexes of the x and y axes in Numpy array `np` where variable `a` is equal to variable `value`"
+    },
+    "mr": {
+      "python": "i, j = np.where(a == value)"
+    },
+    "question_id": 18079029
+  },
+  {
+    "question": {
+      "en": "Creating an empty list"
+    },
+    "mr": {
+      "python": "[]"
+    },
+    "question_id": 2972212
+  },
+  {
+    "question": {
+      "en": "split a string `s` into integers"
+    },
+    "mr": {
+      "python": "l = (int(x) for x in s.split())"
+    },
+    "question_id": 6429638
+  },
+  {
+    "question": {
+      "en": "compare two lists in python `a` and `b` and return matches"
+    },
+    "mr": {
+      "python": "set(a).intersection(b)"
+    },
+    "question_id": 1388818
+  },
+  {
+    "question": {
+      "en": "Sort dictionary `dict1` by value in ascending order"
+    },
+    "mr": {
+      "python": "sorted(dict1, key=dict1.get)"
+    },
+    "question_id": 613183
+  },
+  {
+    "question": {
+      "en": "replace special characters in url 'http://spam.com/go/' using the '%xx' escape"
+    },
+    "mr": {
+      "python": "urllib.parse.quote('http://spam.com/go/')"
+    },
+    "question_id": 5399112
+  },
+  {
+    "question": {
+      "en": "cut a string using delimiter '&'"
+    },
+    "mr": {
+      "python": "s[:s.rfind('&')]"
+    },
+    "question_id": 8247792
+  },
+  {
+    "question": {
+      "en": "separate each character in string `s` by '-'"
+    },
+    "mr": {
+      "python": "re.sub('(.)(?=.)', '\\\\1-', s)"
+    },
+    "question_id": 27457970
+  },
+  {
+    "question": {
+      "en": "check if string `b` is a number"
+    },
+    "mr": {
+      "python": "b.isdigit()"
+    },
+    "question_id": 354038
+  },
+  {
+    "question": {
+      "en": "get the value at index 1 for each tuple in the list of tuples `L`"
+    },
+    "mr": {
+      "python": "[x[1] for x in L]"
+    },
+    "question_id": 4800811
+  },
+  {
+    "question": {
+      "en": "display a grayscale image from array of pixels `imageArray`"
+    },
+    "mr": {
+      "python": "imshow(imageArray, cmap='Greys_r')"
+    },
+    "question_id": 14111705
+  },
+  {
+    "question": {
+      "en": "make a 60 seconds time delay"
+    },
+    "mr": {
+      "python": "time.sleep(60)"
+    },
+    "question_id": 510348
+  },
+  {
+    "question": {
+      "en": "generate all permutations of a list `[1, 2, 3]`"
+    },
+    "mr": {
+      "python": "itertools.permutations([1, 2, 3])"
+    },
+    "question_id": 104420
+  },
+  {
+    "question": {
+      "en": "split string `s` by letter 's'"
+    },
+    "mr": {
+      "python": "s.split('s')"
+    },
+    "question_id": 13128565
+  },
+  {
+    "question": {
+      "en": "Split string `Hello` into a string of letters seperated by `,`"
+    },
+    "mr": {
+      "python": "\"\"\",\"\"\".join('Hello')"
+    },
+    "question_id": 14737222
+  },
+  {
+    "question": {
+      "en": "read file `fname` line by line into a list `content`"
+    },
+    "mr": {
+      "python": "with open(fname) as f:\n    content = f.readlines()"
+    },
+    "question_id": 3277503
+  },
+  {
+    "question": {
+      "en": "Make a dictionary from list `f` which is in the format of four sets of  \"val, key, val\""
+    },
+    "mr": {
+      "python": "{f[i + 1]: [f[i], f[i + 2]] for i in range(0, len(f), 3)}"
+    },
+    "question_id": 23914774
+  },
+  {
+    "question": {
+      "en": "replace values `['ABC', 'AB']` in a column 'BrandName' of  pandas dataframe `df` with another value 'A'"
+    },
+    "mr": {
+      "python": "df['BrandName'] = df['BrandName'].replace(['ABC', 'AB'], 'A')"
+    },
+    "question_id": 27060098
+  },
+  {
+    "question": {
+      "en": "fetch all elements in a dictionary `parent_dict`, falling between two keys 2 and 4"
+    },
+    "mr": {
+      "python": "dict((k, v) for k, v in parent_dict.items() if 2 < k < 4)"
+    },
+    "question_id": 8654637
+  },
+  {
+    "question": {
+      "en": "trim whitespace (including tabs) in `s` on the left side"
+    },
+    "mr": {
+      "python": "s = s.lstrip()"
+    },
+    "question_id": 1185524
+  },
+  {
+    "question": {
+      "en": "sort a multidimensional array `a` by column with index 1"
+    },
+    "mr": {
+      "python": "sorted(a, key=lambda x: x[1])"
+    },
+    "question_id": 20183069
+  },
+  {
+    "question": {
+      "en": "split string 'abcdefg' into a list of characters"
+    },
+    "mr": {
+      "python": "re.findall('\\\\w', 'abcdefg')"
+    },
+    "question_id": 464736
+  },
+  {
+    "question": {
+      "en": "remove the element in list `a` at index `index`"
+    },
+    "mr": {
+      "python": "a.pop(index)"
+    },
+    "question_id": 627435
+  },
+  {
+    "question": {
+      "en": "copy the content of file 'file.txt' to file 'file2.txt'"
+    },
+    "mr": {
+      "python": "shutil.copy('file.txt', 'file2.txt')"
+    },
+    "question_id": 36875258
+  },
+  {
+    "question": {
+      "en": "split list `mylist` into a list of lists whose elements have the same first five characters"
+    },
+    "mr": {
+      "python": "[list(v) for k, v in itertools.groupby(mylist, key=lambda x: x[:5])]"
+    },
+    "question_id": 13368723
+  },
+  {
+    "question": {
+      "en": "retrieve arabic texts from string `my_string`"
+    },
+    "mr": {
+      "python": "print(re.findall('[\\\\u0600-\\\\u06FF]+', my_string))"
+    },
+    "question_id": 36661837
+  },
+  {
+    "question": {
+      "en": "dictionary `d` to string, custom format"
+    },
+    "mr": {
+      "python": "\"\"\"<br/>\"\"\".join([('%s:: %s' % (key, value)) for key, value in list(d.items())])"
+    },
+    "question_id": 8519599
+  },
+  {
+    "question": {
+      "en": "sort a pandas data frame by column `Peak` in ascending and `Weeks` in descending order"
+    },
+    "mr": {
+      "python": "df.sort(['Peak', 'Weeks'], ascending=[True, False], inplace=True)"
+    },
+    "question_id": 13636592
+  },
+  {
+    "question": {
+      "en": "Rearrange the columns 'a','b','x','y' of pandas DataFrame `df` in mentioned sequence 'x' ,'y','a' ,'b'"
+    },
+    "mr": {
+      "python": "df = df[['x', 'y', 'a', 'b']]"
+    },
+    "question_id": 12329853
+  },
+  {
+    "question": {
+      "en": "Create a pandas dataframe of values from a dictionary `d` which contains dictionaries of dictionaries"
+    },
+    "mr": {
+      "python": "pd.concat(map(pd.DataFrame, iter(d.values())), keys=list(d.keys())).stack().unstack(0)"
+    },
+    "question_id": 15455388
+  },
+  {
+    "question": {
+      "en": "print the number of occurences of not `none` in a list `lst` in Python 2"
+    },
+    "mr": {
+      "python": "print(len([x for x in lst if x is not None]))"
+    },
+    "question_id": 29422691
+  },
+  {
+    "question": {
+      "en": "How to sort a list according to another list?"
+    },
+    "mr": {
+      "python": "a.sort(key=lambda x_y: b.index(x_y[0]))"
+    },
+    "question_id": 12814667
+  },
+  {
+    "question": {
+      "en": "Get a list of all fields in class `User` that are marked `required`"
+    },
+    "mr": {
+      "python": "[k for k, v in User._fields.items() if v.required]"
+    },
+    "question_id": 8586738
+  },
+  {
+    "question": {
+      "en": "get the middle two characters of a string 'state' in a pandas dataframe `df`"
+    },
+    "mr": {
+      "python": "df['state'].apply(lambda x: x[len(x) / 2 - 1:len(x) / 2 + 1])"
+    },
+    "question_id": 20970279
+  },
+  {
+    "question": {
+      "en": "convert date strings in pandas dataframe column`df['date']` to pandas timestamps using the format '%d%b%Y'"
+    },
+    "mr": {
+      "python": "df['date'] = pd.to_datetime(df['date'], format='%d%b%Y')"
+    },
+    "question_id": 23797491
+  },
+  {
+    "question": {
+      "en": "combine two lists `[1, 2, 3, 4]` and `['a', 'b', 'c', 'd']` into a dictionary"
+    },
+    "mr": {
+      "python": "dict(zip([1, 2, 3, 4], ['a', 'b', 'c', 'd']))"
+    },
+    "question_id": 7271385
+  },
+  {
+    "question": {
+      "en": "decode url-encoded string `some_string` to its character equivalents"
+    },
+    "mr": {
+      "python": "urllib.parse.unquote(urllib.parse.unquote(some_string))"
+    },
+    "question_id": 28431359
+  },
+  {
+    "question": {
+      "en": "Reverse a string \"foo\""
+    },
+    "mr": {
+      "python": "'foo'[::(-1)]"
+    },
+    "question_id": 931092
+  },
+  {
+    "question": {
+      "en": "execute os command ''TASKKILL /F /IM firefox.exe''"
+    },
+    "mr": {
+      "python": "os.system('TASKKILL /F /IM firefox.exe')"
+    },
+    "question_id": 5625524
+  },
+  {
+    "question": {
+      "en": "how to format a list of arguments `my_args` into a string"
+    },
+    "mr": {
+      "python": "'Hello %s' % ', '.join(my_args)"
+    },
+    "question_id": 18391059
+  },
+  {
+    "question": {
+      "en": "sort dict `data` by value"
+    },
+    "mr": {
+      "python": "sorted(data, key=data.get)"
+    },
+    "question_id": 16772071
+  },
+  {
+    "question": {
+      "en": "extend dictionary `a` with key/value pairs of dictionary `b`"
+    },
+    "mr": {
+      "python": "a.update(b)"
+    },
+    "question_id": 577234
+  },
+  {
+    "question": {
+      "en": "Log info message 'Log message' with attributes `{'app_name': 'myapp'}`"
+    },
+    "mr": {
+      "python": "logging.info('Log message', extra={'app_name': 'myapp'})"
+    },
+    "question_id": 17558552
+  },
+  {
+    "question": {
+      "en": "reverse y-axis in pyplot"
+    },
+    "mr": {
+      "python": "plt.gca().invert_yaxis()"
+    },
+    "question_id": 2051744
+  },
+  {
+    "question": {
+      "en": "get the name of the OS"
+    },
+    "mr": {
+      "python": "print(os.name)"
+    },
+    "question_id": 1854
+  },
+  {
+    "question": {
+      "en": "get a list of locally installed Python modules"
+    },
+    "mr": {
+      "python": "help('modules')"
+    },
+    "question_id": 739993
+  },
+  {
+    "question": {
+      "en": "find consecutive segments from a column 'A' in a pandas data frame 'df'"
+    },
+    "mr": {
+      "python": "df.reset_index().groupby('A')['index'].apply(np.array)"
+    },
+    "question_id": 14358567
+  },
+  {
+    "question": {
+      "en": "check if any element of list `substring_list` are in string `string`"
+    },
+    "mr": {
+      "python": "any(substring in string for substring in substring_list)"
+    },
+    "question_id": 8122079
+  },
+  {
+    "question": {
+      "en": "select all rows in dataframe `df` where the values of column 'columnX' is bigger than or equal to `x` and smaller than or equal to `y`"
+    },
+    "mr": {
+      "python": "df[(x <= df['columnX']) & (df['columnX'] <= y)]"
+    },
+    "question_id": 40156469
+  },
+  {
+    "question": {
+      "en": "execute raw sql queue '<sql here>' in database `db` in sqlalchemy-flask app"
+    },
+    "mr": {
+      "python": "result = db.engine.execute('<sql here>')"
+    },
+    "question_id": 17972020
+  },
+  {
+    "question": {
+      "en": "How to delete a record in Django models?"
+    },
+    "mr": {
+      "python": "SomeModel.objects.filter(id=id).delete()"
+    },
+    "question_id": 3805958
+  },
+  {
+    "question": {
+      "en": "rename `last` row index label in dataframe `df` to `a`"
+    },
+    "mr": {
+      "python": "df = df.rename(index={last: 'a'})"
+    },
+    "question_id": 42142756
+  },
+  {
+    "question": {
+      "en": "zip a list of tuples `[(1, 4), (2, 5), (3, 6)]` into a list of tuples according to original tuple index"
+    },
+    "mr": {
+      "python": "zip(*[(1, 4), (2, 5), (3, 6)])"
+    },
+    "question_id": 8092877
+  },
+  {
+    "question": {
+      "en": "reduce the first element of list of strings `data` to a string, separated by '.'"
+    },
+    "mr": {
+      "python": "print('.'.join([item[0] for item in data]))"
+    },
+    "question_id": 27436748
+  },
+  {
+    "question": {
+      "en": "Remove characters in `b` from a string `a`"
+    },
+    "mr": {
+      "python": "a = a.replace(char, '')"
+    },
+    "question_id": 3939361
+  },
+  {
+    "question": {
+      "en": "Join data of dataframe `df1` with data in dataframe `df2` based on similar values of column 'user_id' in both dataframes"
+    },
+    "mr": {
+      "python": "s1 = pd.merge(df1, df2, how='inner', on=['user_id'])"
+    },
+    "question_id": 19618912
+  },
+  {
+    "question": {
+      "en": "split a string `a , b; cdf`  using both commas and semicolons as delimeters"
+    },
+    "mr": {
+      "python": "re.split('\\\\s*,\\\\s*|\\\\s*;\\\\s*', 'a , b; cdf')"
+    },
+    "question_id": 4697006
+  },
+  {
+    "question": {
+      "en": "input an integer tuple from user"
+    },
+    "mr": {
+      "python": "tuple(map(int, input().split(',')))"
+    },
+    "question_id": 2233917
+  },
+  {
+    "question": {
+      "en": "Check if all elements in list `lst` are tupples of long and int"
+    },
+    "mr": {
+      "python": "all(isinstance(x, int) for x in lst)"
+    },
+    "question_id": 13252333
+  },
+  {
+    "question": {
+      "en": "get logical xor of `a` and `b`"
+    },
+    "mr": {
+      "python": "(bool(a) ^ bool(b))"
+    },
+    "question_id": 432842
+  },
+  {
+    "question": {
+      "en": "get a new string with the 3rd to the second-to-last characters of string `x`"
+    },
+    "mr": {
+      "python": "x[2:(-2)]"
+    },
+    "question_id": 663171
+  },
+  {
+    "question": {
+      "en": "sort list `list_` based on first element of each tuple and by the length of the second element of each tuple"
+    },
+    "mr": {
+      "python": "list_.sort(key=lambda x: [x[0], len(x[1]), x[1]])"
+    },
+    "question_id": 19643099
+  },
+  {
+    "question": {
+      "en": "insert variables `(var1, var2, var3)` into sql statement 'INSERT INTO table VALUES (?, ?, ?)'"
+    },
+    "mr": {
+      "python": "cursor.execute('INSERT INTO table VALUES (?, ?, ?)', (var1, var2, var3))"
+    },
+    "question_id": 902408
+  },
+  {
+    "question": {
+      "en": "iterate over a dictionary `dict` in sorted order"
+    },
+    "mr": {
+      "python": "return iter(sorted(dict.items()))"
+    },
+    "question_id": 364519
+  },
+  {
+    "question": {
+      "en": "Plot using the color code `#112233` in matplotlib pyplot"
+    },
+    "mr": {
+      "python": "pyplot.plot(x, y, color='#112233')"
+    },
+    "question_id": 6027690
+  },
+  {
+    "question": {
+      "en": "remove the last element in list `a`"
+    },
+    "mr": {
+      "python": "del a[(-1)]"
+    },
+    "question_id": 627435
+  },
+  {
+    "question": {
+      "en": "make a window `root` jump to the front"
+    },
+    "mr": {
+      "python": "root.attributes('-topmost', True)"
+    },
+    "question_id": 1892339
+  },
+  {
+    "question": {
+      "en": "regular expression matching all but 'aa' and 'bb' for string `string`"
+    },
+    "mr": {
+      "python": "re.findall('-(?!aa-|bb-)([^-]+)', string)"
+    },
+    "question_id": 39600161
+  },
+  {
+    "question": {
+      "en": "count the number of non-nan elements in a numpy ndarray matrix `data`"
+    },
+    "mr": {
+      "python": "np.count_nonzero(~np.isnan(data))"
+    },
+    "question_id": 21778118
+  },
+  {
+    "question": {
+      "en": "Get the position of a regex match for word `is` in a string `String`"
+    },
+    "mr": {
+      "python": "re.search('\\\\bis\\\\b', String).start()"
+    },
+    "question_id": 2674391
+  },
+  {
+    "question": {
+      "en": "sort list of strings `xs` by the length of string"
+    },
+    "mr": {
+      "python": "xs.sort(key=lambda s: len(s))"
+    },
+    "question_id": 2587402
+  },
+  {
+    "question": {
+      "en": "Get the number of NaN values in each column of dataframe `df`"
+    },
+    "mr": {
+      "python": "df.isnull().sum()"
+    },
+    "question_id": 26266362
+  },
+  {
+    "question": {
+      "en": "get current RAM usage of current program"
+    },
+    "mr": {
+      "python": "pid = os.getpid()\npy = psutil.Process(pid)\nmemoryUse = (py.memory_info()[0] / (2.0 ** 30))"
+    },
+    "question_id": 276052
+  },
+  {
+    "question": {
+      "en": "Find all Chinese characters in string `ipath`"
+    },
+    "mr": {
+      "python": "re.findall('[\\u4e00-\\u9fff]+', ipath)"
+    },
+    "question_id": 34587346
+  },
+  {
+    "question": {
+      "en": "add 1 hour and 2 minutes to time object `t`"
+    },
+    "mr": {
+      "python": "dt = datetime.datetime.combine(datetime.date.today(), t)"
+    },
+    "question_id": 14043934
+  },
+  {
+    "question": {
+      "en": "Group a pandas data frame by monthly frequenct `M` using groupby"
+    },
+    "mr": {
+      "python": "df.groupby(pd.TimeGrouper(freq='M'))"
+    },
+    "question_id": 24082784
+  },
+  {
+    "question": {
+      "en": "Log message of level 'info' with value of `date` in the message"
+    },
+    "mr": {
+      "python": "logging.info('date={}'.format(date))"
+    },
+    "question_id": 12843099
+  },
+  {
+    "question": {
+      "en": "find the sums of length 7 subsets of a list `daily`"
+    },
+    "mr": {
+      "python": "weekly = [sum(visitors[x:x + 7]) for x in range(0, len(daily), 7)]"
+    },
+    "question_id": 6133434
+  }
+]

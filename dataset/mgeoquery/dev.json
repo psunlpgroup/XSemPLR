@@ -1,0 +1,884 @@
+[
+    {
+        "mr": {
+            "sql": "SELECT CITY_NAME FROM CITY WHERE POPULATION = ( SELECT POPULATION FROM CITY WHERE STATE_NAME = \"arizona\" ORDER BY POPULATION DESC LIMIT 1) AND STATE_NAME = \"arizona\"",
+            "prolog": "answer(A,largest(A,(city(A),loc(A,B),const(B,stateid(arizona)))))",
+            "lambda": "(argmax:<<e,t>,<<e,i>,e>> (lambda $0:e (and:<t*,t> (city:<c,t> $0) (loc:<lo,<lo,t>> $0 arizona:s))) (lambda $0:e (size:<lo,i> $0)))",
+            "funql": "answer(largest(city(loc_2(stateid('arizona')))))"
+        },
+        "question": {
+            "en": "what is the biggest city in arizona",
+            "de": "wie lautet die groesste stadt in arizona",
+            "el": "ποια είναι η μεγαλύτερη πόλη στην arizona",
+            "fa": "بزرگترین شهر آریزونا کدام است ؟",
+            "id": "apa kota terbesar di arizona ?",
+            "sv": "vilken är den största staden i arizona ?",
+            "th": "เมือง ใด เป็น เมือง ใหญ่ ที่สุด ใน รัฐ แอริโซนา",
+            "zh": "亚利桑那 州 最大 的 城市 是 哪个"
+        }
+    },
+    {
+        "mr": {
+            "sql": "SELECT CITY_NAME FROM CITY WHERE POPULATION = ( SELECT POPULATION FROM CITY WHERE STATE_NAME = \"texas\" ORDER BY POPULATION DESC LIMIT 1) AND STATE_NAME = \"texas\"",
+            "prolog": "answer(A,largest(B,(const(C,stateid(texas)),city(A),loc(A,C),population(A,B))))",
+            "lambda": "(argmax:<<e,t>,<<e,i>,e>> (lambda $0:e (and:<t*,t> (city:<c,t> $0) (loc:<lo,<lo,t>> $0 texas:s))) (lambda $0:e (population:<lo,i> $0)))",
+            "funql": "answer(largest_one(population_1(city(loc_2(stateid('texas'))))))"
+        },
+        "question": {
+            "en": "what texas city has the largest population",
+            "de": "welches ist die bevoelkerungsreichste stadt von texas",
+            "el": "ποια πολιτεία του texas έχει το μεγαλύτερο πληθυσμό",
+            "fa": "کدام شهر تگزاس دارای بیشترین جمعیت است ؟",
+            "id": "kota texas apa yang memiliki populasi terbesar ?",
+            "sv": "vilken stad i texas har den största befolkningen ?",
+            "th": "เมือง ใด ใน รัฐ เท็กซัส มี ประชากร มาก ที่สุด",
+            "zh": "得克萨斯 州 的 什么 城市 的 人口 最多"
+        }
+    },
+    {
+        "mr": {
+            "sql": "SELECT CITY_NAME FROM CITY WHERE POPULATION = ( SELECT POPULATION FROM CITY WHERE STATE_NAME = \"missouri\" ORDER BY POPULATION DESC LIMIT 1) AND STATE_NAME = \"missouri\"",
+            "prolog": "answer(A,largest(A,(city(A),loc(A,B),const(B,stateid(missouri)))))",
+            "lambda": "(argmax:<<e,t>,<<e,i>,e>> (lambda $0:e (and:<t*,t> (city:<c,t> $0) (loc:<lo,<lo,t>> $0 missouri:s))) (lambda $0:e (size:<lo,i> $0)))",
+            "funql": "answer(largest(city(loc_2(stateid('missouri')))))"
+        },
+        "question": {
+            "en": "what is the largest city in missouri",
+            "de": "wie lautet die groesste stadt in missouri",
+            "el": "ποια είναι η μεγαλύτερη πόλη στο missouri",
+            "fa": "بزرگترین شهر در میسوری کجاست ؟",
+            "id": "apa kota terbesar di missouri ?",
+            "sv": "vad är den största staden i missouri ?",
+            "th": "เมือง ที่ ใหญ่ ที่สุด ของ รัฐ มิสซูรี คือ เมือง ใด",
+            "zh": "密苏里 州 最大 的 城市 是 哪个"
+        }
+    },
+    {
+        "mr": {
+            "sql": "SELECT RIVER_NAME FROM RIVER WHERE TRAVERSE IN ( SELECT STATE_NAME FROM CITY WHERE POPULATION = ( SELECT POPULATION FROM CITY ORDER BY POPULATION DESC LIMIT 1) )",
+            "prolog": "answer(A,(river(A),traverse(A,B),state(B),loc(C,B),largest(C,(city(C),loc(C,D),const(D,countryid(usa))))))",
+            "lambda": "(lambda $0:e (and:<t*,t> (river:<r,t> $0) (loc:<lo,<lo,t>> $0 (the:<<e,t>,e> (lambda $1:e (and:<t*,t> (state:<s,t> $1) (loc:<lo,<lo,t>> (argmax:<<e,t>,<<e,i>,e>> (lambda $2:e (and:<t*,t> (city:<c,t> $2) (loc:<lo,<lo,t>> $2 usa:co))) (lambda $2:e (size:<lo,i> $2))) $1)))))))",
+            "funql": "answer(river(traverse_2(state(loc_1(largest(city(loc_2(countryid('usa')))))))))"
+        },
+        "question": {
+            "en": "which rivers run through the state with the largest city in the us",
+            "de": "welche fluesse fliessen durch den staat mit der groesstes stadt in den usa",
+            "el": "ποια ποτάμια διατρέχουν την πολιτεία με τη μεγαλύτερη πόλη στις us",
+            "fa": "کدام رودخانه ها از ایالتی که بزرگترین شهر آمریکا در آن واقع شده است میگذرند ؟",
+            "id": "apa sungai-sungai yang mengalir melalui negara bagian dengan kota terbesar di as ?",
+            "sv": "vilka floder löper genom staten med den största staden i usa ?",
+            "th": "แม่น้ำ สาย ใด ไหล ผ่าน รัฐ ที่ มี ประชากร มาก ที่สุด ใน สหรัฐ",
+            "zh": "哪些 河流 贯穿 拥有 美国 最大 城市 的 州"
+        }
+    },
+    {
+        "mr": {
+            "sql": "SELECT AREA FROM STATE WHERE STATE_NAME = \"texas\"",
+            "prolog": "answer(A,(size(B,A),const(B,stateid(texas))))",
+            "lambda": "(size:<lo,i> texas:s)",
+            "funql": "answer(size(stateid('texas')))"
+        },
+        "question": {
+            "en": "how big is texas",
+            "de": "wie gross ist texas",
+            "el": "πόσο μεγάλο είναι το texas",
+            "fa": "وسعت تگزاس چقدر است ؟",
+            "id": "seberapa besarkah texas ?",
+            "sv": "hur stort är texas ?",
+            "th": "รัฐ เท็กซัส มี ขนาด เท่าไหร่",
+            "zh": "得克萨斯 州 有 多大"
+        }
+    },
+    {
+        "mr": {
+            "sql": "SELECT AREA FROM STATE WHERE STATE_NAME = \"california\"",
+            "prolog": "answer(A,(area(B,A),const(B,stateid(california))))",
+            "lambda": "(area:<lo,i> california:s)",
+            "funql": "answer(area_1(stateid('california')))"
+        },
+        "question": {
+            "en": "what is the area of california",
+            "de": "welche flaechenausdehnung hat kalifornien",
+            "el": "ποιο είναι το εμβαδό της california",
+            "fa": "مساحت کالیفرنیا چقدر است ؟",
+            "id": "berapa luas dari california ?",
+            "sv": "vad är kalifornias area ?",
+            "th": "รัฐ แคลิฟอร์เนีย มี พื้นที่ เท่าไหร่",
+            "zh": "加 州 的 面积 是 多少"
+        }
+    },
+    {
+        "mr": {
+            "sql": "SELECT AREA FROM STATE WHERE STATE_NAME = \"new mexico\"",
+            "prolog": "answer(A,(size(B,A),const(B,stateid('new mexico'))))",
+            "lambda": "(size:<lo,i> new_mexico:s)",
+            "funql": "answer(size(stateid('new mexico')))"
+        },
+        "question": {
+            "en": "how big is new mexico",
+            "de": "wie gross ist new mexico",
+            "el": "πόσο μεγάλο είναι το new mexico",
+            "fa": "وسعت نیومکزیکو چقدر است ؟",
+            "id": "seberapa besarkah new mexico ?",
+            "sv": "hur stort är new mexico ?",
+            "th": "รัฐ นิวเม็กซิโก มี พื้นที่ เท่าไหร่",
+            "zh": "新墨西哥 州 有 多大"
+        }
+    },
+    {
+        "mr": {
+            "sql": "SELECT POPULATION FROM STATE WHERE STATE_NAME = \"washington\"",
+            "prolog": "answer(A,(population(B,A),const(B,stateid(washington))))",
+            "lambda": "(population:<lo,i> washington:s)",
+            "funql": "answer(population_1(stateid('washington')))"
+        },
+        "question": {
+            "en": "how many people live in washington",
+            "de": "welches ist die einwohnerzahl von washington",
+            "el": "πόσοι άνθρωποι ζουν στην washington",
+            "fa": "چند نفر در واشنگتن زندگی میکنند ؟",
+            "id": "berapa banyak orang tinggal di washington ?",
+            "sv": "hur många människor bor i washington ?",
+            "th": "มี ประชากร กี่ คน อาศัย อยู่ ใน รัฐ วอชิงตัน",
+            "zh": "有 多少 人 住 在 华盛顿"
+        }
+    },
+    {
+        "mr": {
+            "sql": "SELECT STATE_NAME FROM STATE WHERE POPULATION = ( SELECT POPULATION FROM STATE ORDER BY POPULATION LIMIT 1)",
+            "prolog": "answer(A,smallest(B,(state(A),population(A,B))))",
+            "lambda": "(argmin:<<e,t>,<<e,i>,e>> (lambda $0:e (state:<s,t> $0)) (lambda $0:e (population:<lo,i> $0)))",
+            "funql": "answer(smallest_one(population_1(state(all))))"
+        },
+        "question": {
+            "en": "what state has the smallest population",
+            "de": "welcher staat hat die kleinste anzahl urbaner einwohner",
+            "el": "ποια πολιτεία έχει τον μικρότερο πληθυσμό",
+            "fa": "کدام ایالت جمعیت کمتری دارد ؟",
+            "id": "apa negara bagian yang memiliki populasi terkecil ?",
+            "sv": "vilken stat har den minsta befolkningen ?",
+            "th": "รัฐ ที่ มี ประชากร น้อย ที่สุด คือ รัฐ ใด",
+            "zh": "哪个 州 有 最少 的 人口"
+        }
+    },
+    {
+        "mr": {
+            "sql": "SELECT AREA FROM STATE WHERE CAPITAL = \"albany\"",
+            "prolog": "answer(A,(area(B,A),state(B),loc(C,B),capital(C),const(C,cityid(albany,_))))",
+            "lambda": "(area:<lo,i> (the:<<e,t>,e> (lambda $0:e (and:<t*,t> (state:<s,t> $0) (capital2:<s,<c,t>> $0 albany_ny:c)))))",
+            "funql": "answer(area_1(state(loc_1(capital(cityid('albany', _))))))"
+        },
+        "question": {
+            "en": "what is the area of the state with the capital albany",
+            "de": "wie gross ist die flaeche des staates mit der hauptstadt albany",
+            "el": "ποιο είναι το εμβαδό της πολιτείας με πρωτεύουσα το albany",
+            "fa": "مساحت ایالتی که مرکز آن آلبانی است چقدر است ؟",
+            "id": "berapa luas dari negara bagian dengan ibukota albany ?",
+            "sv": "vad är arean av den stat med huvudstaden albany ?",
+            "th": "จง หา พื้นที่ ของ รัฐ ที่ มี เมืองหลวง ชื่อ ว่า อัลบานี",
+            "zh": "奥尔巴尼 首府 的 所在 州 的 面积 是 多少"
+        }
+    },
+    {
+        "mr": {
+            "sql": "SELECT LAKE_NAME FROM LAKE WHERE STATE_NAME = \"california\"",
+            "prolog": "answer(A,(lake(A),loc(A,B),const(B,stateid(california))))",
+            "lambda": "(lambda $0:e (and:<t*,t> (lake:<l,t> $0) (loc:<lo,<lo,t>> $0 california:s)))",
+            "funql": "answer(lake(loc_2(stateid('california'))))"
+        },
+        "question": {
+            "en": "give me the lakes in california",
+            "de": "nenne mir die seen in california",
+            "el": "δώσε μου τις λίμνες στην california",
+            "fa": "دریاچه های کالیفرنیا را به من بده .",
+            "id": "berikan danau-danau di california .",
+            "sv": "ge mig sjöarna i kalifornien .",
+            "th": "จง บอก ชื่อ ทะเลสาบ ใน รัฐ แคลิฟอร์เนีย",
+            "zh": "给 我 在 加利福尼亚 州 的 湖泊"
+        }
+    },
+    {
+        "mr": {
+            "sql": "SELECT STATE_NAME FROM STATE",
+            "prolog": "answer(A,state(A))",
+            "lambda": "(lambda $0:e (state:<s,t> $0))",
+            "funql": "answer(state(all))"
+        },
+        "question": {
+            "en": "what are the states",
+            "de": "welche staaten gibt es",
+            "el": "ποιες είναι οι πολιτείες",
+            "fa": "ایالت ها را نام ببر .",
+            "id": "apa saja negara-negara bagiannya ?",
+            "sv": "vilka är staterna ?",
+            "th": "สหรัฐ มี รัฐ อะไรบ้าง",
+            "zh": "有 哪些 州"
+        }
+    },
+    {
+        "mr": {
+            "sql": "SELECT TRAVERSE FROM RIVER WHERE RIVER_NAME = \"colorado\"",
+            "prolog": "answer(A,(state(A),const(B,riverid(colorado)),river(B),traverse(B,A)))",
+            "lambda": "(lambda $0:e (and:<t*,t> (state:<s,t> $0) (loc:<lo,<lo,t>> colorado_river:r $0)))",
+            "funql": "answer(state(traverse_1(river(riverid('colorado')))))"
+        },
+        "question": {
+            "en": "which states do colorado river flow through",
+            "de": "durch welche staaten fliesst der colorado fluss",
+            "el": "ποιες πολιτείες διασχίζει ο colorado ποταμός",
+            "fa": "رود کلرادو از میان کدام ایالت ها عبور میکند ؟",
+            "id": "apa negara-negara bagian yang dialiri sungai colorado ?",
+            "sv": "vilka stater flödar coloradofloden genom ?",
+            "th": "แม่น้ำ โคโลราโด ไหล ผ่าน รัฐ ใดบ้าง",
+            "zh": "科罗拉多 河 流经 哪些 州"
+        }
+    },
+    {
+        "mr": {
+            "sql": "SELECT TRAVERSE FROM RIVER WHERE RIVER_NAME = \"colorado\"",
+            "prolog": "answer(A,(state(A),const(B,riverid(colorado)),river(B),traverse(B,A)))",
+            "lambda": "(lambda $0:e (and:<t*,t> (state:<s,t> $0) (loc:<lo,<lo,t>> colorado_river:r $0)))",
+            "funql": "answer(state(traverse_1(river(riverid('colorado')))))"
+        },
+        "question": {
+            "en": "what states does the colorado river run through",
+            "de": "durch welche staaten fliesst der fluss colorado",
+            "el": "ποιες πολιτείες διασχίζει ο ποταμός colorado",
+            "fa": "رودخانه کلرادو از کدام ایالت ها عبور میکند ؟",
+            "id": "apa negara-negara bagian yang dilalui sungai colorado ?",
+            "sv": "vilka stater rinner coloradofloden genom ?",
+            "th": "รัฐ ใด บ้าง ที่ แม่น้ำ โคโลราโด ไหล ผ่าน",
+            "zh": "科罗拉多 河 贯穿 哪些 州"
+        }
+    },
+    {
+        "mr": {
+            "sql": "SELECT TRAVERSE FROM RIVER WHERE RIVER_NAME = \"mississippi\"",
+            "prolog": "answer(A,(state(A),next_to(A,B),const(B,riverid(mississippi)),river(B)))",
+            "lambda": "(lambda $0:e (and:<t*,t> (state:<s,t> $0) (next_to:<lo,<lo,t>> $0 mississippi_river:r)))",
+            "funql": "answer(state(next_to_2(river(riverid('mississippi')))))"
+        },
+        "question": {
+            "en": "what states border the mississippi river",
+            "de": "welche staaten grenzen an den mississippi fluss an",
+            "el": "ποιες πολιτείες συνορεύουν με τον mississippi ποταμό",
+            "fa": "کدام ایالات هم مرز رودخانه میسیسیپی هستند ؟",
+            "id": "apa negara-negara bagian yang berbatasan dengan sungai mississippi ?",
+            "sv": "vilka stater gränsar till mississippifloden ?",
+            "th": "รัฐ ใด อยู่ ติด กับ แม่น้ำ มิสซิสซิปปี บ้าง",
+            "zh": "什么 州 与 密西西比 河 接壤"
+        }
+    },
+    {
+        "mr": {
+            "sql": "SELECT STATE_NAME FROM STATE WHERE POPULATION = ( SELECT POPULATION FROM STATE ORDER BY POPULATION DESC LIMIT 1)",
+            "prolog": "answer(A,largest(B,(state(A),population(A,B))))",
+            "lambda": "(argmax:<<e,t>,<<e,i>,e>> (lambda $0:e (state:<s,t> $0)) (lambda $0:e (population:<lo,i> $0)))",
+            "funql": "answer(largest_one(population_1(state(all))))"
+        },
+        "question": {
+            "en": "what state has the largest population",
+            "de": "welcher staat hat die groesste bevoelkerung",
+            "el": "ποια πολιτεία έχει τον περισσότερο πληθυσμό",
+            "fa": "کدام ایالت دارای بزرگترین جمعیت است ؟",
+            "id": "apa negara bagian yang memiliki populasi terbesar ?",
+            "sv": "vilken stat har den största befolkningen ?",
+            "th": "รัฐ ใด มี ประชากร มาก ที่สุด",
+            "zh": "哪个 州 拥有 最多 人口"
+        }
+    },
+    {
+        "mr": {
+            "sql": "SELECT LOWEST_ELEVATION FROM HIGHLOW WHERE STATE_NAME = \"pennsylvania\"",
+            "prolog": "answer(A,lowest(A,(place(A),loc(A,B),const(B,stateid(pennsylvania)))))",
+            "lambda": "(argmin:<<e,t>,<<e,i>,e>> (lambda $0:e (and:<t*,t> (place:<p,t> $0) (loc:<lo,<lo,t>> $0 pennsylvania:s))) (lambda $0:e (elevation:<lo,i> $0)))",
+            "funql": "answer(lowest(place(loc_2(stateid('pennsylvania')))))"
+        },
+        "question": {
+            "en": "what is the lowest elevation in pennsylvania",
+            "de": "welches ist die niedrigste erhoehung in pennsylvania",
+            "el": "ποιο είναι το χαμηλότερο υψόμετρο στην pennsylvania",
+            "fa": "کمترین ارتفاع در پنسیلوانیا چقدر است ؟",
+            "id": "berapa elevasi terendah di pennsylvania ?",
+            "sv": "vilken är den lägsta höjden i pennsylvania ?",
+            "th": "พื้นที่ ใด เป็น จุด ต่ำ สุด ของ รัฐ เพ็นซิลเวเนีย",
+            "zh": "宾夕法尼亚 州 的 最低 海拔 是 什么"
+        }
+    },
+    {
+        "mr": {
+            "sql": "SELECT HIGHEST_POINT , STATE_NAME FROM HIGHLOW WHERE LOWEST_ELEVATION = 0",
+            "prolog": "answer(A,(highest(A,(place(A),loc(A,B),state(B))),lowest(C,(loc(C,B),place(C))),elevation(C,0)))",
+            "lambda": "(lambda $0:e (equals:<e,<e,t>> $0 (argmax:<<e,t>,<<e,i>,e>> (lambda $1:e (and:<t*,t> (place:<p,t> $1) (exists:<<e,t>,t> (lambda $2:e (and:<t*,t> (state:<s,t> $2) (=:<i,<i,t>> (elevation:<lo,i> (argmin:<<e,t>,<<e,i>,e>> (lambda $3:e (and:<t*,t> (place:<p,t> $3) (loc:<lo,<lo,t>> $3 $2))) (lambda $3:e (elevation:<lo,i> $3)))) 0:i) (loc:<lo,<lo,t>> $0 $2)))))) (lambda $1:e (elevation:<lo,i> $1)))))",
+            "funql": "answer(highest(place(loc_2(state(loc_1(place(elevation_2(0))))))))"
+        },
+        "question": {
+            "en": "what is the highest point in each state whose lowest point is sea level",
+            "de": "welches sind die hoechsten punkte der staaten dessen tiefster punkt auf meeresniveau liegt",
+            "el": "ποιο είναι το ψηλότερο σημείο σε κάθε πολιτεία της οποία το χαμηλότερο σημείο είναι στο επίπεδο της θάλασσας",
+            "fa": "بلندترین نقاط همه ایالت هایی که کمترین ارتفاع آنها سطح دریاست نام ببر .",
+            "id": "apa titik tertinggi di setiap negara bagian yang memiliki titik terendah permukaan laut ?",
+            "sv": "vad är den högsta punkten i varje stat vars lägsta punkt är vid havsnivå ?",
+            "th": "จง หา จุด สูง สุด ของ แต่ละ รัฐ ซึ่ง มี จุด ต่ำ สุด อยู่ ที่ ระดับ น้ำ ทะเล",
+            "zh": "在 各个 最低 点 与 海平面 持平 的 州 里 的 最高 点 是 什么"
+        }
+    },
+    {
+        "mr": {
+            "sql": "SELECT DISTINCT LENGTH FROM RIVER WHERE LENGTH = ( SELECT LENGTH FROM RIVER ORDER BY LENGTH DESC LIMIT 1)",
+            "prolog": "answer(A,(len(B,A),longest(B,(river(B),loc(B,C),const(C,countryid(usa))))))",
+            "lambda": "(len:<r,i> (argmax:<<e,t>,<<e,i>,e>> (lambda $0:e (and:<t*,t> (river:<r,t> $0) (loc:<lo,<lo,t>> $0 usa:co))) (lambda $0:e (len:<r,i> $0))))",
+            "funql": "answer(len(longest(river(loc_2(countryid('usa'))))))"
+        },
+        "question": {
+            "en": "what is the length of the longest river in the usa",
+            "de": "wie lang ist der laengste fluss der usa",
+            "el": "ποιο είναι το μήκος του μακρύτερου ποταμού στις ηπα",
+            "fa": "طول بلند ترین رودخانه ایالات متحده کدامست ؟",
+            "id": "berapa panjang dari sungai terpanjang di amerika serikat ?",
+            "sv": "vad är längden på den längsta floden i usa ?",
+            "th": "แม่น้ำ สาย ที่ ยาว ที่สุด ใน สหรัฐ ยาว เท่าไหร่",
+            "zh": "美国 最长 的 河流 的 长度 是 多少"
+        }
+    },
+    {
+        "mr": {
+            "sql": "SELECT RIVER_NAME FROM RIVER WHERE LENGTH = ( SELECT LENGTH FROM RIVER WHERE TRAVERSE = \"new york\" ORDER BY LENGTH DESC LIMIT 1) AND TRAVERSE = \"new york\"",
+            "prolog": "answer(A,longest(A,(river(A),traverse(A,B),const(B,stateid('new york')))))",
+            "lambda": "(argmax:<<e,t>,<<e,i>,e>> (lambda $0:e (and:<t*,t> (river:<r,t> $0) (loc:<lo,<lo,t>> $0 new_york:s))) (lambda $0:e (len:<r,i> $0)))",
+            "funql": "answer(longest(river(traverse_2(stateid('new york')))))"
+        },
+        "question": {
+            "en": "what is the longest river flowing through new york",
+            "de": "welches ist der laengste fluss new yorks",
+            "el": "ποιο είναι το μακρύτερο ποτάμι που διασχίζει τη new york",
+            "fa": "بلندترین رودخانه ای که از از نیویورک میگذرد کدامست ؟",
+            "id": "apa sungai terpanjang yang mengalir melalui new york ?",
+            "sv": "vad är den längsta floden som rinner genom new york ?",
+            "th": "แม่น้ำ ที่ ยาว ที่สุด ที่ ไหล ผ่าน รัฐ นิวยอร์ค คือ แม่น้ำ ใด",
+            "zh": "流经 纽约 的 最长 的 河流 是 哪个"
+        }
+    },
+    {
+        "mr": {
+            "sql": "SELECT COUNT( RIVER_NAME ) FROM RIVER WHERE TRAVERSE = \"new york\"",
+            "prolog": "answer(A,count(B,(river(B),loc(B,C),const(C,stateid('new york'))),A))",
+            "lambda": "(count:<<e,t>,i> (lambda $0:e (and:<t*,t> (river:<r,t> $0) (loc:<lo,<lo,t>> $0 new_york:s))))",
+            "funql": "answer(count(river(loc_2(stateid('new york')))))"
+        },
+        "question": {
+            "en": "how many rivers are in new york",
+            "de": "wie viele fluesse gibt es in new york",
+            "el": "πόσα ποτάμια υπάρχουν στη new york",
+            "fa": "چند رودخانه در نیویورک وجود دارد ؟",
+            "id": "berapa banyak sungai di new york ?",
+            "sv": "hur många floder har new york ?",
+            "th": "รัฐ นิวยอร์ค มี แม่น้ำ กี่ สาย",
+            "zh": "在 纽约 州 有 多少 条 河流"
+        }
+    },
+    {
+        "mr": {
+            "sql": "SELECT BORDER FROM BORDER_INFO WHERE STATE_NAME = \"maine\"",
+            "prolog": "answer(A,(state(A),next_to(A,B),const(B,stateid(maine))))",
+            "lambda": "(lambda $0:e (and:<t*,t> (state:<s,t> $0) (next_to:<lo,<lo,t>> $0 maine:s)))",
+            "funql": "answer(state(next_to_2(stateid('maine'))))"
+        },
+        "question": {
+            "en": "what states neighbor maine",
+            "de": "welche staaten grenzen an maine",
+            "el": "ποιες πολιτείες γειτονεύουν το maine",
+            "fa": "کدام ایالات با مین همسایه اند ؟",
+            "id": "negara-negara bagian apa yang bertetangga dengan maine ?",
+            "sv": "vilka stater är grannar till maine ?",
+            "th": "รัฐ ใด เป็น เพื่อนบ้าน กับ รัฐ เมน",
+            "zh": "哪些 州 与 缅因 州 相邻"
+        }
+    },
+    {
+        "mr": {
+            "sql": "SELECT BORDER FROM BORDER_INFO WHERE STATE_NAME = \"iowa\"",
+            "prolog": "answer(A,(state(A),next_to(A,B),const(B,stateid(iowa))))",
+            "lambda": "(lambda $0:e (and:<t*,t> (state:<s,t> $0) (next_to:<lo,<lo,t>> $0 iowa:s)))",
+            "funql": "answer(state(next_to_2(stateid('iowa'))))"
+        },
+        "question": {
+            "en": "which states border iowa",
+            "de": "welche staaten grenzen an iowa",
+            "el": "ποιες πολιτείες συνορεύουν με την iowa",
+            "fa": "کدام ایالت ها همجوار آیووا هستند ؟",
+            "id": "apa negara-negara bagian yang berbatasan dengan iowa ?",
+            "sv": "vilka stater gränsar iowa ?",
+            "th": "รัฐ ใด อยู่ ติด กับ รัฐ ไอโอวา",
+            "zh": "哪些 州 与 艾奥瓦 州 接壤"
+        }
+    },
+    {
+        "mr": {
+            "sql": "SELECT BORDER FROM BORDER_INFO WHERE STATE_NAME = \"delaware\"",
+            "prolog": "answer(A,(state(A),next_to(A,B),const(B,stateid(delaware))))",
+            "lambda": "(lambda $0:e (and:<t*,t> (state:<s,t> $0) (next_to:<lo,<lo,t>> $0 delaware:s)))",
+            "funql": "answer(state(next_to_2(stateid('delaware'))))"
+        },
+        "question": {
+            "en": "what states border delaware",
+            "de": "welche staaten grenzen an delaware",
+            "el": "ποιες πολιτείες συνορεύουν με το delaware",
+            "fa": "کدام ایالت ها هم مرز دلاور هستند ؟",
+            "id": "apa negara-negara bagian yang berbatasan dengan delaware ?",
+            "sv": "vilka stater gränsar till delaware ?",
+            "th": "รัฐ ใด บ้าง อยู่ ติด กับ รัฐ เดลาแวร์",
+            "zh": "什么 州 与 特拉华 州 接壤"
+        }
+    },
+    {
+        "mr": {
+            "sql": "SELECT DERIVED_FIELDalias0 FROM ( SELECT STATE_NAME , COUNT( DISTINCT BORDER ) DERIVED_FIELDalias0 FROM BORDER_INFO GROUP BY STATE_NAME ) ORDER BY DERIVED_FIELDalias0 DESC LIMIT 1",
+            "prolog": "answer(A,count(B,(state(B),next_to(B,C),most(C,D,(state(C),next_to(C,D),state(D)))),A))",
+            "lambda": "(count:<<e,t>,i> (lambda $0:e (and:<t*,t> (state:<s,t> $0) (next_to:<lo,<lo,t>> $0 (argmax:<<e,t>,<<e,i>,e>> (lambda $1:e (state:<s,t> $1)) (lambda $1:e (count:<<e,t>,i> (lambda $2:e (and:<t*,t> (state:<s,t> $2) (next_to:<lo,<lo,t>> $1 $2))))))))))",
+            "funql": "answer(count(state(next_to_2(most(state(next_to_2(state(all))))))))"
+        },
+        "question": {
+            "en": "how many states border the state that borders the most states",
+            "de": "wie viele staaten grenzen an den staat mit den meisten nachbarstaaten",
+            "el": "πόσες πολιτείες συνορεύουν με την πολιτεία την οποία συνορεύουν οι περισσότερες πολιτείες",
+            "fa": "چند ایالت همجوار ایالتی هستند که همجوار ایالات بیشتری است ؟",
+            "id": "berapa banyak negara bagian yang berbatasan dengan negara bagian yang berbatasan dengan paling banyak negara bagian ?",
+            "sv": "hur många stater gränsar till den stat som gränsar till flest antal stater ?",
+            "th": "มี กี่ รัฐ บ้าง ที่ อยู่ ติด กับ รัฐ ที่ อยู่ ติด กับ รัฐ อื่นๆ มาก ที่สุด",
+            "zh": "有 多少 州 与 和 最多 的 州 接壤 的 州 接壤"
+        }
+    },
+    {
+        "mr": {
+            "sql": "SELECT STATE_NAME FROM CITY WHERE CITY_NAME = \"dallas\"",
+            "prolog": "answer(A,(state(A),const(B,cityid(dallas,_)),loc(B,A)))",
+            "lambda": "(lambda $0:e (and:<t*,t> (state:<s,t> $0) (loc:<lo,<lo,t>> dallas_tx:c $0)))",
+            "funql": "answer(state(loc_1(cityid('dallas', _))))"
+        },
+        "question": {
+            "en": "what state is dallas in",
+            "de": "in welchem staat liegt dallas",
+            "el": "σε ποια πολιτεία είναι το dallas",
+            "fa": "دالاس در کدام ایالت است ؟",
+            "id": "di negara bagian manakah dallas berada ?",
+            "sv": "viken stat ligger dallas i ?",
+            "th": "รัฐ ใด มี เมือง ชื่อ ดัลลัส อยู่",
+            "zh": "达拉斯 在 哪个 州"
+        }
+    },
+    {
+        "mr": {
+            "sql": "SELECT STATE_NAME FROM CITY WHERE CITY_NAME = \"san diego\"",
+            "prolog": "answer(A,(loc(B,A),const(B,cityid('san diego',_))))",
+            "lambda": "(lambda $0:e (loc:<lo,<lo,t>> san_diego_ca:c $0))",
+            "funql": "answer(loc_1(cityid('san diego', _)))"
+        },
+        "question": {
+            "en": "where is san diego",
+            "de": "wo liegt san diego",
+            "el": "που είναι το san diego",
+            "fa": "سن دیگو در کجا است ؟",
+            "id": "di mana san diego ?",
+            "sv": "vart ligger san diego ?",
+            "th": "เมือง ซานดิอาโก อยู่ ที่ไหน",
+            "zh": "圣地亚哥 市 在 哪里"
+        }
+    },
+    {
+        "mr": {
+            "sql": "SELECT POPULATION FROM STATE WHERE AREA = ( SELECT AREA FROM STATE ORDER BY AREA DESC LIMIT 1)",
+            "prolog": "answer(A,(population(B,A),largest(C,(state(B),area(B,C)))))",
+            "lambda": "(population:<lo,i> (argmax:<<e,t>,<<e,i>,e>> (lambda $0:e (state:<s,t> $0)) (lambda $0:e (area:<lo,i> $0))))",
+            "funql": "answer(population_1(largest_one(area_1(state(all)))))"
+        },
+        "question": {
+            "en": "what is the population of the state with the largest area",
+            "de": "was ist die bevoelkerung des staates mit der groessten flaeche",
+            "el": "ποιος είναι ο πληθυσμός της πολιτείας με την μεγαλύτερη επιφάνεια",
+            "fa": "جمعیت ایالتی دارای بیشترین مساحت چقدر است ؟",
+            "id": "berapa populasi dari negara bagian dengan luas terbesar ?",
+            "sv": "vad är folkmängden i staten med den största arean ?",
+            "th": "รัฐ ที่ มี พื้นที่ ใหญ่ ที่สุด มี ประชากร เท่าไหร่",
+            "zh": "面积 最大 的 州 的 人口 是 多少"
+        }
+    },
+    {
+        "mr": {
+            "sql": "SELECT POPULATION FROM CITY WHERE CITY_NAME = \"chicago\"",
+            "prolog": "answer(A,(population(B,A),const(B,cityid(chicago,_))))",
+            "lambda": "(population:<lo,i> chicago_il:c)",
+            "funql": "answer(population_1(cityid('chicago', _)))"
+        },
+        "question": {
+            "en": "how many people live in chicago",
+            "de": "wie viele leute wohnen in chicago",
+            "el": "πόσοι άνθρωποι ζουν στο chicago",
+            "fa": "چند نفر در شیکاگو زندگی میکنند ؟",
+            "id": "berapa banyak orang tinggal di chicago ?",
+            "sv": "hur många människor bor i chicago ?",
+            "th": "เมือง ชิคาโก มี ประชากร เท่าไหร่",
+            "zh": "有 多少 人 生活 在 芝加哥"
+        }
+    },
+    {
+        "mr": {
+            "sql": "SELECT POPULATION FROM CITY WHERE CITY_NAME = \"dallas\"",
+            "prolog": "answer(A,(population(B,A),const(B,cityid(dallas,_))))",
+            "lambda": "(population:<lo,i> dallas_tx:c)",
+            "funql": "answer(population_1(cityid('dallas', _)))"
+        },
+        "question": {
+            "en": "what is the population of dallas",
+            "de": "wie viele einwohner hat dallas",
+            "el": "ποιος είναι ο πληθυσμός του dallas",
+            "fa": "جمعیت دالاس چقدر است ؟",
+            "id": "berapa populasi dallas ?",
+            "sv": "vad är folkmängden i dallas ?",
+            "th": "เมือง ดัลลัส รัฐ เท็กซัส มี ประชากร เท่าไหร่",
+            "zh": "达拉斯 的 人口 是 多少"
+        }
+    },
+    {
+        "mr": {
+            "sql": "SELECT CITY_NAME FROM CITY WHERE POPULATION = ( SELECT POPULATION FROM CITY WHERE STATE_NAME = \"arkansas\" ORDER BY POPULATION LIMIT 1) AND STATE_NAME = \"arkansas\"",
+            "prolog": "answer(A,smallest(A,(city(A),loc(A,B),const(B,stateid(arkansas)))))",
+            "lambda": "(argmin:<<e,t>,<<e,i>,e>> (lambda $0:e (and:<t*,t> (city:<c,t> $0) (loc:<lo,<lo,t>> $0 arkansas:s))) (lambda $0:e (size:<lo,i> $0)))",
+            "funql": "answer(smallest(city(loc_2(stateid('arkansas')))))"
+        },
+        "question": {
+            "en": "what is the smallest city in arkansas",
+            "de": "welches ist die kleinste stadt in arkansas",
+            "el": "ποια είναι η μικρότερη πόλη στο arkansas",
+            "fa": "نام کوچکترین شهرستان در آرکانزاس چیست ؟",
+            "id": "apa kota terkecil di arkansas ?",
+            "sv": "vilken är den minsta staden i arkansas ?",
+            "th": "เมือง ที่ เล็ก ที่สุด ใน รัฐ อาร์คันซอ คือ เมือง ใด",
+            "zh": "在 阿肯色 州 最小 的 城市 是 哪个"
+        }
+    },
+    {
+        "mr": {
+            "sql": "SELECT TRAVERSE FROM RIVER WHERE LENGTH = ( SELECT LENGTH FROM RIVER ORDER BY LENGTH DESC LIMIT 1)",
+            "prolog": "answer(A,(state(A),traverse(B,A),longest(B,(river(B),loc(B,C),const(C,countryid(usa))))))",
+            "lambda": "(lambda $0:e (and:<t*,t> (state:<s,t> $0) (loc:<lo,<lo,t>> (argmax:<<e,t>,<<e,i>,e>> (lambda $1:e (and:<t*,t> (river:<r,t> $1) (loc:<lo,<lo,t>> $1 usa:co))) (lambda $1:e (size:<lo,i> $1))) $0)))",
+            "funql": "answer(state(traverse_1(longest(river(loc_2(countryid('usa')))))))"
+        },
+        "question": {
+            "en": "which states lie on the largest river in the united states",
+            "de": "welche staates liegen entlang den laengsten fluss in den vereinigten staaten",
+            "el": "σε ποιες πολιτείες βρίσκεται το μακρύτερο ποτάμι στις ηνωμένες πολιτείες",
+            "fa": "کدام ایالت ها بر بزرگترین رودخانه ایالات متحده واقع شده اند ؟",
+            "id": "apa negara-negara bagian yang terletak di sungai terbesar di amerika serikat ?",
+            "sv": "vilka stater ligger på den största floden i usa ?",
+            "th": "รัฐ ใด อยู่ ขนาบ แม่น้ำ ที่ ใหญ่ ที่สุด ใน สหรัฐอเมริกา",
+            "zh": "哪些 州 被 美国 最大 的 河流 穿越"
+        }
+    },
+    {
+        "mr": {
+            "sql": "SELECT DENSITY FROM STATE WHERE AREA = ( SELECT AREA FROM STATE ORDER BY AREA LIMIT 1)",
+            "prolog": "answer(A,(density(B,A),smallest(C,(state(B),area(B,C)))))",
+            "lambda": "(density:<lo,i> (argmin:<<e,t>,<<e,i>,e>> (lambda $0:e (state:<s,t> $0)) (lambda $0:e (area:<lo,i> $0))))",
+            "funql": "answer(density_1(smallest_one(area_1(state(all)))))"
+        },
+        "question": {
+            "en": "what is the population density of the state with the smallest area",
+            "de": "was ist die bevoelkerungsdichte des staates mit der kleinsten groesse",
+            "el": "ποια είναι η πυκνότητα πληθυσμού της πολιτείας με τη μικρότερη επιφάνεια",
+            "fa": "چگالی جمعیت ایالتی که کمترین مساحت را دارد چقدر است ؟",
+            "id": "berapa kepadatan penduduk negara bagian dengan luas wilayah terkecil ?",
+            "sv": "vad är befolkningstätheten i staten med den minsta arean ?",
+            "th": "รัฐ ที่ มี พื้นที่ เล็ก ที่สุด มี ความ หนาแน่น ของ ประชากร เท่าไหร่",
+            "zh": "面积 最小 的 州 的 人口 密度 是 多少"
+        }
+    },
+    {
+        "mr": {
+            "sql": "SELECT STATE_NAME FROM HIGHLOW WHERE HIGHEST_ELEVATION > ( SELECT HIGHEST_ELEVATION FROM HIGHLOW WHERE STATE_NAME = \"colorado\" )",
+            "prolog": "answer(A,(state(A),loc(B,A),place(B),higher(B,C),highest(C,(place(C),loc(C,D),const(D,stateid(colorado))))))",
+            "lambda": "(lambda $0:e (and:<t*,t> (state:<s,t> $0) (exists:<<e,t>,t> (lambda $1:e (and:<t*,t> (place:<p,t> $1) (loc:<lo,<lo,t>> $1 $0) (>:<i,<i,t>> (elevation:<lo,i> $1) (elevation:<lo,i> (argmax:<<e,t>,<<e,i>,e>> (lambda $2:e (and:<t*,t> (place:<p,t> $2) (loc:<lo,<lo,t>> $2 colorado:s))) (lambda $2:e (elevation:<lo,i> $2))))))))))",
+            "funql": "answer(state(loc_1(place(higher_2(highest(place(loc_2(stateid('colorado')))))))))"
+        },
+        "question": {
+            "en": "which states have points higher than the highest point in colorado",
+            "de": "welche staaten haben erhebungen welche hoeher sind als der hoechste punkt in colorado",
+            "el": "ποιες πολιτείες έχουν σημεία ψηλότερα από το ψηλότερο σημείο στο colorado",
+            "fa": "کدان ایالت ها نقطه ای بلند تر از بلندترین نقطه کلرادو دارند ؟",
+            "id": "apa negara-negara bagian yang memiliki titik-titik lebih tinggi dari titik tertinggi di colorado ?",
+            "sv": "vilka stater har högre punkter än den högsta punkten i colorado ?",
+            "th": "รัฐ ใด มี จุด ที่ สูง กว่า จุด สูง สุด ของ รัฐ โคโลราโด",
+            "zh": "哪些 州 有 比 科罗拉多 州 的 最高 点 更高 的 点"
+        }
+    },
+    {
+        "mr": {
+            "sql": "SELECT HIGHEST_ELEVATION FROM HIGHLOW WHERE STATE_NAME = \"new mexico\"",
+            "prolog": "answer(A,highest(A,(place(A),loc(A,B),const(B,stateid('new mexico')))))",
+            "lambda": "(argmax:<<e,t>,<<e,i>,e>> (lambda $0:e (and:<t*,t> (place:<p,t> $0) (loc:<lo,<lo,t>> $0 new_mexico:s))) (lambda $0:e (elevation:<lo,i> $0)))",
+            "funql": "answer(highest(place(loc_2(stateid('new mexico')))))"
+        },
+        "question": {
+            "en": "what is the highest elevation in new mexico",
+            "de": "welcher ist der hoechste punkt in new mexico",
+            "el": "ποιο είναι το μεγαλύτερο υψόμετρο στο new mexico",
+            "fa": "بلندترین ارتفاع در نیومکزیکو چقدر است ؟",
+            "id": "berapa elevasi tertinggi di new mexico ?",
+            "sv": "vad är den högsta höjden i new mexico ?",
+            "th": "จุด สูง สุด ของ รัฐ นิวเม็กซิโก อยู่ ตรงไหน",
+            "zh": "新墨西哥 州 的 最高 点 是 什么"
+        }
+    },
+    {
+        "mr": {
+            "sql": "SELECT HIGHEST_ELEVATION FROM HIGHLOW WHERE STATE_NAME = \"florida\"",
+            "prolog": "answer(A,(elevation(B,A),highest(B,(place(B),loc(B,C),const(C,stateid(florida))))))",
+            "lambda": "(elevation:<lo,i> (argmax:<<e,t>,<<e,i>,e>> (lambda $0:e (and:<t*,t> (place:<p,t> $0) (loc:<lo,<lo,t>> $0 florida:s))) (lambda $0:e (elevation:<lo,i> $0))))",
+            "funql": "answer(elevation_1(highest(place(loc_2(stateid('florida'))))))"
+        },
+        "question": {
+            "en": "how high is the highest point of florida",
+            "de": "wie hoch liegt der hoechste punkt floridas",
+            "el": "πόσο ψηλό είναι το ψηλότερο σημείο της florida",
+            "fa": "بلند ترین نقطه فلوریدا چقدر ارتفاع دارد ؟",
+            "id": "seberapa tinggikah titik tertinggi dari florida ?",
+            "sv": "hur hög är den högsta punkten i florida ?",
+            "th": "จุด ที่ สูง ที่สุด ใน ฟลอริด้า มี ความ สูง เท่าไหร่",
+            "zh": "佛罗里达 州 的 最高 点 有 多高"
+        }
+    },
+    {
+        "mr": {
+            "sql": "SELECT RIVER_NAME FROM RIVER WHERE LENGTH = ( SELECT LENGTH FROM RIVER ORDER BY LENGTH DESC LIMIT 1)",
+            "prolog": "answer(A,longest(A,(river(A),traverse(A,B),const(B,countryid(usa)))))",
+            "lambda": "(argmax:<<e,t>,<<e,i>,e>> (lambda $0:e (and:<t*,t> (river:<r,t> $0) (loc:<lo,<lo,t>> $0 usa:co))) (lambda $0:e (len:<r,i> $0)))",
+            "funql": "answer(longest(river(traverse_2(countryid('usa')))))"
+        },
+        "question": {
+            "en": "give me the longest river that passes through the us",
+            "de": "nenne mir den laengsten fluss welcher durch die usa fliesst",
+            "el": "δώσε μου το μακρύτερο ποτάμι που διασχίζει τις ηπα",
+            "fa": "بلند ترین رودخانه ای که از ایالات متحده میگذرد را به من بده .",
+            "id": "berikan sungai terpanjang yang melewati us .",
+            "sv": "ge mig den längsta floden som passerar genom usa .",
+            "th": "จง บอก ชื่อ แม่น้ำ ที่ ยาว ที่สุด ใน สหรัฐ",
+            "zh": "给 我 流经 美国 的 最长 的 河流"
+        }
+    },
+    {
+        "mr": {
+            "sql": "SELECT STATE_NAME FROM CITY WHERE POPULATION = ( SELECT POPULATION FROM CITY ORDER BY POPULATION DESC LIMIT 1)",
+            "prolog": "answer(A,(state(A),loc(B,A),largest(C,(city(B),population(B,C)))))",
+            "lambda": "(lambda $0:e (and:<t*,t> (state:<s,t> $0) (loc:<lo,<lo,t>> (argmax:<<e,t>,<<e,i>,e>> (lambda $1:e (city:<c,t> $1)) (lambda $1:e (population:<lo,i> $1))) $0)))",
+            "funql": "answer(state(loc_1(largest_one(population_1(city(all))))))"
+        },
+        "question": {
+            "en": "what state has the city with the largest population",
+            "de": "in welchem staat befindet sich die bevoelkerungsreichste stadt",
+            "el": "ποια πολιτεία έχει η πόλη με το μεγαλύτερο πληθυσμό",
+            "fa": "کدام ایالت شهری با بیشترین جمعیت دارد ؟",
+            "id": "apa negara bagian yang memiliki kota dengan populasi terbesar ?",
+            "sv": "vilken stat har staden med den största befolkningen ?",
+            "th": "รัฐ ใด มี เมือง ที่ มี ประชากร มาก ที่สุด",
+            "zh": "哪个 州 拥有 人口 最多 的 城市"
+        }
+    },
+    {
+        "mr": {
+            "sql": "SELECT CITY_NAME FROM CITY WHERE POPULATION = ( SELECT POPULATION FROM CITY WHERE STATE_NAME IN ( SELECT STATE_NAME FROM STATE WHERE AREA = ( SELECT AREA FROM STATE ORDER BY AREA DESC LIMIT 1) ) ORDER BY POPULATION LIMIT 1) AND STATE_NAME IN ( SELECT STATE_NAME FROM STATE WHERE AREA = ( SELECT AREA FROM STATE ORDER BY AREA DESC LIMIT 1) )",
+            "prolog": "answer(A,smallest(A,(city(A),loc(A,B),largest(B,state(B)))))",
+            "lambda": "(argmin:<<e,t>,<<e,i>,e>> (lambda $0:e (and:<t*,t> (city:<c,t> $0) (loc:<lo,<lo,t>> $0 (argmax:<<e,t>,<<e,i>,e>> (lambda $1:e (state:<s,t> $1)) (lambda $1:e (size:<lo,i> $1)))))) (lambda $0:e (size:<lo,i> $0)))",
+            "funql": "answer(smallest(city(loc_2(largest(state(all))))))"
+        },
+        "question": {
+            "en": "what is the smallest city in the largest state",
+            "de": "wie lautet die kleinste stadt in dem groessten staat",
+            "el": "ποια είναι η μικρότερη πόλη στη μεγαλύτερη πολιτεία",
+            "fa": "نام کوچکترین شهرستان در بزرگترین ایالت چیست ؟",
+            "id": "apa kota terkecil di negara bagian terbesar ?",
+            "sv": "vilken är den minsta staden i den största staten ?",
+            "th": "เมือง เล็ก ที่สุด ใน รัฐ ที่ ใหญ่ ที่สุด ชื่อ ว่า อะไร",
+            "zh": "最大 的 州 中 最小 的 城市 是 哪个"
+        }
+    },
+    {
+        "mr": {
+            "sql": "SELECT STATE_NAME FROM STATE WHERE AREA = ( SELECT AREA FROM STATE ORDER BY AREA DESC LIMIT 1)",
+            "prolog": "answer(A,largest(A,state(A)))",
+            "lambda": "(argmax:<<e,t>,<<e,i>,e>> (lambda $0:e (state:<s,t> $0)) (lambda $0:e (size:<lo,i> $0)))",
+            "funql": "answer(largest(state(all)))"
+        },
+        "question": {
+            "en": "what state is the biggest",
+            "de": "welcher ist der grosste staat",
+            "el": "ποια πολιτεία είναι η μεγαλύτερη",
+            "fa": "بزرگترین ایالت کدامست ؟",
+            "id": "apa negara bagian terbesar ?",
+            "sv": "vilken stat är den största ?",
+            "th": "บอก ชื่อ รัฐ ที่ ใหญ่ ที่สุด มา หน่อย",
+            "zh": "哪个 州 最大"
+        }
+    },
+    {
+        "mr": {
+            "sql": "SELECT HIGHEST_POINT FROM HIGHLOW WHERE STATE_NAME IN ( SELECT BORDER FROM BORDER_INFO WHERE STATE_NAME = \"mississippi\" )",
+            "prolog": "answer(A,(highest(A,(place(A),loc(A,B),state(B),next_to(B,C),const(C,stateid(mississippi))))))",
+            "lambda": "(argmax:<<e,t>,<<e,i>,e>> (lambda $0:e (and:<t*,t> (place:<p,t> $0) (exists:<<e,t>,t> (lambda $1:e (and:<t*,t> (state:<s,t> $1) (next_to:<lo,<lo,t>> $1 mississippi:s) (loc:<lo,<lo,t>> $0 $1)))))) (lambda $0:e (elevation:<lo,i> $0)))",
+            "funql": "answer(highest(place(loc_2(state(next_to_2(stateid('mississippi')))))))"
+        },
+        "question": {
+            "en": "what are the highest points of states surrounding mississippi",
+            "de": "wie lauten die hoechsten punkte der staaten welche mississippi umgeben",
+            "el": "ποια είναι τα ψηλότερα σημεία των πολιτειών που περιβάλλουν τον mississippi",
+            "fa": "بلندترین نقاط ایالت های همجوار میسیسیپی کدامند ؟",
+            "id": "apa saja titik tertinggi dari negara-negara bagian di sekitar mississippi ?",
+            "sv": "vilka är de högsta punkterna i stater kring mississippi ?",
+            "th": "รัฐ ที่ อยู่ ติด กับ รัฐ มิสซิสซิปปี มี จุด สูง สุด อะไร บ้าง",
+            "zh": "什么 是 密西西比 州 的 周边 的 州 的 最高 点"
+        }
+    },
+    {
+        "mr": {
+            "sql": "SELECT STATE_NAME FROM STATE WHERE DENSITY = ( SELECT DENSITY FROM STATE ORDER BY DENSITY LIMIT 1)",
+            "prolog": "answer(A,smallest(B,(state(A),density(A,B))))",
+            "lambda": "(argmin:<<e,t>,<<e,i>,e>> (lambda $0:e (state:<s,t> $0)) (lambda $0:e (density:<lo,i> $0)))",
+            "funql": "answer(smallest_one(density_1(state(all))))"
+        },
+        "question": {
+            "en": "what is the state with the lowest population density",
+            "de": "welche staaten haben die niedrigste  bevoelkerungsdichte",
+            "el": "ποια είναι η πολιτεία με τη μικρότερη πυκνότητα πληθυσμού",
+            "fa": "کدام ایالت دارای کمترین تراکم جمعیت است ؟",
+            "id": "apa negara bagian dengan kepadatan penduduk terendah ?",
+            "sv": "vilken stat har den lägsta befolkningstätheten ?",
+            "th": "รัฐ ใด มี การ กระจายตัว ของ ประชากร ต่ำ ที่สุด",
+            "zh": "人口 密度 最低 的 州 是 哪个"
+        }
+    },
+    {
+        "mr": {
+            "sql": "SELECT DISTINCT RIVER_NAME FROM RIVER WHERE LENGTH IN ( SELECT DERIVED_FIELDalias0 FROM ( SELECT LENGTH DERIVED_FIELDalias0 , TRAVERSE FROM RIVER WHERE TRAVERSE IN ( SELECT STATE_NAME FROM BORDER_INFO WHERE BORDER IN ( SELECT BORDER FROM BORDER_INFO GROUP BY BORDER HAVING COUNT( 1 ) = ( SELECT DERIVED_FIELDalias1 FROM ( SELECT BORDER , COUNT( 1 ) DERIVED_FIELDalias1 FROM BORDER_INFO GROUP BY BORDER ) ORDER BY DERIVED_FIELDalias1 DESC LIMIT 1) ) ) GROUP BY TRAVERSE ORDER BY LENGTH DESC LIMIT 1) ORDER BY DERIVED_FIELDalias0 DESC LIMIT 1)",
+            "prolog": "answer(A,longest(A,(river(A),traverse(A,B),state(B),next_to(B,C),most(C,D,(state(C),next_to(C,D),state(D))))))",
+            "lambda": "(argmax:<<e,t>,<<e,i>,e>> (lambda $0:e (and:<t*,t> (river:<r,t> $0) (exists:<<e,t>,t> (lambda $1:e (and:<t*,t> (state:<s,t> $1) (next_to:<lo,<lo,t>> $1 (argmax:<<e,t>,<<e,i>,e>> (lambda $2:e (state:<s,t> $2)) (lambda $2:e (count:<<e,t>,i> (lambda $3:e (and:<t*,t> (state:<s,t> $3) (next_to:<lo,<lo,t>> $2 $3)))))))))))) (lambda $0:e (len:<r,i> $0)))",
+            "funql": "answer(longest(river(traverse_2(state(next_to_2(most(state(next_to_2(state(all))))))))))"
+        },
+        "question": {
+            "en": "what is the longest river that passes the states that border the state that borders the most states",
+            "de": "wie lautet der laengste fluss der durch die staaten verlaeuft welche an den staat grenzen der die meisten nachbar-staaten hat",
+            "el": "ποιο είναι το μεγαλύτερο ποτάμι που διασχίζει τις πολιτείες που συνορεύουν την πολιτεία που συνορεύει τις περισσότερες πολιτείες",
+            "fa": "نام بلندترین رودخانه ای که از ایالت همجوار ایالتی که با بیشترین ایالات هم مرز میگذرد چیست ؟",
+            "id": "apa sungai terpanjang yang melewati negara-negara bagian yang berbatasan dengan negara bagian yang berbatasan dengan paling banyak negara bagian ?",
+            "sv": "vilken är den längsta floden som passerar genom de stater som gränsar till staten som gränsar till flest stater ?",
+            "th": "แม่น้ำ สาย ใด เป็น แม่น้ำ สาย ที่ ยาว ที่สุด ที่ ไหล ผ่าน รัฐ ที่ ติด กับ รัฐ ที่ ติด กับ รัฐ อื่นๆ มาก ที่สุด",
+            "zh": "流经 与 最多 州 接壤 的 州 接壤 的 州 的 最长 的 河流 是 哪个"
+        }
+    },
+    {
+        "mr": {
+            "sql": "SELECT HIGHEST_POINT FROM HIGHLOW WHERE STATE_NAME = \"montana\"",
+            "prolog": "answer(A,highest(A,(place(A),loc(A,B),const(B,stateid(montana)))))",
+            "lambda": "(argmax:<<e,t>,<<e,i>,e>> (lambda $1:e (and:<t*,t> (place:<p,t> $1) (loc:<lo,<lo,t>> $1 montana:s))) (lambda $1:e (elevation:<lo,i> $1)))",
+            "funql": "answer(highest(place(loc_2(stateid('montana')))))"
+        },
+        "question": {
+            "en": "where is the highest point in montana",
+            "de": "wo liegt der hoechste punkt in montana",
+            "el": "που είναι το ψηλότερο σημείο στη montana",
+            "fa": "بالاترین نقطه در مونتانا کجا است ؟",
+            "id": "di mana titik tertinggi di montana ?",
+            "sv": "vart ligger den högsta punkten i montana ?",
+            "th": "จุด สูง สุด ของ รัฐ มอนตานา สูง เท่าไหร่",
+            "zh": "哪里 是 蒙大拿 州 的 最高 点"
+        }
+    },
+    {
+        "mr": {
+            "sql": "SELECT STATE_NAME FROM STATE WHERE STATE_NAME NOT IN ( SELECT STATE_NAME FROM BORDER_INFO )",
+            "prolog": "answer(A,(state(A),not((next_to(A,B),state(B)))))",
+            "lambda": "(lambda $0:e (and:<t*,t> (state:<s,t> $0) (not:<t,t> (exists:<<e,t>,t> (lambda $1:e (and:<t*,t> (state:<s,t> $1) (next_to:<lo,<lo,t>> $0 $1)))))))",
+            "funql": "answer(exclude(state(all), next_to_2(state(all))))"
+        },
+        "question": {
+            "en": "what states have no bordering state",
+            "de": "welche staaten haben keine angrenzende staaten",
+            "el": "ποιες πολιτείες δεν έχουν συνορεύουσα πολιτεία",
+            "fa": "کدام ایالت ها با هیچ ایالتی هم مرز نیستند ؟",
+            "id": "apa negara-negara bagian yang tidak berbatasan dengan negara bagian lain ?",
+            "sv": "vilka stater har inga gränsande stater ?",
+            "th": "จง บอก ชื่อ รัฐ ที่ ไม่ได้ อยู่ ติด กับ รัฐ ใดๆ เลย",
+            "zh": "哪些 州 没有 和 其它 州 接壤"
+        }
+    },
+    {
+        "mr": {
+            "sql": "SELECT DISTINCT RIVER_NAME FROM RIVER WHERE LENGTH IN (SELECT MAX (DERIVED_FIELDalias0) FROM (SELECT MAX (LENGTH) AS DERIVED_FIELDalias0, TRAVERSE FROM RIVER WHERE TRAVERSE IN (SELECT STATE_NAME FROM BORDER_INFO WHERE BORDER IN (SELECT BORDER FROM BORDER_INFO GROUP BY BORDER HAVING COUNT(1) = (SELECT MAX (DERIVED_FIELDalias1) FROM (SELECT BORDER, COUNT(1) AS DERIVED_FIELDalias1 FROM BORDER_INFO GROUP BY BORDER) AS DERIVED_TABLEalias0)) ) GROUP BY TRAVERSE) AS DERIVED_TABLEalias1)",
+            "prolog": "answer(A,most(A,B,(state(A),next_to(A,B),state(B))))",
+            "lambda": "(argmax:<<e,t>,<<e,i>,e>> (lambda $0:e (state:<s,t> $0)) (lambda $0:e (count:<<e,t>,i> (lambda $1:e (and:<t*,t> (state:<s,t> $1) (next_to:<lo,<lo,t>> $0 $1))))))",
+            "funql": "answer(most(state(next_to_2(state(all)))))"
+        },
+        "question": {
+            "en": "which state borders most states",
+            "de": "welcher staat grenzt hat am meisten nachbarstaaten",
+            "el": "ποιες πολιτείες συνορεύουν με τις περισσότερες πολιτείες",
+            "fa": "کدام ایالت با بیشتر ایالت ها همجوار است ؟",
+            "id": "apa negara bagian yang berbatasan dengan paling banyak negara bagian ?",
+            "sv": "vilken stat gränsar till flest stater ?",
+            "th": "รัฐ ใด อยู่ ติด กับ รัฐ อื่น มาก ที่สุด",
+            "zh": "哪个 州 与 最多 的 州 接壤"
+        }
+    },
+    {
+        "mr": {
+            "sql": "SELECT AREA FROM STATE WHERE DENSITY = ( SELECT DENSITY FROM STATE ORDER BY DENSITY LIMIT 1)",
+            "prolog": "answer(A,(area(B,A),smallest(C,(state(B),density(B,C)))))",
+            "lambda": "(area:<lo,i> (argmin:<<e,t>,<<e,i>,e>> (lambda $0:e (state:<s,t> $0)) (lambda $0:e (density:<lo,i> $0))))",
+            "funql": "answer(area_1(smallest_one(density_1(state(all)))))"
+        },
+        "question": {
+            "en": "what is the area of the state with the smallest population density",
+            "de": "wie gross ist die flaeche von dem staat mit der niedrigsten bevoelkerungsdichte",
+            "el": "ποιο είναι το εμβαδό της πολιτείας με τη χαμηλότερη πυκνότητα πληθυσμού",
+            "fa": "مساحت ایالتی که کمترین چگالی جمعیت را دارد چقدر است ؟",
+            "id": "berapa luas dari negara bagian dengan kepadatan penduduk terkecil ?",
+            "sv": "vad är det arean av staten med den minsta befolkningstätheten ?",
+            "th": "รัฐ ที่ มี ความ หนาแน่น ของ ประชากร ต่ำ ที่สุด มี พื้นที่ เท่าไหร่",
+            "zh": "人口 密度 最小 的 州 的 的 面积 是 多少"
+        }
+    },
+    {
+        "mr": {
+            "sql": "SELECT POPULATION FROM CITY WHERE CITY_NAME = \"atlanta\" AND STATE_NAME = \"georgia\"",
+            "prolog": "answer(A,(population(B,A),const(B,cityid(atlanta,_))))",
+            "lambda": "(population:<lo,i> atlanta_ga:c)",
+            "funql": "answer(population_1(cityid('atlanta', 'ga')))"
+        },
+        "question": {
+            "en": "what is the population of atlanta ga",
+            "de": "wieviele einwohner hat atlanta ga",
+            "el": "ποιος είναι ο πληθυσμός της atlanta ga",
+            "fa": "جمعیت آتلانتا ga چقدر است ؟",
+            "id": "berapa populasi atlanta ga ?",
+            "sv": "vad är folkmängden i atlanta ga ?",
+            "th": "เมือง แอตแลนต้า รัฐ จอร์เจีย มี ประชากร เท่าไหร่",
+            "zh": "佐治亚 州 亚特兰大 的 人口 是 多少"
+        }
+    },
+    {
+        "mr": {
+            "sql": "SELECT RIVER_NAME FROM RIVER WHERE LENGTH > 750 AND TRAVERSE = \"texas\"",
+            "prolog": "answer(A,(major(A),river(A),loc(A,B),const(B,stateid(texas))))",
+            "lambda": "(lambda $0:e (and:<t*,t> (major:<lo,t> $0) (river:<r,t> $0) (loc:<lo,<lo,t>> $0 texas:s)))",
+            "funql": "answer(major(river(loc_2(stateid('texas')))))"
+        },
+        "question": {
+            "en": "what are major rivers in texas",
+            "de": "welche wichtigen fleusse gibt es in texas",
+            "el": "ποια είναι τα κύρια ποτάμια στο texas",
+            "fa": "رودخانه های عمده تگزاس کدامند ؟",
+            "id": "apa sungai-sungai besar di texas ?",
+            "sv": "vilka är de stora floderna i texas ?",
+            "th": "แม่น้ำ สาย หลัก ใน รัฐ เท็กซัส มี อะไร บ้าง",
+            "zh": "德克萨斯 州 的 主要 河流 是 哪些"
+        }
+    }
+]
