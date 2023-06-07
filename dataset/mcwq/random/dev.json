@@ -1,0 +1,3533 @@
+[
+    {
+        "mr": {
+            "sparql": "ASK WHERE { ?x0 wdt:P453 M0 . ?x0 wdt:P453 M1 . FILTER ( M2 != ?x0 ) . M2 wdt:P26 ?x0 }"
+        },
+        "question": {
+            "en": "Did M2 marry a actor of M0 and M1",
+            "kn": "M2 M0 ಮತ್ತು M1 ನ ನಟನನ್ನು ಮದುವೆಯಾಗಿದೆಯೇ",
+            "he": "האם M2 התחתנה עם שחקן M0 ו- M1",
+            "zh": "M2 和 M0 和 M1 的 演 员 结 婚 了 吗 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { ?x0 wdt:P108 M0 . M1 wdt:P161 ?x0 . M2 wdt:P161 ?x0 }"
+        },
+        "question": {
+            "en": "Did M1 and M2 star M0 's employee",
+            "kn": "M1 ಮತ್ತು M2 ಸ್ಟಾರ್ M0 ನ ಉದ್ಯೋಗಿಯಾಗಿದ್ದಾರೆಯೇ",
+            "he": "האם M1 ו- M2 כיכבו בעובדי M0",
+            "zh": "M1 和 M2 是 否 给 M0 的 员 工 加 星 标 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { ?x0 wdt:P27 wd:Q16 . ?x0 wdt:P3373 ?x1 . ?x1 wdt:P3373 M1 . FILTER ( ?x0 != ?x1 ) . FILTER ( ?x1 != M1 ) . FILTER ( M2 != ?x0 ) . FILTER ( M2 != M3 ) . M2 wdt:P26 ?x0 . M2 wdt:P26 M3 }"
+        },
+        "question": {
+            "en": "Did M2 marry M1 's sibling 's Canadian sibling and marry M3",
+            "kn": "M2 M1 ನ ಒಡಹುಟ್ಟಿದವರ ಕೆನಡಿಯನ್ ಸಹೋದರನನ್ನು ಮದುವೆಯಾಗಿ M3 ಅನ್ನು ಮದುವೆಯಾಗಿದೆಯೇ",
+            "he": "האם M2 התחתן עם אחיו של M1 עם אחיו הקנדי והתחתן עם M3",
+            "zh": "M2 嫁 给 M1 的 兄 弟 姐 妹 的 加 拿 大 同 胞 并 嫁 给 M3 吗 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { ?x0 wdt:P26 M0 . FILTER ( ?x0 != M0 ) . FILTER ( M1 != ?x0 ) . FILTER ( M1 != M2 ) . FILTER ( M1 != M3 ) . M1 wdt:P26 ?x0 . M1 wdt:P26 M2 . M1 wdt:P26 M3 }"
+        },
+        "question": {
+            "en": "Did M1 marry M2 and M3 and marry M0 's spouse",
+            "kn": "M1 M2 ಮತ್ತು M3 ಗಳನ್ನು ಮದುವೆಯಾಗಿ M0 ಅವರ ಸಂಗಾತಿಯನ್ನು ಮದುವೆಯಾಗಿದೆಯೇ",
+            "he": "האם M1 התחתנה עם M2 ו- M3 והתחתנה עם בן הזוג של M0",
+            "zh": "M1 嫁 给 M2 和 M3 并 嫁 给 M0 的 配 偶 吗 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { ?x0 wdt:P108 M0 . ?x0 wdt:P27 wd:Q16 . ?x0 wdt:P26 M2 . FILTER ( ?x0 != M2 ) }"
+        },
+        "question": {
+            "en": "Did M0 's Canadian employee marry M2",
+            "kn": "M0 ನ ಕೆನಡಾದ ಉದ್ಯೋಗಿ M2 ಅನ್ನು ಮದುವೆಯಾಗಿದ್ದಾರೆಯೇ",
+            "he": "האם העובד הקנדי של M0 התחתן עם M2",
+            "zh": "M0 的 加 拿 大 雇 员 是 否 与 M2 结 婚 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { ?x0 wdt:P21 wd:Q6581072 . ?x0 wdt:P27 wd:Q183 . ?x0 wdt:P26 M2 . ?x0 wdt:P26 M3 . FILTER ( ?x0 != M2 ) . FILTER ( ?x0 != M3 ) }"
+        },
+        "question": {
+            "en": "Did M3 's German female spouse marry M2",
+            "kn": "M3 ನ ಜರ್ಮನ್ ಮಹಿಳಾ ಸಂಗಾತಿಯು M2 ಅನ್ನು ಮದುವೆಯಾಗಿದ್ದಾಳೆ",
+            "he": "האם בן הזוג הגרמני של M3 התחתן עם M2",
+            "zh": "M3 的 德 国 女 性 配 偶 是 否 与 M2 结 婚 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { ?x0 wdt:P26 M0 . FILTER ( ?x0 != M0 ) . M1 wdt:P161 ?x0 . M2 wdt:P161 ?x0 }"
+        },
+        "question": {
+            "en": "Did M1 and M2 star a spouse of M0",
+            "kn": "M1 ಮತ್ತು M2 M0 ನ ಸಂಗಾತಿಯಾಗಿ ನಟಿಸಿದ್ದೀರಾ",
+            "he": "האם M1 ו- M2 כיכבו בת זוג של M0",
+            "zh": "M1 和 M2 是 否 有 M0 的 配 偶 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { ?x0 wdt:P453 M1 . ?x0 wdt:P21 wd:Q6581097 . ?x0 wdt:P3373 M0 . FILTER ( ?x0 != M0 ) }"
+        },
+        "question": {
+            "en": "Did M0 's male sibling play M1",
+            "kn": "M0 ನ ಪುರುಷ ಒಡಹುಟ್ಟಿದವರು M1 ಆಡಿದ್ದಾರೆಯೇ",
+            "he": "האם אחיו הגברי של M0 שיחק M1",
+            "zh": "M0 的 男 性 同 胞 玩 M1 吗 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { ?x0 wdt:P108 M0 . ?x0 wdt:P26 M1 . ?x0 wdt:P26 M2 . FILTER ( ?x0 != M1 ) . FILTER ( ?x0 != M2 ) }"
+        },
+        "question": {
+            "en": "Did M0 's employee marry M1 and M2",
+            "kn": "M0 ನ ಉದ್ಯೋಗಿ M1 ಮತ್ತು M2 ಅನ್ನು ಮದುವೆಯಾಗಿದ್ದಾರೆಯೇ",
+            "he": "האם עובד M0 התחתן עם M1 ו- M2",
+            "zh": "M0 的 员 工 是 否 与 M1 和 M2 结 婚 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { ?x0 wdt:P27 wd:Q17 . ?x0 wdt:P26 M1 . FILTER ( ?x0 != M1 ) . FILTER ( M2 != ?x0 ) . FILTER ( M3 != ?x0 ) . M2 wdt:P26 ?x0 . M3 wdt:P26 ?x0 }"
+        },
+        "question": {
+            "en": "Did M2 and M3 marry a Japanese spouse of M1",
+            "kn": "M2 ಮತ್ತು M3 M1 ನ ಜಪಾನಿನ ಸಂಗಾತಿಯನ್ನು ಮದುವೆಯಾಗಿದೆಯೇ",
+            "he": "האם M2 ו- M3 התחתנו עם בן זוג יפני של M1",
+            "zh": "M2 和 M3 是 否 与 M1 的 日 本 配 偶 结 婚 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { ?x0 wdt:P3373 M0 . FILTER ( ?x0 != M0 ) . M1 wdt:P161 ?x0 . M2 wdt:P161 ?x0 }"
+        },
+        "question": {
+            "en": "Did M1 and M2 star M0 's sibling",
+            "kn": "M1 ಮತ್ತು M2 ಸ್ಟಾರ್ M0 ನ ಒಡಹುಟ್ಟಿದವರೇ",
+            "he": "האם M1 ו- M2 מככבים את אחיהם של M0",
+            "zh": "M1 和 M2 是 否 为 M0 的 同 级 明 星 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { ?x0 wdt:P749 M0 . M1 wdt:P161 ?x0 . M1 wdt:P161 M2 }"
+        },
+        "question": {
+            "en": "Did M1 star M0 's child and star M2",
+            "kn": "M1 ಸ್ಟಾರ್ M0 ನ ಮಗು ಮತ್ತು ನಕ್ಷತ್ರ M2 ಮಾಡಿದ್ದೀರಾ",
+            "he": "האם M1 כיכב בילד של M0 וכוכב M2",
+            "zh": "M1 是 否 给 M0 的 孩 子 和 M2 做 过 星 星 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { ?x0 wdt:P108 M0 . ?x0 wdt:P27 wd:Q145 . ?x0 wdt:P26 M2 . ?x0 wdt:P26 M3 . FILTER ( ?x0 != M2 ) . FILTER ( ?x0 != M3 ) }"
+        },
+        "question": {
+            "en": "Did M0 's British employee marry M2 and M3",
+            "kn": "M0 ನ ಬ್ರಿಟಿಷ್ ಉದ್ಯೋಗಿ M2 ಮತ್ತು M3 ಅನ್ನು ಮದುವೆಯಾಗಿದ್ದಾರೆಯೇ",
+            "he": "האם העובד הבריטי של M0 התחתן עם M2 ו- M3",
+            "zh": "M0 的 英 国 雇 员 是 否 与 M2 和 M3 结 婚 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { ?x0 wdt:P40|wdt:P355 ?x1 . ?x1 wdt:P3373 M0 . FILTER ( ?x1 != M0 ) . M1 wdt:P161 ?x0 }"
+        },
+        "question": {
+            "en": "Did M1 star M0 's sibling 's parent",
+            "kn": "M1 ಸ್ಟಾರ್ M0 ನ ಒಡಹುಟ್ಟಿದವರ ಪೋಷಕರು ಮಾಡಿದ್ದಾರೆಯೇ",
+            "he": "האם M1 כיכב ההורה של אחיו של M0",
+            "zh": "M1 是 M0 的 兄 弟 姐 妹 的 父 母 吗 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { ?x0 wdt:P26 ?x1 . ?x0 wdt:P26 M0 . ?x0 wdt:P26 M1 . ?x1 wdt:P26 M2 . FILTER ( ?x0 != ?x1 ) . FILTER ( ?x0 != M0 ) . FILTER ( ?x0 != M1 ) . FILTER ( ?x1 != M2 ) }"
+        },
+        "question": {
+            "en": "Did M2 's spouse 's spouse marry M0 and M1",
+            "kn": "M2 ಅವರ ಸಂಗಾತಿಯ ಸಂಗಾತಿಯು M0 ಮತ್ತು M1 ಅನ್ನು ಮದುವೆಯಾಗಿದ್ದಾರೆಯೇ",
+            "he": "האם בן / בת הזוג של M2 התחתנו עם M0 ו- M1",
+            "zh": "M2 的 配 偶 是 否 与 M0 和 M1 结 婚 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { ?x0 wdt:P453 M2 . ?x0 wdt:P453 M3 . ?x0 wdt:P453 M4 . ?x0 wdt:P453 M5 . ?x0 wdt:P27 wd:Q38 . ?x0 wdt:P3373 M0 . FILTER ( ?x0 != M0 ) }"
+        },
+        "question": {
+            "en": "Did M0 's Italian sibling play M2 and M3 and play M4 and M5",
+            "kn": "M0 ನ ಇಟಾಲಿಯನ್ ಒಡಹುಟ್ಟಿದವರು M2 ಮತ್ತು M3 ಅನ್ನು ಆಡಿದ್ದಾರೆಯೇ ಮತ್ತು M4 ಮತ್ತು M5 ಅನ್ನು ಆಡಿದ್ದಾರೆಯೇ",
+            "he": "האם האחים האיטלקיים של M0 שיחקו M2 ו- M3 ושיחקו M4 ו- M5",
+            "zh": "M0 的 意 大 利 同 胞 玩 M2 和 M3 以 及 玩 M4 和 M5 吗 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { ?x0 wdt:P40|wdt:P355 M0 . ?x0 wdt:P3373 M0 . FILTER ( ?x0 != M0 ) . M1 wdt:P161 ?x0 }"
+        },
+        "question": {
+            "en": "Did M1 star a parent and sibling of M0",
+            "kn": "M1 M0 ನ ಪೋಷಕರು ಮತ್ತು ಒಡಹುಟ್ಟಿದವರಾಗಿ ನಟಿಸಿದ್ದಾರೆಯೇ",
+            "he": "האם M1 כיכב הורה ואחיו של M0",
+            "zh": "M1 是 否 为 M0 的 父 母 和 兄 弟 姐 妹 加 星 标 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { ?x0 wdt:P453 M0 . ?x0 wdt:P21 wd:Q6581072 . ?x0 wdt:P26 M2 . FILTER ( ?x0 != M2 ) }"
+        },
+        "question": {
+            "en": "Did a female spouse of M2 play M0",
+            "kn": "M2 ನ ಸ್ತ್ರೀ ಸಂಗಾತಿಯು M0 ಆಡಿದ್ದೀರಾ",
+            "he": "האם בן / בת זוג של M2 שיחק M0",
+            "zh": "M2 的 女 性 配 偶 是 否 玩 过 M0 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { ?x0 wdt:P156 M0 . ?x0 wdt:P161 M1 }"
+        },
+        "question": {
+            "en": "Did a prequel of M0 star M1",
+            "kn": "M0 ಸ್ಟಾರ್ M1 ನ ಪೂರ್ವಭಾವಿ",
+            "he": "האם פריקוול של M0 הכוכב M1",
+            "zh": "M0 的 前 传 是 M1 星 吗 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { ?x0 wdt:P453 M0 . ?x0 wdt:P26 M1 . FILTER ( ?x0 != M1 ) }"
+        },
+        "question": {
+            "en": "Did a actor of M0 marry M1",
+            "kn": "M0 ನ ನಟ M1 ಅನ್ನು ಮದುವೆಯಾಗಿದ್ದಾನೆಯೇ",
+            "he": "האם שחקן של M0 התחתן עם M1",
+            "zh": "M0 的 演 员 和 M1 结 婚 吗 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { M0 wdt:P57 M2 . M0 wdt:P162|wdt:P272 M1 }"
+        },
+        "question": {
+            "en": "Was M0 directed by M2 and produced by M1",
+            "kn": "M0 ಅನ್ನು M2 ನಿರ್ದೇಶಿಸಿ M1 ನಿರ್ಮಿಸಿದೆಯೇ",
+            "he": "האם M0 הופנה על ידי M2 והופק על ידי M1",
+            "zh": "M0 是 由 M2 指 挥 并 由 M1 产 生 的 吗 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { M0 wdt:P57 M1 . M0 wdt:P1040 M1 . M0 wdt:P58 M1 }"
+        },
+        "question": {
+            "en": "Was M0 directed , edited , and written by M1",
+            "kn": "M0 ಅನ್ನು M1 ನಿರ್ದೇಶಿಸಿದ, ಸಂಪಾದಿಸಿದ ಮತ್ತು ಬರೆದಿದ್ದೀರಾ",
+            "he": "האם M0 ביים, נערך ונכתב על ידי M1",
+            "zh": "M0 是 由 M1 指 导 ， 编 辑 和 编 写 的 吗 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { ?x0 wdt:P27 wd:Q38 . ?x0 wdt:P26 M1 . FILTER ( ?x0 != M1 ) . M2 wdt:P57 ?x0 . M2 wdt:P1040 ?x0 . M2 wdt:P162|wdt:P272 ?x0 . M2 wdt:P58 ?x0 }"
+        },
+        "question": {
+            "en": "Was M2 written by , produced by , directed by , and edited by a Italian spouse of M1",
+            "kn": "M2 ಅನ್ನು ಇಟಾಲಿಯನ್ ಸಂಗಾತಿಯು M1 ಬರೆದಿದ್ದಾರೆ, ನಿರ್ಮಿಸಿದ್ದಾರೆ, ನಿರ್ದೇಶಿಸಿದ್ದಾರೆ ಮತ್ತು ಸಂಪಾದಿಸಿದ್ದಾರೆ",
+            "he": "האם M2 נכתב על ידי, הופק על ידי, ביים ונערך על ידי בן זוג איטלקי של M1",
+            "zh": "M2 是 由 意 大 利 M1 的 配 偶 撰 写 ， 制 作 ， 导 演 和 编 辑 吗 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { ?x0 wdt:P21 wd:Q6581072 . ?x0 wdt:P3373 M0 . ?x0 wdt:P3373 M1 . FILTER ( ?x0 != M0 ) . FILTER ( ?x0 != M1 ) }"
+        },
+        "question": {
+            "en": "Was M0 's female sibling M1 's sibling",
+            "kn": "M0 ನ ಸ್ತ್ರೀ ಸಹೋದರ M1 ನ ಒಡಹುಟ್ಟಿದವರೇ",
+            "he": "האם אחיה הנשי של M0 היה אחיו של M1",
+            "zh": "M0 的 女 同 胞 是 M1 的 同 胞 吗 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { ?x0 wdt:P40|wdt:P355 M0 . ?x0 wdt:P3373 M0 . ?x0 wdt:P26 M1 . FILTER ( ?x0 != M0 ) . FILTER ( ?x0 != M1 ) }"
+        },
+        "question": {
+            "en": "Was M1 's spouse a parent and sibling of M0",
+            "kn": "M1 ಅವರ ಸಂಗಾತಿಯು M0 ನ ಪೋಷಕರು ಮತ್ತು ಸಹೋದರರಾಗಿದ್ದಾರೆಯೇ",
+            "he": "האם בן הזוג של M1 היה הורה ואחיו של M0",
+            "zh": "M1 的 配 偶 是 M0 的 父 母 吗 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { ?x0 wdt:P108 M0 . ?x0 wdt:P21 wd:Q6581097 . M2 wdt:P57 ?x0 . M2 wdt:P1040 ?x0 . M2 wdt:P1431 ?x0 . M2 wdt:P162|wdt:P272 ?x0 . M2 wdt:P58 ?x0 }"
+        },
+        "question": {
+            "en": "Was M2 edited by , executive produced by , produced by , directed by , and written by M0 's male employee",
+            "kn": "M2 ನ ಸಂಪಾದಕ, ಕಾರ್ಯನಿರ್ವಾಹಕರಿಂದ M0 ನ ಪುರುಷ ಉದ್ಯೋಗಿ ನಿರ್ಮಿಸಿದ, ನಿರ್ಮಿಸಿದ, ನಿರ್ದೇಶಿಸಿದ ಮತ್ತು ಬರೆದಿದ್ದೀರಾ",
+            "he": "האם M2 נערך על ידי, מנהל הופק על ידי, הופק על ידי, ביים, ונכתב על ידי העובד הגברי של M0",
+            "zh": "M2 是 由 M0 的 男 性 员 工 编 辑 ， 执 行 人 员 制 作 ， 制 作 ， 指 导 和 编 写 的 吗 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { M0 wdt:P108 M1 . M0 wdt:P108 M2 . M0 wdt:P27 wd:Q96 }"
+        },
+        "question": {
+            "en": "Was M0 a Mexican employee of M1 and M2",
+            "kn": "M0 M1 ಮತ್ತು M2 ನ ಮೆಕ್ಸಿಕನ್ ಉದ್ಯೋಗಿಯಾಗಿದ್ದರಾ",
+            "he": "האם M0 היה עובד מקסיקני של M1 ו- M2",
+            "zh": "M0 是 M1 和 M2 的 墨 西 哥 雇 员 吗 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { ?x0 wdt:P27 wd:Q29 . ?x0 wdt:P27 wd:Q96 . ?x0 wdt:P3373 M0 . FILTER ( ?x0 != M0 ) . FILTER ( M3 != ?x0 ) . M3 wdt:P26 ?x0 }"
+        },
+        "question": {
+            "en": "Was M0 's Mexican Spanish sibling 's spouse M3",
+            "kn": "M0 ನ ಮೆಕ್ಸಿಕನ್ ಸ್ಪ್ಯಾನಿಷ್ ಒಡಹುಟ್ಟಿದವರ ಸಂಗಾತಿ M3 ಆಗಿದ್ದೀರಾ",
+            "he": "האם בן / בת הזוג של אח / ים מקסיקני / ספרדי M0 היה M3",
+            "zh": "M0 的 墨 西 哥 西 班 牙 兄 弟 姐 妹 的 配 偶 是 M3 吗 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { M0 wdt:P1431 M1 . M0 wdt:P162|wdt:P272 M1 . M0 wdt:P58 M1 }"
+        },
+        "question": {
+            "en": "Was M0 produced by , written by , and executive produced by M1",
+            "kn": "M0 ಅನ್ನು M1 ನಿರ್ಮಿಸಿದ, ಬರೆದ ಮತ್ತು ಕಾರ್ಯನಿರ್ವಾಹಕರಿಂದ ಉತ್ಪಾದಿಸಲಾಗಿದೆಯೇ",
+            "he": "האם M0 הופק על ידי, נכתב על ידי והמנהל הופק על ידי M1",
+            "zh": "M0 是 由 M1 制 作 ， 编 写 并 由 执 行 人 员 制 作 的 吗 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { ?x0 wdt:P453 M0 . M1 wdt:P162|wdt:P272 ?x0 }"
+        },
+        "question": {
+            "en": "Was M1 produced by a actor of M0",
+            "kn": "M1 ಅನ್ನು M0 ನ ನಟರು ನಿರ್ಮಿಸಿದ್ದಾರೆಯೇ",
+            "he": "האם M1 הופק על ידי שחקן של M0",
+            "zh": "M1 是 由 M0 的 演 员 制 作 的 吗 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { M0 wdt:P1431 M1 . M0 wdt:P1431 M2 . M0 wdt:P162|wdt:P272 M1 . M0 wdt:P162|wdt:P272 M2 . M0 wdt:P58 M1 . M0 wdt:P58 M2 }"
+        },
+        "question": {
+            "en": "Was M0 written , executive produced , and produced by M1 and M2",
+            "kn": "M0 ಅನ್ನು M1 ಮತ್ತು M2 ನಿಂದ ಬರೆಯಲಾಗಿದೆಯೇ, ಕಾರ್ಯನಿರ್ವಾಹಕ ಉತ್ಪಾದಿಸಲಾಗಿದೆಯೇ",
+            "he": "האם M0 נכתב, הופק והופק על ידי M1 ו- M2",
+            "zh": "M0 是 由 M1 和 M2 编 写 ， 执 行 并 由 M1 和 M2 产 生 的 吗 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { M0 wdt:P57 M1 . M0 wdt:P57 M2 . M0 wdt:P1040 M1 . M0 wdt:P1040 M2 . M0 wdt:P58 M1 . M0 wdt:P58 M2 }"
+        },
+        "question": {
+            "en": "Was M0 directed , written , and edited by M1 and M2",
+            "kn": "M0 ಅನ್ನು M1 ಮತ್ತು M2 ನಿರ್ದೇಶಿಸಿದ, ಬರೆದ ಮತ್ತು ಸಂಪಾದಿಸಿದ್ದೀರಾ",
+            "he": "האם M0 ביים, נכתב ונערך על ידי M1 ו- M2",
+            "zh": "M0 是 否 由 M1 和 M2 指 导 ， 编 写 和 编 辑 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { FILTER ( M0 != M4 ) . M0 wdt:P21 wd:Q6581097 . M0 wdt:P27 wd:Q96 . M0 wdt:P27 wd:Q142 . M0 wdt:P26 M4 }"
+        },
+        "question": {
+            "en": "Was M4 's Mexican French male spouse M0",
+            "kn": "M4 ನ ಮೆಕ್ಸಿಕನ್ ಫ್ರೆಂಚ್ ಪುರುಷ ಸಂಗಾತಿ M0 ಆಗಿದ್ದೀರಾ",
+            "he": "האם בן הזוג הגברי הצרפתי המקסיקני של M4 היה M0",
+            "zh": "M4 的 墨 西 哥 法 国 男 性 配 偶 是 M0 吗 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { M0 wdt:P1040 M1 . M0 wdt:P1040 M2 . M0 wdt:P162|wdt:P272 M1 . M0 wdt:P162|wdt:P272 M2 . M0 wdt:P58 M1 . M0 wdt:P58 M2 }"
+        },
+        "question": {
+            "en": "Was M0 produced , edited , and written by M1 and M2",
+            "kn": "M0 ಅನ್ನು M1 ಮತ್ತು M2 ನಿರ್ಮಿಸಿ, ಸಂಪಾದಿಸಿ, ಬರೆದಿದ್ದೀರಾ",
+            "he": "האם M0 הופק, נערך ונכתב על ידי M1 ו- M2",
+            "zh": "M0 是 由 M1 和 M2 制 作 ， 编 辑 和 编 写 的 吗 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { ?x0 wdt:P749 M0 . M1 wdt:P112 ?x0 }"
+        },
+        "question": {
+            "en": "Was M1 founded by a child of M0",
+            "kn": "M1 ಅನ್ನು M0 ನ ಮಗು ಸ್ಥಾಪಿಸಿದೆಯೇ",
+            "he": "האם M1 הוקם על ידי ילד מ- M0",
+            "zh": "M1 是 由 M0 的 孩 子 创 立 的 吗 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { M0 wdt:P57 M1 . M0 wdt:P1040 M1 . M0 wdt:P1431 M1 }"
+        },
+        "question": {
+            "en": "Was M0 edited , directed , and executive produced by M1",
+            "kn": "M0 ಅನ್ನು M1 ಸಂಪಾದಿಸಿದೆ, ನಿರ್ದೇಶಿಸಿದೆ ಮತ್ತು ಕಾರ್ಯನಿರ್ವಾಹಕವಾಗಿದೆಯೇ",
+            "he": "האם M0 נערך, ביים והוצג על ידי M1",
+            "zh": "M0 是 否 由 M1 进 行 编 辑 ， 导 演 和 执 行 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { ?x0 wdt:P26 M0 . FILTER ( ?x0 != M0 ) . M1 wdt:P57 ?x0 . M1 wdt:P1040 ?x0 . M1 wdt:P1431 ?x0 . M1 wdt:P162|wdt:P272 ?x0 . M1 wdt:P58 ?x0 }"
+        },
+        "question": {
+            "en": "Was M1 produced by , written by , executive produced by , edited by , and directed by M0 's spouse",
+            "kn": "M1 ಅನ್ನು M0 ಅವರ ಸಂಗಾತಿಯು ನಿರ್ಮಿಸಿದ, ಬರೆದ, ಕಾರ್ಯನಿರ್ವಾಹಕರಿಂದ ನಿರ್ಮಿಸಲಾಗಿದೆಯೇ, ಸಂಪಾದಿಸಲಾಗಿದೆಯೇ ಮತ್ತು ನಿರ್ದೇಶಿಸಲಾಗಿದೆಯೇ",
+            "he": "האם M1 הופק על ידי, נכתב על ידי מנהל, הופק על ידי, נערך על ידי וביים בן / בת הזוג של M0",
+            "zh": "M1 是 由 M0 的 配 偶 制 作 ， 撰 写 ， 由 执 行 人 员 制 作 ， 由 M0 的 配 偶 编 辑 和 导 演 的 吗 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { ?x0 wdt:P27 wd:Q29 . ?x0 wdt:P26 M1 . FILTER ( ?x0 != M1 ) . M2 wdt:P1431 M3 . M2 wdt:P1431 M4 . M2 wdt:P162|wdt:P272 ?x0 }"
+        },
+        "question": {
+            "en": "Was M2 produced by a Spanish spouse of M1 and executive produced by M3 and M4",
+            "kn": "M2 ಅನ್ನು ಸ್ಪ್ಯಾನಿಷ್ ಸಂಗಾತಿಯ M1 ಮತ್ತು ಕಾರ್ಯನಿರ್ವಾಹಕ M3 ಮತ್ತು M4 ನಿರ್ಮಿಸಿದೆಯೇ",
+            "he": "האם M2 הופק על ידי בן זוג ספרדי ל- M1 והמנהל הופק על ידי M3 ו- M4",
+            "zh": "M2 是 由 M1 的 西 班 牙 配 偶 生 产 的 ， 而 M3 和 M4 是 由 执 行 官 生 产 的 吗 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { M0 wdt:P749 M1 }"
+        },
+        "question": {
+            "en": "Was M0 a child of M1",
+            "kn": "M0 M1 ನ ಮಗು",
+            "he": "האם M0 היה ילד של M1",
+            "zh": "M0 是 M1 的 孩 子 吗 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { M0 wdt:P108 M1 . M0 wdt:P21 wd:Q6581072 . M0 wdt:P27 wd:Q183 }"
+        },
+        "question": {
+            "en": "Was M1 's German female employee M0",
+            "kn": "M1 ನ ಜರ್ಮನ್ ಮಹಿಳಾ ಉದ್ಯೋಗಿ M0 ಆಗಿದ್ದಾರೆಯೇ",
+            "he": "האם עובדת גרמנית של M1 הייתה M0",
+            "zh": "M1 的 德 国 女 员 工 是 M0 吗 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { ?x0 wdt:P27 wd:Q148 . ?x0 wdt:P3373 M0 . FILTER ( ?x0 != M0 ) . FILTER ( M2 != ?x0 ) . M2 wdt:P3373 ?x0 }"
+        },
+        "question": {
+            "en": "Was M0 's Chinese sibling 's sibling M2",
+            "kn": "M0 ನ ಚೀನೀ ಒಡಹುಟ್ಟಿದವರ ಸಹೋದರ M2 ಆಗಿದ್ದೀರಾ",
+            "he": "האם אחיו הסיני של M0 היה M2",
+            "zh": "M0 的 中 国 兄 弟 姐 妹 是 M2 的 兄 弟 姐 妹 吗 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { M0 wdt:P57 M1 . M0 wdt:P1040 M1 . M0 wdt:P1431 M1 . M0 wdt:P162|wdt:P272 M1 }"
+        },
+        "question": {
+            "en": "Was M0 edited by , directed by , executive produced by , and produced by M1",
+            "kn": "M0 ಸಂಪಾದಿಸಿದ, ನಿರ್ದೇಶಿಸಿದ, ಕಾರ್ಯನಿರ್ವಾಹಕರಿಂದ M1 ನಿಂದ ನಿರ್ಮಿಸಲ್ಪಟ್ಟಿದೆಯೇ",
+            "he": "האם M0 נערך על ידי, ביים מנהל, הופק על ידי והופק על ידי M1",
+            "zh": "M0 是 由 M1 编 辑 ， 导 演 ， 执 行 由 M1 制 作 并 由 M1 制 作 的 吗 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { ?x0 wdt:P40|wdt:P355 M0 . ?x0 wdt:P3373 M0 . ?x0 wdt:P26 M1 . FILTER ( ?x0 != M0 ) . FILTER ( ?x0 != M1 ) }"
+        },
+        "question": {
+            "en": "Was M1 's spouse M0 's sibling and parent",
+            "kn": "M1 ಅವರ ಸಂಗಾತಿ M0 ಅವರ ಒಡಹುಟ್ಟಿದವರು ಮತ್ತು ಪೋಷಕರು",
+            "he": "האם בן / בת הזוג של M1 היו אחים והורים של M0",
+            "zh": "M1 的 配 偶 是 M0 的 兄 弟 姐 妹 还 是 父 母 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { ?x0 wdt:P3373 M0 . FILTER ( ?x0 != M0 ) . M1 wdt:P57 ?x0 . M1 wdt:P1040 ?x0 . M1 wdt:P162|wdt:P272 ?x0 . M1 wdt:P58 ?x0 }"
+        },
+        "question": {
+            "en": "Was M1 directed by , written by , produced by , and edited by a sibling of M0",
+            "kn": "M1 ಅನ್ನು M0 ನ ಒಡಹುಟ್ಟಿದವರು ನಿರ್ದೇಶಿಸಿದ್ದಾರೆ, ಬರೆದಿದ್ದಾರೆ, ನಿರ್ಮಿಸಿದ್ದಾರೆ ಮತ್ತು ಸಂಪಾದಿಸಿದ್ದಾರೆ",
+            "he": "האם M1 ביים, נכתב על ידי, הופק על ידי ונערך על ידי אח של M0",
+            "zh": "M1 是 由 M0 的 同 级 导 演 ， 编 写 ， 制 作 和 编 辑 吗 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { ?x0 wdt:P3373 M0 . FILTER ( ?x0 != M0 ) . M1 wdt:P57 ?x0 . M1 wdt:P1040 ?x0 . M1 wdt:P1431 ?x0 . M1 wdt:P162|wdt:P272 ?x0 . M1 wdt:P58 ?x0 }"
+        },
+        "question": {
+            "en": "Was M1 written , directed , edited , produced , and executive produced by M0 's sibling",
+            "kn": "M1 ಅನ್ನು M0 ನ ಒಡಹುಟ್ಟಿದವರು ಬರೆದಿದ್ದಾರೆ, ನಿರ್ದೇಶಿಸಿದ್ದಾರೆ, ಸಂಪಾದಿಸಿದ್ದಾರೆ, ನಿರ್ಮಿಸಿದ್ದಾರೆ ಮತ್ತು ಕಾರ್ಯನಿರ್ವಾಹಕವಾಗಿದ್ದಾರೆಯೇ",
+            "he": "האם M1 נכתב, ביים, נערך, הופק והוצג על ידי אחיו של M0",
+            "zh": "M1 是 由 M0 的 兄 弟 姐 妹 编 写 ， 导 演 ， 编 辑 ， 制 作 和 执 行 的 吗 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { ?x0 wdt:P737 M1 . ?x0 wdt:P737 M2 . ?x0 wdt:P737 M3 . ?x0 wdt:P21 wd:Q6581097 . ?x0 wdt:P3373 M0 . FILTER ( ?x0 != M0 ) }"
+        },
+        "question": {
+            "en": "Was M0 's male sibling influenced by M1 and M2 and influenced by M3",
+            "kn": "M0 ನ ಪುರುಷ ಒಡಹುಟ್ಟಿದವರು M1 ಮತ್ತು M2 ನಿಂದ ಪ್ರಭಾವಿತರಾಗಿದ್ದರು ಮತ್ತು M3 ನಿಂದ ಪ್ರಭಾವಿತರಾಗಿದ್ದಾರೆಯೇ",
+            "he": "האם אחיו של M0 הושפע מ- M1 ו- M2 והושפע מ- M3",
+            "zh": "M0 的 男 性 同 胞 受 M1 和 M2 以 及 M3 的 影 响 吗 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { M0 wdt:P57 M1 . M0 wdt:P1040 M1 . M0 wdt:P1431 M1 . M0 wdt:P162|wdt:P272 M1 . M0 wdt:P58 M1 }"
+        },
+        "question": {
+            "en": "Was M0 executive produced , produced , written , directed , and edited by M1",
+            "kn": "M0 ಕಾರ್ಯನಿರ್ವಾಹಕನನ್ನು M1 ನಿರ್ಮಿಸಿ, ನಿರ್ಮಿಸಿ, ಬರೆದು, ನಿರ್ದೇಶಿಸಿ ಮತ್ತು ಸಂಪಾದಿಸಿದ್ದೀರಾ",
+            "he": "האם מנהל M0 הופק, הופק, נכתב, ביים ונערך על ידי M1",
+            "zh": "M0 主 管 是 由 M1 制 作 ， 制 作 ， 编 写 ， 导 演 和 编 辑 的 吗 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { ?x0 wdt:P27 wd:Q142 . ?x0 wdt:P3373 ?x1 . ?x1 wdt:P26 M1 . FILTER ( ?x0 != ?x1 ) . FILTER ( ?x1 != M1 ) . M2 wdt:P737 ?x0 }"
+        },
+        "question": {
+            "en": "Was M2 influenced by a French sibling of M1 's spouse",
+            "kn": "M1 ನ ಸಂಗಾತಿಯ ಫ್ರೆಂಚ್ ಸಹೋದರನಿಂದ M2 ಪ್ರಭಾವಿತವಾಗಿದೆಯೇ",
+            "he": "האם M2 הושפע מאח צרפתי מבן הזוג של M1",
+            "zh": "M2 是 否 受 到 法 国 M1 配 偶 的 同 胞 影 响 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { M0 wdt:P57 M1 . M0 wdt:P58 M1 }"
+        },
+        "question": {
+            "en": "Was M0 directed and written by M1",
+            "kn": "M0 ಅನ್ನು M1 ನಿರ್ದೇಶಿಸಿ ಬರೆದಿದ್ದೀರಾ",
+            "he": "האם M0 ביים ונכתב על ידי M1",
+            "zh": "M0 是 由 M1 指 导 和 编 写 的 吗 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { ?x0 wdt:P21 wd:Q6581097 . ?x0 wdt:P3373 ?x1 . ?x1 wdt:P27 wd:Q30 . ?x1 wdt:P26 M2 . FILTER ( ?x0 != ?x1 ) . FILTER ( ?x1 != M2 ) . M3 wdt:P57 ?x0 . M3 wdt:P162|wdt:P272 ?x0 . M3 wdt:P58 ?x0 }"
+        },
+        "question": {
+            "en": "Was M3 produced by , directed by , and written by a male sibling of a American spouse of M2",
+            "kn": "M2 ನ ಅಮೇರಿಕನ್ ಸಂಗಾತಿಯ ಪುರುಷ ಒಡಹುಟ್ಟಿದವನು M3 ಅನ್ನು ನಿರ್ಮಿಸಿದ, ನಿರ್ದೇಶಿಸಿದ ಮತ್ತು ಬರೆದಿದ್ದಾನೆಯೇ",
+            "he": "האם M3 הופק על ידי, ביים, ונכתב על ידי אח אח זכר מבן זוג אמריקאי של M2",
+            "zh": "M3 是 由 M2 的 美 国 配 偶 的 男 性 同 胞 产 生 ， 指 导 和 书 写 的 吗 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { ?x0 wdt:P453 M0 . M1 wdt:P57 ?x0 }"
+        },
+        "question": {
+            "en": "Was M1 directed by a actor of M0",
+            "kn": "M1 ಅನ್ನು M0 ನ ನಟ ನಿರ್ದೇಶಿಸಿದ್ದಾರೆಯೇ",
+            "he": "האם M1 ביים שחקן M0",
+            "zh": "M1 是 由 M0 的 演 员 导 演 的 吗 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { FILTER ( M0 != M2 ) . M0 wdt:P27 wd:Q183 . M0 wdt:P26 M2 }"
+        },
+        "question": {
+            "en": "Was M2 's German spouse M0",
+            "kn": "M2 ನ ಜರ್ಮನ್ ಸಂಗಾತಿ M0 ಆಗಿದ್ದೀರಾ",
+            "he": "האם בן הזוג הגרמני של M2 היה M0",
+            "zh": "M2 的 德 国 配 偶 是 M0 吗 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { ?x0 wdt:P108 M0 . ?x0 wdt:P21 wd:Q6581097 . M2 wdt:P57 ?x0 . M2 wdt:P1431 ?x0 . M2 wdt:P162|wdt:P272 ?x0 . M2 wdt:P58 ?x0 }"
+        },
+        "question": {
+            "en": "Was M2 produced , executive produced , written , and directed by a male employee of M0",
+            "kn": "M2 ಅನ್ನು M0 ನ ಪುರುಷ ಉದ್ಯೋಗಿ ನಿರ್ಮಿಸಿದ, ಕಾರ್ಯನಿರ್ವಾಹಕ ನಿರ್ಮಿಸಿದ, ಬರೆದ, ಮತ್ತು ನಿರ್ದೇಶಿಸಲಾಗಿದೆಯೇ",
+            "he": "האם M2 הופק, מנהל הופק, נכתב ובוים על ידי עובד גבר של M0",
+            "zh": "M2 是 由 M0 的 男 性 雇 员 制 作 ， 执 行 ， 制 作 ， 撰 写 和 导 演 的 吗 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { M0 wdt:P57 M1 . M0 wdt:P1040 M1 . M0 wdt:P162|wdt:P272 M1 . M0 wdt:P58 M1 }"
+        },
+        "question": {
+            "en": "Was M0 directed by , edited by , written by , and produced by M1",
+            "kn": "M0 ನಿರ್ದೇಶಿಸಿದ, ಸಂಪಾದಿಸಿದ, ಬರೆದ, ಮತ್ತು M1 ನಿರ್ಮಿಸಿದೆಯೇ",
+            "he": "האם M0 ביים, נערך על ידי, נכתב על ידי והופק על ידי M1",
+            "zh": "M0 是 由 M1 导 演 ， 编 辑 ， 编 写 和 制 作 的 吗 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { ?x0 wdt:P40|wdt:P355 M1 . ?x0 wdt:P108 M0 }"
+        },
+        "question": {
+            "en": "Was M1 's parent employed by M0",
+            "kn": "M1 ನ ಪೋಷಕರನ್ನು M0 ನಿಂದ ನೇಮಿಸಲಾಗಿದೆಯೇ",
+            "he": "האם ההורה של M1 הועסק על ידי M0",
+            "zh": "M1 的 父 母 受 雇 于 M0 吗 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { ?x0 wdt:P3373 M0 . FILTER ( ?x0 != M0 ) . M1 wdt:P57 ?x0 . M1 wdt:P1040 ?x0 . M1 wdt:P1431 ?x0 . M1 wdt:P58 ?x0 }"
+        },
+        "question": {
+            "en": "Was M1 executive produced , written , edited , and directed by a sibling of M0",
+            "kn": "M1 ಕಾರ್ಯನಿರ್ವಾಹಕನನ್ನು M0 ನ ಒಡಹುಟ್ಟಿದವನು ನಿರ್ಮಿಸಿದ, ಬರೆದ, ಸಂಪಾದಿಸಿದ ಮತ್ತು ನಿರ್ದೇಶಿಸಿದನೇ",
+            "he": "האם מנהל M1 הופק, נכתב, נערך וביים אח של M0",
+            "zh": "M1 主 管 是 否 由 M0 的 兄 弟 姐 妹 制 作 ， 编 写 ， 编 辑 和 导 演 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { M0 wdt:P750 M1 . M0 wdt:P750 M2 . M0 wdt:P162|wdt:P272 M3 }"
+        },
+        "question": {
+            "en": "Was M0 produced by M3 and distributed by M1 and M2",
+            "kn": "M0 ಅನ್ನು M3 ನಿಂದ ಉತ್ಪಾದಿಸಲಾಗಿದೆಯೇ ಮತ್ತು M1 ಮತ್ತು M2 ನಿಂದ ವಿತರಿಸಲಾಗಿದೆಯೇ",
+            "he": "האם M0 הופק על ידי M3 והופץ על ידי M1 ו- M2",
+            "zh": "M0 是 由 M3 产 生 并 由 M1 和 M2 分 配 吗 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { ?x0 wdt:P108 M0 . ?x0 wdt:P21 wd:Q6581097 . M2 wdt:P112 ?x0 }"
+        },
+        "question": {
+            "en": "Was M2 founded by M0 's male employee",
+            "kn": "M2 ಅನ್ನು M0 ನ ಪುರುಷ ಉದ್ಯೋಗಿ ಸ್ಥಾಪಿಸಿದಿರಾ",
+            "he": "האם M2 הוקמה על ידי העובד הגברי של M0",
+            "zh": "M2 是 由 M0 的 男 性 雇 员 创 立 的 吗 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { ?x0 wdt:P27 wd:Q183 . ?x0 wdt:P26 M1 . FILTER ( ?x0 != M1 ) . M2 wdt:P58 ?x0 }"
+        },
+        "question": {
+            "en": "Was M2 written by M1 's German spouse",
+            "kn": "M2 ಅನ್ನು M1 ನ ಜರ್ಮನ್ ಸಂಗಾತಿಯು ಬರೆದಿದ್ದಾರೆಯೇ",
+            "he": "האם M2 נכתב על ידי בן הזוג הגרמני של M1",
+            "zh": "M2 是 由 M1 的 德 国 配 偶 写 的 吗 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { M0 wdt:P57 M1 . M0 wdt:P57 M2 . M0 wdt:P1040 M1 . M0 wdt:P1040 M2 . M0 wdt:P58 M1 . M0 wdt:P58 M2 }"
+        },
+        "question": {
+            "en": "Was M0 edited , directed , and written by M1 and M2",
+            "kn": "M0 ಅನ್ನು M1 ಮತ್ತು M2 ಸಂಪಾದಿಸಿ, ನಿರ್ದೇಶಿಸಿ ಮತ್ತು ಬರೆದಿದ್ದೀರಾ",
+            "he": "האם M0 נערך, ביים ונכתב על ידי M1 ו- M2",
+            "zh": "M0 是 否 由 M1 和 M2 编 辑 ， 指 导 和 编 写 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { ?x0 wdt:P40|wdt:P355 M1 . ?x0 wdt:P27 wd:Q38 . M2 wdt:P737 ?x0 }"
+        },
+        "question": {
+            "en": "Was M2 influenced by a Italian parent of M1",
+            "kn": "M1 ನ ಇಟಾಲಿಯನ್ ಪೋಷಕರಿಂದ M2 ಪ್ರಭಾವಿತವಾಗಿದೆಯೇ",
+            "he": "האם M2 הושפע מהורה איטלקי ל- M1",
+            "zh": "M2 是 否 受 到 M1 的 意 大 利 父 母 的 影 响 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { ?x0 wdt:P26 M0 . FILTER ( ?x0 != M0 ) . M1 wdt:P40|wdt:P355 ?x0 }"
+        },
+        "question": {
+            "en": "Was M0 's spouse 's parent M1",
+            "kn": "M0 ಅವರ ಸಂಗಾತಿಯ ಪೋಷಕ M1 ಆಗಿದ್ದಾರೆಯೇ",
+            "he": "האם ההורה של בן / בת הזוג M0 היה M1",
+            "zh": "M0 的 配 偶 是 M1 的 父 母 吗 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { ?x0 wdt:P40|wdt:P355 M0 . M1 wdt:P112 ?x0 . M1 wdt:P112 M2 }"
+        },
+        "question": {
+            "en": "Was M1 founded by M0 's parent and founded by M2",
+            "kn": "M1 ಅನ್ನು M0 ನ ಪೋಷಕರು ಸ್ಥಾಪಿಸಿದರು ಮತ್ತು M2 ಸ್ಥಾಪಿಸಿದಿರಾ",
+            "he": "האם M1 הוקם על ידי ההורה של M0 והוקם על ידי M2",
+            "zh": "M1 是 由 M0 的 父 母 创 立 的 ， 还 是 由 M2 创 立 的 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { ?x0 wdt:P21 wd:Q6581072 . ?x0 wdt:P3373 M0 . ?x0 wdt:P3373 M1 . FILTER ( ?x0 != M0 ) . FILTER ( ?x0 != M1 ) }"
+        },
+        "question": {
+            "en": "Was M0 's sibling M1 's female sibling",
+            "kn": "M0 ನ ಒಡಹುಟ್ಟಿದವರು M1 ನ ಸ್ತ್ರೀ ಸಹೋದರರಾಗಿದ್ದಾರೆಯೇ",
+            "he": "האם האח של M0 היה האח של M1",
+            "zh": "M0 的 兄 弟 姐 妹 是 M1 的 女 性 兄 弟 姐 妹 吗 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { FILTER ( M0 != M1 ) . M0 wdt:P21 wd:Q6581072 . M0 wdt:P27 wd:Q148 . M0 wdt:P27 wd:Q16 . M0 wdt:P3373 M1 }"
+        },
+        "question": {
+            "en": "Was M0 M1 's Chinese female Canadian sibling",
+            "kn": "M0 M1 ನ ಚೀನೀ ಸ್ತ್ರೀ ಕೆನಡಿಯನ್ ಒಡಹುಟ್ಟಿದವರೇ",
+            "he": "האם האח הסיני הקנדי של M0 M1 היה אח",
+            "zh": "M0   M1 是 加 拿 大 的 华 裔 女 性 同 胞 吗 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { M0 wdt:P1040 M1 . M0 wdt:P1040 M2 . M0 wdt:P162|wdt:P272 M1 . M0 wdt:P162|wdt:P272 M2 . M0 wdt:P58 M1 . M0 wdt:P58 M2 }"
+        },
+        "question": {
+            "en": "Was M0 produced , written , and edited by M1 and M2",
+            "kn": "M0 ಅನ್ನು M1 ಮತ್ತು M2 ನಿಂದ ಉತ್ಪಾದಿಸಲಾಗಿದೆಯೇ, ಬರೆಯಲಾಗಿದೆಯೇ ಮತ್ತು ಸಂಪಾದಿಸಲಾಗಿದೆಯೇ",
+            "he": "האם M0 הופק, נכתב ונערך על ידי M1 ו- M2",
+            "zh": "M0 是 由 M1 和 M2 制 作 ， 编 写 和 编 辑 的 吗 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { ?x0 wdt:P40|wdt:P355 M0 . M1 wdt:P453 ?x0 }"
+        },
+        "question": {
+            "en": "Was M1 M0 's parent 's actor",
+            "kn": "M1 M0 ಅವರ ಪೋಷಕರ ನಟನಾ",
+            "he": "האם שחקן ההורים של M1 M0 היה",
+            "zh": "M1   M0 是 父 母 的 演 员 吗 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { ?x0 wdt:P453 M0 . FILTER ( M1 != ?x0 ) . M1 wdt:P21 wd:Q6581097 . M1 wdt:P26 ?x0 }"
+        },
+        "question": {
+            "en": "Was M0 's actor 's male spouse M1",
+            "kn": "M0 ನ ನಟನ ಪುರುಷ ಸಂಗಾತಿ M1 ಆಗಿದ್ದೀರಾ",
+            "he": "האם בן הזוג הגברי של השחקן M0 היה M1",
+            "zh": "M0 的 演 员 是 男 配 偶 M1 吗 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { ?x0 wdt:P27 wd:Q183 . ?x0 wdt:P3373 M0 . FILTER ( ?x0 != M0 ) . FILTER ( M2 != ?x0 ) . M2 wdt:P3373 ?x0 }"
+        },
+        "question": {
+            "en": "Was M2 M0 's German sibling 's sibling",
+            "kn": "M2 M0 ನ ಜರ್ಮನ್ ಒಡಹುಟ್ಟಿದವರ ಸಹೋದರರಾಗಿದ್ದಾರೆಯೇ",
+            "he": "האם אחיו הגרמני של M2 M0",
+            "zh": "M2   M0 是 德 国 兄 弟 姐 妹 的 兄 弟 姐 妹 吗 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { ?x0 wdt:P3373 M0 . FILTER ( ?x0 != M0 ) . M1 wdt:P57 ?x0 . M1 wdt:P1040 ?x0 . M1 wdt:P1431 ?x0 . M1 wdt:P162|wdt:P272 ?x0 . M1 wdt:P58 ?x0 }"
+        },
+        "question": {
+            "en": "Was M1 edited by , written by , executive produced by , directed by , and produced by M0 's sibling",
+            "kn": "M1 ಅನ್ನು ಸಂಪಾದಿಸಿದ, ಬರೆದ, ಕಾರ್ಯನಿರ್ವಾಹಕರಿಂದ M0 ನ ಒಡಹುಟ್ಟಿದವರಿಂದ ನಿರ್ಮಿಸಲ್ಪಟ್ಟಿದೆಯೇ",
+            "he": "האם M1 נערך על ידי, נכתב על ידי מנהל, הופק על ידי, ביים, והופק על ידי אחיו של M0",
+            "zh": "M1 是 否 由 M0 的 兄 弟 姐 妹 编 辑 ， 编 写 ， 执 行 由 M0 的 兄 弟 姐 妹 制 作 ， 导 演 和 制 作 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { ?x0 wdt:P737 M1 . ?x0 wdt:P27 wd:Q183 . ?x0 wdt:P3373 M0 . FILTER ( ?x0 != M0 ) }"
+        },
+        "question": {
+            "en": "Was M0 's German sibling influenced by M1",
+            "kn": "M0 ನ ಜರ್ಮನ್ ಒಡಹುಟ್ಟಿದವರು M1 ನಿಂದ ಪ್ರಭಾವಿತರಾಗಿದ್ದಾರೆಯೇ",
+            "he": "האם אחיו הגרמני של M0 הושפע מ- M1",
+            "zh": "M0 的 德 国 同 胞 受 M1 影 响 吗 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { FILTER ( M0 != M3 ) . M0 wdt:P21 wd:Q6581072 . M0 wdt:P27 wd:Q30 . M0 wdt:P26 M3 }"
+        },
+        "question": {
+            "en": "Was M0 a American female spouse of M3",
+            "kn": "M0 ಅಮೆರಿಕನ್ ಸ್ತ್ರೀ ಸಂಗಾತಿಯಾಗಿದ್ದ M3",
+            "he": "האם M0 הייתה בת זוג אמריקאית של M3",
+            "zh": "M0 是 M3 的 美 国 女 性 配 偶 吗 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { ?x0 wdt:P3373 M0 . ?x0 wdt:P26 M0 . FILTER ( ?x0 != M0 ) . FILTER ( ?x0 != M0 ) . FILTER ( M1 != ?x0 ) . M1 wdt:P3373 ?x0 }"
+        },
+        "question": {
+            "en": "Was M1 a sibling of M0 's spouse and sibling",
+            "kn": "M1 M0 ನ ಸಂಗಾತಿ ಮತ್ತು ಒಡಹುಟ್ಟಿದವರ ಸಹೋದರರಾಗಿದ್ದೀರಾ",
+            "he": "האם M1 היה אח של בן / בת זוגו של M0",
+            "zh": "M1 是 M0 的 配 偶 和 同 级 的 同 胞 吗 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { ?x0 wdt:P26 M0 . FILTER ( ?x0 != M0 ) . M1 wdt:P453 ?x0 }"
+        },
+        "question": {
+            "en": "Was M0 's spouse 's actor M1",
+            "kn": "M0 ಅವರ ಸಂಗಾತಿಯ ನಟ M1 ಆಗಿದ್ದಾರೆಯೇ",
+            "he": "האם השחקן של בן / בת הזוג M0 היה M1",
+            "zh": "M0 的 配 偶 是 演 员 M1 吗 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { ?x0 wdt:P27 wd:Q38 . ?x0 wdt:P26 M1 . FILTER ( ?x0 != M1 ) . M2 wdt:P112 ?x0 . M2 wdt:P112 M3 }"
+        },
+        "question": {
+            "en": "Was M2 founded by M3 and founded by M1 's Italian spouse",
+            "kn": "M2 ಅನ್ನು M3 ಸ್ಥಾಪಿಸಿತು ಮತ್ತು M1 ನ ಇಟಾಲಿಯನ್ ಸಂಗಾತಿಯಿಂದ ಸ್ಥಾಪಿಸಲ್ಪಟ್ಟಿದೆಯೇ",
+            "he": "האם M2 הוקמה על ידי M3 והוקמה על ידי בן הזוג האיטלקי של M1",
+            "zh": "M2 是 由 M3 创 建 并 由 M1 的 意 大 利 配 偶 创 建 的 吗 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { ?x0 wdt:P3373 M0 . FILTER ( ?x0 != M0 ) . M1 wdt:P57 ?x0 }"
+        },
+        "question": {
+            "en": "Was M1 directed by a sibling of M0",
+            "kn": "M1 ಅನ್ನು M0 ನ ಒಡಹುಟ್ಟಿದವರು ನಿರ್ದೇಶಿಸಿದ್ದಾರೆಯೇ",
+            "he": "האם M1 הופנה על ידי אח של M0",
+            "zh": "M1 是 由 M0 的 兄 弟 姐 妹 指 挥 的 吗 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { ?x0 wdt:P737 M1 . ?x0 wdt:P21 wd:Q6581072 . ?x0 wdt:P3373 M0 . FILTER ( ?x0 != M0 ) }"
+        },
+        "question": {
+            "en": "Was M0 's female sibling influenced by M1",
+            "kn": "M0 ನ ಸ್ತ್ರೀ ಒಡಹುಟ್ಟಿದವರು M1 ನಿಂದ ಪ್ರಭಾವಿತರಾಗಿದ್ದಾರೆಯೇ",
+            "he": "האם אחיה הנשי של M0 הושפע מ- M1",
+            "zh": "M0 的 女 性 同 胞 受 M1 影 响 吗 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { ?x0 wdt:P108 M1 . ?x0 wdt:P108 M2 . ?x0 wdt:P3373 M0 . FILTER ( ?x0 != M0 ) }"
+        },
+        "question": {
+            "en": "Was M0 's sibling a employee of M1 and M2",
+            "kn": "M0 ನ ಒಡಹುಟ್ಟಿದವರು M1 ಮತ್ತು M2 ನ ಉದ್ಯೋಗಿಯಾಗಿದ್ದಾರೆಯೇ",
+            "he": "האם האח של M0 היה עובד של M1 ו- M2",
+            "zh": "M0 是 M1 和 M2 的 同 胞 吗 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { ?x0 wdt:P27 wd:Q17 . ?x0 wdt:P3373 M0 . FILTER ( ?x0 != M0 ) . M2 wdt:P57 ?x0 }"
+        },
+        "question": {
+            "en": "Was M2 directed by M0 's Japanese sibling",
+            "kn": "M2 ಅನ್ನು M0 ನ ಜಪಾನೀಸ್ ಒಡಹುಟ್ಟಿದವರು ನಿರ್ದೇಶಿಸಿದ್ದಾರೆಯೇ",
+            "he": "האם M2 הופנה על ידי אחיו היפני של M0",
+            "zh": "M2 是 由 M0 的 日 本 同 胞 指 挥 的 吗 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { ?x0 wdt:P3373 M0 . FILTER ( ?x0 != M0 ) . M1 wdt:P57 ?x0 . M1 wdt:P1040 ?x0 . M1 wdt:P1431 ?x0 . M1 wdt:P162|wdt:P272 ?x0 . M1 wdt:P58 ?x0 }"
+        },
+        "question": {
+            "en": "Was M1 executive produced by , produced by , written by , directed by , and edited by M0 's sibling",
+            "kn": "M1 ಕಾರ್ಯನಿರ್ವಾಹಕನನ್ನು M0 ನ ಒಡಹುಟ್ಟಿದವರು ನಿರ್ಮಿಸಿದ್ದಾರೆ, ನಿರ್ಮಿಸಿದ್ದಾರೆ, ಬರೆದಿದ್ದಾರೆ, ನಿರ್ದೇಶಿಸಿದ್ದಾರೆ ಮತ್ತು ಸಂಪಾದಿಸಿದ್ದಾರೆ",
+            "he": "האם מנהל M1 הופק על ידי, הופק על ידי, נכתב על ידי, ביים ונערך על ידי אחיו של M0",
+            "zh": "M1 执 行 人 员 是 由 M0 的 兄 弟 姐 妹 制 作 ， 制 作 ， 编 写 ， 导 演 还 是 由 M0 的 兄 弟 姐 妹 编 辑 的 吗 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { ?x0 wdt:P21 wd:Q6581072 . ?x0 wdt:P26 M1 . FILTER ( ?x0 != M1 ) . M2 wdt:P1431 ?x0 . M2 wdt:P58 ?x0 }"
+        },
+        "question": {
+            "en": "Was M2 written and executive produced by a female spouse of M1",
+            "kn": "M1 ನ ಮಹಿಳಾ ಸಂಗಾತಿಯಿಂದ M2 ಬರೆಯಲ್ಪಟ್ಟ ಮತ್ತು ಕಾರ್ಯನಿರ್ವಾಹಕವಾಗಿದೆಯೇ",
+            "he": "האם M2 נכתב והוצג על ידי בן / בת זוג של M1",
+            "zh": "M2 是 由 M1 的 女 性 配 偶 撰 写 并 制 作 的 吗 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { ?x0 wdt:P21 wd:Q6581072 . ?x0 wdt:P3373 M0 . ?x1 wdt:P108 M2 . ?x1 wdt:P27 wd:Q30 . FILTER ( ?x0 != M0 ) . M4 wdt:P57 ?x1 . M4 wdt:P58 ?x0 }"
+        },
+        "question": {
+            "en": "Was M4 directed by M2 's American employee and written by M0 's female sibling",
+            "kn": "M4 ಅನ್ನು M2 ನ ಅಮೇರಿಕನ್ ಉದ್ಯೋಗಿ ನಿರ್ದೇಶಿಸಿದ ಮತ್ತು M0 ನ ಸ್ತ್ರೀ ಸಹೋದರರಿಂದ ಬರೆಯಲ್ಪಟ್ಟಿದೆಯೇ",
+            "he": "האם M4 הופנתה על ידי העובדת האמריקאית של M2 ונכתבה על ידי אחיה הנשי של M0",
+            "zh": "M4 是 由 M2 的 美 国 雇 员 指 挥 并 由 M0 的 女 性 同 胞 写 的 吗 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { ?x0 wdt:P108 M0 . M1 wdt:P40|wdt:P355 ?x0 }"
+        },
+        "question": {
+            "en": "Was M1 a parent of M0 's employee",
+            "kn": "M1 M0 ನ ಉದ್ಯೋಗಿಯ ಪೋಷಕರಾಗಿದ್ದಾರೆಯೇ",
+            "he": "האם M1 היה הורה לעובד M0",
+            "zh": "M1 是 M0 员 工 的 父 母 吗 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { ?x0 wdt:P3373 M0 . ?x0 wdt:P26 M1 . FILTER ( ?x0 != M0 ) . FILTER ( ?x0 != M1 ) }"
+        },
+        "question": {
+            "en": "Was M0 's sibling M1 's spouse",
+            "kn": "M0 ಅವರ ಸಹೋದರ M1 ಅವರ ಸಂಗಾತಿಯಾಗಿದ್ದರಾ",
+            "he": "האם בן / בת זוגו של M0 היה בן / בת הזוג M1",
+            "zh": "M0 的 兄 弟 姐 妹 是 M1 的 配 偶 吗 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { M0 wdt:P57 M1 . M0 wdt:P1040 M1 . M0 wdt:P162|wdt:P272 M1 . M0 wdt:P58 M1 }"
+        },
+        "question": {
+            "en": "Was M0 produced , edited , directed , and written by M1",
+            "kn": "M0 ಅನ್ನು M1 ನಿರ್ಮಿಸಿ, ಸಂಪಾದಿಸಿ, ನಿರ್ದೇಶಿಸಿ ಮತ್ತು ಬರೆದಿದ್ದೀರಾ",
+            "he": "האם M0 הופק, נערך, ביים ונכתב על ידי M1",
+            "zh": "M0 是 由 M1 制 作 ， 编 辑 ， 指 导 和 编 写 的 吗 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { ?x0 wdt:P3373 M0 . FILTER ( ?x0 != M0 ) . M1 wdt:P57 ?x0 . M1 wdt:P1040 ?x0 . M1 wdt:P1431 ?x0 . M1 wdt:P58 ?x0 }"
+        },
+        "question": {
+            "en": "Was M1 executive produced , edited , directed , and written by M0 's sibling",
+            "kn": "M1 ನ ಕಾರ್ಯನಿರ್ವಾಹಕನನ್ನು M0 ನ ಒಡಹುಟ್ಟಿದವರು ನಿರ್ಮಿಸಿದ, ಸಂಪಾದಿಸಿದ, ನಿರ್ದೇಶಿಸಿದ ಮತ್ತು ಬರೆದಿದ್ದಾರೆಯೇ",
+            "he": "האם מנהל M1 הופק, נערך, ביים ונכתב על ידי אחיו של M0",
+            "zh": "M1 主 管 是 由 M0 的 兄 弟 姐 妹 制 作 ， 编 辑 ， 指 导 和 编 写 的 吗 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { ?x0 wdt:P737 M0 . ?x0 wdt:P21 wd:Q6581072 . ?x0 wdt:P26 M2 . FILTER ( ?x0 != M2 ) }"
+        },
+        "question": {
+            "en": "Was M2 's female spouse influenced by M0",
+            "kn": "M2 ನ ಸ್ತ್ರೀ ಸಂಗಾತಿಯು M0 ನಿಂದ ಪ್ರಭಾವಿತರಾಗಿದ್ದಾರೆಯೇ",
+            "he": "האם בן הזוג הנשי של M2 הושפע מ- M0",
+            "zh": "M2 的 女 性 配 偶 受 M0 影 响 吗 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { ?x0 wdt:P155 M1 . ?x0 wdt:P156 M0 }"
+        },
+        "question": {
+            "en": "Was M0 's prequel a sequel of M1",
+            "kn": "M0 ನ ಪೂರ್ವಭಾವಿ M1 ನ ಉತ್ತರಭಾಗವೇ",
+            "he": "האם הפריקוול של M0 היה סרט המשך של M1",
+            "zh": "M0 的 前 传 是 M1 的 续 集 吗 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { ?x0 wdt:P156 M0 . M1 wdt:P155 ?x0 }"
+        },
+        "question": {
+            "en": "Was M1 M0 's prequel 's sequel",
+            "kn": "M1 M0 ನ ಪೂರ್ವಭಾವಿ ಉತ್ತರಭಾಗವೇ",
+            "he": "האם סרט ההמשך של פריקוול M1 M0 היה",
+            "zh": "M1   M0 的 前 传 是 续 集 吗 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { ?x0 wdt:P26 M0 . FILTER ( ?x0 != M0 ) . M1 wdt:P57 ?x0 . M1 wdt:P1040 ?x0 . M1 wdt:P1431 ?x0 . M1 wdt:P162|wdt:P272 ?x0 . M1 wdt:P58 ?x0 }"
+        },
+        "question": {
+            "en": "Was M1 executive produced by , directed by , edited by , written by , and produced by M0 's spouse",
+            "kn": "M1 ನ ಕಾರ್ಯನಿರ್ವಾಹಕರಿಂದ M0 ನ ಸಂಗಾತಿಯು ನಿರ್ಮಿಸಿದ, ನಿರ್ದೇಶಿಸಿದ, ಸಂಪಾದಿಸಿದ, ಬರೆದ, ಮತ್ತು ನಿರ್ಮಿಸಿದೆಯೇ",
+            "he": "האם מנהל M1 הופק על ידי, ביים, נערך על ידי, נכתב על ידי והופק על ידי בן / בת הזוג של M0",
+            "zh": "M1 执 行 人 员 是 由 M0 的 配 偶 制 作 ， 导 演 ， 编 辑 ， 编 写 和 制 作 的 吗 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { ?x0 wdt:P27 wd:Q183 . ?x0 wdt:P3373 M0 . ?x0 wdt:P26 M2 . FILTER ( ?x0 != M0 ) . FILTER ( ?x0 != M2 ) }"
+        },
+        "question": {
+            "en": "Was M2 's spouse a German sibling of M0",
+            "kn": "M2 ಅವರ ಸಂಗಾತಿಯು M0 ನ ಜರ್ಮನ್ ಸಹೋದರರಾಗಿದ್ದಾರೆಯೇ",
+            "he": "האם בן הזוג של M2 היה אח גרמני של M0",
+            "zh": "M2 的 配 偶 是 M0 的 德 国 同 胞 吗 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { ?x0 wdt:P737 M1 . ?x0 wdt:P737 M2 . ?x0 wdt:P27 wd:Q16 . ?x0 wdt:P3373 M0 . FILTER ( ?x0 != M0 ) }"
+        },
+        "question": {
+            "en": "Was M0 's Canadian sibling influenced by M1 and influenced by M2",
+            "kn": "M0 ನ ಕೆನಡಿಯನ್ ಒಡಹುಟ್ಟಿದವರು M1 ನಿಂದ ಪ್ರಭಾವಿತರಾಗಿದ್ದರು ಮತ್ತು M2 ನಿಂದ ಪ್ರಭಾವಿತರಾಗಿದ್ದಾರೆಯೇ",
+            "he": "האם אחיו הקנדי של M0 הושפע מ- M1 והושפע מ- M2",
+            "zh": "M0 的 加 拿 大 同 胞 受 M1 和 M2 影 响 吗 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { ?x0 wdt:P21 wd:Q6581097 . ?x0 wdt:P27 wd:Q38 . ?x0 wdt:P27 wd:Q145 . ?x0 wdt:P3373 M0 . ?x0 wdt:P26 M4 . FILTER ( ?x0 != M0 ) . FILTER ( ?x0 != M4 ) }"
+        },
+        "question": {
+            "en": "Was M4 's male British spouse M0 's Italian sibling",
+            "kn": "M4 ನ ಪುರುಷ ಬ್ರಿಟಿಷ್ ಸಂಗಾತಿ M0 ನ ಇಟಾಲಿಯನ್ ಒಡಹುಟ್ಟಿದವರೇ",
+            "he": "האם אחיו האיטלקי של בן הזוג הבריטי M0 היה M4",
+            "zh": "M4 的 男 性 英 国 配 偶 是 M0 的 意 大 利 同 胞 吗 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { ?x0 wdt:P3373 M0 . FILTER ( ?x0 != M0 ) . M1 wdt:P453 ?x0 }"
+        },
+        "question": {
+            "en": "Was M1 M0 's sibling 's actor",
+            "kn": "M1 M0 ನ ಒಡಹುಟ್ಟಿದವರ ನಟನಾ",
+            "he": "האם שחקן האח של M1 M0 היה",
+            "zh": "M1   M0 是 兄 弟 姐 妹 的 演 员 吗 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { ?x0 wdt:P3373 ?x1 . ?x1 wdt:P40|wdt:P355 M0 . FILTER ( ?x0 != ?x1 ) . M1 wdt:P737 ?x0 . M1 wdt:P737 M2 }"
+        },
+        "question": {
+            "en": "Was M1 influenced by M2 and influenced by a sibling of M0 's parent",
+            "kn": "M1 M2 ನಿಂದ ಪ್ರಭಾವಿತವಾಗಿದೆಯೇ ಮತ್ತು M0 ನ ಪೋಷಕರ ಒಡಹುಟ್ಟಿದವರಿಂದ ಪ್ರಭಾವಿತವಾಗಿದೆಯೇ",
+            "he": "האם M1 הושפע מ- M2 והושפע מאח של ההורה של M0",
+            "zh": "M1 是 否 受 M2 的 影 响 并 且 受 M0 的 父 级 的 同 胞 影 响 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { FILTER ( M0 != M2 ) . M0 wdt:P27 wd:Q29999 . M0 wdt:P26 M2 }"
+        },
+        "question": {
+            "en": "Was M0 a Dutch spouse of M2",
+            "kn": "M0 M2 ನ ಡಚ್ ಸಂಗಾತಿಯಾಗಿದೆಯೇ",
+            "he": "האם M0 היה בן זוג הולנדי של M2",
+            "zh": "M0 是 M2 的 荷 兰 人 配 偶 吗 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { ?x0 wdt:P40|wdt:P355 M0 . M1 wdt:P57 ?x0 }"
+        },
+        "question": {
+            "en": "Was M1 directed by a parent of M0",
+            "kn": "M1 ಅನ್ನು M0 ನ ಪೋಷಕರು ನಿರ್ದೇಶಿಸಿದ್ದಾರೆಯೇ",
+            "he": "האם M1 הופנה על ידי הורה ל- M0",
+            "zh": "M1 是 由 M0 的 父 级 导 演 的 吗 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { ?x0 wdt:P108 M0 . ?x0 wdt:P27 wd:Q38 . ?x0 wdt:P27 wd:Q29 . FILTER ( M3 != ?x0 ) . M3 wdt:P26 ?x0 }"
+        },
+        "question": {
+            "en": "Was M3 M0 's Spanish Italian employee 's spouse",
+            "kn": "M3 M0 ನ ಸ್ಪ್ಯಾನಿಷ್ ಇಟಾಲಿಯನ್ ಉದ್ಯೋಗಿಯ ಸಂಗಾತಿಯಾಗಿದ್ದರಾ",
+            "he": "האם בן הזוג של עובד איטלקי ספרדי של M3 M0 היה",
+            "zh": "M3   M0 是 西 班 牙 意 大 利 雇 员 的 配 偶 吗 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { ?x0 wdt:P108 M0 . ?x0 wdt:P108 M1 . ?x0 wdt:P27 wd:Q17 . ?x0 wdt:P26 M3 . FILTER ( ?x0 != M3 ) }"
+        },
+        "question": {
+            "en": "Was M3 's Japanese spouse a employee of M0 and M1",
+            "kn": "M3 ನ ಜಪಾನಿನ ಸಂಗಾತಿಯು M0 ಮತ್ತು M1 ನ ಉದ್ಯೋಗಿಯಾಗಿದ್ದಾರೆಯೇ",
+            "he": "האם בן הזוג היפני של M3 היה עובד של M0 ו- M1",
+            "zh": "M3 的 日 本 配 偶 是 M0 和 M1 的 雇 员 吗 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { ?x0 wdt:P26 M0 . FILTER ( ?x0 != M0 ) . M1 wdt:P57 ?x0 . M1 wdt:P1040 ?x0 }"
+        },
+        "question": {
+            "en": "Was M1 edited by and directed by a spouse of M0",
+            "kn": "M1 ಅನ್ನು M0 ನ ಸಂಗಾತಿಯು ಸಂಪಾದಿಸಿ ನಿರ್ದೇಶಿಸಿದ್ದಾರೆಯೇ",
+            "he": "האם M1 נערך על ידי וביים בן / בת זוג של M0",
+            "zh": "M1 是 否 由 M0 的 配 偶 编 辑 并 指 导 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { ?x0 wdt:P155 M0 . M1 wdt:P155 ?x0 }"
+        },
+        "question": {
+            "en": "Was M1 a sequel of M0 's sequel",
+            "kn": "M1 M0 ನ ಉತ್ತರಭಾಗದ ಉತ್ತರಭಾಗವೇ",
+            "he": "האם M1 היה סרט המשך של סרט ההמשך של M0",
+            "zh": "M1 是 M0 的 续 集 吗 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { M0 wdt:P108 M1 . M0 wdt:P27 wd:Q29999 . M0 wdt:P27 wd:Q16 }"
+        },
+        "question": {
+            "en": "Was M0 M1 's Dutch Canadian employee",
+            "kn": "M0 M1 ನ ಡಚ್ ಕೆನಡಾದ ಉದ್ಯೋಗಿಯಾಗಿದ್ದರಾ",
+            "he": "האם העובד הקנדי ההולנדי של M0 M1 היה",
+            "zh": "是 M0   M1 的 荷 兰 籍 加 拿 大 雇 员 吗 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { ?x0 wdt:P26 M0 . FILTER ( ?x0 != M0 ) . M1 wdt:P1040 ?x0 . M1 wdt:P162|wdt:P272 ?x0 }"
+        },
+        "question": {
+            "en": "Was M1 edited by and produced by a spouse of M0",
+            "kn": "M1 ಅನ್ನು M0 ನ ಸಂಗಾತಿಯಿಂದ ಸಂಪಾದಿಸಲಾಗಿದೆಯೇ",
+            "he": "האם M1 נערך על ידי והופק על ידי בן / בת זוג של M0",
+            "zh": "M1 由 M0 的 配 偶 编 辑 和 制 作 吗 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { M0 wdt:P162|wdt:P272 M1 . M0 wdt:P162|wdt:P272 M2 . M0 wdt:P58 M1 . M0 wdt:P58 M2 }"
+        },
+        "question": {
+            "en": "Was M0 written by and produced by M1 and M2",
+            "kn": "M0 ಅನ್ನು M1 ಮತ್ತು M2 ಬರೆದು ನಿರ್ಮಿಸಿದೆಯೇ",
+            "he": "האם M0 נכתב על ידי M1 ו- M2 והופק אותו",
+            "zh": "M0 是 由 M1 和 M2 编 写 并 产 生 的 吗 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { ?x0 wdt:P27 wd:Q148 . ?x0 wdt:P3373 M0 . FILTER ( ?x0 != M0 ) . FILTER ( M2 != ?x0 ) . M2 wdt:P21 wd:Q6581072 . M2 wdt:P26 ?x0 }"
+        },
+        "question": {
+            "en": "Was M2 M0 's Chinese sibling 's female spouse",
+            "kn": "M2 M0 ನ ಚೀನೀ ಒಡಹುಟ್ಟಿದವರ ಸ್ತ್ರೀ ಸಂಗಾತಿಯಾಗಿದ್ದೀರಾ",
+            "he": "האם בן / בת הזוג של אח / אחות / סינית M2 M0",
+            "zh": "M2   M0 是 中 国 同 胞 的 女 配 偶 吗 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { FILTER ( M0 != M4 ) . M0 wdt:P21 wd:Q6581097 . M0 wdt:P27 wd:Q145 . M0 wdt:P27 wd:Q148 . M0 wdt:P26 M4 }"
+        },
+        "question": {
+            "en": "Was M0 M4 's British Chinese male spouse",
+            "kn": "M0 M4 ನ ಬ್ರಿಟಿಷ್ ಚೀನೀ ಪುರುಷ ಸಂಗಾತಿಯಾಗಿದ್ದರಾ",
+            "he": "האם בן / בת הזוג הסינית הבריטית של M0 M4",
+            "zh": "M0   M4 是 英 国 华 裔 男 性 配 偶 吗 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { M0 wdt:P453 M2 . M0 wdt:P21 wd:Q6581072 . M0 wdt:P27 wd:Q30 }"
+        },
+        "question": {
+            "en": "Was M0 a female American actor of M2",
+            "kn": "M0 M2 ನ ಮಹಿಳಾ ಅಮೇರಿಕನ್ ನಟನಾ",
+            "he": "האם M0 הייתה שחקנית אמריקאית של M2",
+            "zh": "M0 是 M2 的 美 国 女 性 演 员 吗 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { M0 wdt:P40|wdt:P355 M4 . M0 wdt:P21 wd:Q6581097 . M0 wdt:P27 wd:Q29999 . M0 wdt:P27 wd:Q142 }"
+        },
+        "question": {
+            "en": "Was M4 's male French Dutch parent M0",
+            "kn": "M4 ನ ಪುರುಷ ಫ್ರೆಂಚ್ ಡಚ್ ಪೋಷಕ M0",
+            "he": "האם ההורה ההולנדי הצרפתי של M4 היה M0",
+            "zh": "M4 的 男 性 法 国 荷 兰 父 母 是 M0 吗 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { ?x0 wdt:P40|wdt:P355 M0 . FILTER ( M1 != ?x0 ) . M1 wdt:P27 wd:Q17 . M1 wdt:P27 wd:Q16 . M1 wdt:P26 ?x0 }"
+        },
+        "question": {
+            "en": "Was M1 a Canadian Japanese spouse of M0 's parent",
+            "kn": "M1 ಕೆನಡಾದ ಜಪಾನಿನ ಸಂಗಾತಿಯಾಗಿದ್ದ M0 ಪೋಷಕರೇ",
+            "he": "האם M1 היה בן זוג יפני קנדי להורה של M0",
+            "zh": "M1 是 M0 父 母 的 加 拿 大 日 本 配 偶 吗 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { ?x0 wdt:P27 wd:Q142 . ?x0 wdt:P3373 M0 . FILTER ( ?x0 != M0 ) . M2 wdt:P1431 ?x0 }"
+        },
+        "question": {
+            "en": "Was M2 executive produced by a French sibling of M0",
+            "kn": "M2 ಕಾರ್ಯನಿರ್ವಾಹಕನನ್ನು M0 ನ ಫ್ರೆಂಚ್ ಒಡಹುಟ್ಟಿದವನು ತಯಾರಿಸಿದ್ದಾನೆಯೇ",
+            "he": "האם מנהל M2 הופק על ידי אחיו הצרפתי של M0",
+            "zh": "M2 行 政 人 员 是 由 法 国 M0 的 兄 弟 姐 妹 生 产 的 吗 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { ?x0 wdt:P750 ?x1 . ?x0 wdt:P750 M0 . ?x0 wdt:P155 M1 . ?x1 wdt:P749 M2 }"
+        },
+        "question": {
+            "en": "Was M1 's sequel distributed by M0 and distributed by M2 's child",
+            "kn": "M1 ನ ಉತ್ತರಭಾಗವನ್ನು M0 ವಿತರಿಸಿದೆ ಮತ್ತು M2 ನ ಮಗು ವಿತರಿಸಿದೆ",
+            "he": "האם סרט ההמשך של M1 הופץ על ידי M0 והופץ על ידי הילד של M2",
+            "zh": "M1 的 续 集 是 否 由 M0 分 发 并 由 M2 的 孩 子 分 发 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { ?x0 wdt:P3373 M0 . FILTER ( ?x0 != M0 ) . M1 wdt:P57 ?x0 . M1 wdt:P1040 ?x0 . M1 wdt:P1431 ?x0 . M1 wdt:P162|wdt:P272 ?x0 . M1 wdt:P58 ?x0 }"
+        },
+        "question": {
+            "en": "Was M1 written by , directed by , executive produced by , edited by , and produced by M0 's sibling",
+            "kn": "M1 ಅನ್ನು M0 ಅವರ ಒಡಹುಟ್ಟಿದವರು ಬರೆದಿದ್ದಾರೆ, ನಿರ್ದೇಶಿಸಿದ್ದಾರೆ, ಕಾರ್ಯನಿರ್ವಾಹಕರಿಂದ ನಿರ್ಮಿಸಲಾಗಿದೆ, ಸಂಪಾದಿಸಲಾಗಿದೆ ಮತ್ತು ನಿರ್ಮಿಸಲಾಗಿದೆಯೇ",
+            "he": "האם M1 נכתב על ידי, ביים מנהל, מיוצר על ידי, נערך על ידי והופק על ידי אחיו של M0",
+            "zh": "M1 是 由 M0 的 兄 弟 姐 妹 编 写 ， 导 演 ， 执 行 人 员 制 作 ， 编 辑 还 是 由 M0 的 兄 弟 姐 妹 制 作 的 吗 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { ?x0 wdt:P3373 M0 . FILTER ( ?x0 != M0 ) . M1 wdt:P1040 ?x0 . M1 wdt:P162|wdt:P272 ?x0 }"
+        },
+        "question": {
+            "en": "Was M1 edited and produced by a sibling of M0",
+            "kn": "M1 ಅನ್ನು M0 ನ ಒಡಹುಟ್ಟಿದವರು ಸಂಪಾದಿಸಿ ತಯಾರಿಸಿದ್ದಾರೆಯೇ",
+            "he": "האם M1 נערך והופק על ידי אח של M0",
+            "zh": "M1 是 由 M0 的 兄 弟 姐 妹 编 辑 和 制 作 的 吗 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { ?x0 wdt:P27 wd:Q148 . ?x0 wdt:P3373 M0 . FILTER ( ?x0 != M0 ) . M2 wdt:P1431 ?x0 }"
+        },
+        "question": {
+            "en": "Was M2 executive produced by a Chinese sibling of M0",
+            "kn": "M2 ನ ಕಾರ್ಯನಿರ್ವಾಹಕನನ್ನು M0 ನ ಚೀನಾದ ಒಡಹುಟ್ಟಿದವರು ತಯಾರಿಸಿದ್ದಾರೆಯೇ",
+            "he": "האם מנהל M2 הופק על ידי אח סיני של M0",
+            "zh": "M2 高 管 是 由 中 国 M0 的 兄 弟 姐 妹 产 生 的 吗 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { ?x0 wdt:P108 M0 . ?x0 wdt:P108 M1 . ?x0 wdt:P27 wd:Q30 . M3 wdt:P57 ?x0 . M3 wdt:P1431 ?x0 }"
+        },
+        "question": {
+            "en": "Was M3 directed and executive produced by a American employee of M0 and M1",
+            "kn": "M3 ನಿರ್ದೇಶನ ಮತ್ತು ಕಾರ್ಯನಿರ್ವಾಹಕನನ್ನು M0 ಮತ್ತು M1 ನ ಅಮೇರಿಕನ್ ಉದ್ಯೋಗಿ ನಿರ್ಮಿಸಿದ್ದಾರೆಯೇ",
+            "he": "האם M3 בוצעה והופעלה על ידי עובד אמריקאי של M0 ו- M1",
+            "zh": "M3 是 由 M0 和 M1 的 美 国 雇 员 领 导 和 执 行 的 吗 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { ?x0 wdt:P27 wd:Q16 . ?x0 wdt:P26 ?x1 . ?x1 wdt:P26 M1 . FILTER ( ?x0 != ?x1 ) . FILTER ( ?x1 != M1 ) . M2 wdt:P57 M3 . M2 wdt:P58 ?x0 }"
+        },
+        "question": {
+            "en": "Was M2 written by M1 's spouse 's Canadian spouse and directed by M3",
+            "kn": "M2 ಅನ್ನು M1 ನ ಸಂಗಾತಿಯ ಕೆನಡಿಯನ್ ಸಂಗಾತಿಯು ಬರೆದು M3 ನಿರ್ದೇಶಿಸಿದ್ದಾರೆಯೇ",
+            "he": "האם M2 נכתב על ידי בן הזוג הקנדי של בן / בת הזוג M1 והונהג על ידי M3",
+            "zh": "M2 是 由 M1 的 配 偶 的 加 拿 大 配 偶 写 的 并 由 M3 指 导 的 吗 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { M0 wdt:P1431 M1 . M0 wdt:P162|wdt:P272 M1 . M0 wdt:P58 M1 }"
+        },
+        "question": {
+            "en": "Was M0 written , produced , and executive produced by M1",
+            "kn": "M0 ಅನ್ನು M1 ಬರೆದಿದೆಯೆ, ಉತ್ಪಾದಿಸಿದ ಮತ್ತು ಕಾರ್ಯನಿರ್ವಾಹಕವಾಗಿದೆಯೇ",
+            "he": "האם M0 נכתב, הופק והוצג על ידי M1",
+            "zh": "M0 是 由 M1 编 写 ， 生 产 和 执 行 的 吗 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { ?x0 wdt:P27 wd:Q142 . ?x0 wdt:P26 M1 . FILTER ( ?x0 != M1 ) . M2 wdt:P1040 ?x0 . M2 wdt:P1431 M3 . M2 wdt:P1431 M4 }"
+        },
+        "question": {
+            "en": "Was M2 executive produced by M3 and M4 and edited by M1 's French spouse",
+            "kn": "M2 ಕಾರ್ಯನಿರ್ವಾಹಕನನ್ನು M3 ಮತ್ತು M4 ನಿರ್ಮಿಸಿ M1 ನ ಫ್ರೆಂಚ್ ಸಂಗಾತಿಯಿಂದ ಸಂಪಾದಿಸಲಾಗಿದೆಯೇ",
+            "he": "האם מנהל M2 הופק על ידי M3 ו- M4 ונערך על ידי בן הזוג הצרפתי של M1",
+            "zh": "M2 主 管 由 M3 和 M4 制 作 并 由 M1 的 法 国 配 偶 编 辑 吗 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { ?x0 wdt:P21 wd:Q6581097 . ?x0 wdt:P3373 M0 . FILTER ( ?x0 != M0 ) . M2 wdt:P57 ?x0 }"
+        },
+        "question": {
+            "en": "Was M2 directed by M0 's male sibling",
+            "kn": "M2 ಅನ್ನು M0 ನ ಪುರುಷ ಒಡಹುಟ್ಟಿದವರು ನಿರ್ದೇಶಿಸಿದ್ದಾರೆಯೇ",
+            "he": "האם M2 הופנה על ידי אחיו הגברי של M0",
+            "zh": "M2 是 由 M0 的 男 性 兄 弟 姐 妹 指 挥 的 吗 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { ?x0 wdt:P27 wd:Q183 . ?x0 wdt:P27 wd:Q142 . ?x0 wdt:P26 M2 . FILTER ( ?x0 != M2 ) . M3 wdt:P750 M4 . M3 wdt:P162|wdt:P272 ?x0 }"
+        },
+        "question": {
+            "en": "Was M3 distributed by M4 and produced by a French German spouse of M2",
+            "kn": "M3 ಅನ್ನು M4 ವಿತರಿಸಿದೆ ಮತ್ತು M2 ನ ಫ್ರೆಂಚ್ ಜರ್ಮನ್ ಸಂಗಾತಿಯಿಂದ ಉತ್ಪಾದಿಸಲ್ಪಟ್ಟಿದೆಯೇ",
+            "he": "האם M3 הופץ על ידי M4 והופק על ידי בן זוג גרמני צרפתי ל- M2",
+            "zh": "M3 是 由 M4 分 发 并 由 法 国 德 国 M2 的 配 偶 生 产 的 吗 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { M0 wdt:P57 M1 . M0 wdt:P1040 M1 . M0 wdt:P162|wdt:P272 M1 }"
+        },
+        "question": {
+            "en": "Was M0 edited by , directed by , and produced by M1",
+            "kn": "M0 ಅನ್ನು M1 ಸಂಪಾದಿಸಿದೆ, ನಿರ್ದೇಶಿಸಿದೆ ಮತ್ತು ನಿರ್ಮಿಸಿದೆ",
+            "he": "האם M0 נערך על ידי, ביים על ידי והופק על ידי M1",
+            "zh": "M0 是 由 M1 编 辑 ， 指 导 和 制 作 的 吗 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { ?x0 wdt:P40|wdt:P355 M0 . M1 wdt:P57 ?x0 . M1 wdt:P57 M2 }"
+        },
+        "question": {
+            "en": "Was M1 directed by M2 and directed by M0 's parent",
+            "kn": "M1 ಅನ್ನು M2 ನಿರ್ದೇಶಿಸಿದ ಮತ್ತು M0 ನ ಪೋಷಕರು ನಿರ್ದೇಶಿಸಿದ್ದಾರೆಯೇ",
+            "he": "האם M1 הופנה על ידי M2 וביים ההורה של M0",
+            "zh": "M1 是 由 M2 指 导 ， 还 是 由 M0 的 父 母 指 导 吗 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { ?x0 wdt:P40|wdt:P355 M1 . ?x0 wdt:P27 wd:Q96 . M2 wdt:P162|wdt:P272 ?x0 }"
+        },
+        "question": {
+            "en": "Was M2 produced by M1 's Mexican parent",
+            "kn": "M1 ನ ಮೆಕ್ಸಿಕನ್ ಪೋಷಕರಿಂದ M2 ಅನ್ನು ಉತ್ಪಾದಿಸಲಾಗಿದೆಯೇ",
+            "he": "האם M2 הופק על ידי ההורה המקסיקני של M1",
+            "zh": "M2 是 由 M1 的 墨 西 哥 父 母 生 产 的 吗 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { ?x0 wdt:P162|wdt:P272 M1 . ?x0 wdt:P156 M0 . ?x0 wdt:P58 M1 }"
+        },
+        "question": {
+            "en": "Was M0 's prequel produced and written by M1",
+            "kn": "M0 ನ ಪ್ರಿಕ್ವೆಲ್ ಅನ್ನು M1 ನಿರ್ಮಿಸಿ ಬರೆದಿದೆಯೇ",
+            "he": "האם הפריקוול של M0 הופק ונכתב על ידי M1",
+            "zh": "M0 的 前 传 是 由 M1 产 生 和 编 写 的 吗 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { ?x0 wdt:P3373 M0 . FILTER ( ?x0 != M0 ) . FILTER ( M1 != ?x0 ) . M1 wdt:P21 wd:Q6581072 . M1 wdt:P27 wd:Q145 . M1 wdt:P27 wd:Q34 . M1 wdt:P26 ?x0 }"
+        },
+        "question": {
+            "en": "Was M1 M0 's sibling 's British female Swedish spouse",
+            "kn": "M1 M0 ನ ಒಡಹುಟ್ಟಿದವರ ಬ್ರಿಟಿಷ್ ಸ್ತ್ರೀ ಸ್ವೀಡಿಷ್ ಸಂಗಾತಿಯಾಗಿದ್ದರಾ",
+            "he": "האם בן / בת הזוג הבריטי / אח של M1 M0 היו שוודית",
+            "zh": "M1   M0 的 兄 弟 姐 妹 是 英 国 女 性 瑞 典 配 偶 吗 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { ?x0 wdt:P40|wdt:P355 M0 . M1 wdt:P57 M2 . M1 wdt:P1431 ?x0 }"
+        },
+        "question": {
+            "en": "Was M1 executive produced by M0 's parent and directed by M2",
+            "kn": "M1 ಕಾರ್ಯನಿರ್ವಾಹಕನನ್ನು M0 ನ ಪೋಷಕರು ನಿರ್ಮಿಸಿದರು ಮತ್ತು M2 ನಿರ್ದೇಶಿಸಿದ್ದಾರೆಯೇ",
+            "he": "האם מנהל M1 הופק על ידי ההורה של M0 וביים M2",
+            "zh": "M1 的 执 行 人 员 是 由 M0 的 父 母 生 产 并 由 M2 导 演 的 吗 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { ?x0 wdt:P1431 M1 . ?x0 wdt:P162|wdt:P272 M1 . ?x0 wdt:P156 M0 }"
+        },
+        "question": {
+            "en": "Was M0 's prequel executive produced by and produced by M1",
+            "kn": "M0 ನ ಪ್ರಿಕ್ವೆಲ್ ಎಕ್ಸಿಕ್ಯೂಟಿವ್ ಅನ್ನು M1 ನಿರ್ಮಿಸಿ ನಿರ್ಮಿಸಿದೆಯೇ",
+            "he": "האם המנהל המקדים של M0 הופק על ידי M1 והופק עליו",
+            "zh": "M0 的 前 传 执 行 人 是 M1 产 生 的 吗 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { ?x0 wdt:P108 M0 . ?x0 wdt:P108 M1 . ?x0 wdt:P108 M2 . ?x0 wdt:P108 M3 . ?x0 wdt:P27 wd:Q183 }"
+        },
+        "question": {
+            "en": "Was M0 's German employee employed by M1 and employed by M2 and M3",
+            "kn": "M0 ನ ಜರ್ಮನ್ ಉದ್ಯೋಗಿ M1 ನಿಂದ ಉದ್ಯೋಗದಲ್ಲಿದ್ದರು ಮತ್ತು M2 ಮತ್ತು M3 ನಿಂದ ಉದ್ಯೋಗದಲ್ಲಿದ್ದಾರೆಯೇ",
+            "he": "האם העובד הגרמני של M0 הועסק על ידי M1 והועסק על ידי M2 ו- M3",
+            "zh": "M0 的 德 国 雇 员 是 否 受 雇 于 M1 并 受 雇 于 M2 和 M3 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { ?x0 wdt:P453 ?x1 . ?x1 wdt:P40|wdt:P355 M0 }"
+        },
+        "question": {
+            "en": "Was M0 's parent 's actor a actor",
+            "kn": "M0 ಅವರ ಪೋಷಕರ ನಟ ನಟನಾ",
+            "he": "האם שחקן ההורים של M0 היה שחקן",
+            "zh": "M0 的 父 母 的 演 员 是 演 员 吗 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { ?x0 wdt:P40|wdt:P355 M0 . M1 wdt:P1040 ?x0 . M1 wdt:P1431 ?x0 . M1 wdt:P162|wdt:P272 ?x0 . M1 wdt:P58 ?x0 }"
+        },
+        "question": {
+            "en": "Was M1 edited by , produced by , executive produced by , and written by a parent of M0",
+            "kn": "M1 ಅನ್ನು M0 ನ ಪೋಷಕರು ಸಂಪಾದಿಸಿದ್ದಾರೆ, ನಿರ್ಮಿಸಿದ್ದಾರೆ, ಕಾರ್ಯನಿರ್ವಾಹಕರು ನಿರ್ಮಿಸಿದ್ದಾರೆ ಮತ್ತು ಬರೆದಿದ್ದಾರೆ",
+            "he": "האם M1 נערך על ידי, הופק על ידי, מנהל הופק על ידי ונכתב על ידי הורה ל- M0",
+            "zh": "M1 是 由 M0 的 母 公 司 编 辑 ， 制 作 ， 由 执 行 人 员 制 作 并 由 M0 的 母 公 司 编 写 吗 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { ?x0 wdt:P40|wdt:P355 M0 . M1 wdt:P57 ?x0 . M1 wdt:P1040 ?x0 . M1 wdt:P1431 ?x0 . M1 wdt:P162|wdt:P272 ?x0 . M1 wdt:P58 ?x0 }"
+        },
+        "question": {
+            "en": "Was M1 written by , edited by , produced by , executive produced by , and directed by a parent of M0",
+            "kn": "M1 ಅನ್ನು M0 ನ ಪೋಷಕರು ಬರೆದಿದ್ದಾರೆ, ಸಂಪಾದಿಸಿದ್ದಾರೆ, ನಿರ್ಮಿಸಿದ್ದಾರೆ, ಕಾರ್ಯನಿರ್ವಾಹಕರು ನಿರ್ಮಿಸಿದ್ದಾರೆ ಮತ್ತು ನಿರ್ದೇಶಿಸಿದ್ದಾರೆ",
+            "he": "האם M1 נכתב על ידי, נערך על ידי, הופק על ידי, מנהל הופק על ידי והורה על ידי הורה ל- M0",
+            "zh": "M1 是 由 M0 的 母 公 司 写 ， 由 其 编 辑 ， 由 其 制 作 ， 由 执 行 人 员 制 作 并 由 其 指 导 吗 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { ?x0 wdt:P3373 M0 . ?x0 wdt:P26 M1 . FILTER ( ?x0 != M0 ) . FILTER ( ?x0 != M1 ) }"
+        },
+        "question": {
+            "en": "Was M1 's spouse a sibling of M0",
+            "kn": "M1 ಅವರ ಸಂಗಾತಿಯು M0 ನ ಒಡಹುಟ್ಟಿದವರೇ",
+            "he": "האם בן הזוג של M1 היה אח של M0",
+            "zh": "M1 的 配 偶 是 M0 的 同 胞 吗 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { ?x0 wdt:P40|wdt:P355 M1 . ?x0 wdt:P27 wd:Q148 . M2 wdt:P57 ?x0 . M2 wdt:P1431 ?x0 . M2 wdt:P162|wdt:P272 ?x0 . M2 wdt:P58 ?x0 }"
+        },
+        "question": {
+            "en": "Was M2 directed by , executive produced by , written by , and produced by a Chinese parent of M1",
+            "kn": "M1 ಅನ್ನು ಚೀನಾದ ಪೋಷಕರಿಂದ M2 ನಿರ್ದೇಶಿಸಿದ, ಕಾರ್ಯನಿರ್ವಾಹಕರಿಂದ ನಿರ್ಮಿಸಲಾಗಿದೆಯೇ, ಬರೆಯಲಾಗಿದೆಯೇ ಮತ್ತು ನಿರ್ಮಿಸಲಾಗಿದೆಯೇ",
+            "he": "האם M2 הופנה על ידי, בכיר שהופק על ידי, נכתב על ידי והופק על ידי הורה סיני ל- M1",
+            "zh": "M2 是 由 M1 的 中 国 父 母 领 导 ， 由 M1 的 中 国 父 母 制 作 ， 撰 写 和 执 行 吗 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { FILTER ( M0 != M3 ) . M0 wdt:P27 wd:Q17 . M0 wdt:P27 wd:Q142 . M0 wdt:P26 M3 }"
+        },
+        "question": {
+            "en": "Was M0 M3 's French Japanese spouse",
+            "kn": "M0 M3 ನ ಫ್ರೆಂಚ್ ಜಪಾನೀಸ್ ಸಂಗಾತಿಯಾಗಿದ್ದರಾ",
+            "he": "האם בן הזוג היפני הצרפתי של M0 M3 היה",
+            "zh": "M0   M3 是 法 国 的 日 本 配 偶 吗 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { M0 wdt:P57 M1 . M0 wdt:P1040 M1 . M0 wdt:P1431 M1 . M0 wdt:P162|wdt:P272 M1 }"
+        },
+        "question": {
+            "en": "Was M0 directed , executive produced , produced , and edited by M1",
+            "kn": "M0 ನಿರ್ದೇಶಿಸಿದ, ಕಾರ್ಯನಿರ್ವಾಹಕ ನಿರ್ಮಿಸಿದ, ನಿರ್ಮಿಸಿದ ಮತ್ತು M1 ನಿಂದ ಸಂಪಾದಿಸಲ್ಪಟ್ಟಿದೆಯೇ",
+            "he": "האם M0 הופנה, הופק, הופק ונערך על ידי M1",
+            "zh": "M0 是 由 M1 导 演 ， 执 行 ， 制 作 和 编 辑 的 吗 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { ?x0 wdt:P3373 M0 . FILTER ( ?x0 != M0 ) . M1 wdt:P40|wdt:P355 ?x0 . M1 wdt:P27 wd:Q148 }"
+        },
+        "question": {
+            "en": "Was M1 a Chinese parent of M0 's sibling",
+            "kn": "M1 M0 ನ ಒಡಹುಟ್ಟಿದವರ ಚೀನೀ ಪೋಷಕರಾಗಿದ್ದರಾ",
+            "he": "האם M1 היה הורה סיני לאחיו של M0",
+            "zh": "M1 是 M0 的 同 胞 的 中 国 父 母 吗 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { ?x0 wdt:P40|wdt:P355 ?x1 . ?x0 wdt:P26 M0 . ?x1 wdt:P3373 M1 . FILTER ( ?x0 != M0 ) . FILTER ( ?x1 != M1 ) }"
+        },
+        "question": {
+            "en": "Was M0 's spouse M1 's sibling 's parent",
+            "kn": "M0 ಅವರ ಸಂಗಾತಿ M1 ಅವರ ಒಡಹುಟ್ಟಿದವರ ಪೋಷಕರಾಗಿದ್ದಾರೆಯೇ",
+            "he": "האם בן / בת הזוג של M0 היו ההורים של אח / ה M1",
+            "zh": "M0 的 配 偶 是 M1 的 兄 弟 姐 妹 的 父 母 吗 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { FILTER ( M0 != M1 ) . M0 wdt:P27 wd:Q145 . M0 wdt:P3373 M1 }"
+        },
+        "question": {
+            "en": "Was a British sibling of M1 M0",
+            "kn": "M1 M0 ನ ಬ್ರಿಟಿಷ್ ಸಹೋದರರಾಗಿದ್ದೀರಾ",
+            "he": "האם היה אח בריטי של M1 M0",
+            "zh": "英 国 人 是 M1   M0 的 同 胞 吗 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { FILTER ( M0 != M4 ) . M0 wdt:P21 wd:Q6581072 . M0 wdt:P27 wd:Q148 . M0 wdt:P27 wd:Q142 . M0 wdt:P26 M4 }"
+        },
+        "question": {
+            "en": "Was a French Chinese female spouse of M4 M0",
+            "kn": "M4 M0 ನ ಫ್ರೆಂಚ್ ಚೀನೀ ಮಹಿಳಾ ಸಂಗಾತಿಯಾಗಿದ್ದೀರಾ",
+            "he": "האם בן זוג סיני צרפתי ל- M4 M0",
+            "zh": "法 国 华 裔 女 性 配 偶 是 M4   M0 吗 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { FILTER ( M0 != M1 ) . M0 wdt:P21 wd:Q6581072 . M0 wdt:P27 wd:Q17 . M0 wdt:P27 wd:Q145 . M0 wdt:P3373 M1 }"
+        },
+        "question": {
+            "en": "Was a Japanese British female sibling of M1 M0",
+            "kn": "ಜಪಾನಿನ ಬ್ರಿಟಿಷ್ ಮಹಿಳಾ ಒಡಹುಟ್ಟಿದವರು M1 M0 ಆಗಿದ್ದಾರೆಯೇ",
+            "he": "האם נקבה בריטית יפנית אחיה מ- M1 M0",
+            "zh": "日 本 的 英 国 女 性 兄 弟 姐 妹 是 M1   M0 吗 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { ?x0 wdt:P737 M1 . ?x0 wdt:P737 M2 . ?x0 wdt:P27 wd:Q96 . ?x0 wdt:P3373 M0 . FILTER ( ?x0 != M0 ) }"
+        },
+        "question": {
+            "en": "Was a Mexican sibling of M0 influenced by M1 and M2",
+            "kn": "M0 ನ ಮೆಕ್ಸಿಕನ್ ಒಡಹುಟ್ಟಿದವರು M1 ಮತ್ತು M2 ನಿಂದ ಪ್ರಭಾವಿತರಾಗಿದ್ದಾರೆಯೇ",
+            "he": "האם אח מקסיקני של M0 הושפע מ- M1 ו- M2",
+            "zh": "墨 西 哥 M0 的 兄 弟 姐 妹 受 M1 和 M2 影 响 吗 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { FILTER ( M0 != M1 ) . M0 wdt:P27 wd:Q96 . M0 wdt:P3373 M1 }"
+        },
+        "question": {
+            "en": "Was a Mexican sibling of M1 M0",
+            "kn": "M1 M0 ನ ಮೆಕ್ಸಿಕನ್ ಸಹೋದರರಾಗಿದ್ದೀರಾ",
+            "he": "האם היה אח מקסיקני של M1 M0",
+            "zh": "是 M1   M0 的 墨 西 哥 同 胞 吗 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { M0 wdt:P453 M2 . M0 wdt:P27 wd:Q34 }"
+        },
+        "question": {
+            "en": "Was a Swedish actor of M2 M0",
+            "kn": "M2 M0 ನ ಸ್ವೀಡಿಷ್ ನಟನಾ",
+            "he": "האם היה שחקן שוודי של M2 M0",
+            "zh": "是 M2   M0 的 瑞 典 演 员 吗 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { ?x0 wdt:P108 M0 . ?x0 wdt:P108 M1 . ?x0 wdt:P21 wd:Q6581097 }"
+        },
+        "question": {
+            "en": "Was a male employee of M0 employed by M1",
+            "kn": "M0 ನ ಪುರುಷ ಉದ್ಯೋಗಿ M1 ನಿಂದ ಉದ್ಯೋಗದಲ್ಲಿದ್ದರಾ",
+            "he": "האם עובד M0 היה מועסק על ידי M1",
+            "zh": "M1 雇 用 了 M0 的 男 性 雇 员 吗 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { FILTER ( M0 != M2 ) . M0 wdt:P21 wd:Q6581097 . M0 wdt:P26 M2 }"
+        },
+        "question": {
+            "en": "Was a male spouse of M2 M0",
+            "kn": "M2 M0 ನ ಪುರುಷ ಸಂಗಾತಿಯಾಗಿದ್ದೀರಾ",
+            "he": "האם בן / בת זוג גבר של M2 M0",
+            "zh": "是 M2   M0 的 男 性 配 偶 吗 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { ?x0 wdt:P40|wdt:P355 M1 . ?x0 wdt:P3373 M0 . FILTER ( ?x0 != M0 ) }"
+        },
+        "question": {
+            "en": "Was a parent of M1 a sibling of M0",
+            "kn": "M1 ನ ಪೋಷಕರು M0 ನ ಒಡಹುಟ್ಟಿದವರೇ",
+            "he": "האם הורה ל- M1 היה אח של M0",
+            "zh": "M1 的 父 母 是 M0 的 兄 弟 吗 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { ?x0 wdt:P737 M0 . ?x0 wdt:P40|wdt:P355 M1 }"
+        },
+        "question": {
+            "en": "Was a parent of M1 influenced by M0",
+            "kn": "M1 ನ ಪೋಷಕರು M0 ನಿಂದ ಪ್ರಭಾವಿತರಾಗಿದ್ದಾರೆಯೇ",
+            "he": "האם הורה ל- M1 הושפע מ- M0",
+            "zh": "M1 的 父 母 受 M0 影 响 吗 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { ?x0 wdt:P57 ?x1 . ?x0 wdt:P1431 ?x1 . ?x0 wdt:P162|wdt:P272 ?x1 . ?x0 wdt:P156 M0 . ?x0 wdt:P58 ?x1 . ?x1 wdt:P26 M1 . FILTER ( ?x1 != M1 ) }"
+        },
+        "question": {
+            "en": "Was a prequel of M0 written by , executive produced by , produced by , and directed by M1 's spouse",
+            "kn": "M0 ನ ಪೂರ್ವಭಾವಿ ಬರೆಯಲಾಗಿದೆ, ಕಾರ್ಯನಿರ್ವಾಹಕರಿಂದ M1 ನ ಸಂಗಾತಿಯು ನಿರ್ಮಿಸಿದ, ನಿರ್ಮಿಸಿದ ಮತ್ತು ನಿರ್ದೇಶಿಸಿದಿರಾ",
+            "he": "האם פריקוול של M0 נכתב על ידי, בכיר שהופק על ידי, הופק על ידי וביים בן / בת הזוג של M1",
+            "zh": "M0 的 前 传 是 由 M1 的 配 偶 编 写 ， 由 执 行 人 员 制 作 ， 由 M1 制 作 并 由 其 导 演 的 吗 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { ?x0 wdt:P750 M1 . ?x0 wdt:P750 M2 . ?x0 wdt:P156 M0 }"
+        },
+        "question": {
+            "en": "Was a prequel of M0 distributed by M1 and M2",
+            "kn": "M0 ನ ಪೂರ್ವಭಾವಿಯನ್ನು M1 ಮತ್ತು M2 ವಿತರಿಸಿದ್ದೀರಾ",
+            "he": "האם פריקוול של M0 הופץ על ידי M1 ו- M2",
+            "zh": "M1 和 M2 分 发 了 M0 的 前 传 吗 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { ?x0 wdt:P750 M1 . ?x0 wdt:P156 M0 }"
+        },
+        "question": {
+            "en": "Was a prequel of M0 distributed by M1",
+            "kn": "M0 ನ ಪೂರ್ವಭಾವಿಯನ್ನು M1 ವಿತರಿಸಲಾಗಿದೆಯೇ",
+            "he": "האם פריקוול של M0 הופץ על ידי M1",
+            "zh": "M1 分 发 了 M0 的 前 传 吗 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { ?x0 wdt:P57 M0 . ?x0 wdt:P1040 M0 . ?x0 wdt:P156 ?x1 . ?x1 wdt:P155 M1 }"
+        },
+        "question": {
+            "en": "Was a prequel of M1 's sequel edited by and directed by M0",
+            "kn": "M1 ನ ಉತ್ತರಭಾಗದ ಪೂರ್ವಭಾವಿಯನ್ನು M0 ಸಂಪಾದಿಸಿ ನಿರ್ದೇಶಿಸಿದೆಯೇ",
+            "he": "האם פריקוול של סרט ההמשך של M1 נערך על ידי וביים M0",
+            "zh": "M1 的 续 集 的 前 传 是 由 M0 编 辑 和 导 演 的 吗 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { ?x0 wdt:P155 M0 . ?x0 wdt:P155 M1 }"
+        },
+        "question": {
+            "en": "Was a sequel of M0 a sequel of M1",
+            "kn": "M0 ನ ಉತ್ತರಭಾಗವು M1 ನ ಉತ್ತರಭಾಗವೇ",
+            "he": "האם סרט המשך של M0 היה סרט המשך של M1",
+            "zh": "M0 的 续 集 是 M1 的 续 集 吗 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { ?x0 wdt:P155 M0 . M1 wdt:P155 ?x0 }"
+        },
+        "question": {
+            "en": "Was a sequel of M0 's sequel M1",
+            "kn": "M0 ನ ಉತ್ತರಭಾಗ M1 ನ ಉತ್ತರಭಾಗವೇ",
+            "he": "האם סרט ההמשך של M0 היה סרט ההמשך M1",
+            "zh": "是 M0 的 续 集 M1 的 续 集 吗 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { ?x0 wdt:P1431 M0 . ?x0 wdt:P155 ?x1 . ?x0 wdt:P58 M0 . ?x1 wdt:P155 M1 }"
+        },
+        "question": {
+            "en": "Was a sequel of M1 's sequel written and executive produced by M0",
+            "kn": "M1 ನ ಉತ್ತರಭಾಗವನ್ನು ಬರೆಯಲಾಗಿದೆ ಮತ್ತು ಕಾರ್ಯನಿರ್ವಾಹಕನು M0 ನಿರ್ಮಿಸಿದ್ದಾನೆಯೇ",
+            "he": "האם סרט ההמשך של סרט ההמשך של M1 נכתב והוצג על ידי M0",
+            "zh": "M0 是 否 编 写 并 执 行 了 M1 的 续 集 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { ?x0 wdt:P155 M0 . ?x0 wdt:P155 M1 }"
+        },
+        "question": {
+            "en": "Was a sequel of M0 M1 's sequel",
+            "kn": "M0 M1 ನ ಉತ್ತರಭಾಗವೇ",
+            "he": "האם היה סרט ההמשך של סרט ההמשך של M0 M1",
+            "zh": "是 M0   M1 的 续 集 吗 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { ?x0 wdt:P40|wdt:P355 M1 . ?x0 wdt:P3373 M0 . FILTER ( ?x0 != M0 ) }"
+        },
+        "question": {
+            "en": "Was a sibling of M0 a parent of M1",
+            "kn": "M0 ನ ಒಡಹುಟ್ಟಿದವರು M1 ನ ಪೋಷಕರಾಗಿದ್ದಾರೆಯೇ",
+            "he": "האם אח של M0 היה הורה ל- M1",
+            "zh": "M0 的 兄 弟 姐 妹 是 M1 的 父 母 吗 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { ?x0 wdt:P453 M0 . FILTER ( M1 != ?x0 ) . M1 wdt:P3373 ?x0 }"
+        },
+        "question": {
+            "en": "Was a sibling of a actor of M0 M1",
+            "kn": "M0 M1 ನ ನಟನ ಸಹೋದರನಾಗಿದ್ದನೇ",
+            "he": "האם היה אח של שחקן M0 M1",
+            "zh": "是 M0   M1 演 员 的 兄 弟 姐 妹 吗 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { ?x0 wdt:P27 wd:Q96 . ?x0 wdt:P26 M1 . ?x0 wdt:P26 M2 . FILTER ( ?x0 != M1 ) . FILTER ( ?x0 != M2 ) }"
+        },
+        "question": {
+            "en": "Was a spouse of M1 a Mexican spouse of M2",
+            "kn": "M1 ನ ಸಂಗಾತಿಯು M2 ನ ಮೆಕ್ಸಿಕನ್ ಸಂಗಾತಿಯಾಗಿದ್ದರಾ",
+            "he": "האם בן זוג של M1 היה בן זוג מקסיקני של M2",
+            "zh": "M1 的 配 偶 是 M2 的 墨 西 哥 配 偶 吗 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { FILTER ( M0 != M2 ) . M0 wdt:P27 wd:Q30 . M0 wdt:P26 M2 }"
+        },
+        "question": {
+            "en": "Was a American spouse of M2 M0",
+            "kn": "M2 M0 ನ ಅಮೇರಿಕನ್ ಸಂಗಾತಿಯಾಗಿದ್ದೀರಾ",
+            "he": "האם בן / בת זוג אמריקאים של M2 M0",
+            "zh": "美 国 的 配 偶 是 M2   M0 吗 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { FILTER ( M0 != M1 ) . M0 wdt:P27 wd:Q38 . M0 wdt:P3373 M1 }"
+        },
+        "question": {
+            "en": "Was a Italian sibling of M1 M0",
+            "kn": "M1 M0 ನ ಇಟಾಲಿಯನ್ ಸಹೋದರ",
+            "he": "האם היה אח איטלקי של M1 M0",
+            "zh": "是 意 大 利 的 M1   M0 兄 弟 姐 妹 吗 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { ?x0 wdt:P453 M0 . ?x0 wdt:P453 M1 . ?x0 wdt:P21 wd:Q6581097 }"
+        },
+        "question": {
+            "en": "Was a actor of M0 M1 's male actor",
+            "kn": "M0 M1 ನ ಪುರುಷ ನಟನ ನಟನಾ",
+            "he": "האם היה שחקן השחקן הגברי של M0 M1",
+            "zh": "是 M0   M1 的 男 性 演 员 吗 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { ?x0 wdt:P40|wdt:P355 M1 . ?x0 wdt:P108 M0 }"
+        },
+        "question": {
+            "en": "Was a employee of M0 M1 's parent",
+            "kn": "M0 M1 ನ ಪೋಷಕರ ಉದ್ಯೋಗಿಯಾಗಿದ್ದೀರಾ",
+            "he": "האם היה עובד של ההורה של M0 M1",
+            "zh": "是 M0   M1 父 母 的 雇 员 吗 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { ?x0 wdt:P737 ?x1 . ?x0 wdt:P737 M1 . ?x0 wdt:P737 M2 . ?x0 wdt:P108 M0 . ?x1 wdt:P27 wd:Q148 . ?x1 wdt:P3373 M3 . FILTER ( ?x1 != M3 ) }"
+        },
+        "question": {
+            "en": "Was a employee of M0 influenced by M1 and M2 and influenced by M3 's Chinese sibling",
+            "kn": "M0 ನ ಉದ್ಯೋಗಿ M1 ಮತ್ತು M2 ನಿಂದ ಪ್ರಭಾವಿತರಾಗಿದ್ದಾರೆಯೇ ಮತ್ತು M3 ನ ಚೀನೀ ಸಹೋದರರಿಂದ ಪ್ರಭಾವಿತರಾಗಿದ್ದಾರೆಯೇ",
+            "he": "האם עובד ב- M0 הושפע מ- M1 ו- M2 והושפע מאחיו הסיני של M3",
+            "zh": "M0 的 员 工 是 否 受 M1 和 M2 的 影 响 以 及 M3 的 中 国 同 胞 的 影 响 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { M0 wdt:P1040 M1 . M0 wdt:P1040 M2 . M0 wdt:P58 M1 . M0 wdt:P58 M2 . M3 wdt:P1040 M1 . M3 wdt:P1040 M2 . M3 wdt:P58 M1 . M3 wdt:P58 M2 }"
+        },
+        "question": {
+            "en": "Were M0 and M3 written by and edited by M1 and M2",
+            "kn": "M0 ಮತ್ತು M3 ಅನ್ನು M1 ಮತ್ತು M2 ಬರೆದು ಸಂಪಾದಿಸಿದ್ದೀರಾ",
+            "he": "האם M0 ו- M3 נכתבו על ידי M1 ו- M2 ונערכו",
+            "zh": "M0 和 M3 是 否 由 M1 和 M2 编 写 和 编 辑 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { ?x0 wdt:P27 wd:Q96 . ?x0 wdt:P3373 M0 . FILTER ( ?x0 != M0 ) . M2 wdt:P57 ?x0 . M2 wdt:P1040 ?x0 . M3 wdt:P57 ?x0 . M3 wdt:P1040 ?x0 }"
+        },
+        "question": {
+            "en": "Were M2 and M3 edited by and directed by a Mexican sibling of M0",
+            "kn": "M2 ಮತ್ತು M3 ಅನ್ನು M0 ನ ಮೆಕ್ಸಿಕನ್ ಒಡಹುಟ್ಟಿದವರು ಸಂಪಾದಿಸಿ ನಿರ್ದೇಶಿಸಿದ್ದಾರೆಯೇ",
+            "he": "האם M2 ו- M3 נערכו על ידי ואח של אח מקסיקני מ- M0",
+            "zh": "M2 和 M3 是 否 由 M0 的 墨 西 哥 兄 弟 姐 妹 编 辑 和 导 演 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { M0 wdt:P1040 M1 . M0 wdt:P1040 M2 . M0 wdt:P162|wdt:P272 M1 . M0 wdt:P162|wdt:P272 M2 . M3 wdt:P1040 M1 . M3 wdt:P1040 M2 . M3 wdt:P162|wdt:P272 M1 . M3 wdt:P162|wdt:P272 M2 }"
+        },
+        "question": {
+            "en": "Were M0 and M3 produced by and edited by M1 and M2",
+            "kn": "M0 ಮತ್ತು M3 ಅನ್ನು M1 ಮತ್ತು M2 ನಿರ್ಮಿಸಿ ಸಂಪಾದಿಸಿದ್ದೀರಾ",
+            "he": "האם M0 ו- M3 הופקו על ידי M1 ו- M2 ונערכו",
+            "zh": "M0 和 M3 是 由 M1 和 M2 制 作 和 编 辑 的 吗 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { M0 wdt:P737 M1 . M0 wdt:P737 M2 . M3 wdt:P737 M1 . M3 wdt:P737 M2 }"
+        },
+        "question": {
+            "en": "Were M0 and M3 influenced by M1 and influenced by M2",
+            "kn": "M0 ಮತ್ತು M3 M1 ನಿಂದ ಪ್ರಭಾವಿತವಾಗಿದೆಯೇ ಮತ್ತು M2 ನಿಂದ ಪ್ರಭಾವಿತವಾಗಿದೆಯೇ",
+            "he": "האם M0 ו- M3 הושפעו מ- M1 והושפעו מ- M2",
+            "zh": "M0 和 M3 是 否 受 M1 和 M2 影 响 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { ?x0 wdt:P108 M0 . M1 wdt:P162|wdt:P272 ?x0 . M2 wdt:P162|wdt:P272 ?x0 }"
+        },
+        "question": {
+            "en": "Were M1 and M2 produced by M0 's employee",
+            "kn": "M0 ನ ಉದ್ಯೋಗಿ M1 ಮತ್ತು M2 ಅನ್ನು ಉತ್ಪಾದಿಸಲಾಗಿದೆಯೇ",
+            "he": "האם M1 ו- M2 הופקו על ידי עובד M0",
+            "zh": "M0 的 员 工 生 产 M1 和 M2 吗 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { ?x0 wdt:P26 M0 . FILTER ( ?x0 != M0 ) . M1 wdt:P737 ?x0 . M2 wdt:P737 ?x0 }"
+        },
+        "question": {
+            "en": "Were M1 and M2 influenced by a spouse of M0",
+            "kn": "M1 ಮತ್ತು M2 M0 ನ ಸಂಗಾತಿಯಿಂದ ಪ್ರಭಾವಿತವಾಗಿದೆಯೇ",
+            "he": "האם M1 ו- M2 הושפעו מבן זוג של M0",
+            "zh": "M1 和 M2 是 否 受 M0 的 配 偶 影 响 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { M0 wdt:P1040 M1 . M0 wdt:P1431 M1 . M0 wdt:P162|wdt:P272 M1 . M2 wdt:P1040 M1 . M2 wdt:P1431 M1 . M2 wdt:P162|wdt:P272 M1 }"
+        },
+        "question": {
+            "en": "Were M0 and M2 produced , executive produced , and edited by M1",
+            "kn": "M0 ಮತ್ತು M2 ಅನ್ನು M1 ನಿಂದ ಉತ್ಪಾದಿಸಲಾಗಿದೆಯೇ, ಕಾರ್ಯನಿರ್ವಾಹಕ ಉತ್ಪಾದಿಸಲಾಗಿದೆಯೇ ಮತ್ತು ಸಂಪಾದಿಸಲಾಗಿದೆಯೇ",
+            "he": "האם M0 ו- M2 הופקו, הופקו על ידי M1 וערכו אותם",
+            "zh": "M0 和 M2 是 由 M1 制 作 ， 执 行 制 作 和 编 辑 的 吗 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "ASK WHERE { M0 wdt:P57 M1 . M0 wdt:P1040 M1 . M0 wdt:P162|wdt:P272 M1 . M2 wdt:P57 M1 . M2 wdt:P1040 M1 . M2 wdt:P162|wdt:P272 M1 }"
+        },
+        "question": {
+            "en": "Were M0 and M2 edited , directed , and produced by M1",
+            "kn": "M0 ಮತ್ತು M2 ಅನ್ನು M1 ಸಂಪಾದಿಸಿ, ನಿರ್ದೇಶಿಸಿ ಮತ್ತು ನಿರ್ಮಿಸಿತ್ತೆ",
+            "he": "האם M0 ו- M2 נערכו, בוימו והופקו על ידי M1",
+            "zh": "M0 和 M2 是 否 由 M1 编 辑 ， 指 导 和 制 作 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P737 M1 . ?x0 wdt:P27 wd:Q145 . ?x0 wdt:P3373 M0 . FILTER ( ?x0 != M0 ) }"
+        },
+        "question": {
+            "en": "What British sibling of M0 did M1 influence",
+            "kn": "M0 ನ ಯಾವ ಬ್ರಿಟಿಷ್ ಸಹೋದರ M1 ಪ್ರಭಾವ ಬೀರಿದರು",
+            "he": "על איזה אח בריטי של M0 השפיע M1",
+            "zh": "M1 对 M0 的 英 国 同 胞 有 什 么 影 响 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P737 M0 . ?x0 wdt:P737 M1 . ?x0 wdt:P27 wd:Q145 . ?x0 wdt:P26 M3 . FILTER ( ?x0 != M3 ) }"
+        },
+        "question": {
+            "en": "What British spouse of M3 did M0 influence and M1 influence",
+            "kn": "M3 ನ ಯಾವ ಬ್ರಿಟಿಷ್ ಸಂಗಾತಿಯು M0 ಪ್ರಭಾವ ಮತ್ತು M1 ಪ್ರಭಾವ ಬೀರಿದರು",
+            "he": "על איזה בן זוג בריטי ל- M3 השפיע M0 ו- M1",
+            "zh": "M0 和 M1 对 M3 的 英 国 配 偶 有 何 影 响 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P40|wdt:P355 M3 . ?x0 wdt:P27 wd:Q145 . ?x0 wdt:P27 wd:Q16 . ?x0 wdt:P3373 M0 . FILTER ( ?x0 != M0 ) }"
+        },
+        "question": {
+            "en": "What Canadian parent of M3 was a British sibling of M0",
+            "kn": "M3 ನ ಯಾವ ಕೆನಡಾದ ಪೋಷಕರು M0 ನ ಬ್ರಿಟಿಷ್ ಸಹೋದರರಾಗಿದ್ದರು",
+            "he": "איזה הורה קנדי ל- M3 היה אח בריטי ל- M0",
+            "zh": "M3 的 哪 个 加 拿 大 父 母 是 M0 的 英 国 同 胞 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P27 wd:Q16 . ?x0 wdt:P3373 M0 . ?x0 wdt:P26 M2 . ?x0 wdt:P26 M3 . FILTER ( ?x0 != M0 ) . FILTER ( ?x0 != M2 ) . FILTER ( ?x0 != M3 ) }"
+        },
+        "question": {
+            "en": "What Canadian sibling of M0 married M2 and M3",
+            "kn": "M0 ಮತ್ತು ಕೆನಡಾದ ಒಡಹುಟ್ಟಿದವರು M2 ಮತ್ತು M3 ಅನ್ನು ವಿವಾಹವಾದರು",
+            "he": "איזה אח קנדי מ- M0 התחתן עם M2 ו- M3",
+            "zh": "加 拿 大 的 M0 的 哪 个 兄 弟 姐 妹 与 M2 和 M3 结 婚 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P27 wd:Q183 . ?x0 wdt:P3373 M0 . ?x0 wdt:P26 M2 . FILTER ( ?x0 != M0 ) . FILTER ( ?x0 != M2 ) }"
+        },
+        "question": {
+            "en": "What German sibling of M0 was M2 's spouse",
+            "kn": "M2 ನ ಸಂಗಾತಿಯ M0 ನ ಯಾವ ಜರ್ಮನ್ ಸಹೋದರ",
+            "he": "איזה אח גרמני של M0 היה בן הזוג של M2",
+            "zh": "M2 的 配 偶 是 M0 的 哪 个 德 国 同 胞 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P108 M0 . ?x0 wdt:P108 M1 . ?x0 wdt:P27 wd:Q17 }"
+        },
+        "question": {
+            "en": "What Japanese employee of M0 was employed by M1",
+            "kn": "M0 ಯ ಯಾವ ಜಪಾನಿನ ಉದ್ಯೋಗಿಯನ್ನು M1 ನೇಮಿಸಿಕೊಂಡಿದೆ",
+            "he": "איזה עובד יפני של M0 הועסק על ידי M1",
+            "zh": "M1 雇 用 了 M0 的 哪 个 日 本 雇 员 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P737 M1 . ?x0 wdt:P27 wd:Q96 . ?x0 wdt:P3373 M0 . FILTER ( ?x0 != M0 ) }"
+        },
+        "question": {
+            "en": "What Mexican sibling of M0 did M1 influence",
+            "kn": "M0 ನ ಯಾವ ಮೆಕ್ಸಿಕನ್ ಸಹೋದರ M1 ಪ್ರಭಾವ ಬೀರಿದರು",
+            "he": "על איזה אח מקסיקני של M0 השפיע M1",
+            "zh": "M1 对 墨 西 哥 的 M0 同 胞 有 什 么 影 响 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P737 M0 . ?x0 wdt:P749 M1 }"
+        },
+        "question": {
+            "en": "What child of M1 was influenced by M0",
+            "kn": "M1 ಯ ಯಾವ ಮಗು M0 ನಿಂದ ಪ್ರಭಾವಿತವಾಗಿದೆ",
+            "he": "איזה ילד של M1 הושפע מ- M0",
+            "zh": "M1 的 哪 个 孩 子 受 到 M0 的 影 响 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P57 M0 . ?x0 wdt:P57 M1 }"
+        },
+        "question": {
+            "en": "What did M0 and M1 direct",
+            "kn": "M0 ಮತ್ತು M1 ಏನು ನಿರ್ದೇಶಿಸಿದವು",
+            "he": "מה כיוונו M0 ו- M1",
+            "zh": "M0 和 M1 指 导 什 么 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P750 ?x1 . ?x0 wdt:P750 M0 . ?x0 wdt:P750 M1 . ?x1 wdt:P40|wdt:P355 M2 }"
+        },
+        "question": {
+            "en": "What did M0 and M1 distribute and M2 's parent distribute",
+            "kn": "M0 ಮತ್ತು M1 ಏನು ವಿತರಿಸಿದೆ ಮತ್ತು M2 ನ ಪೋಷಕರು ಏನು ವಿತರಿಸಿದರು",
+            "he": "מה הפיץ M0 ו- M1 וההורה של M2 הפיץ",
+            "zh": "M0 和 M1 分 发 什 么 ， M2 的 父 分 发 什 么 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P1040 ?x1 . ?x0 wdt:P58 ?x1 . ?x1 wdt:P3373 M0 . FILTER ( ?x1 != M0 ) }"
+        },
+        "question": {
+            "en": "What did M0 's sibling write and edit",
+            "kn": "M0 ಅವರ ಒಡಹುಟ್ಟಿದವರು ಏನು ಬರೆದರು ಮತ್ತು ಸಂಪಾದಿಸಿದ್ದಾರೆ",
+            "he": "מה כתב ואחיו של M0",
+            "zh": "M0 的 兄 弟 姐 妹 写 和 编 辑 了 什 么 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P57 ?x1 . ?x0 wdt:P1040 ?x1 . ?x0 wdt:P1431 ?x1 . ?x0 wdt:P162|wdt:P272 ?x1 . ?x0 wdt:P58 ?x1 . ?x1 wdt:P40|wdt:P355 M0 }"
+        },
+        "question": {
+            "en": "What did M0 's parent produce , executive produce , direct , edit , and write",
+            "kn": "M0 ನ ಪೋಷಕರು ಏನು ಉತ್ಪಾದಿಸಿದರು, ಕಾರ್ಯನಿರ್ವಾಹಕ ಉತ್ಪನ್ನಗಳು, ನೇರ, ಸಂಪಾದನೆ ಮತ್ತು ಬರೆಯುತ್ತಾರೆ",
+            "he": "מה הפיק, ההנהלה, הביאה, ערכה וכתבה ההורה של M0",
+            "zh": "M0 的 父 代 产 生 ， 执 行 者 产 生 ， 指 挥 ， 编 辑 和 书 写 什 么 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P58 ?x1 . ?x1 wdt:P108 M0 . ?x1 wdt:P27 wd:Q183 }"
+        },
+        "question": {
+            "en": "What did M0 's German employee write",
+            "kn": "M0 ನ ಜರ್ಮನ್ ಉದ್ಯೋಗಿ ಏನು ಬರೆದಿದ್ದಾರೆ",
+            "he": "מה כתב העובד הגרמני של M0",
+            "zh": "M0 的 德 国 雇 员 写 了 什 么 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P1040 M3 . ?x0 wdt:P1040 M4 . ?x0 wdt:P1431 M0 . ?x0 wdt:P162|wdt:P272 M2 . ?x0 wdt:P58 M1 }"
+        },
+        "question": {
+            "en": "What did M0 executive produce , M1 write , M2 produce , and M3 and M4 edit",
+            "kn": "M0 ಕಾರ್ಯನಿರ್ವಾಹಕ ಉತ್ಪಾದನೆ, M1 ಬರೆಯುವಿಕೆ, M2 ಉತ್ಪಾದನೆ ಮತ್ತು M3 ಮತ್ತು M4 ಸಂಪಾದನೆ ಏನು",
+            "he": "מה ערכו M0 מנהלים, M1 כתבו, M2 הפיקו, ו- M3 ו- M4 ערכו",
+            "zh": "M0 执 行 人 员 产 生 ， M1 编 写 ， M2 产 生 以 及 M3 和 M4 编 辑 什 么 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P57 M0 . ?x0 wdt:P1040 M0 . ?x0 wdt:P58 M0 }"
+        },
+        "question": {
+            "en": "What did M0 direct , edit , and write",
+            "kn": "M0 ಏನು ನಿರ್ದೇಶಿಸಿತು, ಸಂಪಾದಿಸಿದೆ ಮತ್ತು ಬರೆದಿದೆ",
+            "he": "מה M0 ביימה, ערכה וכתבה",
+            "zh": "M0 指 挥 ， 编 辑 和 编 写 了 什 么 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P57 M0 . ?x0 wdt:P1431 ?x1 . ?x1 wdt:P3373 ?x2 . ?x2 wdt:P27 wd:Q16 . ?x2 wdt:P26 M2 . FILTER ( ?x1 != ?x2 ) . FILTER ( ?x2 != M2 ) }"
+        },
+        "question": {
+            "en": "What did M0 direct and a sibling of M2 's Canadian spouse executive produce",
+            "kn": "M0 ನೇರ ಮತ್ತು M2 ನ ಕೆನಡಿಯನ್ ಸಂಗಾತಿಯ ಕಾರ್ಯನಿರ್ವಾಹಕನ ಒಡಹುಟ್ಟಿದವರು ಏನು ಉತ್ಪಾದಿಸಿದರು",
+            "he": "מה הפיק M0 ואח ממנהלת בן הזוג הקנדי של M2",
+            "zh": "M0 指 挥 和 M2 的 加 拿 大 配 偶 高 管 的 同 胞 产 生 什 么 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P1040 M0 . ?x0 wdt:P1431 ?x1 . ?x1 wdt:P40|wdt:P355 M1 }"
+        },
+        "question": {
+            "en": "What did M0 edit and M1 's parent executive produce",
+            "kn": "M0 ಸಂಪಾದನೆ ಮತ್ತು M1 ನ ಮೂಲ ಕಾರ್ಯನಿರ್ವಾಹಕ ಏನು ಉತ್ಪಾದಿಸಿದರು",
+            "he": "מה ערכה M0 והפקת ההורים של M1 הפיקה",
+            "zh": "M0 编 辑 和 M1 的 上 级 主 管 产 生 了 什 么 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P1040 ?x1 . ?x0 wdt:P1431 ?x1 . ?x0 wdt:P162|wdt:P272 ?x1 . ?x0 wdt:P58 ?x1 . ?x1 wdt:P26 M0 . FILTER ( ?x1 != M0 ) }"
+        },
+        "question": {
+            "en": "What did M0 's spouse executive produce , edit , write , and produce",
+            "kn": "M0 ನ ಸಂಗಾತಿಯ ಕಾರ್ಯನಿರ್ವಾಹಕನು ಏನು ಉತ್ಪಾದಿಸಿದನು, ಸಂಪಾದಿಸಿದ್ದಾನೆ, ಬರೆಯುತ್ತಿದ್ದನು ಮತ್ತು ಉತ್ಪಾದಿಸಿದನು",
+            "he": "מה הפיק, ערך, כתב, והפיק בכיר בן / בת הזוג של M0",
+            "zh": "M0 的 配 偶 执 行 人 员 制 作 ， 编 辑 ， 编 写 和 制 作 了 什 么 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P1040 ?x1 . ?x0 wdt:P1431 ?x1 . ?x1 wdt:P26 M0 . FILTER ( ?x1 != M0 ) }"
+        },
+        "question": {
+            "en": "What did M0 's spouse edit and executive produce",
+            "kn": "M0 ಅವರ ಸಂಗಾತಿಯ ಸಂಪಾದನೆ ಮತ್ತು ಕಾರ್ಯನಿರ್ವಾಹಕ ಏನು ಉತ್ಪಾದಿಸಿತು",
+            "he": "מה עשה בן הזוג של M0 והפיק אותו",
+            "zh": "M0 的 配 偶 编 辑 和 执 行 产 生 了 什 么 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P57 ?x1 . ?x0 wdt:P58 ?x1 . ?x1 wdt:P3373 M0 . FILTER ( ?x1 != M0 ) }"
+        },
+        "question": {
+            "en": "What did M0 's sibling write and direct",
+            "kn": "M0 ಅವರ ಒಡಹುಟ್ಟಿದವರು ಏನು ಬರೆದರು ಮತ್ತು ನಿರ್ದೇಶಿಸಿದರು",
+            "he": "מה כתב ואחיו של M0",
+            "zh": "M0 的 兄 弟 姐 妹 写 和 指 挥 了 什 么 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P57 ?x1 . ?x0 wdt:P57 M0 . ?x1 wdt:P749 M1 }"
+        },
+        "question": {
+            "en": "What did M0 direct and M1 's child direct",
+            "kn": "M0 ನೇರ ಮತ್ತು M1 ನ ಮಗು ಏನು ನಿರ್ದೇಶಿಸಿತು",
+            "he": "מה כיוון M0 וילדו של M1",
+            "zh": "M0 指 挥 和 M1 的 孩 子 指 挥 什 么 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P112 ?x1 . ?x0 wdt:P112 M0 . ?x0 wdt:P112 M1 . ?x1 wdt:P108 M2 . ?x1 wdt:P27 wd:Q38 }"
+        },
+        "question": {
+            "en": "What did M0 and M1 found and a British employee of M2 found",
+            "kn": "M0 ಮತ್ತು M1 ಏನು ಕಂಡುಕೊಂಡವು ಮತ್ತು M2 ನ ಬ್ರಿಟಿಷ್ ಉದ್ಯೋಗಿ ಕಂಡುಕೊಂಡರು",
+            "he": "מה מצאו M0 ו- M1 ועובד בריטי של M2 מצא",
+            "zh": "M0 和 M1 发 现 了 什 么 ， M2 的 英 国 雇 员 发 现 了 什 么 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P1431 ?x1 . ?x1 wdt:P3373 ?x2 . ?x2 wdt:P26 M0 . FILTER ( ?x1 != ?x2 ) . FILTER ( ?x2 != M0 ) }"
+        },
+        "question": {
+            "en": "What did M0 's spouse 's sibling executive produce",
+            "kn": "M0 ಅವರ ಸಂಗಾತಿಯ ಸಹೋದರ ಕಾರ್ಯನಿರ್ವಾಹಕನು ಏನು ಉತ್ಪಾದಿಸಿದನು",
+            "he": "מה הפיק בכיר האחים של בן / בת הזוג M0",
+            "zh": "M0 的 兄 弟 姊 妹 高 管 产 生 了 什 么 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P112 ?x1 . ?x1 wdt:P40|wdt:P355 ?x2 . ?x2 wdt:P3373 M0 . FILTER ( ?x2 != M0 ) }"
+        },
+        "question": {
+            "en": "What did M0 's sibling 's parent found",
+            "kn": "M0 ನ ಒಡಹುಟ್ಟಿದವರ ಪೋಷಕರು ಏನು ಕಂಡುಕೊಂಡರು",
+            "he": "מה מצא ההורה של אחיו של M0",
+            "zh": "M0 的 兄 弟 姐 妹 的 父 母 找 到 了 什 么 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P57 ?x1 . ?x1 wdt:P27 wd:Q142 . ?x1 wdt:P3373 M0 . FILTER ( ?x1 != M0 ) }"
+        },
+        "question": {
+            "en": "What did M0 's French sibling direct",
+            "kn": "M0 ನ ಫ್ರೆಂಚ್ ಒಡಹುಟ್ಟಿದವರು ಏನು ನಿರ್ದೇಶಿಸಿದರು",
+            "he": "מה הורה אחיו הצרפתי של M0",
+            "zh": "M0 的 法 国 同 胞 指 示 什 么 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P1431 ?x1 . ?x1 wdt:P21 wd:Q6581097 . ?x1 wdt:P3373 M0 . FILTER ( ?x1 != M0 ) }"
+        },
+        "question": {
+            "en": "What did M0 's male sibling executive produce",
+            "kn": "M0 ನ ಪುರುಷ ಸಹೋದರ ಕಾರ್ಯನಿರ್ವಾಹಕನು ಏನು ಉತ್ಪಾದಿಸಿದನು",
+            "he": "מה הפיק בכיר האחים M0",
+            "zh": "M0 的 男 性 同 胞 高 管 产 生 了 什 么 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P1040 ?x1 . ?x0 wdt:P162|wdt:P272 ?x1 . ?x0 wdt:P58 ?x1 . ?x1 wdt:P3373 M0 . FILTER ( ?x1 != M0 ) }"
+        },
+        "question": {
+            "en": "What did M0 's sibling produce , edit , and write",
+            "kn": "M0 ನ ಒಡಹುಟ್ಟಿದವರು ಏನು ಉತ್ಪಾದಿಸಿದರು, ಸಂಪಾದಿಸಿದ್ದಾರೆ ಮತ್ತು ಬರೆದಿದ್ದಾರೆ",
+            "he": "מה אחיו של M0 הפיק, ערך, וכתב",
+            "zh": "M0 的 兄 弟 姐 妹 产 生 ， 编 辑 和 编 写 了 什 么 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P1431 ?x1 . ?x1 wdt:P26 ?x2 . ?x2 wdt:P40|wdt:P355 M0 . FILTER ( ?x1 != ?x2 ) }"
+        },
+        "question": {
+            "en": "What did M0 's parent 's spouse executive produce",
+            "kn": "M0 ನ ಪೋಷಕರ ಸಂಗಾತಿಯ ಕಾರ್ಯನಿರ್ವಾಹಕನು ಏನು ಉತ್ಪಾದಿಸಿದನು",
+            "he": "מה הפיק מנהל בן / בת הזוג של ההורה של M0",
+            "zh": "M0 的 父 母 的 配 偶 高 管 产 生 了 什 么 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P750 M0 . ?x0 wdt:P162|wdt:P272 ?x1 . ?x1 wdt:P108 M1 . ?x1 wdt:P27 wd:Q16 }"
+        },
+        "question": {
+            "en": "What did M1 's Canadian employee produce and M0 distribute",
+            "kn": "M1 ನ ಕೆನಡಾದ ಉದ್ಯೋಗಿ ಏನು ಉತ್ಪಾದಿಸಿದರು ಮತ್ತು M0 ವಿತರಿಸಿದರು",
+            "he": "מה הפיק העובד הקנדי של M1 והפיץ M0",
+            "zh": "M1 的 加 拿 大 雇 员 生 产 和 分 发 M0 的 什 么 东 西 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P57 ?x1 . ?x1 wdt:P21 wd:Q6581072 . ?x1 wdt:P27 wd:Q183 . ?x1 wdt:P3373 M0 . FILTER ( ?x1 != M0 ) }"
+        },
+        "question": {
+            "en": "What did M0 's German female sibling direct",
+            "kn": "M0 ನ ಜರ್ಮನ್ ಸ್ತ್ರೀ ಒಡಹುಟ್ಟಿದವರು ಏನು ನಿರ್ದೇಶಿಸಿದರು",
+            "he": "מה כיוונה אחיה הגרמני של M0",
+            "zh": "M0 的 德 国 女 性 兄 弟 姐 妹 指 挥 什 么 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P1040 M0 . ?x0 wdt:P1431 M0 . ?x0 wdt:P58 M0 }"
+        },
+        "question": {
+            "en": "What did M0 executive produce , write , and edit",
+            "kn": "M0 ಕಾರ್ಯನಿರ್ವಾಹಕ ಏನು ಉತ್ಪಾದಿಸಿದರು, ಬರೆಯುತ್ತಾರೆ ಮತ್ತು ಸಂಪಾದಿಸಿದ್ದಾರೆ",
+            "he": "מה הפיק, כתב וערך בכיר M0",
+            "zh": "M0 执 行 人 员 产 生 ， 编 写 和 编 辑 了 什 么 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P57 ?x1 . ?x0 wdt:P1040 ?x1 . ?x0 wdt:P1431 ?x1 . ?x0 wdt:P162|wdt:P272 ?x1 . ?x0 wdt:P58 ?x1 . ?x1 wdt:P26 M0 . FILTER ( ?x1 != M0 ) }"
+        },
+        "question": {
+            "en": "What did M0 's spouse executive produce , direct , write , edit , and produce",
+            "kn": "M0 ನ ಸಂಗಾತಿಯ ಕಾರ್ಯನಿರ್ವಾಹಕನು ಏನು ಉತ್ಪಾದಿಸಿದನು, ನೇರ, ಬರೆಯಲು, ಸಂಪಾದಿಸಲು ಮತ್ತು ಉತ್ಪಾದಿಸಿದನು",
+            "he": "מה הפיק, ביים, כתב, ערך, והפיק בכיר בן / בת הזוג של M0",
+            "zh": "M0 的 配 偶 主 管 执 行 什 么 工 作 ， 指 挥 ， 编 写 ， 编 辑 和 生 产 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P1040 M1 . ?x0 wdt:P1431 M0 }"
+        },
+        "question": {
+            "en": "What did M0 executive produce and M1 edit",
+            "kn": "M0 ಕಾರ್ಯನಿರ್ವಾಹಕ ಏನು ಉತ್ಪಾದಿಸಿತು ಮತ್ತು M1 ಸಂಪಾದಿಸಿದೆ",
+            "he": "מה הפיק M0 ו- M1 ערכו",
+            "zh": "M0 执 行 人 员 产 生 什 么 并 编 辑 M1 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P57 M0 . ?x0 wdt:P57 M1 . ?x0 wdt:P162|wdt:P272 M0 . ?x0 wdt:P162|wdt:P272 M1 }"
+        },
+        "question": {
+            "en": "What did M0 and M1 produce and direct",
+            "kn": "M0 ಮತ್ತು M1 ಏನು ಉತ್ಪಾದಿಸಿ ನಿರ್ದೇಶಿಸಿದವು",
+            "he": "מה ייצרו M0 ו- M1 וביימו",
+            "zh": "M0 和 M1 产 生 并 指 挥 什 么 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P57 ?x1 . ?x1 wdt:P40|wdt:P355 M0 }"
+        },
+        "question": {
+            "en": "What did M0 's parent direct",
+            "kn": "M0 ನ ಪೋಷಕರು ಏನು ನಿರ್ದೇಶಿಸಿದ್ದಾರೆ",
+            "he": "מה הורה ההורה של M0",
+            "zh": "M0 的 父 母 指 挥 什 么 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P1431 ?x1 . ?x0 wdt:P1431 M0 . ?x1 wdt:P3373 M1 . FILTER ( ?x1 != M1 ) }"
+        },
+        "question": {
+            "en": "What did M0 executive produce and M1 's sibling executive produce",
+            "kn": "M0 ಕಾರ್ಯನಿರ್ವಾಹಕ ಮತ್ತು M1 ನ ಒಡಹುಟ್ಟಿದ ಕಾರ್ಯನಿರ್ವಾಹಕನು ಏನು ಉತ್ಪಾದಿಸಿದನು",
+            "he": "מה ייצר מנהלי M0 ומנהלי אחים M1",
+            "zh": "M0 执 行 官 产 生 什 么 ， M1 的 同 级 执 行 官 产 生 什 么 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P57 M3 . ?x0 wdt:P1040 M2 . ?x0 wdt:P1431 M0 . ?x0 wdt:P1431 M1 }"
+        },
+        "question": {
+            "en": "What did M0 executive produce , M2 edit , M3 direct , and M1 executive produce",
+            "kn": "M0 ಕಾರ್ಯನಿರ್ವಾಹಕ ಉತ್ಪಾದನೆ, M2 ಸಂಪಾದನೆ, M3 ನೇರ ಮತ್ತು M1 ಕಾರ್ಯನಿರ್ವಾಹಕ ಉತ್ಪಾದನೆ ಏನು",
+            "he": "מה הפיקו M0 Executive, M2 ערכו, M3 ישיר ו- M1 Executive",
+            "zh": "M0 执 行 人 员 产 生 ， M2 编 辑 ， M3 直 接 和 M1 执 行 人 员 产 生 什 么 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P57 M3 . ?x0 wdt:P57 M4 . ?x0 wdt:P1431 M0 . ?x0 wdt:P1431 M1 . ?x0 wdt:P1431 M2 }"
+        },
+        "question": {
+            "en": "What did M0 executive produce , M1 executive produce , M3 and M4 direct , and M2 executive produce",
+            "kn": "M0 ಕಾರ್ಯನಿರ್ವಾಹಕ ಉತ್ಪಾದನೆಗಳು, M1 ಕಾರ್ಯನಿರ್ವಾಹಕ ಉತ್ಪನ್ನಗಳು, M3 ಮತ್ತು M4 ನೇರ ಮತ್ತು M2 ಕಾರ್ಯನಿರ್ವಾಹಕ ಉತ್ಪಾದನೆಗಳು ಏನು",
+            "he": "מה ייצרו M0 Executive, M1 Executive, M3 ו- M4 ישיר ו- M2 Executive",
+            "zh": "M0 主 管 产 生 ， M1 主 管 产 生 ， M3 和 M4 直 接 产 生 以 及 M2 主 管 产 生 什 么 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P58 ?x1 . ?x1 wdt:P108 M0 }"
+        },
+        "question": {
+            "en": "What did M0 's employee write",
+            "kn": "M0 ನ ಉದ್ಯೋಗಿ ಏನು ಬರೆದಿದ್ದಾರೆ",
+            "he": "מה כתב עובד M0",
+            "zh": "M0 的 员 工 写 了 什 么 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P1040 ?x1 . ?x0 wdt:P1431 ?x1 . ?x1 wdt:P26 ?x2 . ?x2 wdt:P26 M0 . FILTER ( ?x1 != ?x2 ) . FILTER ( ?x2 != M0 ) }"
+        },
+        "question": {
+            "en": "What did M0 's spouse 's spouse executive produce and edit",
+            "kn": "M0 ಅವರ ಸಂಗಾತಿಯ ಸಂಗಾತಿಯ ಕಾರ್ಯನಿರ್ವಾಹಕನು ಏನು ತಯಾರಿಸಿದ್ದಾನೆ ಮತ್ತು ಸಂಪಾದಿಸಿದ್ದಾನೆ",
+            "he": "מה הפיק וערך מנהל בן / בת הזוג של M0",
+            "zh": "M0 的 配 偶 的 配 偶 执 行 人 员 制 作 和 编 辑 了 什 么 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P58 ?x1 . ?x1 wdt:P26 ?x2 . ?x2 wdt:P26 M0 . FILTER ( ?x1 != ?x2 ) . FILTER ( ?x2 != M0 ) }"
+        },
+        "question": {
+            "en": "What did M0 's spouse 's spouse write",
+            "kn": "M0 ಅವರ ಸಂಗಾತಿಯ ಸಂಗಾತಿಯು ಏನು ಬರೆದಿದ್ದಾರೆ",
+            "he": "מה כתב בן / בת הזוג של M0",
+            "zh": "M0 的 配 偶 的 配 偶 写 了 什 么 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P57 ?x1 . ?x1 wdt:P108 M0 . ?x1 wdt:P27 wd:Q38 }"
+        },
+        "question": {
+            "en": "What did M0 's Italian employee direct",
+            "kn": "M0 ನ ಇಟಾಲಿಯನ್ ಉದ್ಯೋಗಿ ಏನು ನಿರ್ದೇಶಿಸಿದ",
+            "he": "מה הנחה העובד האיטלקי של M0",
+            "zh": "M0 的 意 大 利 员 工 指 挥 什 么 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P57 ?x1 . ?x0 wdt:P1040 M0 . ?x1 wdt:P108 M1 . ?x1 wdt:P27 wd:Q30 }"
+        },
+        "question": {
+            "en": "What did M1 's American employee direct and M0 edit",
+            "kn": "M1 ನ ಅಮೇರಿಕನ್ ಉದ್ಯೋಗಿ ನೇರ ಮತ್ತು M0 ಸಂಪಾದನೆ ಏನು",
+            "he": "מה ביצע העובד האמריקאי של M1 ו- M0",
+            "zh": "M1 的 美 国 雇 员 直 接 指 挥 和 M0 进 行 什 么 编 辑 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P57 M0 . ?x0 wdt:P1040 M0 . ?x0 wdt:P162|wdt:P272 M0 }"
+        },
+        "question": {
+            "en": "What did M0 direct , produce , and edit",
+            "kn": "M0 ಏನು ನಿರ್ದೇಶಿಸಿತು, ಉತ್ಪಾದಿಸಿತು ಮತ್ತು ಸಂಪಾದಿಸಿತು",
+            "he": "מה M0 ביים, הפיק וערך",
+            "zh": "M0 指 挥 ， 产 生 和 编 辑 了 什 么 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P1040 ?x1 . ?x1 wdt:P108 M0 . ?x1 wdt:P27 wd:Q16 }"
+        },
+        "question": {
+            "en": "What did a Canadian employee of M0 edit",
+            "kn": "M0 ನ ಕೆನಡಾದ ಉದ್ಯೋಗಿ ಏನು ಸಂಪಾದಿಸಿದ್ದಾರೆ",
+            "he": "מה עשה עובד קנדי של M0",
+            "zh": "M0 的 加 拿 大 雇 员 编 辑 了 什 么 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P57 ?x1 . ?x0 wdt:P57 M0 . ?x0 wdt:P57 M1 . ?x1 wdt:P108 M2 . ?x1 wdt:P108 M3 . ?x1 wdt:P27 wd:Q148 }"
+        },
+        "question": {
+            "en": "What did a Chinese employee of M2 and M3 direct and M0 and M1 direct",
+            "kn": "M2 ಮತ್ತು M3 ನ ಚೀನೀ ಉದ್ಯೋಗಿ ನೇರ ಮತ್ತು M0 ಮತ್ತು M1 ಏನು ನಿರ್ದೇಶಿಸಿದರು",
+            "he": "מה כיוון עובד סיני של M2 ו- M3 ו- M0 ו- M1",
+            "zh": "M2 和 M3 的 中 国 雇 员 直 接 领 导 M0 和 M1 的 中 国 雇 员 直 接 领 导 什 么 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P162|wdt:P272 ?x1 . ?x0 wdt:P58 M0 . ?x1 wdt:P27 wd:Q96 . ?x1 wdt:P26 M2 . FILTER ( ?x1 != M2 ) }"
+        },
+        "question": {
+            "en": "What did a Mexican spouse of M2 produce and M0 write",
+            "kn": "M2 ನ ಮೆಕ್ಸಿಕನ್ ಸಂಗಾತಿಯು ಏನು ಮತ್ತು M0 ಅನ್ನು ಬರೆದಿದ್ದಾರೆ",
+            "he": "מה כתב בן זוג מקסיקני של M2 ו- M0",
+            "zh": "墨 西 哥 M2 和 M0 的 配 偶 生 产 什 么 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P112 ?x1 . ?x1 wdt:P21 wd:Q6581072 . ?x1 wdt:P3373 M0 . FILTER ( ?x1 != M0 ) }"
+        },
+        "question": {
+            "en": "What did a female sibling of M0 found",
+            "kn": "M0 ನ ಸ್ತ್ರೀ ಒಡಹುಟ್ಟಿದವರು ಏನು ಕಂಡುಕೊಂಡರು",
+            "he": "מה מצאה אח נשי מ- M0",
+            "zh": "M0 的 女 性 同 胞 发 现 了 什 么 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P1431 ?x1 . ?x1 wdt:P21 wd:Q6581072 . ?x1 wdt:P3373 M0 . FILTER ( ?x1 != M0 ) }"
+        },
+        "question": {
+            "en": "What did a female sibling of M0 executive produce",
+            "kn": "M0 ಕಾರ್ಯನಿರ್ವಾಹಕ ಮಹಿಳಾ ಒಡಹುಟ್ಟಿದವರು ಏನು ಉತ್ಪಾದಿಸಿದರು",
+            "he": "מה הפיקה אח נשי ממנהלת M0",
+            "zh": "M0 高 管 的 女 性 同 胞 产 生 了 什 么 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P1431 ?x1 . ?x0 wdt:P162|wdt:P272 ?x1 . ?x1 wdt:P21 wd:Q6581097 . ?x1 wdt:P3373 M0 . FILTER ( ?x1 != M0 ) }"
+        },
+        "question": {
+            "en": "What did a male sibling of M0 executive produce and produce",
+            "kn": "M0 ಕಾರ್ಯನಿರ್ವಾಹಕ ಗಂಡು ಒಡಹುಟ್ಟಿದವರು ಏನು ಉತ್ಪಾದಿಸಿದರು ಮತ್ತು ಉತ್ಪಾದಿಸಿದರು",
+            "he": "מה ייצר ואוצר אח זכר מבכירי M0",
+            "zh": "M0 执 行 官 的 男 性 同 胞 生 产 什 么 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P112 ?x1 . ?x1 wdt:P21 wd:Q6581097 . ?x1 wdt:P3373 M0 . FILTER ( ?x1 != M0 ) }"
+        },
+        "question": {
+            "en": "What did a male sibling of M0 found",
+            "kn": "M0 ನ ಗಂಡು ಒಡಹುಟ್ಟಿದವರು ಏನು ಕಂಡುಕೊಂಡರು",
+            "he": "מה מצא אח זכר מ- M0",
+            "zh": "M0 的 一 个 男 性 同 胞 发 现 了 什 么 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P57 ?x1 . ?x0 wdt:P1431 ?x1 . ?x1 wdt:P40|wdt:P355 M0 }"
+        },
+        "question": {
+            "en": "What did a parent of M0 direct and executive produce",
+            "kn": "M0 ನ ನೇರ ಮತ್ತು ಕಾರ್ಯನಿರ್ವಾಹಕ ಪೋಷಕರು ಏನು ಉತ್ಪಾದಿಸಿದರು",
+            "he": "מה הפיק הורה של M0 ישיר ומנהל",
+            "zh": "M0 的 父 母 直 接 和 高 管 产 生 了 什 么 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P57 ?x1 . ?x0 wdt:P1431 ?x1 . ?x1 wdt:P40|wdt:P355 M0 }"
+        },
+        "question": {
+            "en": "What did a parent of M0 executive produce and direct",
+            "kn": "M0 ಕಾರ್ಯನಿರ್ವಾಹಕ ಪೋಷಕರು ಏನು ಉತ್ಪಾದಿಸಿದರು ಮತ್ತು ನಿರ್ದೇಶಿಸಿದರು",
+            "he": "מה הפיק והורה הורה למנהל M0",
+            "zh": "M0 高 管 的 父 母 会 产 生 和 指 挥 什 么 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P1040 ?x1 . ?x0 wdt:P162|wdt:P272 ?x1 . ?x1 wdt:P40|wdt:P355 M0 }"
+        },
+        "question": {
+            "en": "What did a parent of M0 produce and edit",
+            "kn": "M0 ನ ಪೋಷಕರು ಏನು ತಯಾರಿಸಿದರು ಮತ್ತು ಸಂಪಾದಿಸಿದ್ದಾರೆ",
+            "he": "מה הפיק וערך הורה ל- M0",
+            "zh": "M0 的 父 代 产 生 和 编 辑 了 什 么 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P57 ?x1 . ?x1 wdt:P108 M0 }"
+        },
+        "question": {
+            "en": "What did a employee of M0 direct",
+            "kn": "M0 ನ ಉದ್ಯೋಗಿ ಏನು ನಿರ್ದೇಶಿಸಿದ",
+            "he": "מה כיוון עובד של M0",
+            "zh": "M0 的 员 工 指 挥 什 么 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P112 ?x1 . ?x1 wdt:P108 M0 . ?x1 wdt:P108 M1 }"
+        },
+        "question": {
+            "en": "What did a employee of M0 and M1 found",
+            "kn": "M0 ಮತ್ತು M1 ನ ಉದ್ಯೋಗಿ ಏನು ಕಂಡುಕೊಂಡರು",
+            "he": "מה מצא עובד של M0 ו- M1",
+            "zh": "M0 和 M1 的 员 工 发 现 了 什 么 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P57 M0 . ?x0 wdt:P1431 ?x1 . ?x1 wdt:P108 M1 . ?x1 wdt:P27 wd:Q16 }"
+        },
+        "question": {
+            "en": "What did M1 's Canadian employee executive produce and M0 direct",
+            "kn": "M1 ನ ಕೆನಡಾದ ಉದ್ಯೋಗಿ ಕಾರ್ಯನಿರ್ವಾಹಕನು ಏನು ಉತ್ಪಾದಿಸಿದನು ಮತ್ತು M0 ನೇರವಾಗಿ ಏನು ಮಾಡಿದನು",
+            "he": "מה הפיק בכיר העובד הקנדי של M1 ו- M0 בישר",
+            "zh": "M1 的 加 拿 大 员 工 主 管 产 生 什 么 ， M0 指 挥 什 么 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P108 M0 . ?x0 wdt:P108 M1 }"
+        },
+        "question": {
+            "en": "What employee of M0 did M1 employ",
+            "kn": "M0 ನ ಯಾವ ಉದ್ಯೋಗಿಯನ್ನು M1 ನೇಮಿಸಿಕೊಂಡಿದೆ",
+            "he": "איזה עובד של M0 העסיק M1",
+            "zh": "M1 雇 用 了 哪 个 M0 员 工 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P453 M0 . ?x0 wdt:P453 M1 . ?x0 wdt:P21 wd:Q6581072 . ?x0 wdt:P26 M3 . FILTER ( ?x0 != M3 ) }"
+        },
+        "question": {
+            "en": "What female actor of M0 and M1 did M3 marry",
+            "kn": "M0 ಮತ್ತು M1 ನ ಯಾವ ಮಹಿಳಾ ನಟ M3 ಮದುವೆಯಾದರು",
+            "he": "עם איזה שחקנית נשית של M0 ו- M1 התחתנה M3",
+            "zh": "M3 和 M0 和 M1 的 哪 个 女 演 员 结 婚 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P453 M0 . ?x0 wdt:P21 wd:Q6581097 . ?x0 wdt:P26 M2 . FILTER ( ?x0 != M2 ) }"
+        },
+        "question": {
+            "en": "What male actor of M0 did M2 marry",
+            "kn": "M0 ನ ಯಾವ ಪುರುಷ ನಟ M2 ಮದುವೆಯಾದರು",
+            "he": "עם איזה שחקן גבר של M0 התחתן M2",
+            "zh": "M2 嫁 给 了 M0 的 哪 个 男 演 员 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P453 M0 . ?x0 wdt:P21 wd:Q6581097 . ?x0 wdt:P26 M2 . FILTER ( ?x0 != M2 ) }"
+        },
+        "question": {
+            "en": "What male actor of M0 married M2",
+            "kn": "M0 ನ ಯಾವ ಪುರುಷ ನಟ M2 ಅನ್ನು ವಿವಾಹವಾದರು",
+            "he": "איזה שחקן גבר של M0 התחתן עם M2",
+            "zh": "M0 的 哪 个 男 演 员 与 M2 结 婚 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P737 M1 . ?x0 wdt:P108 M0 . ?x0 wdt:P21 wd:Q6581097 }"
+        },
+        "question": {
+            "en": "What male employee of M0 was influenced by M1",
+            "kn": "M0 ಯ ಯಾವ ಪುರುಷ ಉದ್ಯೋಗಿ M1 ನಿಂದ ಪ್ರಭಾವಿತನಾಗಿದ್ದಾನೆ",
+            "he": "איזה עובד גברי ב- M0 הושפע מ- M1",
+            "zh": "M0 的 哪 个 男 性 雇 员 受 到 M1 的 影 响 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P21 wd:Q6581097 . ?x0 wdt:P3373 M0 . ?x0 wdt:P26 M2 . FILTER ( ?x0 != M0 ) . FILTER ( ?x0 != M2 ) }"
+        },
+        "question": {
+            "en": "What male sibling of M0 did M2 marry",
+            "kn": "M0 ನ ಯಾವ ಗಂಡು ಸಹೋದರ M2 ಮದುವೆಯಾದರು",
+            "he": "עם איזה אח זכר מ- M0 התחתן M2",
+            "zh": "M2 嫁 给 了 M0 的 哪 个 男 性 兄 弟 姐 妹 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P40|wdt:P355 M0 . ?x0 wdt:P26 M0 . ?x0 wdt:P26 M1 . FILTER ( ?x0 != M0 ) . FILTER ( ?x0 != M1 ) }"
+        },
+        "question": {
+            "en": "What parent and spouse of M0 married M1",
+            "kn": "M0 ನ ಯಾವ ಪೋಷಕರು ಮತ್ತು ಸಂಗಾತಿಯು M1 ಅನ್ನು ವಿವಾಹವಾದರು",
+            "he": "איזה הורה ובן הזוג של M0 התחתנו עם M1",
+            "zh": "M0 的 哪 个 父 母 和 配 偶 与 M1 结 婚 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P112 M0 . ?x0 wdt:P112 M1 . ?x0 wdt:P40|wdt:P355 M2 }"
+        },
+        "question": {
+            "en": "What parent of M2 did M0 and M1 found",
+            "kn": "M2 ಮತ್ತು M1 ನ ಯಾವ ಪೋಷಕರು M0 ಮತ್ತು M1 ಅನ್ನು ಕಂಡುಕೊಂಡಿದ್ದಾರೆ",
+            "he": "איזה הורה ל- M2 מצא M0 ו- M1",
+            "zh": "M0 和 M1 找 到 了 M2 的 哪 个 父 级 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P156 M0 . ?x0 wdt:P58 M1 }"
+        },
+        "question": {
+            "en": "What prequel of M0 was written by M1",
+            "kn": "M0 ಯ ಯಾವ ಪೂರ್ವಭಾವಿ ಪತ್ರವನ್ನು M1 ಬರೆದಿದೆ",
+            "he": "איזה פריקוול של M0 נכתב על ידי M1",
+            "zh": "M1 写 了 M0 的 哪 些 前 传 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P57 M1 . ?x0 wdt:P1040 M1 . ?x0 wdt:P162|wdt:P272 M1 . ?x0 wdt:P156 M0 . ?x0 wdt:P58 M1 }"
+        },
+        "question": {
+            "en": "What prequel of M0 was written by , directed by , produced by , and edited by M1",
+            "kn": "M0 ಯ ಯಾವ ಪೂರ್ವಭಾವಿ ಪತ್ರವನ್ನು M1 ಬರೆದಿದೆ, ನಿರ್ದೇಶಿಸಿದೆ, ನಿರ್ಮಿಸಿದೆ ಮತ್ತು ಸಂಪಾದಿಸಿದೆ",
+            "he": "איזה פריקוול של M0 נכתב על ידי, ביים, הופק ונערך על ידי M1",
+            "zh": "M0 的 哪 个 前 传 是 由 M1 编 写 ， 导 演 ， 由 M1 制 作 和 编 辑 的 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P1040 ?x1 . ?x0 wdt:P156 M0 . ?x0 wdt:P58 ?x1 . ?x1 wdt:P3373 M1 . FILTER ( ?x1 != M1 ) }"
+        },
+        "question": {
+            "en": "What prequel of M0 was edited by and written by M1 's sibling",
+            "kn": "M0 ನ ಯಾವ ಪೂರ್ವಭಾವಿಯನ್ನು M1 ನ ಒಡಹುಟ್ಟಿದವರು ಸಂಪಾದಿಸಿದ್ದಾರೆ ಮತ್ತು ಬರೆದಿದ್ದಾರೆ",
+            "he": "איזה פריקוול של M0 נערך ונכתב על ידי אחיו של M1",
+            "zh": "M0 的 哪 个 前 传 由 M1 的 兄 弟 姐 妹 编 辑 和 编 写 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P156 ?x1 . ?x0 wdt:P58 M0 . ?x1 wdt:P155 M1 }"
+        },
+        "question": {
+            "en": "What prequel of M1 's sequel was written by M0",
+            "kn": "M1 ನ ಉತ್ತರಭಾಗದ ಯಾವ ಪೂರ್ವಭಾವಿಯನ್ನು M0 ಬರೆದಿದೆ",
+            "he": "איזה פריקוול לסרט ההמשך של M1 נכתב על ידי M0",
+            "zh": "M0 写 的 M1 续 集 的 前 传 是 什 么 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P750 M0 . ?x0 wdt:P155 M1 . ?x0 wdt:P162|wdt:P272 M0 }"
+        },
+        "question": {
+            "en": "What sequel of M1 did M0 produce and distribute",
+            "kn": "M1 ನ ಯಾವ ಉತ್ತರಭಾಗವು M0 ಉತ್ಪಾದಿಸಿತು ಮತ್ತು ವಿತರಿಸಿತು",
+            "he": "איזה סרט המשך של M1 הפיק והפיץ M0",
+            "zh": "M0 产 生 并 发 行 了 M1 的 哪 些 续 集 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P1040 M0 . ?x0 wdt:P1040 M1 . ?x0 wdt:P1431 ?x1 . ?x0 wdt:P155 M2 . ?x1 wdt:P26 M3 . FILTER ( ?x1 != M3 ) }"
+        },
+        "question": {
+            "en": "What sequel of M2 did M3 's spouse executive produce and M0 and M1 edit",
+            "kn": "M3 ನ ಸಂಗಾತಿಯ ಕಾರ್ಯನಿರ್ವಾಹಕನು M2 ನ ಯಾವ ಉತ್ತರಭಾಗವನ್ನು ಉತ್ಪಾದಿಸಿದನು ಮತ್ತು M0 ಮತ್ತು M1 ಸಂಪಾದಿಸಿದನು",
+            "he": "איזה סרט המשך של M2 הפיק בן הזוג של M3 וערך M0 ו- M1",
+            "zh": "M3 的 配 偶 执 行 人 员 制 作 了 M2 的 哪 些 续 集 ， M0 和 M1 进 行 了 编 辑 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P27 wd:Q145 . ?x0 wdt:P3373 M0 . ?x0 wdt:P3373 M1 . FILTER ( ?x0 != M0 ) . FILTER ( ?x0 != M1 ) }"
+        },
+        "question": {
+            "en": "What sibling of M0 was a British sibling of M1",
+            "kn": "M1 ನ ಬ್ರಿಟಿಷ್ ಒಡಹುಟ್ಟಿದವರು M0 ನ ಯಾವ ಸಹೋದರ",
+            "he": "איזה אח של M0 היה אח בריטי של M1",
+            "zh": "英 国 的 M1 兄 弟 是 M0 的 哪 个 兄 弟 姐 妹 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P40|wdt:P355 M0 . ?x0 wdt:P26 M0 . ?x0 wdt:P26 M1 . ?x0 wdt:P26 M2 . ?x0 wdt:P26 M3 . FILTER ( ?x0 != M0 ) . FILTER ( ?x0 != M1 ) . FILTER ( ?x0 != M2 ) . FILTER ( ?x0 != M3 ) }"
+        },
+        "question": {
+            "en": "What spouse and parent of M0 married M1 and M2 and married M3",
+            "kn": "M0 ಮತ್ತು M2 ನ ಯಾವ ಸಂಗಾತಿ ಮತ್ತು ಪೋಷಕರು M1 ಮತ್ತು M2 ಅವರನ್ನು ವಿವಾಹವಾದರು ಮತ್ತು M3 ಅನ್ನು ವಿವಾಹವಾದರು",
+            "he": "איזה בן זוג והורה של M0 התחתנו עם M1 ו- M2 ונשאו M3",
+            "zh": "M0 的 配 偶 和 父 母 与 M1 和 M2 以 及 M3 结 婚 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 ^wdt:P21 ?x1 . ?x1 wdt:P3373 M0 . FILTER ( ?x1 != M0 ) }"
+        },
+        "question": {
+            "en": "What was a gender of M0 's sibling",
+            "kn": "M0 ನ ಒಡಹುಟ್ಟಿದವರ ಲಿಂಗ ಯಾವುದು",
+            "he": "מה היה מין של אחיו של M0",
+            "zh": "M0 的 兄 弟 姐 妹 的 性 别 是 什 么 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 ^wdt:P21 ?x1 . ?x1 wdt:P749 M0 }"
+        },
+        "question": {
+            "en": "What was a gender of M0 's child",
+            "kn": "M0 ಮಗುವಿನ ಲಿಂಗ ಯಾವುದು",
+            "he": "מה היה המין של הילד של M0",
+            "zh": "M0 的 孩 子 的 性 别 是 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P57 ?x1 . ?x0 wdt:P1431 ?x1 . ?x1 wdt:P40|wdt:P355 M0 }"
+        },
+        "question": {
+            "en": "What was directed and executive produced by M0 's parent",
+            "kn": "M0 ನ ಪೋಷಕರು ನಿರ್ದೇಶಿಸಿದ ಮತ್ತು ಕಾರ್ಯನಿರ್ವಾಹಕ ಏನು",
+            "he": "מה הופק והנהלה של ההורה של M0",
+            "zh": "M0 的 父 母 指 挥 和 执 行 的 是 什 么 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P57 ?x1 . ?x1 wdt:P108 M0 . ?x1 wdt:P27 wd:Q38 }"
+        },
+        "question": {
+            "en": "What was directed by M0 's British employee",
+            "kn": "M0 ನ ಬ್ರಿಟಿಷ್ ಉದ್ಯೋಗಿ ಏನು ನಿರ್ದೇಶಿಸಿದ್ದಾರೆ",
+            "he": "מה הורה על ידי העובד הבריטי של M0",
+            "zh": "M0 的 英 国 雇 员 指 示 了 什 么 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P57 ?x1 . ?x0 wdt:P1040 ?x1 . ?x1 wdt:P26 ?x2 . ?x2 wdt:P3373 M0 . FILTER ( ?x1 != ?x2 ) . FILTER ( ?x2 != M0 ) }"
+        },
+        "question": {
+            "en": "What was directed by and edited by M0 's sibling 's spouse",
+            "kn": "M0 ನ ಒಡಹುಟ್ಟಿದವರ ಸಂಗಾತಿಯು ನಿರ್ದೇಶಿಸಿದ ಮತ್ತು ಸಂಪಾದಿಸಿದ್ದು ಏನು",
+            "he": "מה ביים ונערך על ידי בן / בת הזוג של M0",
+            "zh": "由 M0 的 兄 弟 姐 妹 的 配 偶 指 导 和 编 辑 的 内 容 是 什 么 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P57 ?x1 . ?x0 wdt:P1040 ?x1 . ?x1 wdt:P27 wd:Q38 . ?x1 wdt:P3373 M0 . FILTER ( ?x1 != M0 ) }"
+        },
+        "question": {
+            "en": "What was directed by and edited by M0 's Italian sibling",
+            "kn": "M0 ನ ಇಟಾಲಿಯನ್ ಒಡಹುಟ್ಟಿದವರು ನಿರ್ದೇಶಿಸಿದ ಮತ್ತು ಸಂಪಾದಿಸಿದ್ದು ಏನು",
+            "he": "מה ביים ונערך על ידי אחיו האיטלקי של M0",
+            "zh": "由 M0 的 意 大 利 同 胞 指 导 和 编 辑 的 内 容 是 什 么 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P57 ?x1 . ?x0 wdt:P1040 ?x1 . ?x1 wdt:P3373 M0 . FILTER ( ?x1 != M0 ) }"
+        },
+        "question": {
+            "en": "What was directed by and edited by a sibling of M0",
+            "kn": "M0 ನ ಒಡಹುಟ್ಟಿದವರು ನಿರ್ದೇಶಿಸಿದ ಮತ್ತು ಸಂಪಾದಿಸಿದ್ದು ಏನು",
+            "he": "מה ביים ונערך על ידי אח של M0",
+            "zh": "由 M0 的 兄 弟 姐 妹 指 导 和 编 辑 的 内 容 是 什 么 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P57 ?x1 . ?x0 wdt:P162|wdt:P272 ?x1 . ?x1 wdt:P3373 M0 . FILTER ( ?x1 != M0 ) }"
+        },
+        "question": {
+            "en": "What was directed by and produced by a sibling of M0",
+            "kn": "M0 ನ ಒಡಹುಟ್ಟಿದವರು ನಿರ್ದೇಶಿಸಿದ ಮತ್ತು ನಿರ್ಮಿಸಿದ್ದು ಏನು",
+            "he": "מה ביים ואח של M0",
+            "zh": "M0 的 兄 弟 姐 妹 指 导 和 产 生 了 什 么 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P57 ?x1 . ?x0 wdt:P1040 ?x1 . ?x0 wdt:P1431 ?x1 . ?x0 wdt:P162|wdt:P272 ?x1 . ?x0 wdt:P58 ?x1 . ?x1 wdt:P108 M0 }"
+        },
+        "question": {
+            "en": "What was directed , produced , written , edited , and executive produced by a employee of M0",
+            "kn": "M0 ನ ಉದ್ಯೋಗಿಯೊಬ್ಬರು ನಿರ್ಮಿಸಿದ, ನಿರ್ಮಿಸಿದ, ಬರೆದ, ಸಂಪಾದಿಸಿದ ಮತ್ತು ಕಾರ್ಯನಿರ್ವಾಹಕ ಯಾವುದು",
+            "he": "מה הופק, הופק, נכתב, נערך והוצא על ידי עובד M0",
+            "zh": "由 M0 的 员 工 指 导 ， 制 作 ， 编 写 ， 编 辑 和 执 行 的 内 容 是 什 么 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P1040 M0 . ?x0 wdt:P1040 M1 }"
+        },
+        "question": {
+            "en": "What was edited by M0 and edited by M1",
+            "kn": "M0 ನಿಂದ ಏನು ಸಂಪಾದಿಸಲಾಗಿದೆ ಮತ್ತು M1 ನಿಂದ ಸಂಪಾದಿಸಲ್ಪಟ್ಟಿದೆ",
+            "he": "מה נערך על ידי M0 ונערך על ידי M1",
+            "zh": "M0 和 M1 编 辑 了 什 么 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P1040 ?x1 . ?x0 wdt:P1040 M0 . ?x1 wdt:P40|wdt:P355 ?x2 . ?x2 wdt:P3373 M1 . FILTER ( ?x2 != M1 ) }"
+        },
+        "question": {
+            "en": "What was edited by M0 and edited by a parent of M1 's sibling",
+            "kn": "M0 ನಿಂದ ಏನು ಸಂಪಾದಿಸಲಾಗಿದೆ ಮತ್ತು M1 ನ ಒಡಹುಟ್ಟಿದವರ ಪೋಷಕರು ಸಂಪಾದಿಸಿದ್ದಾರೆ",
+            "he": "מה נערך על ידי M0 ונערך על ידי הורה לאחיו של M1",
+            "zh": "由 M0 编 辑 并 由 M1 的 同 级 父 母 编 辑 的 内 容 是 什 么 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P1040 ?x1 . ?x0 wdt:P1040 M0 . ?x1 wdt:P27 wd:Q17 . ?x1 wdt:P3373 M1 . FILTER ( ?x1 != M1 ) }"
+        },
+        "question": {
+            "en": "What was edited by a Japanese sibling of M1 and edited by M0",
+            "kn": "M1 ನ ಜಪಾನಿನ ಒಡಹುಟ್ಟಿದವರು ಏನು ಸಂಪಾದಿಸಿದ್ದಾರೆ ಮತ್ತು M0 ನಿಂದ ಸಂಪಾದಿಸಲಾಗಿದೆ",
+            "he": "מה נערך על ידי אח יפני של M1 ונערך על ידי M0",
+            "zh": "M1 的 日 语 同 胞 和 M0 所 编 辑 的 是 什 么 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P57 ?x1 . ?x0 wdt:P1040 ?x1 . ?x1 wdt:P108 M0 }"
+        },
+        "question": {
+            "en": "What was edited by and directed by M0 's employee",
+            "kn": "M0 ನ ಉದ್ಯೋಗಿ ಏನು ಸಂಪಾದಿಸಿದ್ದಾರೆ ಮತ್ತು ನಿರ್ದೇಶಿಸಿದ್ದಾರೆ",
+            "he": "מה נערך על ידי העובד של M0 וביים אותו",
+            "zh": "由 M0 的 员 工 编 辑 和 指 导 的 内 容 是 什 么 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P57 ?x1 . ?x0 wdt:P1040 ?x1 . ?x1 wdt:P27 wd:Q38 . ?x1 wdt:P3373 M0 . FILTER ( ?x1 != M0 ) }"
+        },
+        "question": {
+            "en": "What was edited by and directed by M0 's Italian sibling",
+            "kn": "M0 ನ ಇಟಾಲಿಯನ್ ಒಡಹುಟ್ಟಿದವರು ಏನು ಸಂಪಾದಿಸಿದ್ದಾರೆ ಮತ್ತು ನಿರ್ದೇಶಿಸಿದ್ದಾರೆ",
+            "he": "מה ערך בעריכתו של אחיו האיטלקי של M0",
+            "zh": "由 M0 的 意 大 利 同 胞 编 辑 和 导 演 的 内 容 是 什 么 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P1040 ?x1 . ?x0 wdt:P1431 ?x1 . ?x1 wdt:P26 M0 . FILTER ( ?x1 != M0 ) }"
+        },
+        "question": {
+            "en": "What was edited by and executive produced by a spouse of M0",
+            "kn": "M0 ನ ಸಂಗಾತಿಯಿಂದ ಸಂಪಾದಿಸಲ್ಪಟ್ಟ ಮತ್ತು ಕಾರ್ಯನಿರ್ವಾಹಕರಿಂದ ಏನು ಸಂಪಾದಿಸಲ್ಪಟ್ಟಿದೆ",
+            "he": "מה נערך על ידי ומנהל מיוצר על ידי בן / בת זוג של M0",
+            "zh": "M0 的 配 偶 编 辑 和 执 行 的 内 容 是 什 么 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P1040 ?x1 . ?x0 wdt:P162|wdt:P272 ?x1 . ?x1 wdt:P26 ?x2 . ?x2 wdt:P26 M0 . FILTER ( ?x1 != ?x2 ) . FILTER ( ?x2 != M0 ) }"
+        },
+        "question": {
+            "en": "What was edited by and produced by M0 's spouse 's spouse",
+            "kn": "M0 ನ ಸಂಗಾತಿಯ ಸಂಗಾತಿಯಿಂದ ಏನು ಸಂಪಾದಿಸಲ್ಪಟ್ಟಿದೆ ಮತ್ತು ನಿರ್ಮಿಸಲ್ಪಟ್ಟಿದೆ",
+            "he": "מה נערך על ידי והופק על ידי בן / בת הזוג של M0",
+            "zh": "M0 的 配 偶 的 配 偶 编 辑 和 制 作 的 内 容 是 什 么 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P1040 ?x1 . ?x0 wdt:P162|wdt:P272 ?x1 . ?x1 wdt:P3373 M0 . FILTER ( ?x1 != M0 ) }"
+        },
+        "question": {
+            "en": "What was edited by and produced by M0 's sibling",
+            "kn": "M0 ನ ಒಡಹುಟ್ಟಿದವರು ಏನು ಸಂಪಾದಿಸಿದ್ದಾರೆ ಮತ್ತು ನಿರ್ಮಿಸಿದ್ದಾರೆ",
+            "he": "מה נערך על ידי אחיו של M0 והפיק אותו",
+            "zh": "M0 的 兄 弟 姐 妹 编 辑 和 制 作 了 什 么 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P1040 ?x1 . ?x0 wdt:P162|wdt:P272 ?x1 . ?x1 wdt:P108 M0 }"
+        },
+        "question": {
+            "en": "What was edited by and produced by a employee of M0",
+            "kn": "M0 ನ ಉದ್ಯೋಗಿ ಏನು ಸಂಪಾದಿಸಿದ್ದಾರೆ ಮತ್ತು ನಿರ್ಮಿಸಿದ್ದಾರೆ",
+            "he": "מה נערך על ידי והופק על ידי עובד ב- M0",
+            "zh": "M0 的 员 工 编 辑 和 制 作 的 内 容 是 什 么 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P57 ?x1 . ?x0 wdt:P1040 ?x1 . ?x0 wdt:P1431 ?x1 . ?x0 wdt:P162|wdt:P272 ?x1 . ?x1 wdt:P40|wdt:P355 M0 }"
+        },
+        "question": {
+            "en": "What was edited by , directed by , produced by , and executive produced by a parent of M0",
+            "kn": "M0 ನ ಪೋಷಕರು ನಿರ್ಮಿಸಿದ, ನಿರ್ದೇಶಿಸಿದ, ನಿರ್ಮಿಸಿದ ಮತ್ತು ಕಾರ್ಯನಿರ್ವಾಹಕರಿಂದ ಏನು ಸಂಪಾದಿಸಲಾಗಿದೆ",
+            "he": "מה נערך על ידי, ביים, הופק ומנהל שהופק על ידי הורה ל- M0",
+            "zh": "由 M0 的 母 公 司 编 辑 ， 指 导 ， 制 作 和 执 行 的 内 容 是 什 么 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P1040 ?x1 . ?x0 wdt:P1431 ?x1 . ?x0 wdt:P58 ?x1 . ?x1 wdt:P3373 ?x2 . ?x2 wdt:P3373 M0 . FILTER ( ?x1 != ?x2 ) . FILTER ( ?x2 != M0 ) }"
+        },
+        "question": {
+            "en": "What was edited by , written by , and executive produced by M0 's sibling 's sibling",
+            "kn": "M0 ನ ಒಡಹುಟ್ಟಿದವರ ಸಹೋದರರಿಂದ ನಿರ್ಮಿಸಲ್ಪಟ್ಟ, ಬರೆದ ಮತ್ತು ಕಾರ್ಯನಿರ್ವಾಹಕರಿಂದ ಏನು ಸಂಪಾದಿಸಲ್ಪಟ್ಟಿದೆ",
+            "he": "מה נערך על ידי, נכתב על ידי ומנהל שהופק על ידי אחיו של אח M0",
+            "zh": "由 M0 的 兄 弟 姐 妹 的 兄 弟 姐 妹 编 辑 ， 编 写 和 执 行 的 内 容 是 什 么 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P57 M0 . ?x0 wdt:P1431 M0 }"
+        },
+        "question": {
+            "en": "What was executive produced and directed by M0",
+            "kn": "ಕಾರ್ಯನಿರ್ವಾಹಕನನ್ನು M0 ನಿರ್ಮಿಸಿ ನಿರ್ದೇಶಿಸಿದ್ದು ಏನು",
+            "he": "מה הופק ובימוי המנהל על ידי M0",
+            "zh": "M0 制 作 并 指 挥 了 什 么 主 管 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P1431 ?x1 . ?x0 wdt:P58 ?x1 . ?x1 wdt:P26 M0 . FILTER ( ?x1 != M0 ) }"
+        },
+        "question": {
+            "en": "What was executive produced and written by a spouse of M0",
+            "kn": "M0 ನ ಸಂಗಾತಿಯಿಂದ ಕಾರ್ಯನಿರ್ವಾಹಕನು ನಿರ್ಮಿಸಿ ಬರೆದದ್ದು ಏನು",
+            "he": "מה הופק ונכתב על ידי בן / בת זוג של M0",
+            "zh": "M0 的 配 偶 制 作 和 撰 写 的 行 政 文 件 是 什 么 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P57 M1 . ?x0 wdt:P1431 M0 }"
+        },
+        "question": {
+            "en": "What was executive produced by M0 and directed by M1",
+            "kn": "ಕಾರ್ಯನಿರ್ವಾಹಕನನ್ನು M0 ನಿರ್ಮಿಸಿ M1 ನಿರ್ದೇಶಿಸಿದ್ದು ಏನು",
+            "he": "מה הופק ההנהלה על ידי M0 וביים M1",
+            "zh": "M0 制 作 并 由 M1 执 导 的 执 行 官 是 什 么 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P1431 M0 . ?x0 wdt:P58 ?x1 . ?x1 wdt:P40|wdt:P355 M1 }"
+        },
+        "question": {
+            "en": "What was executive produced by M0 and written by M1 's parent",
+            "kn": "ಕಾರ್ಯನಿರ್ವಾಹಕನನ್ನು M0 ನಿರ್ಮಿಸಿದ ಮತ್ತು M1 ನ ಪೋಷಕರು ಬರೆದದ್ದು ಏನು",
+            "he": "מה הפיק המנהל על ידי M0 ונכתב על ידי ההורה של M1",
+            "zh": "M0 制 作 的 高 管 由 M1 的 父 母 写 了 什 么 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P1431 ?x1 . ?x1 wdt:P26 M0 . FILTER ( ?x1 != M0 ) }"
+        },
+        "question": {
+            "en": "What was executive produced by M0 's spouse",
+            "kn": "M0 ಅವರ ಸಂಗಾತಿಯಿಂದ ಕಾರ್ಯನಿರ್ವಾಹಕನನ್ನು ಏನು ತಯಾರಿಸಲಾಯಿತು",
+            "he": "מה הפיק מנהל בן הזוג של M0",
+            "zh": "M0 的 配 偶 产 生 了 什 么 执 行 人 员 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P1431 ?x1 . ?x0 wdt:P1431 M0 . ?x0 wdt:P1431 M1 . ?x1 wdt:P108 M2 . ?x1 wdt:P27 wd:Q38 }"
+        },
+        "question": {
+            "en": "What was executive produced by M0 and M1 and executive produced by M2 's British employee",
+            "kn": "M0 ಮತ್ತು M1 ನಿಂದ ಕಾರ್ಯನಿರ್ವಾಹಕ ಮತ್ತು M2 ನ ಬ್ರಿಟಿಷ್ ಉದ್ಯೋಗಿ ನಿರ್ಮಿಸಿದ ಕಾರ್ಯನಿರ್ವಾಹಕ ಯಾವುದು",
+            "he": "מה הופק המנהל על ידי M0 ו- M1 והמנהל הופק על ידי העובד הבריטי של M2",
+            "zh": "M0 和 M1 产 生 的 执 行 人 员 以 及 M2 的 英 国 雇 员 产 生 的 执 行 人 员 是 什 么 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P1431 ?x1 . ?x0 wdt:P1431 M0 . ?x1 wdt:P108 M1 . ?x1 wdt:P27 wd:Q16 }"
+        },
+        "question": {
+            "en": "What was executive produced by a Canadian employee of M1 and executive produced by M0",
+            "kn": "M1 ನ ಕೆನಡಾದ ಉದ್ಯೋಗಿ ಮತ್ತು M0 ನಿರ್ಮಿಸಿದ ಕಾರ್ಯನಿರ್ವಾಹಕರಿಂದ ಕಾರ್ಯನಿರ್ವಾಹಕ ಯಾವುದು",
+            "he": "מה הופק המנהל על ידי עובד קנדי של M1 והמנהל הופק על ידי M0",
+            "zh": "由 M1 的 加 拿 大 雇 员 生 产 的 高 管 人 员 和 M0 的 生 产 人 员 的 主 管 是 什 么 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P1431 ?x1 . ?x1 wdt:P26 M0 . FILTER ( ?x1 != M0 ) }"
+        },
+        "question": {
+            "en": "What was executive produced by a spouse of M0",
+            "kn": "M0 ನ ಸಂಗಾತಿಯಿಂದ ಕಾರ್ಯನಿರ್ವಾಹಕನನ್ನು ಏನು ತಯಾರಿಸಲಾಯಿತು",
+            "he": "מה הפיק המנהל על ידי בן / בת זוג של M0",
+            "zh": "M0 的 配 偶 生 产 的 行 政 人 员 是 什 么 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P1431 ?x1 . ?x0 wdt:P58 ?x1 . ?x1 wdt:P40|wdt:P355 M1 . ?x1 wdt:P27 wd:Q17 }"
+        },
+        "question": {
+            "en": "What was executive produced by and written by a Japanese parent of M1",
+            "kn": "M1 ನ ಜಪಾನಿನ ಪೋಷಕರಿಂದ ಕಾರ್ಯನಿರ್ವಾಹಕನು ನಿರ್ಮಿಸಿದ ಮತ್ತು ಬರೆದದ್ದು ಏನು",
+            "he": "מה הופק ההנהלה ונכתב על ידי הורה יפני ל- M1",
+            "zh": "M1 的 日 本 父 母 制 作 并 写 了 什 么 高 管 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P57 ?x1 . ?x0 wdt:P1040 ?x1 . ?x0 wdt:P1431 ?x1 . ?x0 wdt:P162|wdt:P272 ?x1 . ?x0 wdt:P58 ?x1 . ?x1 wdt:P26 M0 . FILTER ( ?x1 != M0 ) }"
+        },
+        "question": {
+            "en": "What was executive produced by , edited by , produced by , directed by , and written by M0 's spouse",
+            "kn": "M0 ಅವರ ಸಂಗಾತಿಯಿಂದ ಕಾರ್ಯನಿರ್ವಾಹಕರಿಂದ ಏನು ತಯಾರಿಸಲ್ಪಟ್ಟಿದೆ, ಸಂಪಾದಿಸಲ್ಪಟ್ಟಿದೆ, ನಿರ್ಮಿಸಲ್ಪಟ್ಟಿದೆ, ನಿರ್ದೇಶಿಸಲ್ಪಟ್ಟಿದೆ ಮತ್ತು ಬರೆದಿದೆ",
+            "he": "מה הופק ההנהלה על ידי, נערך על ידי, הופק על ידי, ביים, ונכתב על ידי בן / בת הזוג של M0",
+            "zh": "由 M0 的 配 偶 制 作 ， 编 辑 ， 制 作 ， 导 演 和 撰 写 的 执 行 人 员 是 什 么 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P1040 ?x1 . ?x0 wdt:P1431 ?x1 . ?x0 wdt:P162|wdt:P272 ?x1 . ?x0 wdt:P58 ?x1 . ?x1 wdt:P40|wdt:P355 M0 }"
+        },
+        "question": {
+            "en": "What was executive produced by , produced by , edited by , and written by M0 's parent",
+            "kn": "M0 ನ ಪೋಷಕರಿಂದ ಕಾರ್ಯನಿರ್ವಾಹಕನು ನಿರ್ಮಿಸಿದ, ನಿರ್ಮಿಸಿದ, ಸಂಪಾದಿಸಿದ ಮತ್ತು ಬರೆದದ್ದು ಏನು",
+            "he": "מה הופק ההנהלה על ידי, הופק על ידי, נערך על ידי ונכתב על ידי ההורה של M0",
+            "zh": "由 M0 的 父 母 制 作 ， 制 作 ， 编 辑 和 撰 写 的 执 行 人 员 是 什 么 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P57 M0 . ?x0 wdt:P1040 M0 . ?x0 wdt:P1431 M0 }"
+        },
+        "question": {
+            "en": "What was executive produced , edited , and directed by M0",
+            "kn": "ಕಾರ್ಯನಿರ್ವಾಹಕನನ್ನು M0 ನಿರ್ಮಿಸಿದ, ಸಂಪಾದಿಸಿದ ಮತ್ತು ನಿರ್ದೇಶಿಸಿದ್ದು ಏನು",
+            "he": "מה הופק, נערך וביים על ידי M0",
+            "zh": "由 M0 制 作 ， 编 辑 和 导 演 的 执 行 官 是 什 么 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P112 ?x1 . ?x0 wdt:P112 M0 . ?x1 wdt:P108 M1 . ?x1 wdt:P27 wd:Q142 }"
+        },
+        "question": {
+            "en": "What was founded by M0 and founded by a French employee of M1",
+            "kn": "M0 ನಿಂದ ಸ್ಥಾಪಿಸಲ್ಪಟ್ಟದ್ದು ಮತ್ತು M1 ನ ಫ್ರೆಂಚ್ ಉದ್ಯೋಗಿ ಸ್ಥಾಪಿಸಿದ್ದು ಏನು",
+            "he": "מה הוקם על ידי M0 והוקם על ידי עובד צרפתי של M1",
+            "zh": "由 M0 创 立 并 由 M1 的 法 国 雇 员 创 立 的 公 司 是 什 么 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P162|wdt:P272 ?x1 . ?x1 wdt:P453 M0 }"
+        },
+        "question": {
+            "en": "What was produced by a actor of M0",
+            "kn": "M0 ನ ನಟನು ಏನು ನಿರ್ಮಿಸಿದನು",
+            "he": "מה הפיק שחקן M0",
+            "zh": "M0 的 演 员 制 作 了 什 么 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P57 ?x1 . ?x0 wdt:P1040 ?x1 . ?x0 wdt:P162|wdt:P272 ?x1 . ?x0 wdt:P58 ?x1 . ?x1 wdt:P3373 M0 . FILTER ( ?x1 != M0 ) }"
+        },
+        "question": {
+            "en": "What was produced by , directed by , edited by , and written by M0 's sibling",
+            "kn": "M0 ನ ಒಡಹುಟ್ಟಿದವರು ಏನು ನಿರ್ಮಿಸಿದ್ದಾರೆ, ನಿರ್ದೇಶಿಸಿದ್ದಾರೆ, ಸಂಪಾದಿಸಿದ್ದಾರೆ ಮತ್ತು ಬರೆದಿದ್ದಾರೆ",
+            "he": "מה הופק על ידי, ביים, נערך על ידי ונכתב על ידי אחיו של M0",
+            "zh": "由 M0 的 兄 弟 姐 妹 制 作 ， 指 导 ， 编 辑 和 编 写 的 内 容 是 什 么 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P57 M0 . ?x0 wdt:P1040 M0 . ?x0 wdt:P162|wdt:P272 M0 }"
+        },
+        "question": {
+            "en": "What was produced by , edited by , and directed by M0",
+            "kn": "M0 ನಿಂದ ಏನು ನಿರ್ಮಿಸಲಾಗಿದೆ, ಸಂಪಾದಿಸಲಾಗಿದೆ ಮತ್ತು ನಿರ್ದೇಶಿಸಲ್ಪಟ್ಟಿದೆ",
+            "he": "מה הופק, נערך על ידי וביים M0",
+            "zh": "M0 制 作 ， 编 辑 和 指 导 的 内 容 是 什 么 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P57 ?x1 . ?x0 wdt:P1040 ?x1 . ?x0 wdt:P1431 ?x1 . ?x0 wdt:P162|wdt:P272 ?x1 . ?x0 wdt:P58 ?x1 . ?x1 wdt:P40|wdt:P355 M0 }"
+        },
+        "question": {
+            "en": "What was produced by , executive produced by , directed by , edited by , and written by M0 's parent",
+            "kn": "M0 ನ ಪೋಷಕರು ನಿರ್ಮಿಸಿದ, ಕಾರ್ಯನಿರ್ವಾಹಕರಿಂದ ನಿರ್ಮಿಸಲ್ಪಟ್ಟ, ನಿರ್ದೇಶಿಸಿದ, ಸಂಪಾದಿಸಿದ ಮತ್ತು ಬರೆದದ್ದು ಏನು",
+            "he": "מה הופק על ידי, מנהל שהופק על ידי, ביים, נערך על ידי ונכתב על ידי ההורה של M0",
+            "zh": "M0 的 父 母 由 谁 制 作 ， 执 行 ， 由 导 演 执 导 ， 编 辑 和 编 写 的 内 容 是 什 么 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P57 ?x1 . ?x0 wdt:P1040 ?x1 . ?x0 wdt:P1431 ?x1 . ?x0 wdt:P162|wdt:P272 ?x1 . ?x0 wdt:P58 ?x1 . ?x1 wdt:P26 M0 . FILTER ( ?x1 != M0 ) }"
+        },
+        "question": {
+            "en": "What was produced by , executive produced by , directed by , edited by , and written by a spouse of M0",
+            "kn": "M0 ನ ಸಂಗಾತಿಯಿಂದ ಕಾರ್ಯನಿರ್ವಾಹಕರಿಂದ ನಿರ್ಮಿಸಲ್ಪಟ್ಟ, ನಿರ್ದೇಶಿಸಿದ, ಸಂಪಾದಿಸಿದ ಮತ್ತು ಬರೆದದ್ದು ಏನು",
+            "he": "מה הופק על ידי, מנהל שהופק על ידי, ביים, נערך על ידי ונכתב על ידי בן / בת זוג של M0",
+            "zh": "M0 的 配 偶 由 什 么 制 作 ， 由 执 行 制 作 ， 由 其 导 演 ， 由 其 编 辑 和 编 写 的 内 容 是 什 么 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P1040 ?x1 . ?x0 wdt:P162|wdt:P272 ?x1 . ?x0 wdt:P58 ?x1 . ?x1 wdt:P3373 M0 . FILTER ( ?x1 != M0 ) }"
+        },
+        "question": {
+            "en": "What was produced by , written by , and edited by a sibling of M0",
+            "kn": "M0 ನ ಒಡಹುಟ್ಟಿದವರಿಂದ ಏನು ತಯಾರಿಸಲ್ಪಟ್ಟಿದೆ, ಬರೆಯಲ್ಪಟ್ಟಿದೆ ಮತ್ತು ಸಂಪಾದಿಸಲ್ಪಟ್ಟಿದೆ",
+            "he": "מה הופק, נכתב על ידי וערך אחיו של M0",
+            "zh": "由 M0 的 同 级 兄 弟 产 生 ， 编 写 和 编 辑 的 内 容 是 什 么 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P1040 M0 . ?x0 wdt:P1431 M0 . ?x0 wdt:P162|wdt:P272 M0 }"
+        },
+        "question": {
+            "en": "What was produced , edited , and executive produced by M0",
+            "kn": "M0 ನಿರ್ಮಿಸಿದ, ಸಂಪಾದಿಸಿದ ಮತ್ತು ಕಾರ್ಯನಿರ್ವಾಹಕ ಯಾವುದು",
+            "he": "מה הופק, נערך והוצג על ידי M0",
+            "zh": "M0 制 作 ， 编 辑 和 执 行 的 内 容 是 什 么 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P1040 ?x1 . ?x0 wdt:P162|wdt:P272 ?x1 . ?x0 wdt:P58 ?x1 . ?x1 wdt:P27 wd:Q30 . ?x1 wdt:P3373 M0 . FILTER ( ?x1 != M0 ) }"
+        },
+        "question": {
+            "en": "What was produced , edited , and written by a American sibling of M0",
+            "kn": "M0 ನ ಅಮೇರಿಕನ್ ಒಡಹುಟ್ಟಿದವರಿಂದ ಏನು ತಯಾರಿಸಲ್ಪಟ್ಟಿದೆ, ಸಂಪಾದಿಸಲ್ಪಟ್ಟಿದೆ ಮತ್ತು ಬರೆಯಲ್ಪಟ್ಟಿದೆ",
+            "he": "מה הופק, נערך ונכתב על ידי אח אמריקאי מ- M0",
+            "zh": "美 国 M0 的 兄 弟 姐 妹 制 作 ， 编 辑 和 编 写 了 什 么 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P57 M0 . ?x0 wdt:P1040 M0 . ?x0 wdt:P162|wdt:P272 M0 . ?x0 wdt:P58 M0 }"
+        },
+        "question": {
+            "en": "What was produced , edited , written , and directed by M0",
+            "kn": "M0 ನಿರ್ಮಿಸಿದ, ಸಂಪಾದಿಸಿದ, ಬರೆದ ಮತ್ತು ನಿರ್ದೇಶಿಸಿದ್ದು ಏನು",
+            "he": "מה הופק, נערך, נכתב וביים על ידי M0",
+            "zh": "M0 制 作 ， 编 辑 ， 编 写 和 指 导 了 哪 些 内 容 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P162|wdt:P272 M0 . ?x0 wdt:P58 M0 }"
+        },
+        "question": {
+            "en": "What was written and produced by M0",
+            "kn": "M0 ನಿಂದ ಏನು ಬರೆಯಲ್ಪಟ್ಟಿದೆ ಮತ್ತು ತಯಾರಿಸಲ್ಪಟ್ಟಿದೆ",
+            "he": "מה נכתב והופק על ידי M0",
+            "zh": "M0 编 写 和 制 作 了 什 么 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P57 ?x1 . ?x0 wdt:P58 M0 . ?x1 wdt:P21 wd:Q6581072 . ?x1 wdt:P26 M2 . FILTER ( ?x1 != M2 ) }"
+        },
+        "question": {
+            "en": "What was written by M0 and directed by a female spouse of M2",
+            "kn": "M0 ನಿಂದ ಏನು ಬರೆಯಲ್ಪಟ್ಟಿದೆ ಮತ್ತು M2 ನ ಸ್ತ್ರೀ ಸಂಗಾತಿಯಿಂದ ನಿರ್ದೇಶಿಸಲ್ಪಟ್ಟಿದೆ",
+            "he": "מה כתב M0 וביים בן זוגה של M2",
+            "zh": "由 M0 撰 写 并 由 M2 的 女 性 配 偶 导 演 的 内 容 是 什 么 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P1431 ?x1 . ?x0 wdt:P58 M0 . ?x1 wdt:P27 wd:Q34 . ?x1 wdt:P3373 M1 . FILTER ( ?x1 != M1 ) }"
+        },
+        "question": {
+            "en": "What was written by M0 and executive produced by a Swedish sibling of M1",
+            "kn": "M1 ನ ಸ್ವೀಡಿಷ್ ಸಹೋದರ ನಿರ್ಮಿಸಿದ M0 ಮತ್ತು ಕಾರ್ಯನಿರ್ವಾಹಕರಿಂದ ಏನು ಬರೆಯಲ್ಪಟ್ಟಿದೆ",
+            "he": "מה נכתב על ידי M0 והמנהל שהופק על ידי אחיו השבדי של M1",
+            "zh": "M0 写 的 是 什 么 ， 而 瑞 典 M1 的 兄 弟 姐 妹 则 写 了 什 么 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P57 ?x1 . ?x0 wdt:P58 M0 . ?x1 wdt:P108 M1 . ?x1 wdt:P108 M2 . ?x1 wdt:P27 wd:Q96 }"
+        },
+        "question": {
+            "en": "What was written by M0 and directed by a Mexican employee of M1 and M2",
+            "kn": "M0 ಮತ್ತು M1 ಮತ್ತು M2 ನ ಮೆಕ್ಸಿಕನ್ ಉದ್ಯೋಗಿ ನಿರ್ದೇಶಿಸಿದ ಏನು",
+            "he": "מה כתב M0 וביים עובד מקסיקני של M1 ו- M2",
+            "zh": "由 M0 撰 写 并 由 M1 和 M2 的 墨 西 哥 雇 员 指 导 的 内 容 是 什 么 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P58 ?x1 . ?x1 wdt:P40|wdt:P355 M0 . ?x1 wdt:P3373 M0 . FILTER ( ?x1 != M0 ) }"
+        },
+        "question": {
+            "en": "What was written by M0 's parent and sibling",
+            "kn": "M0 ನ ಪೋಷಕರು ಮತ್ತು ಒಡಹುಟ್ಟಿದವರು ಏನು ಬರೆದಿದ್ದಾರೆ",
+            "he": "מה כתב ההורה והאח של M0",
+            "zh": "M0 的 父 母 和 兄 弟 姐 妹 写 了 什 么 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P162|wdt:P272 ?x1 . ?x0 wdt:P58 ?x1 . ?x1 wdt:P26 M0 . FILTER ( ?x1 != M0 ) }"
+        },
+        "question": {
+            "en": "What was written by and produced by a spouse of M0",
+            "kn": "M0 ರ ಸಂಗಾತಿಯಿಂದ ಏನು ಬರೆಯಲ್ಪಟ್ಟಿದೆ ಮತ್ತು ತಯಾರಿಸಲ್ಪಟ್ಟಿದೆ",
+            "he": "מה כתב ויצר בן / בת זוג של M0",
+            "zh": "M0 的 配 偶 写 的 和 写 的 是 什 么 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P57 ?x1 . ?x0 wdt:P1040 ?x1 . ?x0 wdt:P1431 ?x1 . ?x0 wdt:P162|wdt:P272 ?x1 . ?x0 wdt:P58 ?x1 . ?x1 wdt:P40|wdt:P355 M0 }"
+        },
+        "question": {
+            "en": "What was written by , edited by , directed by , executive produced by , and produced by M0 's parent",
+            "kn": "M0 ನ ಪೋಷಕರು ಏನು ಬರೆದಿದ್ದಾರೆ, ಸಂಪಾದಿಸಿದ್ದಾರೆ, ನಿರ್ದೇಶಿಸಿದ್ದಾರೆ, ಕಾರ್ಯನಿರ್ವಾಹಕರು ನಿರ್ಮಿಸಿದ್ದಾರೆ ಮತ್ತು ನಿರ್ಮಿಸಿದ್ದಾರೆ",
+            "he": "מה נכתב על ידי, נערך על ידי, ביים מנהל, שהופק על ידי, והופק על ידי ההורה של M0",
+            "zh": "M0 的 父 母 写 的 ， 由 编 辑 写 的 ， 由 导 演 执 行 的 ， 由 M0 的 父 母 写 的 是 什 么 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P57 ?x1 . ?x0 wdt:P1431 ?x1 . ?x0 wdt:P162|wdt:P272 ?x1 . ?x0 wdt:P58 ?x1 . ?x1 wdt:P3373 M0 . FILTER ( ?x1 != M0 ) }"
+        },
+        "question": {
+            "en": "What was written , directed , produced , and executive produced by a sibling of M0",
+            "kn": "M0 ನ ಒಡಹುಟ್ಟಿದವರಿಂದ ಏನು ಬರೆಯಲ್ಪಟ್ಟಿದೆ, ನಿರ್ದೇಶಿಸಲ್ಪಟ್ಟಿದೆ, ಉತ್ಪಾದಿಸಲ್ಪಟ್ಟಿದೆ ಮತ್ತು ಕಾರ್ಯನಿರ್ವಾಹಕವಾಗಿದೆ",
+            "he": "מה נכתב, ביים, הופק והוצא על ידי אחיו של M0",
+            "zh": "M0 的 兄 弟 姐 妹 编 写 ， 指 导 ， 制 作 和 执 行 的 内 容 是 什 么 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P1040 M0 . ?x0 wdt:P1431 M0 . ?x0 wdt:P58 M0 }"
+        },
+        "question": {
+            "en": "What was written , edited , and executive produced by M0",
+            "kn": "M0 ನಿರ್ಮಿಸಿದ, ಸಂಪಾದಿಸಿದ ಮತ್ತು ಕಾರ್ಯನಿರ್ವಾಹಕ ಏನು",
+            "he": "מה נכתב, נערך והוצג על ידי M0",
+            "zh": "M0 编 写 ， 编 辑 和 执 行 的 内 容 是 什 么 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P1040 ?x1 . ?x0 wdt:P1431 ?x1 . ?x0 wdt:P162|wdt:P272 ?x1 . ?x0 wdt:P58 ?x1 . ?x1 wdt:P26 M0 . FILTER ( ?x1 != M0 ) }"
+        },
+        "question": {
+            "en": "What was written , executive produced , produced , and edited by a spouse of M0",
+            "kn": "M0 ನ ಸಂಗಾತಿಯಿಂದ ಏನು ಬರೆಯಲಾಗಿದೆ, ಕಾರ್ಯನಿರ್ವಾಹಕ ಉತ್ಪಾದನೆ, ಉತ್ಪಾದನೆ ಮತ್ತು ಸಂಪಾದನೆ",
+            "he": "מה נכתב, הופק, הופק, ונערך על ידי בן / בת זוג של M0",
+            "zh": "M0 的 配 偶 编 写 ， 执 行 ， 制 作 和 编 辑 的 内 容 是 什 么 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P737 M1 . ?x0 wdt:P27 wd:Q30 . ?x0 wdt:P3373 M0 . FILTER ( ?x0 != M0 ) }"
+        },
+        "question": {
+            "en": "Which American sibling of M0 did M1 influence",
+            "kn": "M0 ನ ಯಾವ ಅಮೇರಿಕನ್ ಸಹೋದರ M1 ಪ್ರಭಾವ ಬೀರಿದರು",
+            "he": "על איזה אח אמריקאי של M0 השפיע M1",
+            "zh": "M1 对 M0 的 哪 个 美 国 同 胞 有 影 响 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P737 M0 . ?x0 wdt:P737 M1 . ?x0 wdt:P27 wd:Q30 . ?x0 wdt:P26 M3 . FILTER ( ?x0 != M3 ) }"
+        },
+        "question": {
+            "en": "Which American spouse of M3 was influenced by M0 and was influenced by M1",
+            "kn": "M3 ಯ ಯಾವ ಅಮೇರಿಕನ್ ಸಂಗಾತಿಯು M0 ನಿಂದ ಪ್ರಭಾವಿತನಾಗಿದ್ದನು ಮತ್ತು M1 ನಿಂದ ಪ್ರಭಾವಿತನಾಗಿದ್ದನು",
+            "he": "איזה בן זוג אמריקאי ל- M3 הושפע מ- M0 והושפע מ- M1",
+            "zh": "M3 的 哪 个 美 国 配 偶 受 M0 的 影 响 并 且 受 M1 的 影 响 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P737 M0 . ?x0 wdt:P27 wd:Q145 . ?x0 wdt:P26 M0 . ?x0 wdt:P26 M2 . FILTER ( ?x0 != M0 ) . FILTER ( ?x0 != M2 ) }"
+        },
+        "question": {
+            "en": "Which British spouse of M2 did M0 marry and influence",
+            "kn": "M2 ನ ಯಾವ ಬ್ರಿಟಿಷ್ ಸಂಗಾತಿಯು M0 ಮದುವೆಯಾಗಿ ಪ್ರಭಾವ ಬೀರಿದರು",
+            "he": "עם איזה בן זוג בריטי ל- M2 התחתן M0 והשפיע",
+            "zh": "M0 嫁 给 了 M2 的 哪 一 位 英 国 配 偶 并 对 其 产 生 了 影 响 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P27 wd:Q96 . ?x0 wdt:P26 M1 . ?x0 wdt:P26 M2 . ?x0 wdt:P26 M3 . FILTER ( ?x0 != M1 ) . FILTER ( ?x0 != M2 ) . FILTER ( ?x0 != M3 ) }"
+        },
+        "question": {
+            "en": "Which Mexican spouse of M3 married M1 and M2",
+            "kn": "M3 ನ ಯಾವ ಮೆಕ್ಸಿಕನ್ ಸಂಗಾತಿಯು M1 ಮತ್ತು M2 ಅನ್ನು ವಿವಾಹವಾದರು",
+            "he": "איזה בן זוג מקסיקני של M3 התחתן עם M1 ו- M2",
+            "zh": "M3 的 哪 个 墨 西 哥 配 偶 与 M1 和 M2 结 婚 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P453 M1 . ?x0 wdt:P3373 M0 . FILTER ( ?x0 != M0 ) }"
+        },
+        "question": {
+            "en": "Which actor of M1 was M0 's sibling",
+            "kn": "M1 ನ ಯಾವ ನಟ M0 ನ ಒಡಹುಟ್ಟಿದವರು",
+            "he": "איזה שחקן של M1 היה אח של M0",
+            "zh": "M0 的 兄 弟 姐 妹 是 M1 的 哪 个 演 员 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P108 M0 . ?x0 wdt:P108 M1 . ?x0 wdt:P21 wd:Q6581097 }"
+        },
+        "question": {
+            "en": "Which employee of M0 was a male employee of M1",
+            "kn": "M0 ನ ಯಾವ ಉದ್ಯೋಗಿ M1 ನ ಪುರುಷ ಉದ್ಯೋಗಿಯಾಗಿದ್ದರು",
+            "he": "איזה עובד של M0 היה עובד זכר של M1",
+            "zh": "M0 的 哪 个 雇 员 是 M1 的 男 性 雇 员 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P737 M1 . ?x0 wdt:P108 M0 }"
+        },
+        "question": {
+            "en": "Which employee of M0 did M1 influence",
+            "kn": "M0 ನ ಯಾವ ಉದ್ಯೋಗಿ M1 ಪ್ರಭಾವ ಬೀರಿದರು",
+            "he": "איזה עובד של M0 השפיע M1",
+            "zh": "M1 影 响 了 哪 个 M0 员 工 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P737 M1 . ?x0 wdt:P108 M0 }"
+        },
+        "question": {
+            "en": "Which employee of M0 was influenced by M1",
+            "kn": "M0 ಯ ಯಾವ ಉದ್ಯೋಗಿ M1 ನಿಂದ ಪ್ರಭಾವಿತನಾಗಿದ್ದಾನೆ",
+            "he": "איזה עובד של M0 הושפע מ- M1",
+            "zh": "M0 的 哪 个 员 工 受 到 M1 的 影 响 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P737 M0 . ?x0 wdt:P737 M1 . ?x0 wdt:P21 wd:Q6581072 . ?x0 wdt:P26 ?x1 . ?x1 wdt:P26 M3 . FILTER ( ?x0 != ?x1 ) . FILTER ( ?x1 != M3 ) }"
+        },
+        "question": {
+            "en": "Which female spouse of M3 's spouse was influenced by M0 and influenced by M1",
+            "kn": "M3 ನ ಸಂಗಾತಿಯ ಯಾವ ಸ್ತ್ರೀ ಸಂಗಾತಿಯು M0 ನಿಂದ ಪ್ರಭಾವಿತರಾದರು ಮತ್ತು M1 ನಿಂದ ಪ್ರಭಾವಿತರಾದರು",
+            "he": "איזה בן זוג של בן / בת הזוג של M3 הושפע מ- M0 והושפע מ- M1",
+            "zh": "M3 的 配 偶 中 的 哪 个 女 性 配 偶 受 M0 和 M1 影 响 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P40|wdt:P355 M0 . ?x0 wdt:P26 M0 . ?x0 wdt:P26 M1 . FILTER ( ?x0 != M0 ) . FILTER ( ?x0 != M1 ) }"
+        },
+        "question": {
+            "en": "Which parent and spouse of M0 did M1 marry",
+            "kn": "M0 ನ ಯಾವ ಪೋಷಕರು ಮತ್ತು ಸಂಗಾತಿಯು M1 ಅವರನ್ನು ಮದುವೆಯಾದರು",
+            "he": "עם איזה הורה ובן הזוג של M0 התחתנו M1",
+            "zh": "M1 嫁 给 了 M0 的 哪 个 父 母 和 配 偶 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P737 ?x1 . ?x0 wdt:P40|wdt:P355 M0 . ?x1 wdt:P26 M1 . FILTER ( ?x1 != M1 ) }"
+        },
+        "question": {
+            "en": "Which parent of M0 did a spouse of M1 influence",
+            "kn": "M0 ನ ಯಾವ ಪೋಷಕರು M1 ಪ್ರಭಾವದ ಸಂಗಾತಿಯನ್ನು ಮಾಡಿದರು",
+            "he": "על איזה הורה ל- M0 השפיע בן / בת זוג M1",
+            "zh": "M1 的 配 偶 对 M0 的 哪 个 父 母 有 影 响 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P1431 M1 . ?x0 wdt:P1431 M2 . ?x0 wdt:P156 M0 }"
+        },
+        "question": {
+            "en": "Which prequel of M0 did M1 and M2 executive produce",
+            "kn": "M1 ಮತ್ತು M2 ಕಾರ್ಯನಿರ್ವಾಹಕ M0 ನ ಯಾವ ಪೂರ್ವಭಾವಿ ಉತ್ಪಾದಿಸಿತು",
+            "he": "איזה פריקוול של M0 ייצרו M1 ו- M2",
+            "zh": "M1 和 M2 执 行 人 员 产 生 哪 个 M0 前 传 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P57 M0 . ?x0 wdt:P57 M1 . ?x0 wdt:P1431 M0 . ?x0 wdt:P1431 M1 . ?x0 wdt:P156 ?x1 . ?x1 wdt:P156 M2 }"
+        },
+        "question": {
+            "en": "Which prequel of M2 's prequel was executive produced and directed by M0 and M1",
+            "kn": "M2 ನ ಪೂರ್ವಭಾವಿ ಯಾವ ಪೂರ್ವಭಾವಿ ಕಾರ್ಯನಿರ್ವಾಹಕನನ್ನು M0 ಮತ್ತು M1 ನಿರ್ಮಿಸಿ ನಿರ್ದೇಶಿಸಿದೆ",
+            "he": "איזה פריקוול מהפריקוול של M2 הופק ובוצע על ידי M0 ו- M1",
+            "zh": "M2 的 前 传 中 的 哪 个 前 传 是 由 M0 和 M1 执 行 制 作 和 导 演 的 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P750 M1 . ?x0 wdt:P162|wdt:P272 M1 . ?x0 wdt:P156 M0 }"
+        },
+        "question": {
+            "en": "Which prequel of M0 was distributed and produced by M1",
+            "kn": "M0 ಯ ಯಾವ ಪೂರ್ವಭಾವಿಯನ್ನು M1 ವಿತರಿಸಿ ಉತ್ಪಾದಿಸಿತು",
+            "he": "איזה פריקוול של M0 הופץ והופק על ידי M1",
+            "zh": "M1 分 发 并 产 生 了 M0 的 哪 个 前 传 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P57 M1 . ?x0 wdt:P162|wdt:P272 M1 . ?x0 wdt:P156 M0 . ?x0 wdt:P58 M1 }"
+        },
+        "question": {
+            "en": "Which prequel of M0 was produced by , written by , and directed by M1",
+            "kn": "M0 ಯ ಯಾವ ಪೂರ್ವಭಾವಿಯನ್ನು M1 ನಿರ್ಮಿಸಿದೆ, ಬರೆದಿದೆ ಮತ್ತು ನಿರ್ದೇಶಿಸಿದೆ",
+            "he": "איזה פריקוול של M0 הופק, נכתב על ידי וביים M1",
+            "zh": "M0 的 哪 个 前 传 由 M1 产 生 ， 编 写 和 指 示 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P750 M1 . ?x0 wdt:P162|wdt:P272 ?x1 . ?x0 wdt:P156 M0 . ?x1 wdt:P26 M2 . FILTER ( ?x1 != M2 ) }"
+        },
+        "question": {
+            "en": "Which prequel of M0 was produced by M2 's spouse and distributed by M1",
+            "kn": "M0 ನ ಯಾವ ಪೂರ್ವಭಾವಿ M2 ನ ಸಂಗಾತಿಯಿಂದ ಉತ್ಪಾದಿಸಲ್ಪಟ್ಟಿದೆ ಮತ್ತು M1 ನಿಂದ ವಿತರಿಸಲ್ಪಟ್ಟಿದೆ",
+            "he": "איזה פריקוול של M0 הופק על ידי בן הזוג של M2 והופץ על ידי M1",
+            "zh": "M0 的 哪 个 前 传 由 M2 的 配 偶 产 生 并 由 M1 分 发 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P750 M0 . ?x0 wdt:P155 M1 }"
+        },
+        "question": {
+            "en": "Which sequel of M1 was distributed by M0",
+            "kn": "M1 ಯ ಯಾವ ಉತ್ತರಭಾಗವನ್ನು M0 ವಿತರಿಸಿದೆ",
+            "he": "איזה סרט ההמשך של M1 הופץ על ידי M0",
+            "zh": "M0 发 行 了 M1 的 哪 个 续 集 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P1431 M0 . ?x0 wdt:P155 M1 . ?x0 wdt:P58 ?x1 . ?x1 wdt:P26 M2 . FILTER ( ?x1 != M2 ) }"
+        },
+        "question": {
+            "en": "Which sequel of M1 did a spouse of M2 write and M0 executive produce",
+            "kn": "M1 ನ ಯಾವ ಉತ್ತರಭಾಗವು M2 ರ ಸಂಗಾತಿಯನ್ನು ಬರೆಯುತ್ತದೆ ಮತ್ತು M0 ಕಾರ್ಯನಿರ್ವಾಹಕನನ್ನು ಉತ್ಪಾದಿಸಿತು",
+            "he": "איזה סרט המשך של M1 כתב בן זוג M2 ומנהל M0",
+            "zh": "M2 的 配 偶 和 M0 执 行 人 员 制 作 了 M1 的 哪 个 续 集 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P750 M0 . ?x0 wdt:P155 ?x1 . ?x0 wdt:P162|wdt:P272 M0 . ?x1 wdt:P155 M1 }"
+        },
+        "question": {
+            "en": "Which sequel of M1 's sequel was produced by and distributed by M0",
+            "kn": "M1 ನ ಉತ್ತರಭಾಗದ ಯಾವ ಉತ್ತರಭಾಗವನ್ನು M0 ನಿರ್ಮಿಸಿ ವಿತರಿಸಿದೆ",
+            "he": "איזה סרט ההמשך של סרט M1 הופק על ידי M0 והופץ",
+            "zh": "M1 的 哪 个 续 集 是 由 M0 制 作 和 发 行 的 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P57 ?x1 . ?x0 wdt:P155 M0 . ?x0 wdt:P162|wdt:P272 ?x1 . ?x0 wdt:P58 ?x1 . ?x1 wdt:P26 M1 . FILTER ( ?x1 != M1 ) }"
+        },
+        "question": {
+            "en": "Which sequel of M0 was directed , written , and produced by M1 's spouse",
+            "kn": "M0 ನ ಯಾವ ಉತ್ತರಭಾಗವನ್ನು M1 ನ ಸಂಗಾತಿಯು ನಿರ್ದೇಶಿಸಿದ್ದಾರೆ, ಬರೆದಿದ್ದಾರೆ ಮತ್ತು ನಿರ್ಮಿಸಿದ್ದಾರೆ",
+            "he": "איזה סרט ההמשך של M0 ביים, נכתב והופק על ידי בן הזוג של M1",
+            "zh": "M0 的 哪 一 部 续 集 是 由 M1 的 配 偶 导 演 ， 编 写 和 制 作 的 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P1431 ?x1 . ?x0 wdt:P155 M0 . ?x1 wdt:P749 M1 }"
+        },
+        "question": {
+            "en": "Which sequel of M0 was executive produced by M1 's child",
+            "kn": "M0 ನ ಯಾವ ಉತ್ತರಭಾಗವನ್ನು M1 ನ ಮಗು ನಿರ್ಮಿಸಿತು",
+            "he": "איזה סרט ההמשך של M0 הופק על ידי הילד של M1",
+            "zh": "M1 的 孩 子 制 作 了 M0 的 哪 一 部 续 集 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P1040 M0 . ?x0 wdt:P155 M1 }"
+        },
+        "question": {
+            "en": "Which sequel of M1 was edited by M0",
+            "kn": "M1 ಯ ಯಾವ ಉತ್ತರಭಾಗವನ್ನು M0 ಸಂಪಾದಿಸಿದೆ",
+            "he": "איזה סרט ההמשך של M1 נערך על ידי M0",
+            "zh": "M1 的 哪 个 续 集 是 由 M0 编 辑 的 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P57 M0 . ?x0 wdt:P1040 M0 . ?x0 wdt:P155 ?x1 . ?x0 wdt:P162|wdt:P272 M0 . ?x0 wdt:P58 M0 . ?x1 wdt:P155 M1 }"
+        },
+        "question": {
+            "en": "Which sequel of a sequel of M1 was produced by , written by , edited by , and directed by M0",
+            "kn": "M1 ನ ಉತ್ತರಭಾಗದ ಯಾವ ಉತ್ತರಭಾಗವನ್ನು M0 ನಿರ್ಮಿಸಿದೆ, ಬರೆದಿದೆ, ಸಂಪಾದಿಸಿದೆ ಮತ್ತು ನಿರ್ದೇಶಿಸಿದೆ",
+            "he": "איזה סרט ההמשך של סרט ההמשך של M1 הופק, נכתב על ידי, נערך על ידי וביים M0",
+            "zh": "M1 的 哪 个 续 集 是 由 M0 制 作 ， 编 写 ， 编 辑 和 指 导 的 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P40|wdt:P355 M0 . ?x0 wdt:P3373 M0 . ?x0 wdt:P26 M1 . FILTER ( ?x0 != M0 ) . FILTER ( ?x0 != M1 ) }"
+        },
+        "question": {
+            "en": "Which sibling and parent of M0 was M1 's spouse",
+            "kn": "M1 ನ ಸಂಗಾತಿ ಮತ್ತು M0 ನ ಪೋಷಕರು ಯಾರು",
+            "he": "איזה אח והורה ל- M0 היה בן הזוג של M1",
+            "zh": "M1 的 配 偶 是 M0 的 哪 个 兄 弟 姐 妹 ？"
+        }
+    },
+    {
+        "mr": {
+            "sparql": "SELECT DISTINCT ?x0 WHERE { ?x0 wdt:P453 M0 . ?x0 wdt:P3373 ?x1 . ?x1 wdt:P40|wdt:P355 M1 . ?x1 wdt:P3373 M1 . FILTER ( ?x0 != ?x1 ) . FILTER ( ?x1 != M1 ) }"
+        },
+        "question": {
+            "en": "Which sibling of M1 's sibling and parent was M0 's actor",
+            "kn": "M1 ನ ಸಹೋದರ ಮತ್ತು ಪೋಷಕರ ಯಾವ ಸಹೋದರ M0 ನ ನಟ",
+            "he": "איזה אח של אחיו של M1 וההורה היה השחקן של M0",
+            "zh": "M0 的 演 员 是 M1 的 哪 个 兄 弟 姐 妹 和 父 母 ？"
+        }
+    }
+]
