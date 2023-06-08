@@ -1,5 +1,5 @@
 ## XSemPLR
-This repository maintains datasets and models for ACL 2023 paper XSemPLR: Cross-Lingual Semantic Parsing in Multiple Natural Languages and Meaning Representations.
+This repository maintains datasets and models for ACL 2023 paper [XSemPLR: Cross-Lingual Semantic Parsing in Multiple Natural Languages and Meaning Representations](https://arxiv.org/abs/2306.04085).
 
 Navigation:
 [Overview](#overview), 
